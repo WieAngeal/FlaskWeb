@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+    <script src="/static/js/app.js"></script>
+    <script src="/static/js/echarts/echarts.min.js"></script>
+    <script src="/static/js/e-map.js"></script>
+{% endblock %}
+{% block content %}
+    消息提示：<p style="color: red">{{ get_flashed_messages()[0] }}</p>
+    <br/>
+    welcome flask index.html
+
+    <br>
+    {% if users %}
+        <h1>users:</h1>
+        {% for user in users %}
+            {{ user }} &nbsp;
+        {% endfor %}
+    {% endif %}
+    <br/>
+    {% if user %}
+        <h1>user:</h1>{{ user }}
+    {% endif %}
+
+    <br/>
+    <h1>登录</h1>
+    <div style="background-image: inherit;">
+        <img src="/static/images/0.jpg">
+        <form action="/login" method="post" style="background: inherit">
+            username:<input type="text" name="username" placeholder="username"/><br>
+            password:<input type="password" name="password" placeholder="password"/><br>
+            <button type="submit" value="提交">提交</button>
+        </form>
+    </div>
+    <div id="main"  style="width: 600px;height:400px; text-align:center"></div>
+    <div></div>
+
+    <script>
+        var myChart = echarts.init(document.getElementById('main'));
+        if(!myChart){
+            console.log("myChart is null.");
+        }
+        var option = {
+            title: {
+                text: 'ECharts数据分析'
+            },
+            tooltip: {},
+            legend: {
+                data:['销量']
+            },
+            xAxis: {
+                data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+            },
+            yAxis: {},
+            series: [{
+                name: '销量',
+                type: 'bar',
+                data: [5, 20, 36, 10, 10, 20]
+            }]
+        };
+        myChart.setOption(option);
+    </script>
+
+    <script>
+        // 测试静态资源
+        app.alert("当前时间：" + app.time())
+    </script>
+{% endblock %}
