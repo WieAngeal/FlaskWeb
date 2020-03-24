@@ -4,7 +4,6 @@
     {{ super() }}
     <script src="/static/js/app.js"></script>
     <script src="/static/js/echarts/echarts.min.js"></script>
-    <script src="/static/js/e-map.js"></script>
 {% endblock %}
 {% block content %}
     消息提示：<p style="color: red">{{ get_flashed_messages()[0] }}</p>
@@ -24,17 +23,17 @@
     {% endif %}
 
     <br/>
-    <h1>登录</h1>
-    <div style="background-image: inherit;">
+    <h1>欢迎使用Flask Web。</h1>
+    <div style="background-image: inherit; text-align:center;">
         <img src="/static/images/0.jpg">
         <form action="/login" method="post" style="background: inherit">
-            username:<input type="text" name="username" placeholder="username"/><br>
-            password:<input type="password" name="password" placeholder="password"/><br>
+            username:<input type="text" name="username" placeholder="用户名"/><br>
+            password:<input type="password" name="password" placeholder="密码"/><br>
             <button type="submit" value="提交">提交</button>
         </form>
+        <div id="main"  style=" text-align:center; width: 600px; height:400px;"></div>
     </div>
-    <div id="main"  style="width: 600px;height:400px; text-align:center"></div>
-    <div></div>
+
 
     <script>
         var myChart = echarts.init(document.getElementById('main'));
@@ -64,6 +63,6 @@
 
     <script>
         // 测试静态资源
-        app.alert("当前时间：" + app.time())
+        //app.alert("当前时间：" + app.time())
     </script>
 {% endblock %}

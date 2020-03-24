@@ -17,4 +17,5 @@ def home():
     页面使用{{ get_flashed_messages()[0] }} 获取
     """
     flash("welcome !")
+
     return render_template("index.html")

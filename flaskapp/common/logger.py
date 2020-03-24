@@ -5,6 +5,7 @@
 # @File    : logger.py
 # @Software: PyCharm
 import logging
+from logging.handlers import RotatingFileHandler
 
 FORMAT_STR = '%(asctime)s %(levelname)s {model} :: %(message)s'
 
@@ -18,24 +19,38 @@ class ConsoleLogger(object):
     """
 
     def __new__(cls, name='%(module)s'):
-        __format = '%(asctime)s %(levelname)s {model} :: %(message)s'.format(model=name)
+        __format = '1 %(asctime)s %(levelname)s {model} %(filename)s(%(lineno)d) : %(message)s'.format(model=name)
         __logger = logging.getLogger(name)
         __logger.setLevel(logging.DEBUG)
         handler = logging.StreamHandler()
         formatter = logging.Formatter(__format)
         handler.setFormatter(formatter)
         __logger.addHandler(handler)
+
+        # 日志写文件操作
+        logfilehandler = RotatingFileHandler("logs/log.txt", maxBytes=1024 * 1024 * 3, backupCount=2)
+        formatter = logging.Formatter('2 %(asctime)s %(levelname)s {model} %(filename)s(%(lineno)d) : %(message)s')
+        logfilehandler.setFormatter(formatter)
+        __logger.addHandler(logfilehandler)
+
         return __logger
 
 
 class LoggerFactory(object):
     @staticmethod
     def logger(name='%(module)s'):
-        __format = '%(asctime)s %(levelname)s {model} :: %(message)s'.format(model=name)
+        __format = '3 %(asctime)s %(levelname)s {model} %(filename)s(%(lineno)d) : %(message)s'.format(model=name)
         __logger = logging.getLogger(name)
         __logger.setLevel(logging.DEBUG)
         handler = logging.StreamHandler()
         formatter = logging.Formatter(__format)
         handler.setFormatter(formatter)
         __logger.addHandler(handler)
+
+        #日志写文件操作
+        logfilehandler = RotatingFileHandler("logs/log.txt", maxBytes=1024 * 1024 * 3, backupCount=2)
+        formatter = logging.Formatter('4 %(asctime)s %(levelname)s {model} %(filename)s(%(lineno)d) : %(message)s')
+        logfilehandler.setFormatter(formatter)
+        __logger.addHandler(logfilehandler)
+
         return __logger

@@ -8,8 +8,12 @@
 # @Source         : 
 from flask import Blueprint, render_template, request, flash
 
+from ..common import ConsoleLogger, relative_path
+
+
 login = Blueprint('login', __name__)
 
+logger = ConsoleLogger(relative_path(__file__))
 
 @login.route('/login', methods=["POST"])
 def login_func():
@@ -27,6 +31,7 @@ def login_func():
 
     if username == 'admin' and password == 'admin':
         flash("login success!")
+        logger.info('into login_func ')
         return render_template("index.html", users=['jack', 'tom', 'jenny'])
     else:
         flash("username or password is error!")
