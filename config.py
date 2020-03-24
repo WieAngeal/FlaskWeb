@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Author         : Tom.Lee
+# @Author         : WieAngeal
 # @File           : settings.py
 # @Product        : PyCharm
 

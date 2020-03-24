@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time           : 18-7-10 上午10:22
-# @Author         : Tom.Lee
+# @Author         : WieAngeal
 # @File           : manager.py
 # @Product        : PyCharm
 # @Docs           : 
