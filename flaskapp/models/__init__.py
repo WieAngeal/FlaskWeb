@@ -9,12 +9,13 @@
 from .clazz import Clazz
 from .school import School
 from .user import User
+from .hosinfo import Hosinfo
 from ..common import ConsoleLogger, relative_path
 
 logger = ConsoleLogger(relative_path(__file__))
 logger.info('initial app models model')
 
-__all__ = ['User', 'Clazz', 'School']
+__all__ = ['User', 'Clazz', 'School', 'Hosinfo']
 
 # models
 MODELS = __all__

@@ -28,23 +28,23 @@
 						<br>
 						<label for="">为您快速开通账号</label>
 						<ul>
-							<li>
+							<li id="district">
 								<select name="" id="">
 									<option value="">请选择省份</option>
 									<option value="">甘肃</option>
 									<option value="">宁夏</option>
 								</select>
 							</li>
-							<li>
+							<li id="hospital">
 								<input type="text" placeholder="医院名称">
 							</li>
-							<li>
+							<li id="telphone">
 								<input type="text" placeholder="联系电话">
 							</li>
-							<li>
+							<li id="conname">
 								<input type="text" placeholder="联系人姓名">
 							</li>
-							<li>
+							<li id="email">
 								<input type="text" placeholder="邮箱">
 							</li>
 							<li>
@@ -52,7 +52,7 @@
 									<i></i>
 									<span>请选择业务需求(可多选)</span>
 								</div>
-								<div class="box">
+								<div class="box" id="sysname">
 									<div class="box_first">
 										<input class="checkbox" type="checkbox">
 										<span class="name">远程医疗云</span>
@@ -83,8 +83,13 @@
         function register() {
             var data= {
                 data: JSON.stringify({
-                    'x': 2,
-                    'y': 3
+                    'id': 1,
+                    'district': "甘肃省",
+                    'hospital': "兰州市第二人民医院",
+                    'telphone': "17693186908",
+                    'conname': "章果",
+                    'email': "biyan_111@126.com",
+                    'sysname': "远程医疗云"
                 }),
             };
 

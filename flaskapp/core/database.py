@@ -61,6 +61,7 @@ class Persistence(Transactional):
 
     def save(self, obj):
         # 理论上该方法可以被任意对象使用
+        logger.error(obj)
         self._load(obj)
         self.auto_commit()
         return obj

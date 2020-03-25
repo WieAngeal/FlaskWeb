@@ -28,7 +28,7 @@ class ConsoleLogger(object):
         __logger.addHandler(handler)
 
         # 日志写文件操作
-        logfilehandler = RotatingFileHandler("logs/log.txt", maxBytes=1024 * 1024 * 3, backupCount=2)
+        logfilehandler = RotatingFileHandler("logs/log.txt", maxBytes=1024 * 1024 * 3, backupCount=2, encoding='UTF-8')
         formatter = logging.Formatter('2 %(asctime)s %(levelname)s {model} %(filename)s(%(lineno)d) : %(message)s')
         logfilehandler.setFormatter(formatter)
         __logger.addHandler(logfilehandler)
@@ -48,7 +48,7 @@ class LoggerFactory(object):
         __logger.addHandler(handler)
 
         #日志写文件操作
-        logfilehandler = RotatingFileHandler("logs/log.txt", maxBytes=1024 * 1024 * 3, backupCount=2)
+        logfilehandler = RotatingFileHandler("logs/log.txt", maxBytes=1024 * 1024 * 3, backupCount=2, encoding='UTF-8')
         formatter = logging.Formatter('4 %(asctime)s %(levelname)s {model} %(filename)s(%(lineno)d) : %(message)s')
         logfilehandler.setFormatter(formatter)
         __logger.addHandler(logfilehandler)
