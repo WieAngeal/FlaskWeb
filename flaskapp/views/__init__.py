@@ -14,12 +14,15 @@ from .rest_clazz_handler import clazz as _clazz
 from .rest_login_handler import login as _login
 from .rest_school_handler import school as _school
 from .rest_user_handler import user as _user
+from .ycyl_hander import ycyl as _ycyl
+
 from ..common import ConsoleLogger, relative_path
 
 logger = ConsoleLogger(relative_path(__file__))
 logger.info('initial app views model')
 
 BLUEPRINT_MODELS = [
+    _ycyl,
     _error,
     _index,
     _login,
