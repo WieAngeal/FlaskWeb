@@ -11,6 +11,7 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<meta name="author" content="CSS5, css5.com.cn" />
 		<link rel="stylesheet" href="/static/css/ycyl.css">
+        <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
         <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon"/>
 	</head>
 	<body>
@@ -22,7 +23,7 @@
 			<div class="page fourth_page"></div>
 			<div class="page fifth_page">
 				<div class="form-page">
-					<form action="">
+					<form id="reg_form">
 						<label for="">请输入您的医院信息</label>
 						<br>
 						<label for="">为您快速开通账号</label>
@@ -63,7 +64,7 @@
 								</div>
 							</li>
 							<li class="but">
-								<buttom>免费开通</buttom>
+								<buttom type="submit" onclick="register()">免费开通</buttom>
 							</li>
 						</ul>
 						<div class="tell"> 
@@ -78,5 +79,30 @@
 		</div>
 	</body>
 </html>
-<script>
-</script>
+    <script type="text/javascript">
+        function register() {
+            var data= {
+                data: JSON.stringify({
+                    'x': 2,
+                    'y': 3
+                }),
+            };
+
+            $.ajax({
+                type: "POST",
+                url: "/ycyl/api/register",
+                dataType: "json",
+                data: data,
+                contentType: "application/x-www-form-urlencoded",
+                success: function (result) {
+                    console.log(result);
+                    if (result.status == 200) {
+                        alert("SUCCESS");
+                    }
+                },
+                error : function() {
+                    alert("异常！");
+                }
+            });
+        }
+    </script>
