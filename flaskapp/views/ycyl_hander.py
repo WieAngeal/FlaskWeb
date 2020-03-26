@@ -26,13 +26,22 @@ def home():
 @ycyl.route('/api/register', methods=["POST"])
 def register():
     data = json.loads(request.form.get('data'))
-    logger.info(data)
-    logger.info(request.form)
+
+    logger.debug(data)
+    logger.debug(request.form.get('data'))
 
     method = request.method
     if method == 'POST':
         obj = ycyl_service.save(Hosinfo(**multi_dict_parser2dict(request.form)))
-        logger.info("DB: " + obj.json())
+
+        # hosinfo = Hosinfo(id=4, district='gasnsu', hospital='landda',
+        #                         conname='zhagdnguo', email='bia@126.com',
+        #                         telphone='10873023', sysname='yuanschen')
+        # hosinfo = Hosinfo({id: 12, district: '甘肃省', hospital: '兰州市第二人民医院', telphone: '17693186908', conname: '章果', email: 'biyan_111@126.com', sysname: '远程医疗云'})
+        #
+        # logger.info(hosinfo)
+        # obj = ycyl_service.save(hosinfo)
+
         return make_response(data=obj.json())
 
     return render_template("开通成功！")
