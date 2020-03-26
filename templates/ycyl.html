@@ -28,38 +28,38 @@
 						<br>
 						<label for="">为您快速开通账号</label>
 						<ul>
-							<li id="district">
-								<select name="" id="">
+							<li>
+								<select name="" id="district">
 									<option value="">请选择省份</option>
 									<option value="">甘肃</option>
 									<option value="">宁夏</option>
 								</select>
 							</li>
-							<li id="hospital">
-								<input type="text" placeholder="医院名称">
+							<li >
+								<input type="text" id="hospital" placeholder="医院名称">
 							</li>
-							<li id="telphone">
-								<input type="text" placeholder="联系电话">
+							<li >
+								<input type="text" id="telphone" placeholder="联系电话">
 							</li>
-							<li id="conname">
-								<input type="text" placeholder="联系人姓名">
+							<li >
+								<input type="text" id="conname" placeholder="联系人姓名">
 							</li>
-							<li id="email">
-								<input type="text" placeholder="邮箱">
+							<li >
+								<input type="text" id="email" placeholder="邮箱">
 							</li>
 							<li>
 								<div class="title">
 									<i></i>
 									<span>请选择业务需求(可多选)</span>
 								</div>
-								<div class="box" id="sysname">
+								<div class="box" >
 									<div class="box_first">
-										<input class="checkbox" type="checkbox">
+										<input name="sysname" value="远程医疗云" class="checkbox" type="checkbox">
 										<span class="name">远程医疗云</span>
 									</div>
-									<div class="box_second">
-										<input class="checkbox" type="checkbox">
-										<span class="name">医疗影像云</span>
+									<div class="box_second" name="sysname">
+										<input name="sysname" value="医疗影像云" class="checkbox" type="checkbox">
+										<span class="name" >医疗影像云</span>
 									</div>
 								</div>
 							</li>
@@ -81,16 +81,31 @@
 </html>
     <script type="text/javascript" charset="utf-8">
         function register() {
-            var h_name = "中日友好医院";
+            var obj = document.getElementById("district");
+            var index = obj.selectedIndex;
+            var text = obj.options[index].value;
+            var district = obj.options[index].text;
+            var hospital = document.getElementById("hospital").value;
+            var telphone = document.getElementById("telphone").value;
+            var conname = document.getElementById("conname").value;
+            var email = document.getElementById("email").value;
+
+            obj = document.getElementsByName("sysname");
+            sysname = [];
+            for(k in obj){
+                if(obj[k].checked)
+                    sysname.push(obj[k].value);
+            }
+
             var data= {
                 data: JSON.stringify({
                     id: 0,
-                    district: "甘肃省",
-                    hospital: h_name,
-                    telphone: "17693186908",
-                    conname: "章果",
-                    email: "biyan_111@126.com",
-                    sysname: "远程医疗云"
+                    district: district,
+                    hospital: hospital,
+                    telphone: telphone,
+                    conname: conname,
+                    email: email,
+                    sysname: sysname.join("|")
                 }),
             };
 

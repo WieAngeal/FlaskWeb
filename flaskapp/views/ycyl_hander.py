@@ -28,6 +28,7 @@ def register():
     if method == 'POST':
         data = request.form.get('data')
         hosinfo = ast.literal_eval(data)
+        logger.debug(hosinfo)
         hosinfo['id'] = ycyl_service.max(Hosinfo.id) + 1
         obj = ycyl_service.save(Hosinfo(**hosinfo))
         # hosinfo = Hosinfo(id=4, district='gasnsu', hospital='landda',

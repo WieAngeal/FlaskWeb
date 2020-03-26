@@ -14832,3 +14832,256 @@
 2 2020-03-26 14:39:28,541 DEBUG {model} http_interceptor.py(20) : request params: [%s]
 2 2020-03-26 14:41:06,270 DEBUG {model} http_interceptor.py(20) : request params: [%s]
 2 2020-03-26 14:41:09,909 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 18:36:41,239 INFO {model} __init__.py(16) : initial app models model
+2 2020-03-26 18:36:41,242 INFO {model} __init__.py(13) : initial app core model
+2 2020-03-26 18:36:41,243 INFO {model} __init__.py(15) : initial app services model
+2 2020-03-26 18:36:41,244 INFO {model} database.py(129) : init Query
+2 2020-03-26 18:36:41,244 INFO {model} database.py(129) : init Query
+2 2020-03-26 18:36:41,246 INFO {model} database.py(129) : init Query
+2 2020-03-26 18:36:41,246 INFO {model} database.py(129) : init Query
+2 2020-03-26 18:36:41,247 INFO {model} database.py(129) : init Query
+2 2020-03-26 18:36:41,247 INFO {model} database.py(129) : init Query
+2 2020-03-26 18:36:41,248 INFO {model} database.py(129) : init Query
+2 2020-03-26 18:36:41,248 INFO {model} database.py(129) : init Query
+2 2020-03-26 18:36:41,249 INFO {model} __init__.py(22) : initial app views model
+2 2020-03-26 18:36:41,251 INFO {model} __init__.py(50) : register blueprint ycyl success.
+2 2020-03-26 18:36:41,254 INFO {model} __init__.py(50) : register blueprint error success.
+2 2020-03-26 18:36:41,255 INFO {model} __init__.py(50) : register blueprint index success.
+2 2020-03-26 18:36:41,256 INFO {model} __init__.py(50) : register blueprint login success.
+2 2020-03-26 18:36:41,257 INFO {model} __init__.py(50) : register blueprint user success.
+2 2020-03-26 18:36:41,259 INFO {model} __init__.py(50) : register blueprint clazz success.
+2 2020-03-26 18:36:41,261 INFO {model} __init__.py(50) : register blueprint school success.
+2 2020-03-26 18:36:41,262 INFO {model} __init__.py(50) : register blueprint celery success.
+2 2020-03-26 18:36:41,326 DEBUG {model} __init__.py(67) : urls: 
+2 2020-03-26 18:36:41,326 DEBUG {model} __init__.py(69) : /paths
+2 2020-03-26 18:36:41,326 DEBUG {model} __init__.py(69) : /api/classes/
+2 2020-03-26 18:36:41,327 DEBUG {model} __init__.py(69) : /api/schools/
+2 2020-03-26 18:36:41,327 DEBUG {model} __init__.py(69) : /api/users/
+2 2020-03-26 18:36:41,327 DEBUG {model} __init__.py(69) : /err/bad_request
+2 2020-03-26 18:36:41,327 DEBUG {model} __init__.py(69) : /err/unauthorized
+2 2020-03-26 18:36:41,328 DEBUG {model} __init__.py(69) : /api/schools/<school_id>
+2 2020-03-26 18:36:41,328 DEBUG {model} __init__.py(69) : /api/classes/<clazz_id>
+2 2020-03-26 18:36:41,328 DEBUG {model} __init__.py(69) : /login
+2 2020-03-26 18:36:41,328 DEBUG {model} __init__.py(69) : /err/service_unavailable
+2 2020-03-26 18:36:41,328 DEBUG {model} __init__.py(69) : /err/not_found
+2 2020-03-26 18:36:41,328 DEBUG {model} __init__.py(69) : /ycyl/api/register
+2 2020-03-26 18:36:41,328 DEBUG {model} __init__.py(69) : /err/bad_gateway
+2 2020-03-26 18:36:41,328 DEBUG {model} __init__.py(69) : /err/forbidden
+2 2020-03-26 18:36:41,329 DEBUG {model} __init__.py(69) : /task/compute
+2 2020-03-26 18:36:41,329 DEBUG {model} __init__.py(69) : /err/bad_gateway_timeout
+2 2020-03-26 18:36:41,329 DEBUG {model} __init__.py(69) : /ycyl/
+2 2020-03-26 18:36:41,329 DEBUG {model} __init__.py(69) : /api/schools/count
+2 2020-03-26 18:36:41,329 DEBUG {model} __init__.py(69) : /
+2 2020-03-26 18:36:41,329 DEBUG {model} __init__.py(69) : /err/server_error
+2 2020-03-26 18:36:41,329 DEBUG {model} __init__.py(69) : /static/<path:filename>
+2 2020-03-26 18:36:41,329 DEBUG {model} __init__.py(69) : /ycyl/api/count
+2 2020-03-26 18:36:41,330 DEBUG {model} __init__.py(69) : /api/users/<user_id>
+4 2020-03-26 18:36:41,384 INFO {model} functions.py(29) : [flaskapp] bootstrap init on http://127.0.0.1:5000/. Start used time : 0.4386932373046875 s
+2 2020-03-26 18:36:42,856 INFO {model} __init__.py(16) : initial app models model
+2 2020-03-26 18:36:42,860 INFO {model} __init__.py(13) : initial app core model
+2 2020-03-26 18:36:42,861 INFO {model} __init__.py(15) : initial app services model
+2 2020-03-26 18:36:42,861 INFO {model} database.py(129) : init Query
+2 2020-03-26 18:36:42,861 INFO {model} database.py(129) : init Query
+2 2020-03-26 18:36:42,864 INFO {model} database.py(129) : init Query
+2 2020-03-26 18:36:42,864 INFO {model} database.py(129) : init Query
+2 2020-03-26 18:36:42,867 INFO {model} database.py(129) : init Query
+2 2020-03-26 18:36:42,867 INFO {model} database.py(129) : init Query
+2 2020-03-26 18:36:42,868 INFO {model} database.py(129) : init Query
+2 2020-03-26 18:36:42,868 INFO {model} database.py(129) : init Query
+2 2020-03-26 18:36:42,869 INFO {model} __init__.py(22) : initial app views model
+2 2020-03-26 18:36:42,870 INFO {model} __init__.py(50) : register blueprint ycyl success.
+2 2020-03-26 18:36:42,874 INFO {model} __init__.py(50) : register blueprint error success.
+2 2020-03-26 18:36:42,874 INFO {model} __init__.py(50) : register blueprint index success.
+2 2020-03-26 18:36:42,875 INFO {model} __init__.py(50) : register blueprint login success.
+2 2020-03-26 18:36:42,877 INFO {model} __init__.py(50) : register blueprint user success.
+2 2020-03-26 18:36:42,878 INFO {model} __init__.py(50) : register blueprint clazz success.
+2 2020-03-26 18:36:42,880 INFO {model} __init__.py(50) : register blueprint school success.
+2 2020-03-26 18:36:42,880 INFO {model} __init__.py(50) : register blueprint celery success.
+2 2020-03-26 18:36:42,938 DEBUG {model} __init__.py(67) : urls: 
+2 2020-03-26 18:36:42,938 DEBUG {model} __init__.py(69) : /api/schools/
+2 2020-03-26 18:36:42,938 DEBUG {model} __init__.py(69) : /api/schools/<school_id>
+2 2020-03-26 18:36:42,939 DEBUG {model} __init__.py(69) : /err/not_found
+2 2020-03-26 18:36:42,939 DEBUG {model} __init__.py(69) : /err/bad_gateway_timeout
+2 2020-03-26 18:36:42,939 DEBUG {model} __init__.py(69) : /api/schools/count
+2 2020-03-26 18:36:42,939 DEBUG {model} __init__.py(69) : /err/forbidden
+2 2020-03-26 18:36:42,939 DEBUG {model} __init__.py(69) : /ycyl/api/register
+2 2020-03-26 18:36:42,939 DEBUG {model} __init__.py(69) : /err/unauthorized
+2 2020-03-26 18:36:42,939 DEBUG {model} __init__.py(69) : /login
+2 2020-03-26 18:36:42,940 DEBUG {model} __init__.py(69) : /api/classes/
+2 2020-03-26 18:36:42,940 DEBUG {model} __init__.py(69) : /err/bad_gateway
+2 2020-03-26 18:36:42,940 DEBUG {model} __init__.py(69) : /err/server_error
+2 2020-03-26 18:36:42,940 DEBUG {model} __init__.py(69) : /err/bad_request
+2 2020-03-26 18:36:42,940 DEBUG {model} __init__.py(69) : /err/service_unavailable
+2 2020-03-26 18:36:42,940 DEBUG {model} __init__.py(69) : /paths
+2 2020-03-26 18:36:42,940 DEBUG {model} __init__.py(69) : /api/users/<user_id>
+2 2020-03-26 18:36:42,940 DEBUG {model} __init__.py(69) : /task/compute
+2 2020-03-26 18:36:42,941 DEBUG {model} __init__.py(69) : /ycyl/
+2 2020-03-26 18:36:42,941 DEBUG {model} __init__.py(69) : /api/users/
+2 2020-03-26 18:36:42,941 DEBUG {model} __init__.py(69) : /static/<path:filename>
+2 2020-03-26 18:36:42,941 DEBUG {model} __init__.py(69) : /ycyl/api/count
+2 2020-03-26 18:36:42,942 DEBUG {model} __init__.py(69) : /api/classes/<clazz_id>
+2 2020-03-26 18:36:42,942 DEBUG {model} __init__.py(69) : /
+4 2020-03-26 18:36:42,993 INFO {model} functions.py(29) : [flaskapp] bootstrap init on http://127.0.0.1:5000/. Start used time : 0.41274471282958985 s
+2 2020-03-26 18:39:54,961 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 18:39:59,049 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 18:40:19,287 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 18:41:10,013 INFO {model} __init__.py(16) : initial app models model
+2 2020-03-26 18:41:10,016 INFO {model} __init__.py(13) : initial app core model
+2 2020-03-26 18:41:10,017 INFO {model} __init__.py(15) : initial app services model
+2 2020-03-26 18:41:10,018 INFO {model} database.py(129) : init Query
+2 2020-03-26 18:41:10,018 INFO {model} database.py(129) : init Query
+2 2020-03-26 18:41:10,020 INFO {model} database.py(129) : init Query
+2 2020-03-26 18:41:10,020 INFO {model} database.py(129) : init Query
+2 2020-03-26 18:41:10,022 INFO {model} database.py(129) : init Query
+2 2020-03-26 18:41:10,022 INFO {model} database.py(129) : init Query
+2 2020-03-26 18:41:10,026 INFO {model} database.py(129) : init Query
+2 2020-03-26 18:41:10,026 INFO {model} database.py(129) : init Query
+2 2020-03-26 18:41:10,027 INFO {model} __init__.py(22) : initial app views model
+2 2020-03-26 18:41:10,029 INFO {model} __init__.py(50) : register blueprint ycyl success.
+2 2020-03-26 18:41:10,032 INFO {model} __init__.py(50) : register blueprint error success.
+2 2020-03-26 18:41:10,033 INFO {model} __init__.py(50) : register blueprint index success.
+2 2020-03-26 18:41:10,033 INFO {model} __init__.py(50) : register blueprint login success.
+2 2020-03-26 18:41:10,035 INFO {model} __init__.py(50) : register blueprint user success.
+2 2020-03-26 18:41:10,037 INFO {model} __init__.py(50) : register blueprint clazz success.
+2 2020-03-26 18:41:10,038 INFO {model} __init__.py(50) : register blueprint school success.
+2 2020-03-26 18:41:10,039 INFO {model} __init__.py(50) : register blueprint celery success.
+2 2020-03-26 18:41:10,090 DEBUG {model} __init__.py(67) : urls: 
+2 2020-03-26 18:41:10,090 DEBUG {model} __init__.py(69) : /err/service_unavailable
+2 2020-03-26 18:41:10,091 DEBUG {model} __init__.py(69) : /ycyl/api/register
+2 2020-03-26 18:41:10,091 DEBUG {model} __init__.py(69) : /api/schools/count
+2 2020-03-26 18:41:10,091 DEBUG {model} __init__.py(69) : /err/forbidden
+2 2020-03-26 18:41:10,091 DEBUG {model} __init__.py(69) : /err/not_found
+2 2020-03-26 18:41:10,091 DEBUG {model} __init__.py(69) : /ycyl/
+2 2020-03-26 18:41:10,092 DEBUG {model} __init__.py(69) : /task/compute
+2 2020-03-26 18:41:10,092 DEBUG {model} __init__.py(69) : /api/schools/<school_id>
+2 2020-03-26 18:41:10,092 DEBUG {model} __init__.py(69) : /api/schools/
+2 2020-03-26 18:41:10,092 DEBUG {model} __init__.py(69) : /err/bad_gateway
+2 2020-03-26 18:41:10,092 DEBUG {model} __init__.py(69) : /api/users/
+2 2020-03-26 18:41:10,092 DEBUG {model} __init__.py(69) : /err/server_error
+2 2020-03-26 18:41:10,093 DEBUG {model} __init__.py(69) : /api/classes/
+2 2020-03-26 18:41:10,093 DEBUG {model} __init__.py(69) : /err/unauthorized
+2 2020-03-26 18:41:10,093 DEBUG {model} __init__.py(69) : /ycyl/api/count
+2 2020-03-26 18:41:10,093 DEBUG {model} __init__.py(69) : /login
+2 2020-03-26 18:41:10,093 DEBUG {model} __init__.py(69) : /
+2 2020-03-26 18:41:10,093 DEBUG {model} __init__.py(69) : /err/bad_request
+2 2020-03-26 18:41:10,093 DEBUG {model} __init__.py(69) : /static/<path:filename>
+2 2020-03-26 18:41:10,094 DEBUG {model} __init__.py(69) : /api/users/<user_id>
+2 2020-03-26 18:41:10,094 DEBUG {model} __init__.py(69) : /paths
+2 2020-03-26 18:41:10,094 DEBUG {model} __init__.py(69) : /api/classes/<clazz_id>
+2 2020-03-26 18:41:10,094 DEBUG {model} __init__.py(69) : /err/bad_gateway_timeout
+4 2020-03-26 18:41:10,146 INFO {model} functions.py(29) : [flaskapp] bootstrap init on http://127.0.0.1:5000/. Start used time : 0.4765936851501465 s
+2 2020-03-26 18:41:11,112 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 18:41:11,112 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t请选择省份\n\t\t\t\t\t\t\t\t\t甘肃\n\t\t\t\t\t\t\t\t\t宁夏\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t', 'hospital': '\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t', 'telphone': '\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t', 'conname': '\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t', 'email': '\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t', 'sysname': '\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t远程医疗云\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t医疗影像云\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t'}
+2 2020-03-26 18:41:11,112 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t请选择省份\n\t\t\t\t\t\t\t\t\t甘肃\n\t\t\t\t\t\t\t\t\t宁夏\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t', 'hospital': '\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t', 'telphone': '\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t', 'conname': '\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t', 'email': '\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t', 'sysname': '\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t远程医疗云\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t医疗影像云\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t'}
+2 2020-03-26 18:44:50,817 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 18:44:50,915 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 18:45:03,706 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 18:45:03,706 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '请选择省份\n甘肃\n宁夏', 'hospital': '', 'telphone': '', 'conname': '', 'email': '', 'sysname': '远程医疗云\n医疗影像云'}
+2 2020-03-26 18:45:03,706 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '请选择省份\n甘肃\n宁夏', 'hospital': '', 'telphone': '', 'conname': '', 'email': '', 'sysname': '远程医疗云\n医疗影像云'}
+2 2020-03-26 18:46:38,188 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 18:46:38,250 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 18:46:49,520 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 18:46:49,520 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '请选择省份\n甘肃\n宁夏', 'hospital': '', 'telphone': '', 'conname': '', 'email': '', 'sysname': '远程医疗云\n医疗影像云'}
+2 2020-03-26 18:46:49,520 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '请选择省份\n甘肃\n宁夏', 'hospital': '', 'telphone': '', 'conname': '', 'email': '', 'sysname': '远程医疗云\n医疗影像云'}
+2 2020-03-26 18:48:25,849 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 18:48:25,894 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 18:48:35,737 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 18:48:35,737 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '', 'hospital': 0, 'telphone': '2', 'conname': 0, 'email': 0}
+2 2020-03-26 18:48:35,737 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '', 'hospital': 0, 'telphone': '2', 'conname': 0, 'email': 0}
+2 2020-03-26 18:51:44,923 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 18:51:45,002 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 18:51:45,915 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 18:51:45,968 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 18:51:56,786 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 18:51:56,786 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '', 'hospital': '1', 'telphone': '2', 'conname': '4', 'email': '5', 'sysname': 'onon'}
+2 2020-03-26 18:51:56,786 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '', 'hospital': '1', 'telphone': '2', 'conname': '4', 'email': '5', 'sysname': 'onon'}
+2 2020-03-26 18:55:09,291 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 18:55:09,360 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 18:55:45,240 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 18:55:45,311 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 18:55:49,816 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 18:55:49,817 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '', 'hospital': '', 'telphone': '', 'conname': '', 'email': '', 'sysname': 'onon'}
+2 2020-03-26 18:55:49,817 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '', 'hospital': '', 'telphone': '', 'conname': '', 'email': '', 'sysname': 'onon'}
+2 2020-03-26 18:57:17,591 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 18:57:17,647 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 18:57:35,067 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 18:57:35,068 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '', 'hospital': '1', 'telphone': '12', 'conname': '13', 'email': '14', 'sysname': 'onon'}
+2 2020-03-26 18:57:35,068 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '', 'hospital': '1', 'telphone': '12', 'conname': '13', 'email': '14', 'sysname': 'onon'}
+2 2020-03-26 18:58:41,330 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 18:58:41,385 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 18:58:50,379 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 18:58:50,380 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '宁夏', 'hospital': '1', 'telphone': '2', 'conname': '3', 'email': '4', 'sysname': 'onon'}
+2 2020-03-26 18:58:50,380 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '宁夏', 'hospital': '1', 'telphone': '2', 'conname': '3', 'email': '4', 'sysname': 'onon'}
+2 2020-03-26 19:02:46,222 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:02:46,290 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:03:53,955 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:03:54,000 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:03:58,179 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:03:58,179 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '请选择省份', 'hospital': '', 'telphone': '', 'conname': '', 'email': '', 'sysname': 'on,on'}
+2 2020-03-26 19:03:58,179 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '请选择省份', 'hospital': '', 'telphone': '', 'conname': '', 'email': '', 'sysname': 'on,on'}
+2 2020-03-26 19:06:09,357 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:06:09,409 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:06:18,509 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:06:18,510 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '请选择省份', 'hospital': '', 'telphone': '', 'conname': '', 'email': '', 'sysname': 'on,on'}
+2 2020-03-26 19:06:18,510 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '请选择省份', 'hospital': '', 'telphone': '', 'conname': '', 'email': '', 'sysname': 'on,on'}
+2 2020-03-26 19:06:22,553 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:06:22,554 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '请选择省份', 'hospital': '', 'telphone': '', 'conname': '', 'email': '', 'sysname': 'on,on'}
+2 2020-03-26 19:06:22,554 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '请选择省份', 'hospital': '', 'telphone': '', 'conname': '', 'email': '', 'sysname': 'on,on'}
+2 2020-03-26 19:07:11,904 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:07:11,969 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:07:15,451 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:07:15,452 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '请选择省份', 'hospital': '', 'telphone': '', 'conname': '', 'email': '', 'sysname': 'on'}
+2 2020-03-26 19:07:15,452 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '请选择省份', 'hospital': '', 'telphone': '', 'conname': '', 'email': '', 'sysname': 'on'}
+2 2020-03-26 19:08:42,108 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:08:42,153 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:08:42,649 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:08:42,682 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:08:42,814 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:08:42,850 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:08:46,876 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:08:46,876 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '请选择省份', 'hospital': '', 'telphone': '', 'conname': '', 'email': '', 'sysname': 'on,on'}
+2 2020-03-26 19:08:46,876 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '请选择省份', 'hospital': '', 'telphone': '', 'conname': '', 'email': '', 'sysname': 'on,on'}
+2 2020-03-26 19:09:27,950 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:09:27,997 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:11:24,779 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:11:24,842 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:11:56,589 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:11:56,669 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:15:29,236 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:15:29,289 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:16:13,033 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:16:13,089 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:18:43,675 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:18:43,731 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:18:44,473 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:18:44,520 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:18:51,530 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:18:51,531 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '请选择省份', 'hospital': '', 'telphone': '', 'conname': '', 'email': '', 'sysname': ['on']}
+2 2020-03-26 19:18:51,531 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '请选择省份', 'hospital': '', 'telphone': '', 'conname': '', 'email': '', 'sysname': ['on']}
+2 2020-03-26 19:19:39,423 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:19:39,469 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:19:47,027 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:19:47,028 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '请选择省份', 'hospital': '', 'telphone': '', 'conname': '', 'email': '', 'sysname': ['远程医疗云', '医疗影像云']}
+2 2020-03-26 19:19:47,028 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '请选择省份', 'hospital': '', 'telphone': '', 'conname': '', 'email': '', 'sysname': ['远程医疗云', '医疗影像云']}
+2 2020-03-26 19:19:56,295 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:19:56,295 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '请选择省份', 'hospital': '', 'telphone': '', 'conname': '', 'email': '', 'sysname': ['远程医疗云', '医疗影像云']}
+2 2020-03-26 19:19:56,295 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '请选择省份', 'hospital': '', 'telphone': '', 'conname': '', 'email': '', 'sysname': ['远程医疗云', '医疗影像云']}
+2 2020-03-26 19:20:09,326 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:20:09,327 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '请选择省份', 'hospital': '', 'telphone': '', 'conname': '', 'email': '', 'sysname': ['远程医疗云', '医疗影像云']}
+2 2020-03-26 19:20:09,327 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '请选择省份', 'hospital': '', 'telphone': '', 'conname': '', 'email': '', 'sysname': ['远程医疗云', '医疗影像云']}
+2 2020-03-26 19:24:22,126 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:24:22,127 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '请选择省份', 'hospital': '', 'telphone': '', 'conname': '', 'email': '', 'sysname': ['远程医疗云', '医疗影像云']}
+2 2020-03-26 19:24:22,127 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '请选择省份', 'hospital': '', 'telphone': '', 'conname': '', 'email': '', 'sysname': ['远程医疗云', '医疗影像云']}
+2 2020-03-26 19:25:04,088 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:25:04,167 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:25:08,766 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:25:08,766 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '请选择省份', 'hospital': '', 'telphone': '', 'conname': '', 'email': '', 'sysname': '远程医疗云-医疗影像云'}
+2 2020-03-26 19:25:08,766 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '请选择省份', 'hospital': '', 'telphone': '', 'conname': '', 'email': '', 'sysname': '远程医疗云-医疗影像云'}
+2 2020-03-26 19:25:50,838 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:25:50,838 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '甘肃', 'hospital': '兰州大学第二医院', 'telphone': '18909460866', 'conname': '魏彦章', 'email': 'biyan_111@126.com', 'sysname': '医疗影像云'}
+2 2020-03-26 19:25:50,838 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '甘肃', 'hospital': '兰州大学第二医院', 'telphone': '18909460866', 'conname': '魏彦章', 'email': 'biyan_111@126.com', 'sysname': '医疗影像云'}
+2 2020-03-26 19:26:19,033 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:26:19,033 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '宁夏', 'hospital': '兰州大学第一医院', 'telphone': '18909460866', 'conname': '陈泉冰', 'email': 'biyan_111@126.com', 'sysname': '远程医疗云-医疗影像云'}
+2 2020-03-26 19:26:19,033 DEBUG {model} ycyl_hander.py(31) : {'id': 0, 'district': '宁夏', 'hospital': '兰州大学第一医院', 'telphone': '18909460866', 'conname': '陈泉冰', 'email': 'biyan_111@126.com', 'sysname': '远程医疗云-医疗影像云'}
+2 2020-03-26 19:26:38,367 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-26 19:26:38,412 DEBUG {model} http_interceptor.py(20) : request params: [%s]
