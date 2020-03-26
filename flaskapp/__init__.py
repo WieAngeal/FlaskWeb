@@ -10,6 +10,8 @@ from flask_migrate import Migrate, MigrateCommand
 from flask_script import Manager
 from flask_sqlalchemy import SQLAlchemy
 
+
+
 import config
 from . import common
 from . import extends

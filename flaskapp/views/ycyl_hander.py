@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2018/6/5 1:39
-# @Author  : TOM.LEE
+# @Time    : 2020/3/25 1:39
+# @Author  : WieAngeal
 # @File    : ycyl_hander.py
 # @Software: PyCharm
 from flask import Blueprint, flash, render_template
@@ -24,15 +24,22 @@ def home():
 
 @ycyl.route('/api/register', methods=["POST"])
 def register():
-    data = request.form.get('data')
-    hosinfo = ast.literal_eval(data)
-
     method = request.method
     if method == 'POST':
+        data = request.form.get('data')
+        hosinfo = ast.literal_eval(data)
+        hosinfo['id'] = ycyl_service.max(Hosinfo.id) + 1
         obj = ycyl_service.save(Hosinfo(**hosinfo))
         # hosinfo = Hosinfo(id=4, district='gasnsu', hospital='landda',
         #                         conname='zhagdnguo', email='bia@126.com',
         #                         telphone='10873023', sysname='yuanschen')
         return make_response(data=obj.json())
-    return render_template("开通成功！")
+
+
+@ycyl.route('/api/count', methods=["POST", "GET"])
+def count():
+    method = request.method
+    if method == 'GET':
+        max_num = ycyl_service.max(Hosinfo.id)
+        return make_response(data=max_num)
 

@@ -6,6 +6,8 @@
 # @Software: PyCharm
 from flaskapp import db
 from ..common import ConsoleLogger, relative_path, MySQLDataError
+from sqlalchemy import func
+from ..models import Hosinfo
 
 __all__ = ['Persistence', 'Modify', 'Modify2', 'Remove', 'Query', 'Query2']
 
@@ -61,7 +63,6 @@ class Persistence(Transactional):
 
     def save(self, obj):
         # 理论上该方法可以被任意对象使用
-        logger.info(obj)
         self._load(obj)
         self.auto_commit()
         return obj
@@ -125,7 +126,9 @@ class Remove(Transactional):
 
 class Query(Database):
     def __init__(self, **kwargs):
-        # logger.info('init Query')
+        logger.info('init Query')
+        self.session = db.session
+
         self.model = kwargs.get('model_class', None)
         if not self.model:
             raise AssertionError('<class {}>: model_class is not found.'
@@ -172,6 +175,11 @@ class Query(Database):
 
     def count(self, filters=None, **kwargs):
         return self._build_query(filters=filters).filter_by(**kwargs).count()
+
+    def max(self, filters=None, **kwargs):
+        _query = self.model.query
+        self.session = db.session
+        return self.session.query(func.max(filters)).filter_by(**kwargs).scalar()
 
 
 class Modify2(Database):
