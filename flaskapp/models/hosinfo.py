@@ -16,7 +16,7 @@ class Hosinfo(db.Model, DictModel):
     id = db.Column(db.Integer, primary_key=True)
     district = db.Column(db.String(10), unique=False, nullable=True)
     hospital = db.Column(db.String(30), unique=False, nullable=True)
-    telphone = db.Column(db.Integer, unique=False, nullable=True)
+    telphone = db.Column(db.String(20), unique=False, nullable=True)
     conname = db.Column(db.String(10), unique=False, nullable=True)
     email = db.Column(db.String(50), unique=False, nullable=True)
     sysname = db.Column(db.String(50), unique=False, nullable=True)
