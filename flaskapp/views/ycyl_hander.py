@@ -4,6 +4,7 @@
 # @Author  : WieAngeal
 # @File    : ycyl_hander.py
 # @Software: PyCharm
+
 from flask import Blueprint, flash, render_template
 from ..common import (ConsoleLogger, make_response, HttpError,
                       relative_path, multi_dict_parser2dict)
@@ -29,7 +30,6 @@ def register():
     if method == 'POST':
         data = request.form.get('data')
         hosinfo = ast.literal_eval(data)
-        logger.debug(hosinfo)
 
         Attachments = ['工作日报记录表.xlsx']
         email.send_mail(title='第一份flask_email测试邮件',
@@ -41,9 +41,7 @@ def register():
 
         hosinfo['id'] = ycyl_service.max(Hosinfo.id) + 1
         obj = ycyl_service.save(Hosinfo(**hosinfo))
-        # hosinfo = Hosinfo(id=4, district='gasnsu', hospital='landda',
-        #                         conname='zhagdnguo', email='bia@126.com',
-        #                         telphone='10873023', sysname='yuanschen')
+
         return make_response(data=obj.json())
 
 

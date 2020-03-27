@@ -31,21 +31,17 @@ def send_mail(title, to, cc=None, body=None, msg_html=None, attachfiles=None):
                   recipients=[to],
                   cc=cc
                   )
-    # 邮件内容会以文本和html两种格式呈现，而你能看到哪种格式取决于你的邮件客户端。
     if (body is not None):
         msg.body = body
     if (msg_html is not None):
         msg.html = msg_html.format( time=datetime.utcnow)
 
     for att_file in attachfiles:
-        file_name = os.path.basename(att_file)
-        logger.debug(file_name)
-        logger.debug(type(file_name))
+        file_name = os.path.basename(att_file).join('')
+
         with current_app.open_resource(att_file) as fp:
-            # file_name.encode("utf-8") 对文件名进行编码
-            # current_app.config['MIME_TYPE'][os.path.splitext(file_name)[1]] 通过后缀名，获取MIME格式
-            msg.attach(file_name.encode("utf-8"),
-                       app.config['MIME_TYPE'][os.path.splitext(file_name)[1]],
+            msg.attach(str(file_name),
+                       app.config['MIME_TYPE'][os.path.splitext(att_file)[1]],
                        fp.read())
 
     thread = Thread(target=send_async_email, args=[app, msg])
