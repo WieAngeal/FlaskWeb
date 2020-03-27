@@ -9,7 +9,7 @@ from flask import Flask, Blueprint
 from flask_migrate import Migrate, MigrateCommand
 from flask_script import Manager
 from flask_sqlalchemy import SQLAlchemy
-
+from flask_mail import Mail
 
 
 import config
@@ -24,6 +24,9 @@ app.static_folder = config.STATIC_FOLDER
 app.template_folder = config.TEMPLATE_FOLDER
 app.secret_key = '1!@#$%^&*()'
 app.config.from_object(config)
+
+mail = Mail(app)
+
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 manager = Manager(app)

@@ -47,3 +47,32 @@ HOME_PATH = '/'
 # ############################## flask start config ######################################
 HOST = '127.0.0.1'
 PORT = 5000
+
+
+# ############################# flask email config #######################################
+MAIL_DEBUG = True             # 开启debug，便于调试看信息
+MAIL_SUPPRESS_SEND = False    # 发送邮件，为True则不发送
+MAIL_SERVER = 'smtp.189.cn'   # 邮箱服务器
+MAIL_PORT = 25               # 端口
+MAIL_USE_SSL = False           # 重要，qq邮箱需要使用SSL
+MAIL_USE_TLS = False          # 不需要使用TLS
+MAIL_USERNAME = '18909460866@189.cn'  # 填邮箱
+MAIL_PASSWORD = '3Wctyxy.cn'      # 填授权码
+FLASK_MAIL_SENDER = '章果<ctyxy_service@189.cn>'   #邮件发送方
+FLASK_MAIL_SUBJECT_PREFIX = '[章果大数据]'     #邮件标题前缀
+#MAIL_DEFAULT_SENDER = 'xxx@qq.com'  # 填邮箱，默认发送者**加粗样式**
+
+MIME_TYPE = {
+        '.xls':  'application/vnd.ms-excel',
+        '.xlsx': 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+        '.txt':  'text/plain',
+        '.pdf':  'application/pdf',
+        '.doc':  'application/msword',
+        '.docx': 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+        '.pptx': 'application/vnd.openxmlformats-officedocument.presentationml.presentation',
+        '.ppt':  'application/vnd.ms-powerpoint',
+        '.rar':  'application/rar',
+        '.zip':  'application/zip',
+        '.tar':  'application/x-tar',
+        '.gz':   'application/x-gzip'
+    }

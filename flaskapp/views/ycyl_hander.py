@@ -10,6 +10,7 @@ from ..common import (ConsoleLogger, make_response, HttpError,
 from flask import request
 from ..models import Hosinfo
 from ..services import DBService
+from ..common import email
 import ast
 
 logger = ConsoleLogger(relative_path(__file__))
@@ -29,6 +30,15 @@ def register():
         data = request.form.get('data')
         hosinfo = ast.literal_eval(data)
         logger.debug(hosinfo)
+
+        Attachments = ['工作日报记录表.xlsx']
+        email.send_mail(title='第一份flask_email测试邮件',
+                        to='17693186908@126.com',
+                        body=''' This is a test email from flask Websystem.
+                         欢迎使用Flask WebSystem，这是一份测试邮件，请查收，勿回复，谢谢！''',
+                        attachfiles=Attachments
+                        )
+
         hosinfo['id'] = ycyl_service.max(Hosinfo.id) + 1
         obj = ycyl_service.save(Hosinfo(**hosinfo))
         # hosinfo = Hosinfo(id=4, district='gasnsu', hospital='landda',
@@ -42,5 +52,5 @@ def count():
     method = request.method
     if method == 'GET':
         max_num = ycyl_service.max(Hosinfo.id)
-        return make_response(data=max_num)
+        return make_response(data=max_num, e="查询总数成功。")
 
