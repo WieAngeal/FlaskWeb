@@ -34,8 +34,14 @@ def register():
         Attachments = ['工作日报记录表.xlsx']
         email.send_mail(title='第一份flask_email测试邮件',
                         to='17693186908@126.com',
-                        body=''' This is a test email from flask Websystem.
-                         欢迎使用Flask WebSystem，这是一份测试邮件，请查收，勿回复，谢谢！''',
+                        msg_html='''<h2>这是我的个人博客</h2>
+                                    <hr />
+                                    <h3>东风破</h3>
+                                    <h5><font color="blue" size="18px">周杰伦</font></h5>
+                                    <p>一盏离愁 孤灯伫立在窗口</p>
+                                    <p>我在门后 假装你人还没走</p>
+                                    <p>旧地如重游月 圆更寂寞
+                                    <p>夜半清醒的烛火 不忍苛责我</p>''',
                         attachfiles=Attachments
                         )
 
