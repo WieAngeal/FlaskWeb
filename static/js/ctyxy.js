@@ -30,7 +30,7 @@
 			},
 			xAxis: [{
 				type: 'category',
-				data: ['商超门店', '教育培训', '房地产', '生活服务', '汽车销售', '旅游酒店', '五金建材'],
+				data: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'],
 				axisLine: {
 					show: true,
 					lineStyle: {
@@ -127,7 +127,7 @@
 			},
 			xAxis: [{
 				type: 'category',
-				data: ['浙江', '上海', '江苏', '广东', '北京', '深圳', '安徽'],
+				data: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'],
 				axisLine: {
 					show: true,
 					lineStyle: {
@@ -226,7 +226,7 @@
 			},
 			xAxis: [{
 				type: 'category',
-				data: ['浙江', '上海', '江苏', '广东', '北京', '深圳', '安徽', '四川'],
+				data: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'],
 				axisLine: {
 					show: true,
 					lineStyle: {
@@ -325,7 +325,7 @@
 
 					myChart.setOption({
 						series: [{
-							name: 'IOS',
+							name: '医院数',
 							type: 'line',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
 							data: data_ai
 						}]
@@ -406,14 +406,10 @@
 					lineStyle: {
 						color: 'rgba(255,255,255,.2)'
 					}
-
 				},
-
 				data: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '11', '12']
-
 			},
 			{
-
 				axisPointer: {
 					show: false
 				},
@@ -422,7 +418,6 @@
 				},
 				position: 'bottom',
 				offset: 20,
-
 			}],
 
 			yAxis: [{
@@ -449,14 +444,14 @@
 				}
 			}],
 			series: [{
-				name: '安卓',
-				type: 'line',
-				smooth: false,
-				symbol: 'circle',
-				symbolSize: 8,
-				showSymbol: true,
+				name: '',
+				type: 'bar',
+				barWidth: '35%',
+				// smooth: false,
+				// symbol: 'circle',
+				// symbolSize: 4,
+				// showSymbol: true,
 				lineStyle: {
-
 					normal: {
 						color: '#0184d5',
 						width: 2
@@ -477,23 +472,24 @@
 				},
 				itemStyle: {
 					normal: {
-						color: '#0184d5',
-						borderColor: 'rgba(221, 220, 107, .1)',
-						borderWidth: 12
+						// color: '#0184d5',
+						// borderColor: 'rgba(221, 220, 107, .1)',
+						// borderWidth: 12
+						color: '#218435',
+						opacity: 1,
+						barBorderRadius: 5,
 					}
 				},
 				data: [3, 4, 3, 4, 3, 4, 3, 6, 2, 4, 2, 4, 3, 4, 3, 4, 3, 4, 3, 6, 2, 4, 2, 4]
-
 			},
 			{
-				name: 'IOS',
+				name: '医院数',
 				type: 'line',
 				smooth: true,
 				symbol: 'circle',
 				symbolSize: 8,
 				showSymbol: true,
 				lineStyle: {
-
 					normal: {
 						color: '#00d887',
 						width: 2
@@ -522,7 +518,6 @@
 				data: data_ai
 			},
 			]
-
 		};
 
 		// 使用刚指定的配置项和数据显示图表。
@@ -870,7 +865,7 @@
 		option = {
 
 			title: [{
-				text: '年龄分布',
+				text: '存储',
 				left: 'center',
 				textStyle: {
 					color: '#fff',
@@ -890,14 +885,14 @@
 				top: '70%',
 				itemWidth: 10,
 				itemHeight: 10,
-				data: ['0岁以下', '20-29岁', '30-39岁', '40-49岁', '50岁以上'],
+				data: ['1', '2', '3', '4', '5'],
 				textStyle: {
 					color: 'rgba(255,255,255,.5)',
 					fontSize: '12',
 				}
 			},
 			series: [{
-				name: '年龄分布',
+				name: '存储',
 				type: 'pie',
 				center: ['50%', '42%'],
 				radius: ['40%', '60%'],
@@ -910,23 +905,23 @@
 				},
 				data: [{
 					value: 1,
-					name: '0岁以下'
+					name: '1'
 				},
 				{
 					value: 4,
-					name: '20-29岁'
+					name: '2'
 				},
 				{
 					value: 2,
-					name: '30-39岁'
+					name: '3'
 				},
 				{
 					value: 2,
-					name: '40-49岁'
+					name: '4'
 				},
 				{
 					value: 1,
-					name: '50岁以上'
+					name: '5'
 				},
 				]
 			}]
@@ -945,7 +940,7 @@
 		option = {
 
 			title: [{
-				text: '职业分布',
+				text: '医院数',
 				left: 'center',
 				textStyle: {
 					color: '#fff',
@@ -965,14 +960,14 @@
 				top: '70%',
 				itemWidth: 10,
 				itemHeight: 10,
-				data: ['电子商务', '教育', 'IT/互联网', '金融', '学生', '其他'],
+				data: ['1', '2', '3', '4', '5'],
 				textStyle: {
 					color: 'rgba(255,255,255,.5)',
 					fontSize: '12',
 				}
 			},
 			series: [{
-				name: '年龄分布',
+				name: '存储',
 				type: 'pie',
 				center: ['50%', '42%'],
 				radius: ['40%', '60%'],
@@ -985,27 +980,27 @@
 				},
 				data: [{
 					value: 5,
-					name: '电子商务'
+					name: '1'
 				},
 				{
 					value: 1,
-					name: '教育'
+					name: '2'
 				},
 				{
 					value: 6,
-					name: 'IT/互联网'
+					name: '3'
 				},
 				{
 					value: 2,
-					name: '金融'
+					name: '4'
 				},
 				{
 					value: 1,
-					name: '学生'
+					name: '5'
 				},
 				{
 					value: 1,
-					name: '其他'
+					name: '6'
 				},
 				]
 			}]
@@ -1023,7 +1018,7 @@
 		var myChart = echarts.init(document.getElementById('fb3'));
 		option = {
 			title: [{
-				text: '兴趣分布',
+				text: 'AI',
 				left: 'center',
 				textStyle: {
 					color: '#fff',
@@ -1042,14 +1037,14 @@
 				top: '70%',
 				itemWidth: 10,
 				itemHeight: 10,
-				data: ['汽车', '旅游', '财经', '教育', '软件', '其他'],
+				data: ['1', '2', '3', '4', '5'],
 				textStyle: {
 					color: 'rgba(255,255,255,.5)',
 					fontSize: '12',
 				}
 			},
 			series: [{
-				name: '兴趣分布',
+				name: 'AI',
 				type: 'pie',
 				center: ['50%', '42%'],
 				radius: ['40%', '60%'],
@@ -1062,27 +1057,27 @@
 				},
 				data: [{
 					value: 2,
-					name: '汽车'
+					name: '1'
 				},
 				{
 					value: 3,
-					name: '旅游'
+					name: '2'
 				},
 				{
 					value: 1,
-					name: '财经'
+					name: '3'
 				},
 				{
 					value: 4,
-					name: '教育'
+					name: '4'
 				},
 				{
 					value: 8,
-					name: '软件'
+					name: '5'
 				},
 				{
 					value: 1,
-					name: '其他'
+					name: '6'
 				},
 				]
 			}]
