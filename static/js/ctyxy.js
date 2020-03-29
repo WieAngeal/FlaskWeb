@@ -301,9 +301,58 @@
 		});
 	}
 
+	function get_data() {
+		$.ajax({
+         	type : "get",
+			async : false,            //异步请求（同步请求将会锁住浏览器，用户其他操作必须等待请求完成才可以执行）
+         	url : "/api/logodata",    //请求发送到Servlet处
+         	dataType : "json",        //返回数据形式为json
+         	success : function(result) {
+				//请求成功时执行该函数内容，result即为服务器返回的json对象
+				if (result) {
+					console.log(result);
+					var names = [];
+					for(var i=0;i<result.length;i++){
+						names.push(result[i]["yxy_ainum"]);    //挨个取出名称并填入类别数组
+					}
+					console.log(names);
+					return names;
+				}
+			},
+			error : function(errorMsg) {
+				//请求失败时执行该函数
+				alert("图表请求数据失败!");
+			}
+    	});
+	}
 	function echarts_4() {
 		// 基于准备好的dom，初始化echarts实例
 		var myChart = echarts.init(document.getElementById('echart4'));
+		var data_ai = [];
+
+		// ******* 这段请求已成功获取到数据并加载到前端页面，备份此处
+		// $.ajax({
+        //  	type : "get",
+		// 	async : false,            //异步请求（同步请求将会锁住浏览器，用户其他操作必须等待请求完成才可以执行）
+        //  	url : "/api/logodata",    //请求发送到Servlet处
+        //  	dataType : "json",        //返回数据形式为json
+        //  	success : function(result) {
+		// 		//请求成功时执行该函数内容，result即为服务器返回的json对象
+		// 		if (result) {
+		// 			console.log(result);
+		// 			var names = [];
+		// 			for(var i=0;i<result.length;i++){
+		// 				names.push(result[i]["yxy_ainum"]);    //挨个取出名称并填入类别数组
+		// 			}
+		// 			console.log(names);
+		// 			data_ai = names;
+		// 		}
+		// 	},
+		// 	error : function(errorMsg) {
+		// 		//请求失败时执行该函数
+		// 		alert("图表请求数据失败!");
+		// 	}
+    	// });
 
 		option = {
 			tooltip: {
@@ -456,7 +505,7 @@
 						borderWidth: 12
 					}
 				},
-				data: [5, 3, 5, 6, 1, 5, 3, 5, 6, 4, 6, 4, 8, 3, 5, 6, 1, 5, 3, 7, 2, 5, 1, 4]
+				data: data_ai
 
 			},
 
