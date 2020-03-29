@@ -168,6 +168,11 @@ a:hover {
 	/*margin-top:0rem;
 	*/
 }
+
+.head-logo {
+	align: center;
+}
+
 .head-left {
 	display:inline;
 	width:30%;
@@ -298,7 +303,7 @@ a:hover {
 	font-size:.7rem;
 	color:#ffeb7b;
 	padding:.05rem 0;
-	font-family:electronicFont;
+	font-family: electronicFont;
 	font-weight:bold;
 }
 .barbox2 li {

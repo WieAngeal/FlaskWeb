@@ -30493,3 +30493,781 @@
 2 2020-03-29 14:00:50,690 DEBUG {model} http_interceptor.py(20) : request params: [%s]
 2 2020-03-29 14:00:50,694 DEBUG {model} http_interceptor.py(20) : request params: [%s]
 2 2020-03-29 14:00:51,419 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:03:28,845 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:03:28,933 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:03:28,940 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:03:28,949 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:03:28,957 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:03:28,973 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:03:28,984 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:03:29,015 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:03:29,030 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:03:29,066 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:03:29,069 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:03:29,086 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:03:29,088 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:03:29,166 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:03:29,167 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:03:29,168 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:03:29,169 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:03:30,070 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:07,961 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:07,997 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:08,001 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:08,003 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:08,005 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:08,007 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:08,009 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:08,022 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:08,026 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:08,053 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:08,057 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:08,067 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:08,070 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:08,138 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:08,139 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:08,142 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:08,147 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:08,889 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:35,003 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:35,213 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:36,040 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:36,555 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:36,630 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:36,634 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:36,637 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:36,643 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:36,649 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:36,650 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:36,685 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:36,688 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:36,721 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:36,726 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:36,745 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:36,745 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:36,814 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:36,814 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:36,815 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:36,818 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:37,606 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:57,174 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:57,239 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:57,244 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:57,247 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:57,250 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:57,259 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:57,262 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:57,305 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:57,313 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:57,363 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:57,379 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:57,383 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:57,391 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:57,471 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:57,472 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:57,473 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:57,475 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:06:58,168 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:08,946 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:08,981 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:08,983 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:08,986 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:08,987 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:08,996 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:09,000 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:09,014 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:09,017 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:09,035 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:09,039 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:09,050 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:09,055 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:09,121 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:09,123 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:09,124 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:09,125 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:09,714 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:17,059 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:17,099 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:17,102 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:17,103 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:17,107 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:17,112 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:17,117 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:17,129 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:17,140 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:17,155 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:17,162 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:17,171 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:17,175 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:17,238 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:17,239 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:17,239 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:17,244 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:17,788 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:26,476 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:26,587 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:26,590 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:26,591 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:26,599 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:26,605 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:26,608 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:26,633 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:26,640 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:26,659 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:26,675 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:26,677 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:26,691 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:26,751 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:26,753 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:26,753 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:26,757 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:27,537 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:38,335 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:38,409 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:38,417 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:38,420 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:38,421 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:38,429 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:38,434 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:38,465 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:38,471 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:38,527 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:38,533 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:38,550 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:38,552 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:38,634 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:38,635 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:38,635 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:38,639 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:07:39,340 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:08:31,207 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:08:31,286 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:08:31,292 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:08:31,294 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:08:31,295 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:08:31,304 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:08:31,312 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:08:31,333 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:08:31,356 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:08:31,397 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:08:31,406 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:08:31,417 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:08:31,422 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:08:31,521 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:08:31,523 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:08:31,524 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:08:31,524 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:08:32,167 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:12:26,070 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:12:26,166 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:12:26,180 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:12:26,186 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:12:26,191 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:12:26,206 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:12:26,219 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:12:26,251 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:12:26,264 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:12:26,297 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:12:26,300 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:12:26,328 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:12:26,330 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:12:26,430 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:12:26,432 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:12:26,433 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:12:26,433 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:12:26,433 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:12:27,596 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:12:43,009 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:12:43,191 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:12:43,574 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:17:57,608 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:17:57,695 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:17:57,700 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:17:57,700 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:17:57,709 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:17:57,717 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:17:57,719 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:17:57,753 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:17:57,769 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:17:57,803 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:17:57,811 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:17:57,820 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:17:57,828 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:17:57,902 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:17:57,903 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:17:57,904 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:17:57,907 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:17:57,913 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:17:58,863 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:18:00,051 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:18:00,126 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:18:00,131 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:18:00,131 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:18:00,135 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:18:00,144 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:18:00,149 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:18:00,185 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:18:00,197 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:18:00,218 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:18:00,221 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:18:00,237 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:18:00,240 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:18:00,297 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:18:00,298 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:18:00,299 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:18:00,299 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:18:00,303 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:18:00,953 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:19:46,446 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:19:46,537 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:19:46,542 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:19:46,542 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:19:46,549 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:19:46,557 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:19:46,564 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:19:46,599 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:19:46,602 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:19:46,660 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:19:46,661 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:19:46,694 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:19:46,694 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:19:46,728 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:19:46,832 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:19:46,832 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:19:46,837 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:19:46,843 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:19:47,828 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:20,057 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:20,112 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:20,119 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:20,122 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:20,125 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:20,133 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:20,139 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:20,191 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:20,192 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:20,221 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:20,222 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:20,287 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:20,287 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:20,288 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:20,290 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:20,294 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:20,301 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:20,317 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:21,104 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:37,878 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:37,954 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:37,959 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:37,961 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:37,968 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:37,974 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:37,982 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:38,012 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:38,016 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:38,051 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:38,054 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:38,069 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:38,071 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:38,085 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:38,161 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:38,164 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:38,164 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:38,170 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:20:39,182 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:21:59,200 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:21:59,296 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:21:59,303 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:21:59,311 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:21:59,321 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:21:59,339 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:21:59,353 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:21:59,397 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:21:59,404 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:21:59,465 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:21:59,466 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:21:59,482 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:21:59,486 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:21:59,500 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:21:59,570 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:21:59,572 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:21:59,572 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:21:59,580 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:00,421 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:19,377 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:19,401 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:19,403 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:19,408 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:19,409 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:19,417 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:19,426 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:19,439 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:19,450 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:19,467 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:19,482 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:19,492 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:19,498 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:19,511 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:19,582 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:19,582 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:19,587 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:19,591 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:20,239 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:31,575 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:31,601 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:31,604 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:31,606 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:31,607 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:31,611 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:31,617 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:31,631 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:31,641 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:31,657 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:31,658 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:31,670 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:31,674 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:31,684 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:31,742 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:31,742 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:31,743 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:31,744 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:32,541 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:43,697 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:43,723 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:43,724 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:43,727 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:43,730 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:43,736 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:43,741 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:43,760 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:43,760 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:43,779 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:43,781 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:43,796 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:43,796 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:43,820 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:43,882 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:43,886 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:43,887 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:43,889 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:44,447 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:51,626 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:51,713 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:51,722 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:51,727 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:51,738 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:51,742 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:51,755 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:51,807 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:51,818 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:51,844 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:51,846 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:51,862 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:51,863 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:51,877 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:51,939 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:51,939 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:51,939 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:51,944 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:22:52,957 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:23:12,302 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:23:12,332 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:23:12,336 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:23:12,337 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:23:12,337 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:23:12,339 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:23:12,341 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:23:12,352 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:23:12,357 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:23:12,370 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:23:12,384 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:23:12,386 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:23:12,394 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:23:12,401 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:23:12,452 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:23:12,453 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:23:12,454 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:23:12,457 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:23:13,205 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:04,339 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:04,433 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:04,438 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:04,441 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:04,446 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:04,448 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:04,460 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:04,493 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:04,527 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:04,557 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:04,559 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:04,577 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:04,578 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:04,654 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:04,673 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:04,676 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:04,676 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:04,685 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:06,018 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:39,517 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:39,580 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:39,587 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:39,588 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:39,591 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:39,595 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:39,601 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:39,625 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:39,625 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:39,652 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:39,653 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:39,672 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:39,674 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:39,691 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:39,789 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:39,789 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:39,799 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:39,808 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:24:40,945 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:27:39,919 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:27:40,016 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:27:40,020 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:27:40,033 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:27:40,043 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:27:40,050 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:27:40,059 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:27:40,117 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:27:40,120 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:27:40,178 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:27:40,181 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:27:40,210 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:27:40,215 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:27:40,241 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:27:40,367 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:27:40,368 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:27:40,368 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:27:40,372 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:27:41,258 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:28:17,381 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:28:17,761 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:28:18,248 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:28:47,867 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:28:48,005 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:28:48,510 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:28:48,512 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:28:48,908 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:28:49,723 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:28:50,223 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:28:51,113 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:28:51,540 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:28:53,058 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:28:53,440 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:30:39,197 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 14:30:39,683 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-29 15:05:58,735 INFO {model} __init__.py(17) : initial app models model
+2 2020-03-29 15:05:58,739 INFO {model} __init__.py(13) : initial app core model
+2 2020-03-29 15:05:58,740 INFO {model} __init__.py(15) : initial app services model
+2 2020-03-29 15:05:58,741 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:05:58,741 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:05:58,745 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:05:58,745 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:05:58,747 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:05:58,747 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:05:58,749 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:05:58,749 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:05:58,750 INFO {model} __init__.py(22) : initial app views model
+2 2020-03-29 15:05:58,752 INFO {model} __init__.py(53) : register blueprint ycyl success.
+2 2020-03-29 15:05:58,756 INFO {model} __init__.py(53) : register blueprint error success.
+2 2020-03-29 15:05:58,757 INFO {model} __init__.py(53) : register blueprint index success.
+2 2020-03-29 15:05:58,758 INFO {model} __init__.py(53) : register blueprint login success.
+2 2020-03-29 15:05:58,762 INFO {model} __init__.py(53) : register blueprint user success.
+2 2020-03-29 15:05:58,765 INFO {model} __init__.py(53) : register blueprint clazz success.
+2 2020-03-29 15:05:58,767 INFO {model} __init__.py(53) : register blueprint school success.
+2 2020-03-29 15:05:58,768 INFO {model} __init__.py(53) : register blueprint celery success.
+2 2020-03-29 15:05:59,076 DEBUG {model} __init__.py(70) : urls: 
+2 2020-03-29 15:05:59,079 DEBUG {model} __init__.py(72) : /err/bad_request
+2 2020-03-29 15:05:59,081 DEBUG {model} __init__.py(72) : /err/forbidden
+2 2020-03-29 15:05:59,082 DEBUG {model} __init__.py(72) : /err/server_error
+2 2020-03-29 15:05:59,083 DEBUG {model} __init__.py(72) : /api/schools/count
+2 2020-03-29 15:05:59,083 DEBUG {model} __init__.py(72) : /api/users/
+2 2020-03-29 15:05:59,084 DEBUG {model} __init__.py(72) : /err/not_found
+2 2020-03-29 15:05:59,085 DEBUG {model} __init__.py(72) : /task/compute
+2 2020-03-29 15:05:59,086 DEBUG {model} __init__.py(72) : /api/schools/
+2 2020-03-29 15:05:59,087 DEBUG {model} __init__.py(72) : /ycyl/api/register
+2 2020-03-29 15:05:59,088 DEBUG {model} __init__.py(72) : /err/bad_gateway_timeout
+2 2020-03-29 15:05:59,089 DEBUG {model} __init__.py(72) : /static/<path:filename>
+2 2020-03-29 15:05:59,090 DEBUG {model} __init__.py(72) : /login
+2 2020-03-29 15:05:59,091 DEBUG {model} __init__.py(72) : /err/bad_gateway
+2 2020-03-29 15:05:59,092 DEBUG {model} __init__.py(72) : /
+2 2020-03-29 15:05:59,094 DEBUG {model} __init__.py(72) : /api/users/<user_id>
+2 2020-03-29 15:05:59,095 DEBUG {model} __init__.py(72) : /ycyl/
+2 2020-03-29 15:05:59,097 DEBUG {model} __init__.py(72) : /err/service_unavailable
+2 2020-03-29 15:05:59,098 DEBUG {model} __init__.py(72) : /api/classes/
+2 2020-03-29 15:05:59,099 DEBUG {model} __init__.py(72) : /api/classes/<clazz_id>
+2 2020-03-29 15:05:59,100 DEBUG {model} __init__.py(72) : /api/schools/<school_id>
+2 2020-03-29 15:05:59,101 DEBUG {model} __init__.py(72) : /paths
+2 2020-03-29 15:05:59,102 DEBUG {model} __init__.py(72) : /err/unauthorized
+2 2020-03-29 15:05:59,103 DEBUG {model} __init__.py(72) : /ycyl/api/count
+4 2020-03-29 15:05:59,177 INFO {model} functions.py(29) : [flaskapp] bootstrap init on http://127.0.0.1:5000/. Start used time : 0.8095831394195556 s
+2 2020-03-29 15:06:13,799 INFO {model} __init__.py(17) : initial app models model
+2 2020-03-29 15:06:13,802 INFO {model} __init__.py(13) : initial app core model
+2 2020-03-29 15:06:13,804 INFO {model} __init__.py(15) : initial app services model
+2 2020-03-29 15:06:13,805 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:06:13,805 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:06:13,808 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:06:13,808 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:06:13,810 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:06:13,810 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:06:13,812 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:06:13,812 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:06:13,813 INFO {model} __init__.py(22) : initial app views model
+2 2020-03-29 15:06:13,816 INFO {model} __init__.py(53) : register blueprint ycyl success.
+2 2020-03-29 15:06:13,819 INFO {model} __init__.py(53) : register blueprint error success.
+2 2020-03-29 15:06:13,820 INFO {model} __init__.py(53) : register blueprint index success.
+2 2020-03-29 15:06:13,821 INFO {model} __init__.py(53) : register blueprint login success.
+2 2020-03-29 15:06:13,823 INFO {model} __init__.py(53) : register blueprint user success.
+2 2020-03-29 15:06:13,825 INFO {model} __init__.py(53) : register blueprint clazz success.
+2 2020-03-29 15:06:13,827 INFO {model} __init__.py(53) : register blueprint school success.
+2 2020-03-29 15:06:13,828 INFO {model} __init__.py(53) : register blueprint celery success.
+2 2020-03-29 15:06:13,895 DEBUG {model} __init__.py(70) : urls: 
+2 2020-03-29 15:06:13,896 DEBUG {model} __init__.py(72) : /err/forbidden
+2 2020-03-29 15:06:13,896 DEBUG {model} __init__.py(72) : /err/server_error
+2 2020-03-29 15:06:13,896 DEBUG {model} __init__.py(72) : /api/schools/
+2 2020-03-29 15:06:13,897 DEBUG {model} __init__.py(72) : /ycyl/api/register
+2 2020-03-29 15:06:13,897 DEBUG {model} __init__.py(72) : /api/schools/count
+2 2020-03-29 15:06:13,898 DEBUG {model} __init__.py(72) : /api/schools/<school_id>
+2 2020-03-29 15:06:13,898 DEBUG {model} __init__.py(72) : /api/users/<user_id>
+2 2020-03-29 15:06:13,898 DEBUG {model} __init__.py(72) : /err/bad_gateway
+2 2020-03-29 15:06:13,898 DEBUG {model} __init__.py(72) : /err/bad_gateway_timeout
+2 2020-03-29 15:06:13,898 DEBUG {model} __init__.py(72) : /ycyl/
+2 2020-03-29 15:06:13,899 DEBUG {model} __init__.py(72) : /
+2 2020-03-29 15:06:13,899 DEBUG {model} __init__.py(72) : /api/classes/
+2 2020-03-29 15:06:13,900 DEBUG {model} __init__.py(72) : /err/not_found
+2 2020-03-29 15:06:13,900 DEBUG {model} __init__.py(72) : /ycyl/api/count
+2 2020-03-29 15:06:13,902 DEBUG {model} __init__.py(72) : /paths
+2 2020-03-29 15:06:13,902 DEBUG {model} __init__.py(72) : /api/classes/<clazz_id>
+2 2020-03-29 15:06:13,902 DEBUG {model} __init__.py(72) : /err/service_unavailable
+2 2020-03-29 15:06:13,903 DEBUG {model} __init__.py(72) : /api/users/
+2 2020-03-29 15:06:13,903 DEBUG {model} __init__.py(72) : /login
+2 2020-03-29 15:06:13,903 DEBUG {model} __init__.py(72) : /err/unauthorized
+2 2020-03-29 15:06:13,903 DEBUG {model} __init__.py(72) : /static/<path:filename>
+2 2020-03-29 15:06:13,904 DEBUG {model} __init__.py(72) : /task/compute
+2 2020-03-29 15:06:13,905 DEBUG {model} __init__.py(72) : /err/bad_request
+2 2020-03-29 15:06:53,472 INFO {model} __init__.py(17) : initial app models model
+2 2020-03-29 15:06:53,476 INFO {model} __init__.py(13) : initial app core model
+2 2020-03-29 15:06:53,478 INFO {model} __init__.py(15) : initial app services model
+2 2020-03-29 15:06:53,478 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:06:53,478 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:06:53,483 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:06:53,483 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:06:53,486 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:06:53,486 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:06:53,489 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:06:53,489 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:06:53,490 INFO {model} __init__.py(22) : initial app views model
+2 2020-03-29 15:06:53,493 INFO {model} __init__.py(53) : register blueprint ycyl success.
+2 2020-03-29 15:06:53,500 INFO {model} __init__.py(53) : register blueprint error success.
+2 2020-03-29 15:06:53,503 INFO {model} __init__.py(53) : register blueprint index success.
+2 2020-03-29 15:06:53,505 INFO {model} __init__.py(53) : register blueprint login success.
+2 2020-03-29 15:06:53,510 INFO {model} __init__.py(53) : register blueprint user success.
+2 2020-03-29 15:06:53,515 INFO {model} __init__.py(53) : register blueprint clazz success.
+2 2020-03-29 15:06:53,524 INFO {model} __init__.py(53) : register blueprint school success.
+2 2020-03-29 15:06:53,526 INFO {model} __init__.py(53) : register blueprint celery success.
+2 2020-03-29 15:06:53,657 DEBUG {model} __init__.py(70) : urls: 
+2 2020-03-29 15:06:53,657 DEBUG {model} __init__.py(72) : /api/schools/count
+2 2020-03-29 15:06:53,658 DEBUG {model} __init__.py(72) : /api/classes/
+2 2020-03-29 15:06:53,659 DEBUG {model} __init__.py(72) : /login
+2 2020-03-29 15:06:53,659 DEBUG {model} __init__.py(72) : /static/<path:filename>
+2 2020-03-29 15:06:53,659 DEBUG {model} __init__.py(72) : /ycyl/api/count
+2 2020-03-29 15:06:53,660 DEBUG {model} __init__.py(72) : /err/bad_gateway
+2 2020-03-29 15:06:53,660 DEBUG {model} __init__.py(72) : /api/classes/<clazz_id>
+2 2020-03-29 15:06:53,660 DEBUG {model} __init__.py(72) : /paths
+2 2020-03-29 15:06:53,661 DEBUG {model} __init__.py(72) : /api/users/
+2 2020-03-29 15:06:53,661 DEBUG {model} __init__.py(72) : /
+2 2020-03-29 15:06:53,661 DEBUG {model} __init__.py(72) : /api/schools/
+2 2020-03-29 15:06:53,662 DEBUG {model} __init__.py(72) : /ycyl/api/register
+2 2020-03-29 15:06:53,662 DEBUG {model} __init__.py(72) : /err/forbidden
+2 2020-03-29 15:06:53,663 DEBUG {model} __init__.py(72) : /task/compute
+2 2020-03-29 15:06:53,663 DEBUG {model} __init__.py(72) : /err/bad_request
+2 2020-03-29 15:06:53,663 DEBUG {model} __init__.py(72) : /err/server_error
+2 2020-03-29 15:06:53,663 DEBUG {model} __init__.py(72) : /err/bad_gateway_timeout
+2 2020-03-29 15:06:53,664 DEBUG {model} __init__.py(72) : /api/schools/<school_id>
+2 2020-03-29 15:06:53,664 DEBUG {model} __init__.py(72) : /err/service_unavailable
+2 2020-03-29 15:06:53,665 DEBUG {model} __init__.py(72) : /api/users/<user_id>
+2 2020-03-29 15:06:53,666 DEBUG {model} __init__.py(72) : /err/unauthorized
+2 2020-03-29 15:06:53,667 DEBUG {model} __init__.py(72) : /err/not_found
+2 2020-03-29 15:06:53,667 DEBUG {model} __init__.py(72) : /ycyl/
+2 2020-03-29 15:07:01,437 INFO {model} __init__.py(17) : initial app models model
+2 2020-03-29 15:07:01,448 INFO {model} __init__.py(13) : initial app core model
+2 2020-03-29 15:07:01,452 INFO {model} __init__.py(15) : initial app services model
+2 2020-03-29 15:07:01,453 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:07:01,453 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:07:01,459 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:07:01,459 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:07:01,463 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:07:01,463 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:07:01,470 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:07:01,470 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:07:01,472 INFO {model} __init__.py(22) : initial app views model
+2 2020-03-29 15:07:01,477 INFO {model} __init__.py(53) : register blueprint ycyl success.
+2 2020-03-29 15:07:01,489 INFO {model} __init__.py(53) : register blueprint error success.
+2 2020-03-29 15:07:01,492 INFO {model} __init__.py(53) : register blueprint index success.
+2 2020-03-29 15:07:01,493 INFO {model} __init__.py(53) : register blueprint login success.
+2 2020-03-29 15:07:01,499 INFO {model} __init__.py(53) : register blueprint user success.
+2 2020-03-29 15:07:01,505 INFO {model} __init__.py(53) : register blueprint clazz success.
+2 2020-03-29 15:07:01,509 INFO {model} __init__.py(53) : register blueprint school success.
+2 2020-03-29 15:07:01,510 INFO {model} __init__.py(53) : register blueprint celery success.
+2 2020-03-29 15:07:01,635 DEBUG {model} __init__.py(70) : urls: 
+2 2020-03-29 15:07:01,636 DEBUG {model} __init__.py(72) : /task/compute
+2 2020-03-29 15:07:01,637 DEBUG {model} __init__.py(72) : /ycyl/
+2 2020-03-29 15:07:01,638 DEBUG {model} __init__.py(72) : /ycyl/api/count
+2 2020-03-29 15:07:01,638 DEBUG {model} __init__.py(72) : /ycyl/api/register
+2 2020-03-29 15:07:01,639 DEBUG {model} __init__.py(72) : /api/classes/<clazz_id>
+2 2020-03-29 15:07:01,644 DEBUG {model} __init__.py(72) : /api/users/<user_id>
+2 2020-03-29 15:07:01,645 DEBUG {model} __init__.py(72) : /err/service_unavailable
+2 2020-03-29 15:07:01,646 DEBUG {model} __init__.py(72) : /api/schools/<school_id>
+2 2020-03-29 15:07:01,648 DEBUG {model} __init__.py(72) : /err/forbidden
+2 2020-03-29 15:07:01,649 DEBUG {model} __init__.py(72) : /paths
+2 2020-03-29 15:07:01,649 DEBUG {model} __init__.py(72) : /api/classes/
+2 2020-03-29 15:07:01,650 DEBUG {model} __init__.py(72) : /err/not_found
+2 2020-03-29 15:07:01,651 DEBUG {model} __init__.py(72) : /
+2 2020-03-29 15:07:01,652 DEBUG {model} __init__.py(72) : /api/users/
+2 2020-03-29 15:07:01,653 DEBUG {model} __init__.py(72) : /err/bad_gateway
+2 2020-03-29 15:07:01,653 DEBUG {model} __init__.py(72) : /api/schools/
+2 2020-03-29 15:07:01,654 DEBUG {model} __init__.py(72) : /err/unauthorized
+2 2020-03-29 15:07:01,655 DEBUG {model} __init__.py(72) : /api/schools/count
+2 2020-03-29 15:07:01,655 DEBUG {model} __init__.py(72) : /err/bad_gateway_timeout
+2 2020-03-29 15:07:01,657 DEBUG {model} __init__.py(72) : /login
+2 2020-03-29 15:07:01,658 DEBUG {model} __init__.py(72) : /static/<path:filename>
+2 2020-03-29 15:07:01,658 DEBUG {model} __init__.py(72) : /err/server_error
+2 2020-03-29 15:07:01,659 DEBUG {model} __init__.py(72) : /err/bad_request
+2 2020-03-29 15:09:15,533 INFO {model} __init__.py(17) : initial app models model
+2 2020-03-29 15:09:15,539 INFO {model} __init__.py(13) : initial app core model
+2 2020-03-29 15:09:15,543 INFO {model} __init__.py(15) : initial app services model
+2 2020-03-29 15:09:15,543 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:09:15,543 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:09:15,546 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:09:15,546 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:09:15,550 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:09:15,550 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:09:15,558 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:09:15,558 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:09:15,562 INFO {model} __init__.py(22) : initial app views model
+2 2020-03-29 15:09:15,567 INFO {model} __init__.py(53) : register blueprint ycyl success.
+2 2020-03-29 15:09:15,579 INFO {model} __init__.py(53) : register blueprint error success.
+2 2020-03-29 15:09:15,581 INFO {model} __init__.py(53) : register blueprint index success.
+2 2020-03-29 15:09:15,582 INFO {model} __init__.py(53) : register blueprint login success.
+2 2020-03-29 15:09:15,587 INFO {model} __init__.py(53) : register blueprint user success.
+2 2020-03-29 15:09:15,593 INFO {model} __init__.py(53) : register blueprint clazz success.
+2 2020-03-29 15:09:15,599 INFO {model} __init__.py(53) : register blueprint school success.
+2 2020-03-29 15:09:15,601 INFO {model} __init__.py(53) : register blueprint celery success.
+2 2020-03-29 15:09:15,753 DEBUG {model} __init__.py(70) : urls: 
+2 2020-03-29 15:09:15,754 DEBUG {model} __init__.py(72) : /api/schools/
+2 2020-03-29 15:09:15,755 DEBUG {model} __init__.py(72) : /err/bad_gateway
+2 2020-03-29 15:09:15,755 DEBUG {model} __init__.py(72) : /err/unauthorized
+2 2020-03-29 15:09:15,755 DEBUG {model} __init__.py(72) : /err/bad_gateway_timeout
+2 2020-03-29 15:09:15,756 DEBUG {model} __init__.py(72) : /task/compute
+2 2020-03-29 15:09:15,757 DEBUG {model} __init__.py(72) : /ycyl/api/count
+2 2020-03-29 15:09:15,757 DEBUG {model} __init__.py(72) : /err/not_found
+2 2020-03-29 15:09:15,757 DEBUG {model} __init__.py(72) : /api/classes/
+2 2020-03-29 15:09:15,758 DEBUG {model} __init__.py(72) : /api/users/<user_id>
+2 2020-03-29 15:09:15,758 DEBUG {model} __init__.py(72) : /err/bad_request
+2 2020-03-29 15:09:15,758 DEBUG {model} __init__.py(72) : /ycyl/
+2 2020-03-29 15:09:15,758 DEBUG {model} __init__.py(72) : /api/users/
+2 2020-03-29 15:09:15,759 DEBUG {model} __init__.py(72) : /static/<path:filename>
+2 2020-03-29 15:09:15,759 DEBUG {model} __init__.py(72) : /login
+2 2020-03-29 15:09:15,759 DEBUG {model} __init__.py(72) : /api/classes/<clazz_id>
+2 2020-03-29 15:09:15,759 DEBUG {model} __init__.py(72) : /ycyl/api/register
+2 2020-03-29 15:09:15,760 DEBUG {model} __init__.py(72) : /api/schools/count
+2 2020-03-29 15:09:15,760 DEBUG {model} __init__.py(72) : /api/schools/<school_id>
+2 2020-03-29 15:09:15,761 DEBUG {model} __init__.py(72) : /err/forbidden
+2 2020-03-29 15:09:15,761 DEBUG {model} __init__.py(72) : /
+2 2020-03-29 15:09:15,761 DEBUG {model} __init__.py(72) : /err/server_error
+2 2020-03-29 15:09:15,761 DEBUG {model} __init__.py(72) : /paths
+2 2020-03-29 15:09:15,762 DEBUG {model} __init__.py(72) : /err/service_unavailable
+2 2020-03-29 15:09:20,115 INFO {model} __init__.py(17) : initial app models model
+2 2020-03-29 15:09:20,118 INFO {model} __init__.py(13) : initial app core model
+2 2020-03-29 15:09:20,122 INFO {model} __init__.py(15) : initial app services model
+2 2020-03-29 15:09:20,122 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:09:20,122 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:09:20,124 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:09:20,124 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:09:20,126 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:09:20,126 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:09:20,128 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:09:20,128 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:09:20,129 INFO {model} __init__.py(22) : initial app views model
+2 2020-03-29 15:09:20,131 INFO {model} __init__.py(53) : register blueprint ycyl success.
+2 2020-03-29 15:09:20,136 INFO {model} __init__.py(53) : register blueprint error success.
+2 2020-03-29 15:09:20,138 INFO {model} __init__.py(53) : register blueprint index success.
+2 2020-03-29 15:09:20,139 INFO {model} __init__.py(53) : register blueprint login success.
+2 2020-03-29 15:09:20,140 INFO {model} __init__.py(53) : register blueprint user success.
+2 2020-03-29 15:09:20,142 INFO {model} __init__.py(53) : register blueprint clazz success.
+2 2020-03-29 15:09:20,144 INFO {model} __init__.py(53) : register blueprint school success.
+2 2020-03-29 15:09:20,145 INFO {model} __init__.py(53) : register blueprint celery success.
+2 2020-03-29 15:09:20,257 DEBUG {model} __init__.py(70) : urls: 
+2 2020-03-29 15:09:20,258 DEBUG {model} __init__.py(72) : /err/bad_gateway_timeout
+2 2020-03-29 15:09:20,258 DEBUG {model} __init__.py(72) : /err/forbidden
+2 2020-03-29 15:09:20,258 DEBUG {model} __init__.py(72) : /paths
+2 2020-03-29 15:09:20,259 DEBUG {model} __init__.py(72) : /task/compute
+2 2020-03-29 15:09:20,259 DEBUG {model} __init__.py(72) : /err/unauthorized
+2 2020-03-29 15:09:20,259 DEBUG {model} __init__.py(72) : /api/schools/count
+2 2020-03-29 15:09:20,259 DEBUG {model} __init__.py(72) : /api/classes/
+2 2020-03-29 15:09:20,259 DEBUG {model} __init__.py(72) : /api/classes/<clazz_id>
+2 2020-03-29 15:09:20,260 DEBUG {model} __init__.py(72) : /api/users/<user_id>
+2 2020-03-29 15:09:20,260 DEBUG {model} __init__.py(72) : /static/<path:filename>
+2 2020-03-29 15:09:20,260 DEBUG {model} __init__.py(72) : /err/server_error
+2 2020-03-29 15:09:20,260 DEBUG {model} __init__.py(72) : /ycyl/
+2 2020-03-29 15:09:20,261 DEBUG {model} __init__.py(72) : /err/not_found
+2 2020-03-29 15:09:20,261 DEBUG {model} __init__.py(72) : /
+2 2020-03-29 15:09:20,261 DEBUG {model} __init__.py(72) : /ycyl/api/register
+2 2020-03-29 15:09:20,261 DEBUG {model} __init__.py(72) : /login
+2 2020-03-29 15:09:20,262 DEBUG {model} __init__.py(72) : /ycyl/api/count
+2 2020-03-29 15:09:20,262 DEBUG {model} __init__.py(72) : /api/users/
+2 2020-03-29 15:09:20,262 DEBUG {model} __init__.py(72) : /api/schools/
+2 2020-03-29 15:09:20,262 DEBUG {model} __init__.py(72) : /err/service_unavailable
+2 2020-03-29 15:09:20,263 DEBUG {model} __init__.py(72) : /err/bad_request
+2 2020-03-29 15:09:20,263 DEBUG {model} __init__.py(72) : /err/bad_gateway
+2 2020-03-29 15:09:20,263 DEBUG {model} __init__.py(72) : /api/schools/<school_id>
+2 2020-03-29 15:09:37,098 INFO {model} __init__.py(17) : initial app models model
+2 2020-03-29 15:09:37,107 INFO {model} __init__.py(13) : initial app core model
+2 2020-03-29 15:09:37,109 INFO {model} __init__.py(15) : initial app services model
+2 2020-03-29 15:09:37,110 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:09:37,110 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:09:37,112 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:09:37,112 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:09:37,114 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:09:37,114 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:09:37,119 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:09:37,119 INFO {model} database.py(129) : init Query
+2 2020-03-29 15:09:37,122 INFO {model} __init__.py(22) : initial app views model
+2 2020-03-29 15:09:37,125 INFO {model} __init__.py(53) : register blueprint ycyl success.
+2 2020-03-29 15:09:37,129 INFO {model} __init__.py(53) : register blueprint error success.
+2 2020-03-29 15:09:37,130 INFO {model} __init__.py(53) : register blueprint index success.
+2 2020-03-29 15:09:37,131 INFO {model} __init__.py(53) : register blueprint login success.
+2 2020-03-29 15:09:37,136 INFO {model} __init__.py(53) : register blueprint user success.
+2 2020-03-29 15:09:37,138 INFO {model} __init__.py(53) : register blueprint clazz success.
+2 2020-03-29 15:09:37,140 INFO {model} __init__.py(53) : register blueprint school success.
+2 2020-03-29 15:09:37,142 INFO {model} __init__.py(53) : register blueprint celery success.
+2 2020-03-29 15:09:37,222 DEBUG {model} __init__.py(70) : urls: 
+2 2020-03-29 15:09:37,223 DEBUG {model} __init__.py(72) : /err/bad_gateway
+2 2020-03-29 15:09:37,223 DEBUG {model} __init__.py(72) : /paths
+2 2020-03-29 15:09:37,223 DEBUG {model} __init__.py(72) : /
+2 2020-03-29 15:09:37,223 DEBUG {model} __init__.py(72) : /ycyl/api/count
+2 2020-03-29 15:09:37,223 DEBUG {model} __init__.py(72) : /api/schools/<school_id>
+2 2020-03-29 15:09:37,224 DEBUG {model} __init__.py(72) : /api/users/<user_id>
+2 2020-03-29 15:09:37,224 DEBUG {model} __init__.py(72) : /err/server_error
+2 2020-03-29 15:09:37,224 DEBUG {model} __init__.py(72) : /static/<path:filename>
+2 2020-03-29 15:09:37,224 DEBUG {model} __init__.py(72) : /task/compute
+2 2020-03-29 15:09:37,225 DEBUG {model} __init__.py(72) : /api/classes/
+2 2020-03-29 15:09:37,225 DEBUG {model} __init__.py(72) : /err/service_unavailable
+2 2020-03-29 15:09:37,226 DEBUG {model} __init__.py(72) : /ycyl/api/register
+2 2020-03-29 15:09:37,226 DEBUG {model} __init__.py(72) : /err/forbidden
+2 2020-03-29 15:09:37,226 DEBUG {model} __init__.py(72) : /err/unauthorized
+2 2020-03-29 15:09:37,226 DEBUG {model} __init__.py(72) : /err/bad_gateway_timeout
+2 2020-03-29 15:09:37,227 DEBUG {model} __init__.py(72) : /err/bad_request
+2 2020-03-29 15:09:37,227 DEBUG {model} __init__.py(72) : /api/classes/<clazz_id>
+2 2020-03-29 15:09:37,227 DEBUG {model} __init__.py(72) : /ycyl/
+2 2020-03-29 15:09:37,227 DEBUG {model} __init__.py(72) : /login
+2 2020-03-29 15:09:37,228 DEBUG {model} __init__.py(72) : /api/schools/
+2 2020-03-29 15:09:37,228 DEBUG {model} __init__.py(72) : /api/users/
+2 2020-03-29 15:09:37,228 DEBUG {model} __init__.py(72) : /api/schools/count
+2 2020-03-29 15:09:37,229 DEBUG {model} __init__.py(72) : /err/not_found
