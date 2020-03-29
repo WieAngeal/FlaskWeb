@@ -302,21 +302,34 @@
 	}
 
 	function get_data() {
+		var myChart = echarts.init(document.getElementById('echart4'));
+
 		$.ajax({
-         	type : "get",
-			async : false,            //异步请求（同步请求将会锁住浏览器，用户其他操作必须等待请求完成才可以执行）
+         	type : "GET",
+			async : true,            //异步请求（同步请求将会锁住浏览器，用户其他操作必须等待请求完成才可以执行）
          	url : "/api/logodata",    //请求发送到Servlet处
          	dataType : "json",        //返回数据形式为json
          	success : function(result) {
 				//请求成功时执行该函数内容，result即为服务器返回的json对象
 				if (result) {
 					console.log(result);
-					var names = [];
+					var data_ai = [];
+					var month = [];
+
 					for(var i=0;i<result.length;i++){
-						names.push(result[i]["yxy_ainum"]);    //挨个取出名称并填入类别数组
+						data_ai.push(result[i]["yxy_ainum"]);    //挨个取出名称并填入类别数组
+						month.push(result[i]["month"]);
 					}
-					console.log(names);
-					return names;
+					console.log(data_ai);
+					console.log(month);
+
+					myChart.setOption({
+						series: [{
+							name: 'IOS',
+							type: 'line',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
+							data: data_ai
+						}]
+					});
 				}
 			},
 			error : function(errorMsg) {
@@ -329,6 +342,7 @@
 		// 基于准备好的dom，初始化echarts实例
 		var myChart = echarts.init(document.getElementById('echart4'));
 		var data_ai = [];
+		get_data();
 
 		// ******* 这段请求已成功获取到数据并加载到前端页面，备份此处
 		// $.ajax({
@@ -363,19 +377,19 @@
 					}
 				}
 			},
-			legend: {
-				top: '0%',
-				data: ['安卓', 'IOS'],
-				textStyle: {
-					color: 'rgba(255,255,255,.5)',
-					fontSize: '12',
-				}
-			},
+			// legend: {
+			// 	top: '0%',
+			// 	data: ['安卓', 'IOS'],
+			// 	textStyle: {
+			// 		color: 'rgba(255,255,255,.5)',
+			// 		fontSize: '12',
+			// 	}
+			// },
 			grid: {
 				left: '10',
-				top: '30',
+				top: '3',
 				right: '10',
-				bottom: '10',
+				bottom: '0',
 				containLabel: true
 			},
 
@@ -437,10 +451,10 @@
 			series: [{
 				name: '安卓',
 				type: 'line',
-				smooth: true,
+				smooth: false,
 				symbol: 'circle',
-				symbolSize: 5,
-				showSymbol: false,
+				symbolSize: 8,
+				showSymbol: true,
 				lineStyle: {
 
 					normal: {
@@ -476,8 +490,8 @@
 				type: 'line',
 				smooth: true,
 				symbol: 'circle',
-				symbolSize: 5,
-				showSymbol: false,
+				symbolSize: 8,
+				showSymbol: true,
 				lineStyle: {
 
 					normal: {
@@ -506,9 +520,7 @@
 					}
 				},
 				data: data_ai
-
 			},
-
 			]
 
 		};
