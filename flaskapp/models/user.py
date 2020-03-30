@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time    : 2018/6/4 22:08
-# @Author  : TOM.LEE
+# @Author  : WieAngeal
 # @File    : user.py
 # @Software: PyCharm
 from .base import DictModel

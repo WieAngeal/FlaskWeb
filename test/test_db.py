@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time           : 18-6-11 下午1:47
-# @Author         : Tom.Lee
+# @Author         : WieAngeal
 # @File           : test_db.py
 # @Product        : PyCharm
 # @Docs           : 

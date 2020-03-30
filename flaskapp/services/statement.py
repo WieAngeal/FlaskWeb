@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time    : 2018/6/5 21:17
-# @Author  : TOM.LEE
+# @Author  : WieAngeal
 # @File    : statement.py
 # @Software: PyCharm
 

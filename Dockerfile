@@ -1,5 +1,5 @@
 FROM docker.pkg.github.com/tomoncle/mirrors/python36:alpine
-MAINTAINER Tom.Lee <1123431949@qq.com>
+MAINTAINER WieAngeal <1123431949@qq.com>
 
 WORKDIR /workspace
 ADD ./ /workspace/flaskapp

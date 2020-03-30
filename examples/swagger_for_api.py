@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time           : 18-7-5 下午5:57
-# @Author         : Tom.Lee
+# @Author         : WieAngeal
 # @File           : swagger_for_api.py
 # @Product        : PyCharm
 # @Docs           : 

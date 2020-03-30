@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time    : 2018/6/5 1:39
-# @Author  : TOM.LEE
+# @Author  : WieAngeal
 # @File    : index_hander.py
 # @Software: PyCharm
 from flask import Blueprint, flash, render_template, Response, Request

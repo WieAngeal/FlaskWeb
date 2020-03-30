@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time           : 18-7-10 上午9:27
-# @Author         : Tom.Lee
+# @Author         : WieAngeal
 # @File           : extensions_flask_migrate.py
 # @Product        : PyCharm
 # @Source         : 

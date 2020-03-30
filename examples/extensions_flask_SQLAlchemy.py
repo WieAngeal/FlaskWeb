@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time           : 18-3-28 下午5:27
-# @Author         : Tom.Lee
+# @Author         : WieAngeal
 # @File           : extensions_flask_SQLAlchemy.py
 # @Product        : PyCharm
 

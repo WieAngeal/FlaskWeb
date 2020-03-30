@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time           : 18-3-28 下午2:51
-# @Author         : Tom.Lee
+# @Author         : WieAngeal
 # @File           : rest_clazz_handler.py
 # @Product        : PyCharm
 # @Docs           : 

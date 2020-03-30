@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time           : 18-3-28 下午5:01
-# @Author         : Tom.Lee
+# @Author         : WieAngeal
 # @File           : __init__.py
 # @Product        : PyCharm
 # @Source         :

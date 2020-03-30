@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time           : 17-11-9 上午10:58
-# @Author         : Tom.Lee
+# @Author         : WieAngeal
 # @File           : rest_api.py
 # @Product        : PyCharm
 # @Docs           : 

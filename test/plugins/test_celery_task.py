@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time           : 18-6-25 上午10:14
-# @Author         : Tom.Lee
+# @Author         : WieAngeal
 # @File           : test_celery_task.py
 # @Product        : PyCharm
 # @Docs           : 

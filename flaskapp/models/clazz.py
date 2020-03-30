@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time           : 18-6-7 上午9:34
-# @Author         : Tom.Lee
+# @Author         : WieAngeal
 # @File           : clazz.py
 # @Product        : PyCharm
 # @Docs           : 

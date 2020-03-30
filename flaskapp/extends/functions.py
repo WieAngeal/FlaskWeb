@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time           : 18-6-12 下午1:25
-# @Author         : Tom.Lee
+# @Author         : WieAngeal
 # @File           : functions.py
 # @Product        : PyCharm
 # @Docs           : flask 配置拓展函数.

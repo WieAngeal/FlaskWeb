@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time           : 18-6-11 上午10:44
-# @Author         : Tom.Lee
+# @Author         : WieAngeal
 # @File           : http_interceptor.py
 # @Product        : PyCharm
 # @Docs           : 

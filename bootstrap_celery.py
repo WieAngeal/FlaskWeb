@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time           : 18-6-13 下午12:52
-# @Author         : Tom.Lee
+# @Author         : WieAngeal
 # @File           : bootstrap_celery.py
 # @Product        : PyCharm
 # @Docs           : 

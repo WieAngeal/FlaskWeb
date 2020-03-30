@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time    : 2018/6/10 16:25
-# @Author  : TOM.LEE
+# @Author  : WieAngeal
 # @File    : __init__.py.py
 # @Software: PyCharm
 from . import database

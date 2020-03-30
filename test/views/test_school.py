@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time           : 18-6-15 下午2:01
-# @Author         : Tom.Lee
+# @Author         : WieAngeal
 # @File           : test_school.py
 # @Product        : PyCharm
 # @Docs           : 

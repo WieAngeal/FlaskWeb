@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time           : 18-6-5 下午1:24
-# @Author         : Tom.Lee
+# @Author         : WieAngeal
 # @File           : response.py
 # @Product        : PyCharm
 # @Docs           : 
