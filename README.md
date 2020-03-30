@@ -32,7 +32,7 @@ $ ./docker-build.sh
 
 
 ## Authors
-* [tomoncle](https://github.com/WieAngeal/FlaskWeb)
+* [章果](https://github.com/WieAngeal/FlaskWeb)
 * 源码地址：https://github.com/WieAngeal/FlaskWeb
 
 [travis]: https://travis-ci.org/tomoncle/flaskapp
