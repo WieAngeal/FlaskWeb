@@ -1,18 +1,155 @@
 ﻿$(function() {
 	echarts_1();
 	echarts_2();
+	echarts_3();
 	echarts_4();
-	echarts_31();
-	echarts_32();
-	echarts_33();
 	echarts_5();
-	echarts_6();
-	echarts_12();
+
+	echarts_21();
+	echarts_22();
+	echarts_23();
+	echarts_24();
+	echarts_25();
+
+	get_data();
+
+	function get_data() {
+		var echart_1 = echarts.init(document.getElementById('echart_1'));
+		var echart_2 = echarts.init(document.getElementById('echart_2'));
+		var echart_3 = echarts.init(document.getElementById('echart_3'));
+		var echart_4 = echarts.init(document.getElementById('echart_4'));
+		var echart_5 = echarts.init(document.getElementById('echart_5'));
+		var echart_21 = echarts.init(document.getElementById('echart_21'));
+		var echart_22 = echarts.init(document.getElementById('echart_22'));
+		var echart_23 = echarts.init(document.getElementById('echart_23'));
+		var echart_24 = echarts.init(document.getElementById('echart_24'));
+		var echart_25 = echarts.init(document.getElementById('echart_25'));
+
+		$.ajax({
+         	type : "GET",
+			async : true,            //异步请求（同步请求将会锁住浏览器，用户其他操作必须等待请求完成才可以执行）
+         	url : "/api/logodata",    //请求发送server api
+         	dataType : "json",        //返回数据形式为json
+         	success : function(result) {
+				//请求成功时执行该函数内容，result即为服务器返回的json对象
+				if (result) {
+					console.log(result);
+					var month = [];
+					var datatype = [];
+					var sxzz_num = [];
+					var sxzz_used = [];
+					var yxy_diagnum = [];
+					var yxy_callnum = [];
+					var yxy_film = [];
+					var yxy_uv = [];
+					var yxy_pv = [];
+					var yxy_daypv = [];
+					var yxy_ainum = [];
+					var yxy_oss = [];
+					var fjzl_hospital = [];
+					var yxy_aihospital = [];
+					var yxy_hospital = [];
+
+					for(var i=0;i<result.length;i++){
+						month.push(result[i]["month"]);   //挨个取出名称并填入类别数组
+						sxzz_num.push((result[i]["sxzz_num"]));
+						sxzz_used.push(result[i]["sxzz_used"]);
+						yxy_diagnum.push(result[i]["yxy_diagnum"]);
+						yxy_callnum.push(result[i]["yxy_callnum"]);
+						yxy_film.push(result[i]["yxy_film"]);
+						yxy_uv.push(result[i]["yxy_uv"]);
+						yxy_pv.push(result[i]["yxy_pv"]);
+						yxy_daypv.push(result[i]["yxy_daypv"]);
+						yxy_ainum.push(result[i]["yxy_ainum"]);
+						yxy_oss.push(result[i]["yxy_oss"]);
+						fjzl_hospital.push(result[i]["fjzl_hospital"]);
+						yxy_aihospital.push(result[i]["yxy_aihospital"]);
+						yxy_hospital.push(result[i]["yxy_hospital"]);
+					}
+
+					echart_1.setOption({
+						series: [{
+							name: '实际完成',
+							type: 'bar',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
+							data: sxzz_num
+						}]
+					});
+					echart_2.setOption({
+						series: [{
+							name: '实际完成',
+							type: 'line',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
+							data: sxzz_used
+						}]
+					});
+					echart_3.setOption({
+						series: [{
+							name: '实际完成',
+							type: 'line',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
+							data: yxy_diagnum
+						}]
+					});
+					echart_4.setOption({
+						series: [{
+							name: '实际完成',
+							type: 'bar',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
+							data: yxy_callnum
+						}]
+					});
+					echart_5.setOption({
+						series: [{
+							name: '实际完成',
+							type: 'line',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
+							data: yxy_film
+						}]
+					});
+					echart_21.setOption({
+						series: [{
+							name: '实际完成',
+							type: 'line',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
+							data: yxy_uv
+						}]
+					});
+					echart_22.setOption({
+						series: [{
+							name: '实际完成',
+							type: 'line',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
+							data: yxy_pv
+						}]
+					});
+					echart_23.setOption({
+						series: [{
+							name: '实际完成',
+							type: 'line',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
+							data: yxy_oss
+						}]
+					});
+					echart_24.setOption({
+						series: [{
+							name: '实际完成',
+							type: 'line',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
+							data: fjzl_hospital
+						}]
+					});
+					echart_25.setOption({
+						series: [{
+							name: '实际完成',
+							type: 'line',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
+							data: yxy_hospital
+						}]
+					});
+				}
+			},
+			error : function(errorMsg) {
+				//请求失败时执行该函数
+				alert("图表请求数据失败!");
+			}
+    	});
+	}
 
 	function echarts_1() {
 		// 基于准备好的dom，初始化echarts实例
-		var myChart = echarts.init(document.getElementById('echart1'));
-
+		var myChart = echarts.init(document.getElementById('echart_1'));
+		var data_ai = [];
 		option = {
 			//  backgroundColor: '#00265f',
 			tooltip: {
@@ -82,20 +219,79 @@
 				}
 			}],
 			series: [{
+				name: '实际完成',
 				type: 'bar',
-				data: [200, 300, 300, 900, 1500, 1200, 600],
 				barWidth: '35%',
-				//柱子宽度
-				// barGap: 1, //柱子之间间距
+				// smooth: false,
+				// symbol: 'circle',
+				// symbolSize: 4,
+				// showSymbol: true,
+				lineStyle: {
+					normal: {
+						color: '#0184d5',
+						width: 2
+					}
+				},
+				areaStyle: {
+					normal: {
+						color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+							offset: 0,
+							color: 'rgba(1, 132, 213, 0.4)'
+						},
+						{
+							offset: 0.8,
+							color: 'rgba(1, 132, 213, 0.1)'
+						}], false),
+						shadowColor: 'rgba(0, 0, 0, 0.1)',
+					}
+				},
 				itemStyle: {
 					normal: {
-						color: '#2f89cf',
+						// color: '#0184d5',
+						// borderColor: 'rgba(221, 220, 107, .1)',
+						// borderWidth: 12
+						color: '#218435',
 						opacity: 1,
 						barBorderRadius: 5,
 					}
-				}
-			}
-
+				},
+				data: data_ai
+			},
+			{
+				name: '目标',
+				type: 'line',
+				smooth: true,
+				symbol: 'circle',
+				symbolSize: 8,
+				showSymbol: true,
+				lineStyle: {
+					normal: {
+						color: '#00d887',
+						width: 2
+					}
+				},
+				areaStyle: {
+					normal: {
+						color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+							offset: 0,
+							color: 'rgba(0, 216, 135, 0.4)'
+						},
+						{
+							offset: 0.8,
+							color: 'rgba(0, 216, 135, 0.1)'
+						}], false),
+						shadowColor: 'rgba(0, 0, 0, 0.1)',
+					}
+				},
+				itemStyle: {
+					normal: {
+						color: '#00d887',
+						borderColor: 'rgba(221, 220, 107, .1)',
+						borderWidth: 12
+					}
+				},
+				data: [6, 5, 5, 4, 3, 4, 3, 6, 2, 4, 2, 4, 3, 4, 3, 4, 3, 4, 3, 6, 2, 4, 2, 4]
+			},
 			]
 		};
 
@@ -108,7 +304,8 @@
 	}
 	function echarts_2() {
 		// 基于准备好的dom，初始化echarts实例
-		var myChart = echarts.init(document.getElementById('echart2'));
+		var myChart = echarts.init(document.getElementById('echart_2'));
+		var data_ai = [];
 
 		option = {
 			//  backgroundColor: '#00265f',
@@ -179,21 +376,79 @@
 				}
 			}],
 			series: [{
-
+				name: '实际完成',
 				type: 'bar',
-				data: [1500, 1200, 600, 200, 300, 300, 900],
 				barWidth: '35%',
-				//柱子宽度
-				// barGap: 1, //柱子之间间距
+				// smooth: false,
+				// symbol: 'circle',
+				// symbolSize: 4,
+				// showSymbol: true,
+				lineStyle: {
+					normal: {
+						color: '#0184d5',
+						width: 2
+					}
+				},
+				areaStyle: {
+					normal: {
+						color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+							offset: 0,
+							color: 'rgba(1, 132, 213, 0.4)'
+						},
+						{
+							offset: 0.8,
+							color: 'rgba(1, 132, 213, 0.1)'
+						}], false),
+						shadowColor: 'rgba(0, 0, 0, 0.1)',
+					}
+				},
 				itemStyle: {
 					normal: {
-						color: '#27d08a',
+						// color: '#0184d5',
+						// borderColor: 'rgba(221, 220, 107, .1)',
+						// borderWidth: 12
+						color: '#218435',
 						opacity: 1,
 						barBorderRadius: 5,
 					}
-				}
-			}
-
+				},
+				data: data_ai
+			},
+			{
+				name: '目标',
+				type: 'line',
+				smooth: true,
+				symbol: 'circle',
+				symbolSize: 8,
+				showSymbol: true,
+				lineStyle: {
+					normal: {
+						color: '#00d887',
+						width: 2
+					}
+				},
+				areaStyle: {
+					normal: {
+						color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+							offset: 0,
+							color: 'rgba(0, 216, 135, 0.4)'
+						},
+						{
+							offset: 0.8,
+							color: 'rgba(0, 216, 135, 0.1)'
+						}], false),
+						shadowColor: 'rgba(0, 0, 0, 0.1)',
+					}
+				},
+				itemStyle: {
+					normal: {
+						color: '#00d887',
+						borderColor: 'rgba(221, 220, 107, .1)',
+						borderWidth: 12
+					}
+				},
+				data: [6, 5, 5, 4, 3, 4, 3, 6, 2, 4, 2, 4, 3, 4, 3, 4, 3, 4, 3, 6, 2, 4, 2, 4]
+			},
 			]
 		};
 
@@ -204,145 +459,10 @@
 			myChart.resize();
 		});
 	}
-	function echarts_5() {
+	function echarts_3() {
 		// 基于准备好的dom，初始化echarts实例
-		var myChart = echarts.init(document.getElementById('echart5'));
-
-		option = {
-			//  backgroundColor: '#00265f',
-			tooltip: {
-				trigger: 'axis',
-				axisPointer: {
-					type: 'shadow'
-				}
-			},
-
-			grid: {
-				left: '0%',
-				top: '10px',
-				right: '0%',
-				bottom: '2%',
-				containLabel: true
-			},
-			xAxis: [{
-				type: 'category',
-				data: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'],
-				axisLine: {
-					show: true,
-					lineStyle: {
-						color: "rgba(255,255,255,.1)",
-						width: 1,
-						type: "solid"
-					},
-				},
-
-				axisTick: {
-					show: false,
-				},
-				axisLabel: {
-					interval: 0,
-					// rotate:50,
-					show: true,
-					splitNumber: 15,
-					textStyle: {
-						color: "rgba(255,255,255,.6)",
-						fontSize: '12',
-					},
-				},
-			}],
-			yAxis: [{
-				type: 'value',
-				axisLabel: {
-					//formatter: '{value} %'
-					show: true,
-					textStyle: {
-						color: "rgba(255,255,255,.6)",
-						fontSize: '12',
-					},
-				},
-				axisTick: {
-					show: false,
-				},
-				axisLine: {
-					show: true,
-					lineStyle: {
-						color: "rgba(255,255,255,.1	)",
-						width: 1,
-						type: "solid"
-					},
-				},
-				splitLine: {
-					lineStyle: {
-						color: "rgba(255,255,255,.1)",
-					}
-				}
-			}],
-			series: [{
-				type: 'bar',
-				data: [2, 3, 3, 9, 15, 12, 6, 4, 6, 7, 4, 10],
-				barWidth: '35%',
-				//柱子宽度
-				// barGap: 1, //柱子之间间距
-				itemStyle: {
-					normal: {
-						color: '#2f89cf',
-						opacity: 1,
-						barBorderRadius: 5,
-					}
-				}
-			}]
-		};
-
-		// 使用刚指定的配置项和数据显示图表。
-		myChart.setOption(option);
-		window.addEventListener("resize",
-		function() {
-			myChart.resize();
-		});
-	}
-
-	function get_data() {
-		var myChart = echarts.init(document.getElementById('echart4'));
-
-		$.ajax({
-         	type : "GET",
-			async : true,            //异步请求（同步请求将会锁住浏览器，用户其他操作必须等待请求完成才可以执行）
-         	url : "/api/logodata",    //请求发送到Servlet处
-         	dataType : "json",        //返回数据形式为json
-         	success : function(result) {
-				//请求成功时执行该函数内容，result即为服务器返回的json对象
-				if (result) {
-					console.log(result);
-					var data_ai = [];
-					var month = [];
-
-					for(var i=0;i<result.length;i++){
-						data_ai.push(result[i]["yxy_ainum"]);    //挨个取出名称并填入类别数组
-						month.push(result[i]["month"]);
-					}
-					console.log(data_ai);
-					console.log(month);
-
-					myChart.setOption({
-						series: [{
-							name: '医院数',
-							type: 'line',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
-							data: data_ai
-						}]
-					});
-				}
-			},
-			error : function(errorMsg) {
-				//请求失败时执行该函数
-				alert("图表请求数据失败!");
-			}
-    	});
-	}
-	function echarts_4() {
-		// 基于准备好的dom，初始化echarts实例
-		var myChart = echarts.init(document.getElementById('echart4'));
+		var myChart = echarts.init(document.getElementById('echart_3'));
 		var data_ai = [];
-		get_data();
 
 		// ******* 这段请求已成功获取到数据并加载到前端页面，备份此处
 		// $.ajax({
@@ -444,7 +564,7 @@
 				}
 			}],
 			series: [{
-				name: '',
+				name: '实际完成',
 				type: 'bar',
 				barWidth: '35%',
 				// smooth: false,
@@ -480,10 +600,10 @@
 						barBorderRadius: 5,
 					}
 				},
-				data: [3, 4, 3, 4, 3, 4, 3, 6, 2, 4, 2, 4, 3, 4, 3, 4, 3, 4, 3, 6, 2, 4, 2, 4]
+				data: data_ai
 			},
 			{
-				name: '医院数',
+				name: '目标',
 				type: 'line',
 				smooth: true,
 				symbol: 'circle',
@@ -515,7 +635,7 @@
 						borderWidth: 12
 					}
 				},
-				data: data_ai
+				data: [6, 5, 5, 4, 3, 4, 3, 6, 2, 4, 2, 4, 3, 4, 3, 4, 3, 4, 3, 6, 2, 4, 2, 4]
 			},
 			]
 		};
@@ -527,10 +647,34 @@
 			myChart.resize();
 		});
 	}
-
-	function echarts_12() {
+	function echarts_4() {
 		// 基于准备好的dom，初始化echarts实例
-		var myChart = echarts.init(document.getElementById('echart12'));
+		var myChart = echarts.init(document.getElementById('echart_4'));
+		var data_ai = [];
+
+		// ******* 这段请求已成功获取到数据并加载到前端页面，备份此处
+		// $.ajax({
+        //  	type : "get",
+		// 	async : false,            //异步请求（同步请求将会锁住浏览器，用户其他操作必须等待请求完成才可以执行）
+        //  	url : "/api/logodata",    //请求发送到Servlet处
+        //  	dataType : "json",        //返回数据形式为json
+        //  	success : function(result) {
+		// 		//请求成功时执行该函数内容，result即为服务器返回的json对象
+		// 		if (result) {
+		// 			console.log(result);
+		// 			var names = [];
+		// 			for(var i=0;i<result.length;i++){
+		// 				names.push(result[i]["yxy_ainum"]);    //挨个取出名称并填入类别数组
+		// 			}
+		// 			console.log(names);
+		// 			data_ai = names;
+		// 		}
+		// 	},
+		// 	error : function(errorMsg) {
+		// 		//请求失败时执行该函数
+		// 		alert("图表请求数据失败!");
+		// 	}
+    	// });
 
 		option = {
 			tooltip: {
@@ -542,16 +686,16 @@
 				}
 			},
 			// legend: {
-			//     top:'0%',
-			//         data:['安卓','IOS'],
-			//                 textStyle: {
-			//            color: 'rgba(255,255,255,.5)',
-			//             fontSize:'12',
-			//         }
+			// 	top: '0%',
+			// 	data: ['安卓', 'IOS'],
+			// 	textStyle: {
+			// 		color: 'rgba(255,255,255,.5)',
+			// 		fontSize: '12',
+			// 	}
 			// },
 			grid: {
 				left: '10',
-				top: '0',
+				top: '3',
 				right: '10',
 				bottom: '0',
 				containLabel: true
@@ -570,11 +714,8 @@
 					lineStyle: {
 						color: 'rgba(255,255,255,.2)'
 					}
-
 				},
-
-				data: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12']
-
+				data: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '11', '12']
 			},
 			{
 				axisPointer: {
@@ -611,14 +752,14 @@
 				}
 			}],
 			series: [{
-				name: '安卓',
-				type: 'line',
-				smooth: true,
-				symbol: 'circle',
-				symbolSize: 5,
-				showSymbol: false,
+				name: '实际完成',
+				type: 'bar',
+				barWidth: '35%',
+				// smooth: false,
+				// symbol: 'circle',
+				// symbolSize: 4,
+				// showSymbol: true,
 				lineStyle: {
-
 					normal: {
 						color: '#0184d5',
 						width: 2
@@ -639,23 +780,24 @@
 				},
 				itemStyle: {
 					normal: {
-						color: '#0184d5',
-						borderColor: 'rgba(221, 220, 107, .1)',
-						borderWidth: 12
+						// color: '#0184d5',
+						// borderColor: 'rgba(221, 220, 107, .1)',
+						// borderWidth: 12
+						color: '#218435',
+						opacity: 1,
+						barBorderRadius: 5,
 					}
 				},
-				data: [3, 4, 3, 4, 3, 4, 12, 6, 2, 4, 2, 8]
-
+				data: data_ai
 			},
 			{
-				name: 'IOS',
+				name: '目标',
 				type: 'line',
 				smooth: true,
 				symbol: 'circle',
-				symbolSize: 5,
-				showSymbol: false,
+				symbolSize: 8,
+				showSymbol: true,
 				lineStyle: {
-
 					normal: {
 						color: '#00d887',
 						width: 2
@@ -681,12 +823,9 @@
 						borderWidth: 12
 					}
 				},
-				data: [5, 3, 5, 18, 1, 5, 3, 5, 6, 4, 6, 9, 8, 3, 5, 6, 1, 5, 3, 7, 2, 5, 1, 4]
-
+				data: [6, 5, 5, 4, 3, 4, 3, 6, 2, 4, 2, 4, 3, 4, 3, 4, 3, 4, 3, 6, 2, 4, 2, 4]
 			},
-
 			]
-
 		};
 
 		// 使用刚指定的配置项和数据显示图表。
@@ -696,158 +835,153 @@
 			myChart.resize();
 		});
 	}
-	function echarts_6() {
+	function echarts_5() {
 		// 基于准备好的dom，初始化echarts实例
-		var myChart = echarts.init(document.getElementById('echart6'));
+		var myChart = echarts.init(document.getElementById('echart_5'));
+		var data_ai = [];
 
-		var dataStyle = {
-			normal: {
-				label: {
-					show: false
+		option = {
+			//  backgroundColor: '#00265f',
+			tooltip: {
+				trigger: 'axis',
+				axisPointer: {
+					type: 'shadow'
+				}
+			},
+
+			grid: {
+				left: '0%',
+				top: '10px',
+				right: '0%',
+				bottom: '2%',
+				containLabel: true
+			},
+			xAxis: [{
+				type: 'category',
+				data: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'],
+				axisLine: {
+					show: true,
+					lineStyle: {
+						color: "rgba(255,255,255,.1)",
+						width: 1,
+						type: "solid"
+					},
 				},
-				labelLine: {
-					show: false
-				},
-				//shadowBlur: 40,
-				//shadowColor: 'rgba(40, 40, 40, 1)',
-			}
-		};
-		var placeHolderStyle = {
-			normal: {
-				color: 'rgba(255,255,255,.05)',
-				label: {
+
+				axisTick: {
 					show: false,
 				},
-				labelLine: {
-					show: false
+				axisLabel: {
+					interval: 0,
+					// rotate:50,
+					show: true,
+					splitNumber: 15,
+					textStyle: {
+						color: "rgba(255,255,255,.6)",
+						fontSize: '12',
+					},
+				},
+			}],
+			yAxis: [{
+				type: 'value',
+				axisLabel: {
+					//formatter: '{value} %'
+					show: true,
+					textStyle: {
+						color: "rgba(255,255,255,.6)",
+						fontSize: '12',
+					},
+				},
+				axisTick: {
+					show: false,
+				},
+				axisLine: {
+					show: true,
+					lineStyle: {
+						color: "rgba(255,255,255,.1	)",
+						width: 1,
+						type: "solid"
+					},
+				},
+				splitLine: {
+					lineStyle: {
+						color: "rgba(255,255,255,.1)",
+					}
 				}
-			},
-			emphasis: {
-				color: 'rgba(0,0,0,0)'
-			}
-		};
-		option = {
-			color: ['#0f63d6', '#0f78d6', '#0f8cd6', '#0fa0d6', '#0fb4d6'],
-			tooltip: {
-				show: true,
-				formatter: "{a} : {c} "
-			},
-			legend: {
-				itemWidth: 10,
-				itemHeight: 10,
-				itemGap: 12,
-				bottom: '3%',
-
-				data: ['浙江', '上海', '广东', '北京', '深圳'],
-				textStyle: {
-					color: 'rgba(255,255,255,.6)',
-				}
-			},
-
+			}],
 			series: [{
-				name: '浙江',
-				type: 'pie',
-				clockWise: false,
-				center: ['50%', '42%'],
-				radius: ['59%', '70%'],
-				itemStyle: dataStyle,
-				hoverAnimation: false,
-				data: [{
-					value: 80,
-					name: '01'
+				name: '实际完成',
+				type: 'bar',
+				barWidth: '35%',
+				// smooth: false,
+				// symbol: 'circle',
+				// symbolSize: 4,
+				// showSymbol: true,
+				lineStyle: {
+					normal: {
+						color: '#0184d5',
+						width: 2
+					}
 				},
-				{
-					value: 20,
-					name: 'invisible',
-					tooltip: {
-						show: false
-					},
-					itemStyle: placeHolderStyle
-				}]
+				areaStyle: {
+					normal: {
+						color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+							offset: 0,
+							color: 'rgba(1, 132, 213, 0.4)'
+						},
+						{
+							offset: 0.8,
+							color: 'rgba(1, 132, 213, 0.1)'
+						}], false),
+						shadowColor: 'rgba(0, 0, 0, 0.1)',
+					}
+				},
+				itemStyle: {
+					normal: {
+						// color: '#0184d5',
+						// borderColor: 'rgba(221, 220, 107, .1)',
+						// borderWidth: 12
+						color: '#218435',
+						opacity: 1,
+						barBorderRadius: 5,
+					}
+				},
+				data: data_ai
 			},
 			{
-				name: '上海',
-				type: 'pie',
-				clockWise: false,
-				center: ['50%', '42%'],
-				radius: ['49%', '60%'],
-				itemStyle: dataStyle,
-				hoverAnimation: false,
-				data: [{
-					value: 70,
-					name: '02'
+				name: '目标',
+				type: 'line',
+				smooth: true,
+				symbol: 'circle',
+				symbolSize: 8,
+				showSymbol: true,
+				lineStyle: {
+					normal: {
+						color: '#00d887',
+						width: 2
+					}
 				},
-				{
-					value: 30,
-					name: 'invisible',
-					tooltip: {
-						show: false
-					},
-					itemStyle: placeHolderStyle
-				}]
-			},
-			{
-				name: '广东',
-				type: 'pie',
-				clockWise: false,
-				hoverAnimation: false,
-				center: ['50%', '42%'],
-				radius: ['39%', '50%'],
-				itemStyle: dataStyle,
-				data: [{
-					value: 65,
-					name: '03'
+				areaStyle: {
+					normal: {
+						color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+							offset: 0,
+							color: 'rgba(0, 216, 135, 0.4)'
+						},
+						{
+							offset: 0.8,
+							color: 'rgba(0, 216, 135, 0.1)'
+						}], false),
+						shadowColor: 'rgba(0, 0, 0, 0.1)',
+					}
 				},
-				{
-					value: 35,
-					name: 'invisible',
-					tooltip: {
-						show: false
-					},
-					itemStyle: placeHolderStyle
-				}]
-			},
-			{
-				name: '北京',
-				type: 'pie',
-				clockWise: false,
-				hoverAnimation: false,
-				center: ['50%', '42%'],
-				radius: ['29%', '40%'],
-				itemStyle: dataStyle,
-				data: [{
-					value: 60,
-					name: '04'
+				itemStyle: {
+					normal: {
+						color: '#00d887',
+						borderColor: 'rgba(221, 220, 107, .1)',
+						borderWidth: 12
+					}
 				},
-				{
-					value: 40,
-					name: 'invisible',
-					tooltip: {
-						show: false
-					},
-					itemStyle: placeHolderStyle
-				}]
-			},
-			{
-				name: '深圳',
-				type: 'pie',
-				clockWise: false,
-				hoverAnimation: false,
-				center: ['50%', '42%'],
-				radius: ['20%', '30%'],
-				itemStyle: dataStyle,
-				data: [{
-					value: 50,
-					name: '05'
-				},
-				{
-					value: 50,
-					name: 'invisible',
-					tooltip: {
-						show: false
-					},
-					itemStyle: placeHolderStyle
-				}]
+				data: [6, 5, 5, 4, 3, 4, 3, 6, 2, 4, 2, 4, 3, 4, 3, 4, 3, 4, 3, 6, 2, 4, 2, 4]
 			},
 			]
 		};
@@ -859,72 +993,155 @@
 			myChart.resize();
 		});
 	}
-	function echarts_31() {
+
+	function echarts_21() {
 		// 基于准备好的dom，初始化echarts实例
-		var myChart = echarts.init(document.getElementById('fb1'));
+		var myChart = echarts.init(document.getElementById('echart_21'));
+		var data_ai = [];
+
 		option = {
-
-			title: [{
-				text: '存储',
-				left: 'center',
-				textStyle: {
-					color: '#fff',
-					fontSize: '16'
-				}
-
-			}],
+			//  backgroundColor: '#00265f',
 			tooltip: {
-				trigger: 'item',
-				formatter: "{a} <br/>{b}: {c} ({d}%)",
-				position: function(p) { //其中p为当前鼠标的位置
-					return [p[0] + 10, p[1] - 10];
+				trigger: 'axis',
+				axisPointer: {
+					type: 'shadow'
 				}
 			},
-			legend: {
+			grid: {
+				left: '0%',
+				top: '10px',
+				right: '0%',
+				bottom: '4%',
+				containLabel: true
+			},
+			xAxis: [{
+				type: 'category',
+				data: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'],
+				axisLine: {
+					show: true,
+					lineStyle: {
+						color: "rgba(255,255,255,.1)",
+						width: 1,
+						type: "solid"
+					},
+				},
 
-				top: '70%',
-				itemWidth: 10,
-				itemHeight: 10,
-				data: ['1', '2', '3', '4', '5'],
-				textStyle: {
-					color: 'rgba(255,255,255,.5)',
-					fontSize: '12',
+				axisTick: {
+					show: false,
+				},
+				axisLabel: {
+					interval: 0,
+					// rotate:50,
+					show: true,
+					splitNumber: 15,
+					textStyle: {
+						color: "rgba(255,255,255,.6)",
+						fontSize: '12',
+					},
+				},
+			}],
+			yAxis: [{
+				type: 'value',
+				axisLabel: {
+					//formatter: '{value} %'
+					show: true,
+					textStyle: {
+						color: "rgba(255,255,255,.6)",
+						fontSize: '12',
+					},
+				},
+				axisTick: {
+					show: false,
+				},
+				axisLine: {
+					show: true,
+					lineStyle: {
+						color: "rgba(255,255,255,.1	)",
+						width: 1,
+						type: "solid"
+					},
+				},
+				splitLine: {
+					lineStyle: {
+						color: "rgba(255,255,255,.1)",
+					}
 				}
-			},
+			}],
 			series: [{
-				name: '存储',
-				type: 'pie',
-				center: ['50%', '42%'],
-				radius: ['40%', '60%'],
-				color: ['#065aab', '#066eab', '#0682ab', '#0696ab', '#06a0ab', '#06b4ab', '#06c8ab', '#06dcab', '#06f0ab'],
-				label: {
-					show: false
+				name: '实际完成',
+				type: 'bar',
+				barWidth: '35%',
+				// smooth: false,
+				// symbol: 'circle',
+				// symbolSize: 4,
+				// showSymbol: true,
+				lineStyle: {
+					normal: {
+						color: '#0184d5',
+						width: 2
+					}
 				},
-				labelLine: {
-					show: false
+				areaStyle: {
+					normal: {
+						color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+							offset: 0,
+							color: 'rgba(1, 132, 213, 0.4)'
+						},
+						{
+							offset: 0.8,
+							color: 'rgba(1, 132, 213, 0.1)'
+						}], false),
+						shadowColor: 'rgba(0, 0, 0, 0.1)',
+					}
 				},
-				data: [{
-					value: 1,
-					name: '1'
+				itemStyle: {
+					normal: {
+						// color: '#0184d5',
+						// borderColor: 'rgba(221, 220, 107, .1)',
+						// borderWidth: 12
+						color: '#218435',
+						opacity: 1,
+						barBorderRadius: 5,
+					}
 				},
-				{
-					value: 4,
-					name: '2'
+				data: data_ai
+			},
+			{
+				name: '目标',
+				type: 'line',
+				smooth: true,
+				symbol: 'circle',
+				symbolSize: 8,
+				showSymbol: true,
+				lineStyle: {
+					normal: {
+						color: '#00d887',
+						width: 2
+					}
 				},
-				{
-					value: 2,
-					name: '3'
+				areaStyle: {
+					normal: {
+						color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+							offset: 0,
+							color: 'rgba(0, 216, 135, 0.4)'
+						},
+						{
+							offset: 0.8,
+							color: 'rgba(0, 216, 135, 0.1)'
+						}], false),
+						shadowColor: 'rgba(0, 0, 0, 0.1)',
+					}
 				},
-				{
-					value: 2,
-					name: '4'
+				itemStyle: {
+					normal: {
+						color: '#00d887',
+						borderColor: 'rgba(221, 220, 107, .1)',
+						borderWidth: 12
+					}
 				},
-				{
-					value: 1,
-					name: '5'
-				},
-				]
-			}]
+				data: [6, 5, 5, 4, 3, 4, 3, 6, 2, 4, 2, 4, 3, 4, 3, 4, 3, 4, 3, 6, 2, 4, 2, 4]
+			},
+			]
 		};
 
 		// 使用刚指定的配置项和数据显示图表。
@@ -934,76 +1151,154 @@
 			myChart.resize();
 		});
 	}
-	function echarts_32() {
+	function echarts_22() {
 		// 基于准备好的dom，初始化echarts实例
-		var myChart = echarts.init(document.getElementById('fb2'));
+		var myChart = echarts.init(document.getElementById('echart_22'));
+		var data_ai = [];
+
 		option = {
-
-			title: [{
-				text: '医院数',
-				left: 'center',
-				textStyle: {
-					color: '#fff',
-					fontSize: '16'
-				}
-
-			}],
+			//  backgroundColor: '#00265f',
 			tooltip: {
-				trigger: 'item',
-				formatter: "{a} <br/>{b}: {c} ({d}%)",
-				position: function(p) { //其中p为当前鼠标的位置
-					return [p[0] + 10, p[1] - 10];
+				trigger: 'axis',
+				axisPointer: {
+					type: 'shadow'
 				}
 			},
-			legend: {
+			grid: {
+				left: '0%',
+				top: '10px',
+				right: '0%',
+				bottom: '4%',
+				containLabel: true
+			},
+			xAxis: [{
+				type: 'category',
+				data: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'],
+				axisLine: {
+					show: true,
+					lineStyle: {
+						color: "rgba(255,255,255,.1)",
+						width: 1,
+						type: "solid"
+					},
+				},
 
-				top: '70%',
-				itemWidth: 10,
-				itemHeight: 10,
-				data: ['1', '2', '3', '4', '5'],
-				textStyle: {
-					color: 'rgba(255,255,255,.5)',
-					fontSize: '12',
+				axisTick: {
+					show: false,
+				},
+				axisLabel: {
+					interval: 0,
+					// rotate:50,
+					show: true,
+					splitNumber: 15,
+					textStyle: {
+						color: "rgba(255,255,255,.6)",
+						fontSize: '12',
+					},
+				},
+			}],
+			yAxis: [{
+				type: 'value',
+				axisLabel: {
+					//formatter: '{value} %'
+					show: true,
+					textStyle: {
+						color: "rgba(255,255,255,.6)",
+						fontSize: '12',
+					},
+				},
+				axisTick: {
+					show: false,
+				},
+				axisLine: {
+					show: true,
+					lineStyle: {
+						color: "rgba(255,255,255,.1	)",
+						width: 1,
+						type: "solid"
+					},
+				},
+				splitLine: {
+					lineStyle: {
+						color: "rgba(255,255,255,.1)",
+					}
 				}
-			},
+			}],
 			series: [{
-				name: '存储',
-				type: 'pie',
-				center: ['50%', '42%'],
-				radius: ['40%', '60%'],
-				color: ['#065aab', '#066eab', '#0682ab', '#0696ab', '#06a0ab', '#06b4ab', '#06c8ab', '#06dcab', '#06f0ab'],
-				label: {
-					show: false
+				name: '实际完成',
+				type: 'bar',
+				barWidth: '35%',
+				// smooth: false,
+				// symbol: 'circle',
+				// symbolSize: 4,
+				// showSymbol: true,
+				lineStyle: {
+					normal: {
+						color: '#0184d5',
+						width: 2
+					}
 				},
-				labelLine: {
-					show: false
+				areaStyle: {
+					normal: {
+						color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+							offset: 0,
+							color: 'rgba(1, 132, 213, 0.4)'
+						},
+						{
+							offset: 0.8,
+							color: 'rgba(1, 132, 213, 0.1)'
+						}], false),
+						shadowColor: 'rgba(0, 0, 0, 0.1)',
+					}
 				},
-				data: [{
-					value: 5,
-					name: '1'
+				itemStyle: {
+					normal: {
+						// color: '#0184d5',
+						// borderColor: 'rgba(221, 220, 107, .1)',
+						// borderWidth: 12
+						color: '#218435',
+						opacity: 1,
+						barBorderRadius: 5,
+					}
 				},
-				{
-					value: 1,
-					name: '2'
+				data: data_ai
+			},
+			{
+				name: '目标',
+				type: 'line',
+				smooth: true,
+				symbol: 'circle',
+				symbolSize: 8,
+				showSymbol: true,
+				lineStyle: {
+					normal: {
+						color: '#00d887',
+						width: 2
+					}
 				},
-				{
-					value: 6,
-					name: '3'
+				areaStyle: {
+					normal: {
+						color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+							offset: 0,
+							color: 'rgba(0, 216, 135, 0.4)'
+						},
+						{
+							offset: 0.8,
+							color: 'rgba(0, 216, 135, 0.1)'
+						}], false),
+						shadowColor: 'rgba(0, 0, 0, 0.1)',
+					}
 				},
-				{
-					value: 2,
-					name: '4'
+				itemStyle: {
+					normal: {
+						color: '#00d887',
+						borderColor: 'rgba(221, 220, 107, .1)',
+						borderWidth: 12
+					}
 				},
-				{
-					value: 1,
-					name: '5'
-				},
-				{
-					value: 1,
-					name: '6'
-				},
-				]
-			}]
+				data: [6, 5, 5, 4, 3, 4, 3, 6, 2, 4, 2, 4, 3, 4, 3, 4, 3, 4, 3, 6, 2, 4, 2, 4]
+			},
+			]
 		};
 
 		// 使用刚指定的配置项和数据显示图表。
@@ -1013,74 +1308,185 @@
 			myChart.resize();
 		});
 	}
-	function echarts_33() {
+	function echarts_23() {
 		// 基于准备好的dom，初始化echarts实例
-		var myChart = echarts.init(document.getElementById('fb3'));
-		option = {
-			title: [{
-				text: 'AI',
-				left: 'center',
-				textStyle: {
-					color: '#fff',
-					fontSize: '16'
-				}
+		var myChart = echarts.init(document.getElementById('echart_23'));
+		var data_ai = [];
 
-			}],
+		// ******* 这段请求已成功获取到数据并加载到前端页面，备份此处
+		// $.ajax({
+        //  	type : "get",
+		// 	async : false,            //异步请求（同步请求将会锁住浏览器，用户其他操作必须等待请求完成才可以执行）
+        //  	url : "/api/logodata",    //请求发送到Servlet处
+        //  	dataType : "json",        //返回数据形式为json
+        //  	success : function(result) {
+		// 		//请求成功时执行该函数内容，result即为服务器返回的json对象
+		// 		if (result) {
+		// 			console.log(result);
+		// 			var names = [];
+		// 			for(var i=0;i<result.length;i++){
+		// 				names.push(result[i]["yxy_ainum"]);    //挨个取出名称并填入类别数组
+		// 			}
+		// 			console.log(names);
+		// 			data_ai = names;
+		// 		}
+		// 	},
+		// 	error : function(errorMsg) {
+		// 		//请求失败时执行该函数
+		// 		alert("图表请求数据失败!");
+		// 	}
+    	// });
+
+		option = {
 			tooltip: {
-				trigger: 'item',
-				formatter: "{a} <br/>{b}: {c} ({d}%)",
-				position: function(p) { //其中p为当前鼠标的位置
-					return [p[0] + 10, p[1] - 10];
+				trigger: 'axis',
+				axisPointer: {
+					lineStyle: {
+						color: '#dddc6b'
+					}
 				}
 			},
-			legend: {
-				top: '70%',
-				itemWidth: 10,
-				itemHeight: 10,
-				data: ['1', '2', '3', '4', '5'],
-				textStyle: {
-					color: 'rgba(255,255,255,.5)',
-					fontSize: '12',
-				}
+			// legend: {
+			// 	top: '0%',
+			// 	data: ['安卓', 'IOS'],
+			// 	textStyle: {
+			// 		color: 'rgba(255,255,255,.5)',
+			// 		fontSize: '12',
+			// 	}
+			// },
+			grid: {
+				left: '10',
+				top: '3',
+				right: '10',
+				bottom: '0',
+				containLabel: true
 			},
+
+			xAxis: [{
+				type: 'category',
+				boundaryGap: false,
+				axisLabel: {
+					textStyle: {
+						color: "rgba(255,255,255,.6)",
+						fontSize: 12,
+					},
+				},
+				axisLine: {
+					lineStyle: {
+						color: 'rgba(255,255,255,.2)'
+					}
+				},
+				data: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '11', '12']
+			},
+			{
+				axisPointer: {
+					show: false
+				},
+				axisLine: {
+					show: false
+				},
+				position: 'bottom',
+				offset: 20,
+			}],
+
+			yAxis: [{
+				type: 'value',
+				axisTick: {
+					show: false
+				},
+				axisLine: {
+					lineStyle: {
+						color: 'rgba(255,255,255,.1)'
+					}
+				},
+				axisLabel: {
+					textStyle: {
+						color: "rgba(255,255,255,.6)",
+						fontSize: 12,
+					},
+				},
+
+				splitLine: {
+					lineStyle: {
+						color: 'rgba(255,255,255,.1)'
+					}
+				}
+			}],
 			series: [{
-				name: 'AI',
-				type: 'pie',
-				center: ['50%', '42%'],
-				radius: ['40%', '60%'],
-				color: ['#065aab', '#066eab', '#0682ab', '#0696ab', '#06a0ab', '#06b4ab', '#06c8ab', '#06dcab', '#06f0ab'],
-				label: {
-					show: false
+				name: '实际完成',
+				type: 'bar',
+				barWidth: '35%',
+				// smooth: false,
+				// symbol: 'circle',
+				// symbolSize: 4,
+				// showSymbol: true,
+				lineStyle: {
+					normal: {
+						color: '#0184d5',
+						width: 2
+					}
 				},
-				labelLine: {
-					show: false
+				areaStyle: {
+					normal: {
+						color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+							offset: 0,
+							color: 'rgba(1, 132, 213, 0.4)'
+						},
+						{
+							offset: 0.8,
+							color: 'rgba(1, 132, 213, 0.1)'
+						}], false),
+						shadowColor: 'rgba(0, 0, 0, 0.1)',
+					}
 				},
-				data: [{
-					value: 2,
-					name: '1'
+				itemStyle: {
+					normal: {
+						// color: '#0184d5',
+						// borderColor: 'rgba(221, 220, 107, .1)',
+						// borderWidth: 12
+						color: '#218435',
+						opacity: 1,
+						barBorderRadius: 5,
+					}
 				},
-				{
-					value: 3,
-					name: '2'
+				data: data_ai
+			},
+			{
+				name: '目标',
+				type: 'line',
+				smooth: true,
+				symbol: 'circle',
+				symbolSize: 8,
+				showSymbol: true,
+				lineStyle: {
+					normal: {
+						color: '#00d887',
+						width: 2
+					}
 				},
-				{
-					value: 1,
-					name: '3'
+				areaStyle: {
+					normal: {
+						color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+							offset: 0,
+							color: 'rgba(0, 216, 135, 0.4)'
+						},
+						{
+							offset: 0.8,
+							color: 'rgba(0, 216, 135, 0.1)'
+						}], false),
+						shadowColor: 'rgba(0, 0, 0, 0.1)',
+					}
 				},
-				{
-					value: 4,
-					name: '4'
+				itemStyle: {
+					normal: {
+						color: '#00d887',
+						borderColor: 'rgba(221, 220, 107, .1)',
+						borderWidth: 12
+					}
 				},
-				{
-					value: 8,
-					name: '5'
-				},
-				{
-					value: 1,
-					name: '6'
-				},
-				]
-			}]
+				data: [6, 5, 5, 4, 3, 4, 3, 6, 2, 4, 2, 4, 3, 4, 3, 4, 3, 4, 3, 6, 2, 4, 2, 4]
+			},
+			]
 		};
 
 		// 使用刚指定的配置项和数据显示图表。
@@ -1090,5 +1496,350 @@
 			myChart.resize();
 		});
 	}
+	function echarts_24() {
+		// 基于准备好的dom，初始化echarts实例
+		var myChart = echarts.init(document.getElementById('echart_24'));
+		var data_ai = [];
 
+		// ******* 这段请求已成功获取到数据并加载到前端页面，备份此处
+		// $.ajax({
+        //  	type : "get",
+		// 	async : false,            //异步请求（同步请求将会锁住浏览器，用户其他操作必须等待请求完成才可以执行）
+        //  	url : "/api/logodata",    //请求发送到Servlet处
+        //  	dataType : "json",        //返回数据形式为json
+        //  	success : function(result) {
+		// 		//请求成功时执行该函数内容，result即为服务器返回的json对象
+		// 		if (result) {
+		// 			console.log(result);
+		// 			var names = [];
+		// 			for(var i=0;i<result.length;i++){
+		// 				names.push(result[i]["yxy_ainum"]);    //挨个取出名称并填入类别数组
+		// 			}
+		// 			console.log(names);
+		// 			data_ai = names;
+		// 		}
+		// 	},
+		// 	error : function(errorMsg) {
+		// 		//请求失败时执行该函数
+		// 		alert("图表请求数据失败!");
+		// 	}
+    	// });
+
+		option = {
+			tooltip: {
+				trigger: 'axis',
+				axisPointer: {
+					lineStyle: {
+						color: '#dddc6b'
+					}
+				}
+			},
+			// legend: {
+			// 	top: '0%',
+			// 	data: ['安卓', 'IOS'],
+			// 	textStyle: {
+			// 		color: 'rgba(255,255,255,.5)',
+			// 		fontSize: '12',
+			// 	}
+			// },
+			grid: {
+				left: '10',
+				top: '3',
+				right: '10',
+				bottom: '0',
+				containLabel: true
+			},
+
+			xAxis: [{
+				type: 'category',
+				boundaryGap: false,
+				axisLabel: {
+					textStyle: {
+						color: "rgba(255,255,255,.6)",
+						fontSize: 12,
+					},
+				},
+				axisLine: {
+					lineStyle: {
+						color: 'rgba(255,255,255,.2)'
+					}
+				},
+				data: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '11', '12']
+			},
+			{
+				axisPointer: {
+					show: false
+				},
+				axisLine: {
+					show: false
+				},
+				position: 'bottom',
+				offset: 20,
+			}],
+
+			yAxis: [{
+				type: 'value',
+				axisTick: {
+					show: false
+				},
+				axisLine: {
+					lineStyle: {
+						color: 'rgba(255,255,255,.1)'
+					}
+				},
+				axisLabel: {
+					textStyle: {
+						color: "rgba(255,255,255,.6)",
+						fontSize: 12,
+					},
+				},
+
+				splitLine: {
+					lineStyle: {
+						color: 'rgba(255,255,255,.1)'
+					}
+				}
+			}],
+			series: [{
+				name: '实际完成',
+				type: 'bar',
+				barWidth: '35%',
+				// smooth: false,
+				// symbol: 'circle',
+				// symbolSize: 4,
+				// showSymbol: true,
+				lineStyle: {
+					normal: {
+						color: '#0184d5',
+						width: 2
+					}
+				},
+				areaStyle: {
+					normal: {
+						color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+							offset: 0,
+							color: 'rgba(1, 132, 213, 0.4)'
+						},
+						{
+							offset: 0.8,
+							color: 'rgba(1, 132, 213, 0.1)'
+						}], false),
+						shadowColor: 'rgba(0, 0, 0, 0.1)',
+					}
+				},
+				itemStyle: {
+					normal: {
+						// color: '#0184d5',
+						// borderColor: 'rgba(221, 220, 107, .1)',
+						// borderWidth: 12
+						color: '#218435',
+						opacity: 1,
+						barBorderRadius: 5,
+					}
+				},
+				data: data_ai
+			},
+			{
+				name: '目标',
+				type: 'line',
+				smooth: true,
+				symbol: 'circle',
+				symbolSize: 8,
+				showSymbol: true,
+				lineStyle: {
+					normal: {
+						color: '#00d887',
+						width: 2
+					}
+				},
+				areaStyle: {
+					normal: {
+						color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+							offset: 0,
+							color: 'rgba(0, 216, 135, 0.4)'
+						},
+						{
+							offset: 0.8,
+							color: 'rgba(0, 216, 135, 0.1)'
+						}], false),
+						shadowColor: 'rgba(0, 0, 0, 0.1)',
+					}
+				},
+				itemStyle: {
+					normal: {
+						color: '#00d887',
+						borderColor: 'rgba(221, 220, 107, .1)',
+						borderWidth: 12
+					}
+				},
+				data: [6, 5, 5, 4, 3, 4, 3, 6, 2, 4, 2, 4, 3, 4, 3, 4, 3, 4, 3, 6, 2, 4, 2, 4]
+			},
+			]
+		};
+
+		// 使用刚指定的配置项和数据显示图表。
+		myChart.setOption(option);
+		window.addEventListener("resize",
+		function() {
+			myChart.resize();
+		});
+	}
+	function echarts_25() {
+		// 基于准备好的dom，初始化echarts实例
+		var myChart = echarts.init(document.getElementById('echart_25'));
+		var data_ai = [];
+
+		option = {
+			//  backgroundColor: '#00265f',
+			tooltip: {
+				trigger: 'axis',
+				axisPointer: {
+					type: 'shadow'
+				}
+			},
+
+			grid: {
+				left: '0%',
+				top: '10px',
+				right: '0%',
+				bottom: '2%',
+				containLabel: true
+			},
+			xAxis: [{
+				type: 'category',
+				data: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'],
+				axisLine: {
+					show: true,
+					lineStyle: {
+						color: "rgba(255,255,255,.1)",
+						width: 1,
+						type: "solid"
+					},
+				},
+
+				axisTick: {
+					show: false,
+				},
+				axisLabel: {
+					interval: 0,
+					// rotate:50,
+					show: true,
+					splitNumber: 15,
+					textStyle: {
+						color: "rgba(255,255,255,.6)",
+						fontSize: '12',
+					},
+				},
+			}],
+			yAxis: [{
+				type: 'value',
+				axisLabel: {
+					//formatter: '{value} %'
+					show: true,
+					textStyle: {
+						color: "rgba(255,255,255,.6)",
+						fontSize: '12',
+					},
+				},
+				axisTick: {
+					show: false,
+				},
+				axisLine: {
+					show: true,
+					lineStyle: {
+						color: "rgba(255,255,255,.1	)",
+						width: 1,
+						type: "solid"
+					},
+				},
+				splitLine: {
+					lineStyle: {
+						color: "rgba(255,255,255,.1)",
+					}
+				}
+			}],
+			series: [{
+				name: '实际完成',
+				type: 'bar',
+				barWidth: '35%',
+				// smooth: false,
+				// symbol: 'circle',
+				// symbolSize: 4,
+				// showSymbol: true,
+				lineStyle: {
+					normal: {
+						color: '#0184d5',
+						width: 2
+					}
+				},
+				areaStyle: {
+					normal: {
+						color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+							offset: 0,
+							color: 'rgba(1, 132, 213, 0.4)'
+						},
+						{
+							offset: 0.8,
+							color: 'rgba(1, 132, 213, 0.1)'
+						}], false),
+						shadowColor: 'rgba(0, 0, 0, 0.1)',
+					}
+				},
+				itemStyle: {
+					normal: {
+						// color: '#0184d5',
+						// borderColor: 'rgba(221, 220, 107, .1)',
+						// borderWidth: 12
+						color: '#218435',
+						opacity: 1,
+						barBorderRadius: 5,
+					}
+				},
+				data: data_ai
+			},
+			{
+				name: '目标',
+				type: 'line',
+				smooth: true,
+				symbol: 'circle',
+				symbolSize: 8,
+				showSymbol: true,
+				lineStyle: {
+					normal: {
+						color: '#00d887',
+						width: 2
+					}
+				},
+				areaStyle: {
+					normal: {
+						color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+							offset: 0,
+							color: 'rgba(0, 216, 135, 0.4)'
+						},
+						{
+							offset: 0.8,
+							color: 'rgba(0, 216, 135, 0.1)'
+						}], false),
+						shadowColor: 'rgba(0, 0, 0, 0.1)',
+					}
+				},
+				itemStyle: {
+					normal: {
+						color: '#00d887',
+						borderColor: 'rgba(221, 220, 107, .1)',
+						borderWidth: 12
+					}
+				},
+				data: [6, 5, 5, 4, 3, 4, 3, 6, 2, 4, 2, 4, 3, 4, 3, 4, 3, 4, 3, 6, 2, 4, 2, 4]
+			},
+			]
+		};
+
+		// 使用刚指定的配置项和数据显示图表。
+		myChart.setOption(option);
+		window.addEventListener("resize",
+		function() {
+			myChart.resize();
+		});
+	}
 })

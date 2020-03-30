@@ -36423,3 +36423,4 @@
 2 2020-03-29 21:39:55,323 DEBUG {model} http_interceptor.py(20) : request params: [%s]
 2 2020-03-29 21:39:55,346 DEBUG {model} http_interceptor.py(20) : request params: [%s]
 2 2020-03-29 21:39:55,347 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+2 2020-03-30 09:27:50,709 INFO {model} __init__.py(13) : initial app core model
