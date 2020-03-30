@@ -11,9 +11,10 @@
 	echarts_24();
 	echarts_25();
 
-	get_data();
+	get_real_data();
+	get_target_data();
 
-	function get_data() {
+	function get_real_data() {
 		var echart_1 = echarts.init(document.getElementById('echart_1'));
 		var echart_2 = echarts.init(document.getElementById('echart_2'));
 		var echart_3 = echarts.init(document.getElementById('echart_3'));
@@ -28,7 +29,7 @@
 		$.ajax({
          	type : "GET",
 			async : true,            //异步请求（同步请求将会锁住浏览器，用户其他操作必须等待请求完成才可以执行）
-         	url : "/api/logodata",    //请求发送server api
+         	url : "/api/get_real_data",    //请求发送server api
          	dataType : "json",        //返回数据形式为json
          	success : function(result) {
 				//请求成功时执行该函数内容，result即为服务器返回的json对象
@@ -77,14 +78,14 @@
 					echart_2.setOption({
 						series: [{
 							name: '实际完成',
-							type: 'line',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
+							type: 'bar',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
 							data: sxzz_used
 						}]
 					});
 					echart_3.setOption({
 						series: [{
 							name: '实际完成',
-							type: 'line',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
+							type: 'bar',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
 							data: yxy_diagnum
 						}]
 					});
@@ -98,43 +99,175 @@
 					echart_5.setOption({
 						series: [{
 							name: '实际完成',
-							type: 'line',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
+							type: 'bar',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
 							data: yxy_film
 						}]
 					});
 					echart_21.setOption({
 						series: [{
 							name: '实际完成',
-							type: 'line',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
+							type: 'bar',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
 							data: yxy_uv
 						}]
 					});
 					echart_22.setOption({
 						series: [{
 							name: '实际完成',
-							type: 'line',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
-							data: yxy_pv
+							type: 'bar',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
+							data: yxy_daypv
 						}]
 					});
 					echart_23.setOption({
 						series: [{
 							name: '实际完成',
-							type: 'line',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
+							type: 'bar',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
 							data: yxy_oss
 						}]
 					});
 					echart_24.setOption({
 						series: [{
 							name: '实际完成',
-							type: 'line',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
-							data: fjzl_hospital
+							type: 'bar',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
+							data: yxy_ainum
 						}]
 					});
 					echart_25.setOption({
 						series: [{
 							name: '实际完成',
+							type: 'bar',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
+							data: fjzl_hospital
+						}]
+					});
+				}
+			},
+			error : function(errorMsg) {
+				//请求失败时执行该函数
+				alert("图表请求数据失败!");
+			}
+    	});
+	}
+	function get_target_data() {
+		var echart_1 = echarts.init(document.getElementById('echart_1'));
+		var echart_2 = echarts.init(document.getElementById('echart_2'));
+		var echart_3 = echarts.init(document.getElementById('echart_3'));
+		var echart_4 = echarts.init(document.getElementById('echart_4'));
+		var echart_5 = echarts.init(document.getElementById('echart_5'));
+		var echart_21 = echarts.init(document.getElementById('echart_21'));
+		var echart_22 = echarts.init(document.getElementById('echart_22'));
+		var echart_23 = echarts.init(document.getElementById('echart_23'));
+		var echart_24 = echarts.init(document.getElementById('echart_24'));
+		var echart_25 = echarts.init(document.getElementById('echart_25'));
+
+		$.ajax({
+         	type : "GET",
+			async : true,            //异步请求（同步请求将会锁住浏览器，用户其他操作必须等待请求完成才可以执行）
+         	url : "/api/get_target_data",    //请求发送server api
+         	dataType : "json",        //返回数据形式为json
+         	success : function(result) {
+				//请求成功时执行该函数内容，result即为服务器返回的json对象
+				if (result) {
+					console.log(result);
+					var month = [];
+					var datatype = [];
+					var sxzz_num = [];
+					var sxzz_used = [];
+					var yxy_diagnum = [];
+					var yxy_callnum = [];
+					var yxy_film = [];
+					var yxy_uv = [];
+					var yxy_pv = [];
+					var yxy_daypv = [];
+					var yxy_ainum = [];
+					var yxy_oss = [];
+					var fjzl_hospital = [];
+					var yxy_aihospital = [];
+					var yxy_hospital = [];
+
+					for(var i=0;i<result.length;i++){
+						month.push(result[i]["month"]);   //挨个取出名称并填入类别数组
+						sxzz_num.push((result[i]["sxzz_num"]));
+						sxzz_used.push(result[i]["sxzz_used"]);
+						yxy_diagnum.push(result[i]["yxy_diagnum"]);
+						yxy_callnum.push(result[i]["yxy_callnum"]);
+						yxy_film.push(result[i]["yxy_film"]);
+						yxy_uv.push(result[i]["yxy_uv"]);
+						yxy_pv.push(result[i]["yxy_pv"]);
+						yxy_daypv.push(result[i]["yxy_daypv"]);
+						yxy_ainum.push(result[i]["yxy_ainum"]);
+						yxy_oss.push(result[i]["yxy_oss"]);
+						fjzl_hospital.push(result[i]["fjzl_hospital"]);
+						yxy_aihospital.push(result[i]["yxy_aihospital"]);
+						yxy_hospital.push(result[i]["yxy_hospital"]);
+					}
+
+					echart_1.setOption({
+						series: [{
+							name: '目标',
 							type: 'line',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
-							data: yxy_hospital
+							data: sxzz_num
+						}]
+					});
+					echart_2.setOption({
+						series: [{
+							name: '目标',
+							type: 'line', // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
+							data: sxzz_used
+						}]
+					});
+					echart_3.setOption({
+						series: [{
+							name: '目标',
+							type: 'line',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
+							data: yxy_diagnum
+						}]
+					});
+					echart_4.setOption({
+						series: [{
+							name: '目标',
+							type: 'line',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
+							data: yxy_callnum
+						}]
+					});
+					echart_5.setOption({
+						series: [{
+							name: '目标',
+							type: 'line',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
+							data: yxy_film
+						}]
+					});
+					echart_21.setOption({
+						series: [{
+							name: '目标',
+							type: 'line',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
+							data: yxy_uv
+						}]
+					});
+					echart_22.setOption({
+						series: [{
+							name: '目标',
+							type: 'line', // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
+							data: yxy_daypv
+						}]
+					});
+					echart_23.setOption({
+						series: [{
+							name: '目标',
+							type: 'line', // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
+							data: yxy_oss
+						}]
+					});
+					echart_24.setOption({
+						series: [{
+							name: '目标',
+							type: 'line',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
+							data: yxy_ainum
+						}]
+					});
+					echart_25.setOption({
+						series: [{
+							name: '目标',
+							type: 'line',  // line bar pie scatter effectScatter radar(雷达) tree treemap sunburst boxplot candlestick
+							data: fjzl_hospital
 						}]
 					});
 				}
@@ -149,7 +282,10 @@
 	function echarts_1() {
 		// 基于准备好的dom，初始化echarts实例
 		var myChart = echarts.init(document.getElementById('echart_1'));
-		var data_ai = [];
+
+		var real_data = [];
+		var target_data = [];
+
 		option = {
 			//  backgroundColor: '#00265f',
 			tooltip: {
@@ -255,7 +391,7 @@
 						barBorderRadius: 5,
 					}
 				},
-				data: data_ai
+				data: real_data
 			},
 			{
 				name: '目标',
@@ -290,7 +426,7 @@
 						borderWidth: 12
 					}
 				},
-				data: [6, 5, 5, 4, 3, 4, 3, 6, 2, 4, 2, 4, 3, 4, 3, 4, 3, 4, 3, 6, 2, 4, 2, 4]
+				data: target_data
 			},
 			]
 		};
@@ -305,7 +441,8 @@
 	function echarts_2() {
 		// 基于准备好的dom，初始化echarts实例
 		var myChart = echarts.init(document.getElementById('echart_2'));
-		var data_ai = [];
+		var real_data = [];
+		var target_data = [];
 
 		option = {
 			//  backgroundColor: '#00265f',
@@ -412,7 +549,7 @@
 						barBorderRadius: 5,
 					}
 				},
-				data: data_ai
+				data: real_data
 			},
 			{
 				name: '目标',
@@ -447,7 +584,7 @@
 						borderWidth: 12
 					}
 				},
-				data: [6, 5, 5, 4, 3, 4, 3, 6, 2, 4, 2, 4, 3, 4, 3, 4, 3, 4, 3, 6, 2, 4, 2, 4]
+				data: target_data
 			},
 			]
 		};
@@ -462,7 +599,8 @@
 	function echarts_3() {
 		// 基于准备好的dom，初始化echarts实例
 		var myChart = echarts.init(document.getElementById('echart_3'));
-		var data_ai = [];
+		var real_data = [];
+		var target_data = [];
 
 		// ******* 这段请求已成功获取到数据并加载到前端页面，备份此处
 		// $.ajax({
@@ -600,7 +738,7 @@
 						barBorderRadius: 5,
 					}
 				},
-				data: data_ai
+				data: real_data
 			},
 			{
 				name: '目标',
@@ -635,7 +773,7 @@
 						borderWidth: 12
 					}
 				},
-				data: [6, 5, 5, 4, 3, 4, 3, 6, 2, 4, 2, 4, 3, 4, 3, 4, 3, 4, 3, 6, 2, 4, 2, 4]
+				data: target_data
 			},
 			]
 		};
@@ -650,7 +788,8 @@
 	function echarts_4() {
 		// 基于准备好的dom，初始化echarts实例
 		var myChart = echarts.init(document.getElementById('echart_4'));
-		var data_ai = [];
+		var real_data = [];
+		var target_data = [];
 
 		// ******* 这段请求已成功获取到数据并加载到前端页面，备份此处
 		// $.ajax({
@@ -788,7 +927,7 @@
 						barBorderRadius: 5,
 					}
 				},
-				data: data_ai
+				data: real_data
 			},
 			{
 				name: '目标',
@@ -823,7 +962,7 @@
 						borderWidth: 12
 					}
 				},
-				data: [6, 5, 5, 4, 3, 4, 3, 6, 2, 4, 2, 4, 3, 4, 3, 4, 3, 4, 3, 6, 2, 4, 2, 4]
+				data: target_data
 			},
 			]
 		};
@@ -838,7 +977,8 @@
 	function echarts_5() {
 		// 基于准备好的dom，初始化echarts实例
 		var myChart = echarts.init(document.getElementById('echart_5'));
-		var data_ai = [];
+		var real_data = [];
+		var target_data = [];
 
 		option = {
 			//  backgroundColor: '#00265f',
@@ -946,7 +1086,7 @@
 						barBorderRadius: 5,
 					}
 				},
-				data: data_ai
+				data: real_data
 			},
 			{
 				name: '目标',
@@ -981,7 +1121,7 @@
 						borderWidth: 12
 					}
 				},
-				data: [6, 5, 5, 4, 3, 4, 3, 6, 2, 4, 2, 4, 3, 4, 3, 4, 3, 4, 3, 6, 2, 4, 2, 4]
+				data: target_data
 			},
 			]
 		};
@@ -997,7 +1137,8 @@
 	function echarts_21() {
 		// 基于准备好的dom，初始化echarts实例
 		var myChart = echarts.init(document.getElementById('echart_21'));
-		var data_ai = [];
+		var real_data = [];
+		var target_data = [];
 
 		option = {
 			//  backgroundColor: '#00265f',
@@ -1104,7 +1245,7 @@
 						barBorderRadius: 5,
 					}
 				},
-				data: data_ai
+				data: real_data
 			},
 			{
 				name: '目标',
@@ -1139,7 +1280,7 @@
 						borderWidth: 12
 					}
 				},
-				data: [6, 5, 5, 4, 3, 4, 3, 6, 2, 4, 2, 4, 3, 4, 3, 4, 3, 4, 3, 6, 2, 4, 2, 4]
+				data: target_data
 			},
 			]
 		};
@@ -1154,7 +1295,8 @@
 	function echarts_22() {
 		// 基于准备好的dom，初始化echarts实例
 		var myChart = echarts.init(document.getElementById('echart_22'));
-		var data_ai = [];
+		var real_data = [];
+		var target_data = [];
 
 		option = {
 			//  backgroundColor: '#00265f',
@@ -1261,7 +1403,7 @@
 						barBorderRadius: 5,
 					}
 				},
-				data: data_ai
+				data: real_data
 			},
 			{
 				name: '目标',
@@ -1296,7 +1438,7 @@
 						borderWidth: 12
 					}
 				},
-				data: [6, 5, 5, 4, 3, 4, 3, 6, 2, 4, 2, 4, 3, 4, 3, 4, 3, 4, 3, 6, 2, 4, 2, 4]
+				data: target_data
 			},
 			]
 		};
@@ -1311,7 +1453,8 @@
 	function echarts_23() {
 		// 基于准备好的dom，初始化echarts实例
 		var myChart = echarts.init(document.getElementById('echart_23'));
-		var data_ai = [];
+		var real_data = [];
+		var target_data = [];
 
 		// ******* 这段请求已成功获取到数据并加载到前端页面，备份此处
 		// $.ajax({
@@ -1449,7 +1592,7 @@
 						barBorderRadius: 5,
 					}
 				},
-				data: data_ai
+				data: real_data
 			},
 			{
 				name: '目标',
@@ -1484,7 +1627,7 @@
 						borderWidth: 12
 					}
 				},
-				data: [6, 5, 5, 4, 3, 4, 3, 6, 2, 4, 2, 4, 3, 4, 3, 4, 3, 4, 3, 6, 2, 4, 2, 4]
+				data: target_data
 			},
 			]
 		};
@@ -1499,7 +1642,8 @@
 	function echarts_24() {
 		// 基于准备好的dom，初始化echarts实例
 		var myChart = echarts.init(document.getElementById('echart_24'));
-		var data_ai = [];
+		var real_data = [];
+		var target_data = [];
 
 		// ******* 这段请求已成功获取到数据并加载到前端页面，备份此处
 		// $.ajax({
@@ -1637,7 +1781,7 @@
 						barBorderRadius: 5,
 					}
 				},
-				data: data_ai
+				data: real_data
 			},
 			{
 				name: '目标',
@@ -1672,7 +1816,7 @@
 						borderWidth: 12
 					}
 				},
-				data: [6, 5, 5, 4, 3, 4, 3, 6, 2, 4, 2, 4, 3, 4, 3, 4, 3, 4, 3, 6, 2, 4, 2, 4]
+				data: target_data
 			},
 			]
 		};
@@ -1687,7 +1831,8 @@
 	function echarts_25() {
 		// 基于准备好的dom，初始化echarts实例
 		var myChart = echarts.init(document.getElementById('echart_25'));
-		var data_ai = [];
+		var real_data = [];
+		var target_data = [];
 
 		option = {
 			//  backgroundColor: '#00265f',
@@ -1795,7 +1940,7 @@
 						barBorderRadius: 5,
 					}
 				},
-				data: data_ai
+				data: real_data
 			},
 			{
 				name: '目标',
@@ -1830,7 +1975,7 @@
 						borderWidth: 12
 					}
 				},
-				data: [6, 5, 5, 4, 3, 4, 3, 6, 2, 4, 2, 4, 3, 4, 3, 4, 3, 4, 3, 6, 2, 4, 2, 4]
+				data: target_data
 			},
 			]
 		};

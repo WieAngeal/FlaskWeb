@@ -29,9 +29,16 @@ def Response_headers(content):
     resp.headers['Access-Control-Allow-Origin'] = '*'
     return resp
 
-@index.route('/api/logodata', methods=["GET"])
-def logodata():
+@index.route('/api/get_real_data', methods=["GET"])
+def get_real_data():
     obj = ctyxy_service.query_filter_all(datatype='REAL')
+    content = json.dumps(obj)
+    resp = Response_headers(content)
+    return resp
+
+@index.route('/api/get_target_data', methods=["GET"])
+def get_target_data():
+    obj = ctyxy_service.query_filter_all(datatype='TARGET')
     content = json.dumps(obj)
     resp = Response_headers(content)
     return resp

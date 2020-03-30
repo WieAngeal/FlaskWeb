@@ -85,7 +85,7 @@ a:hover {
 	z-index:1;
 }
 .allnav {
-	height:calc(100% - 10px);
+	height:calc(100% - 0px);
 }
 .loading {
 	position:fixed;
@@ -243,7 +243,7 @@ a:hover {
 	font-size:.2rem;
 	color:#fff;
 	text-align:center;
-	line-height:.3rem;
+	line-height:.35rem;
 }
 .boxfoot {
 	position:absolute;
