@@ -12,6 +12,10 @@ TEMPLATE_FOLDER = os.path.join(PROJECT_PATH, "templates")
 STATIC_FOLDER = os.path.join(PROJECT_PATH, "static")
 DEBUG = True  # open debug /or hot restart
 
+# ****** 工程日志配置
+FLASK_LOG_DIR = os.path.join(PROJECT_PATH, "log")
+FLASK_LOG_FILE = "flask.log"
+
 # ****** 上传配置
 UPLOAD_FOLDER = '/tmp/uploads'
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'sql'}

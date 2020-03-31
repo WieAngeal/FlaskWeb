@@ -6,8 +6,27 @@
 # @Software: PyCharm
 import logging
 from logging.handlers import RotatingFileHandler
+from concurrent_log_handler import ConcurrentRotatingFileHandler
+import config
+import os
+
 
 FORMAT_STR = '%(asctime)s %(levelname)s {model} :: %(message)s'
+
+def create_log_file():
+    logdir = config.FLASK_LOG_DIR
+    logfile = config.FLASK_LOG_FILE
+
+    print(logdir + logfile)
+
+    if not os.path.exists(logdir):
+        os.makedirs(logdir)
+
+    if not os.path.isfile(logdir + logfile):
+        with open(logdir + logfile, 'w') as fd:
+            fd.close()
+
+    return logdir + '\\' + logfile
 
 
 class ConsoleLogger(object):
@@ -27,11 +46,12 @@ class ConsoleLogger(object):
         handler.setFormatter(formatter)
         __logger.addHandler(handler)
 
-        # 日志写文件操作
-        logfilehandler = RotatingFileHandler("logs/log.txt", maxBytes=1024 * 1024 * 3, backupCount=2, encoding='UTF-8')
-        formatter = logging.Formatter('2 %(asctime)s %(levelname)s {model} %(filename)s(%(lineno)d) : %(message)s')
-        logfilehandler.setFormatter(formatter)
-        __logger.addHandler(logfilehandler)
+        # 日志写文件操作存在进程占用log失败的问题
+        handler = ConcurrentRotatingFileHandler(create_log_file(), maxBytes=5 * 1024 * 1024, backupCount=10, encoding='utf-8')
+        formatter = logging.Formatter('4 %(asctime)s %(levelname)s {model} %(filename)s(%(lineno)d) : %(message)s')
+        handler.setFormatter(formatter)
+        __logger.addHandler(handler)
+        # __logger.setLevel(logging.INFO)
 
         return __logger
 
@@ -47,10 +67,9 @@ class LoggerFactory(object):
         handler.setFormatter(formatter)
         __logger.addHandler(handler)
 
-        #日志写文件操作
-        logfilehandler = RotatingFileHandler("logs/log.txt", maxBytes=1024 * 1024 * 3, backupCount=2, encoding='UTF-8')
+        handler = ConcurrentRotatingFileHandler(create_log_file(), maxBytes=5 * 1024 * 1024, backupCount=10, encoding='utf-8')
         formatter = logging.Formatter('4 %(asctime)s %(levelname)s {model} %(filename)s(%(lineno)d) : %(message)s')
-        logfilehandler.setFormatter(formatter)
-        __logger.addHandler(logfilehandler)
+        handler.setFormatter(formatter)
+        __logger.addHandler(handler)
 
         return __logger

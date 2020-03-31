@@ -7,7 +7,6 @@
 from flaskapp import db
 from ..common import ConsoleLogger, relative_path, MySQLDataError
 from sqlalchemy import func
-from ..models import Hosinfo
 
 __all__ = ['Persistence', 'Modify', 'Modify2', 'Remove', 'Query', 'Query2']
 
