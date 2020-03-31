@@ -54,7 +54,7 @@
 					for(var i=0;i<result.length;i++){
 						month.push(result[i]["month"]);   //挨个取出名称并填入类别数组
 						sxzz_num.push((result[i]["sxzz_num"]));
-						sxzz_used.push(result[i]["sxzz_used"]);
+						sxzz_used.push(result[i]["sxzz_used"]*100);
 						yxy_diagnum.push(result[i]["yxy_diagnum"]);
 						yxy_callnum.push(result[i]["yxy_callnum"]);
 						yxy_film.push(result[i]["yxy_film"]);
@@ -186,7 +186,7 @@
 					for(var i=0;i<result.length;i++){
 						month.push(result[i]["month"]);   //挨个取出名称并填入类别数组
 						sxzz_num.push((result[i]["sxzz_num"]));
-						sxzz_used.push(result[i]["sxzz_used"]);
+						sxzz_used.push(result[i]["sxzz_used"]*100);
 						yxy_diagnum.push(result[i]["yxy_diagnum"]);
 						yxy_callnum.push(result[i]["yxy_callnum"]);
 						yxy_film.push(result[i]["yxy_film"]);
@@ -450,7 +450,13 @@
 				trigger: 'axis',
 				axisPointer: {
 					type: 'shadow'
-				}
+				},
+				formatter: function(params) {
+				    //设置悬浮图标的显示格式。
+				    var real = params[0];
+				    var target = params[1];
+				    return real.seriesName + ": " + real.data +'%' + '<br>' + target.seriesName + ": " + target.data +'%';
+                }
 			},
 			grid: {
 				left: '0%',
@@ -488,7 +494,7 @@
 			yAxis: [{
 				type: 'value',
 				axisLabel: {
-					//formatter: '{value} %'
+					formatter: '{value} %',
 					show: true,
 					textStyle: {
 						color: "rgba(255,255,255,.6)",
