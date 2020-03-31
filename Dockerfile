@@ -1,4 +1,5 @@
 #FROM docker.pkg.github.com/WieAngeal/mirrors/python36:alpine
+FROM python:3.7
 MAINTAINER WieAngeal <392815095@qq.com>
 
 WORKDIR /WorkCtyxy
