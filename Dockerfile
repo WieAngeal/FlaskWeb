@@ -1,10 +1,10 @@
-FROM docker.pkg.github.com/tomoncle/mirrors/python36:alpine
-MAINTAINER WieAngeal <1123431949@qq.com>
+#FROM docker.pkg.github.com/WieAngeal/mirrors/python36:alpine
+MAINTAINER WieAngeal <392815095@qq.com>
 
-WORKDIR /workspace
-ADD ./ /workspace/flaskapp
+WORKDIR /WorkCtyxy
+ADD ./ /WorkCtyxy/FlaskWeb
 
-RUN pip install -r /workspace/flaskapp/requirements.txt
+RUN pip install -r /WorkCtyxy/FlaskWeb/requirements.txt
 
 EXPOSE 5000
-CMD ["python", "/workspace/flaskapp/bootstrap_app.py"]
+CMD ["python", "/WorkCtyxy/FlaskWeb/bootstrap_app.py"]

@@ -2,5 +2,5 @@
 
 # WieAngeal
 # git config
-git config user.name tom
-git config user.email 1123431949@qq.com
+git config user.name WieAngeal
+git config user.email 392815095@qq.com
