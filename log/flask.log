@@ -1,201 +1,36 @@
-4 2020-03-31 11:38:00,424 INFO {model} __init__.py(17) : initial app models model
-4 2020-03-31 11:38:00,432 INFO {model} __init__.py(13) : initial app core model
-4 2020-03-31 11:38:00,434 INFO {model} __init__.py(15) : initial app services model
-4 2020-03-31 11:38:00,436 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:00,436 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:00,438 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:00,438 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:00,442 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:00,442 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:00,446 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:00,446 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:00,451 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:00,451 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:00,454 INFO {model} __init__.py(22) : initial app views model
-4 2020-03-31 11:38:00,457 INFO {model} __init__.py(53) : register blueprint ycyl success.
-4 2020-03-31 11:38:00,462 INFO {model} __init__.py(53) : register blueprint error success.
-4 2020-03-31 11:38:00,464 INFO {model} __init__.py(53) : register blueprint index success.
-4 2020-03-31 11:38:00,465 INFO {model} __init__.py(53) : register blueprint login success.
-4 2020-03-31 11:38:00,468 INFO {model} __init__.py(53) : register blueprint user success.
-4 2020-03-31 11:38:00,470 INFO {model} __init__.py(53) : register blueprint clazz success.
-4 2020-03-31 11:38:00,473 INFO {model} __init__.py(53) : register blueprint school success.
-4 2020-03-31 11:38:00,474 INFO {model} __init__.py(53) : register blueprint celery success.
-4 2020-03-31 11:38:00,528 DEBUG {model} __init__.py(70) : urls: 
-4 2020-03-31 11:38:00,529 DEBUG {model} __init__.py(72) : /err/unauthorized
-4 2020-03-31 11:38:00,530 DEBUG {model} __init__.py(72) : /api/classes/
-4 2020-03-31 11:38:00,531 DEBUG {model} __init__.py(72) : /err/bad_gateway_timeout
-4 2020-03-31 11:38:00,532 DEBUG {model} __init__.py(72) : /err/bad_request
-4 2020-03-31 11:38:00,533 DEBUG {model} __init__.py(72) : /login
-4 2020-03-31 11:38:00,533 DEBUG {model} __init__.py(72) : /err/forbidden
-4 2020-03-31 11:38:00,534 DEBUG {model} __init__.py(72) : /api/get_target_data
-4 2020-03-31 11:38:00,535 DEBUG {model} __init__.py(72) : /api/users/<user_id>
-4 2020-03-31 11:38:00,536 DEBUG {model} __init__.py(72) : /api/users/
-4 2020-03-31 11:38:00,537 DEBUG {model} __init__.py(72) : /static/<path:filename>
-4 2020-03-31 11:38:00,538 DEBUG {model} __init__.py(72) : /err/not_found
-4 2020-03-31 11:38:00,539 DEBUG {model} __init__.py(72) : /api/schools/
-4 2020-03-31 11:38:00,540 DEBUG {model} __init__.py(72) : /api/classes/<clazz_id>
-4 2020-03-31 11:38:00,540 DEBUG {model} __init__.py(72) : /
-4 2020-03-31 11:38:00,541 DEBUG {model} __init__.py(72) : /api/schools/count
-4 2020-03-31 11:38:00,542 DEBUG {model} __init__.py(72) : /err/bad_gateway
-4 2020-03-31 11:38:00,543 DEBUG {model} __init__.py(72) : /ycyl/api/register
-4 2020-03-31 11:38:00,543 DEBUG {model} __init__.py(72) : /paths
-4 2020-03-31 11:38:00,544 DEBUG {model} __init__.py(72) : /api/schools/<school_id>
-4 2020-03-31 11:38:00,545 DEBUG {model} __init__.py(72) : /ycyl/
-4 2020-03-31 11:38:00,546 DEBUG {model} __init__.py(72) : /api/get_real_data
-4 2020-03-31 11:38:00,547 DEBUG {model} __init__.py(72) : /task/compute
-4 2020-03-31 11:38:00,548 DEBUG {model} __init__.py(72) : /ycyl/api/count
-4 2020-03-31 11:38:00,549 DEBUG {model} __init__.py(72) : /err/service_unavailable
-4 2020-03-31 11:38:00,550 DEBUG {model} __init__.py(72) : /err/server_error
-4 2020-03-31 11:38:00,604 INFO {model} functions.py(29) : [flaskapp] bootstrap init on http://127.0.0.1:5000/. Start used time : 0.45659537315368653 s
-4 2020-03-31 11:38:02,023 INFO {model} __init__.py(17) : initial app models model
-4 2020-03-31 11:38:02,031 INFO {model} __init__.py(13) : initial app core model
-4 2020-03-31 11:38:02,034 INFO {model} __init__.py(15) : initial app services model
-4 2020-03-31 11:38:02,035 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:02,035 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:02,038 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:02,038 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:02,043 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:02,043 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:02,046 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:02,046 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:02,050 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:02,050 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:02,052 INFO {model} __init__.py(22) : initial app views model
-4 2020-03-31 11:38:02,054 INFO {model} __init__.py(53) : register blueprint ycyl success.
-4 2020-03-31 11:38:02,059 INFO {model} __init__.py(53) : register blueprint error success.
-4 2020-03-31 11:38:02,061 INFO {model} __init__.py(53) : register blueprint index success.
-4 2020-03-31 11:38:02,062 INFO {model} __init__.py(53) : register blueprint login success.
-4 2020-03-31 11:38:02,064 INFO {model} __init__.py(53) : register blueprint user success.
-4 2020-03-31 11:38:02,066 INFO {model} __init__.py(53) : register blueprint clazz success.
-4 2020-03-31 11:38:02,069 INFO {model} __init__.py(53) : register blueprint school success.
-4 2020-03-31 11:38:02,071 INFO {model} __init__.py(53) : register blueprint celery success.
-4 2020-03-31 11:38:02,120 DEBUG {model} __init__.py(70) : urls: 
-4 2020-03-31 11:38:02,121 DEBUG {model} __init__.py(72) : /api/get_real_data
-4 2020-03-31 11:38:02,122 DEBUG {model} __init__.py(72) : /api/users/<user_id>
-4 2020-03-31 11:38:02,123 DEBUG {model} __init__.py(72) : /ycyl/
-4 2020-03-31 11:38:02,124 DEBUG {model} __init__.py(72) : /err/unauthorized
-4 2020-03-31 11:38:02,124 DEBUG {model} __init__.py(72) : /api/users/
-4 2020-03-31 11:38:02,125 DEBUG {model} __init__.py(72) : /ycyl/api/count
-4 2020-03-31 11:38:02,126 DEBUG {model} __init__.py(72) : /err/bad_gateway_timeout
-4 2020-03-31 11:38:02,127 DEBUG {model} __init__.py(72) : /api/schools/
-4 2020-03-31 11:38:02,128 DEBUG {model} __init__.py(72) : /err/bad_request
-4 2020-03-31 11:38:02,129 DEBUG {model} __init__.py(72) : /ycyl/api/register
-4 2020-03-31 11:38:02,130 DEBUG {model} __init__.py(72) : /paths
-4 2020-03-31 11:38:02,131 DEBUG {model} __init__.py(72) : /api/schools/<school_id>
-4 2020-03-31 11:38:02,132 DEBUG {model} __init__.py(72) : /err/service_unavailable
-4 2020-03-31 11:38:02,133 DEBUG {model} __init__.py(72) : /api/classes/<clazz_id>
-4 2020-03-31 11:38:02,133 DEBUG {model} __init__.py(72) : /err/forbidden
-4 2020-03-31 11:38:02,134 DEBUG {model} __init__.py(72) : /api/classes/
-4 2020-03-31 11:38:02,135 DEBUG {model} __init__.py(72) : /err/server_error
-4 2020-03-31 11:38:02,136 DEBUG {model} __init__.py(72) : /api/schools/count
-4 2020-03-31 11:38:02,137 DEBUG {model} __init__.py(72) : /
-4 2020-03-31 11:38:02,138 DEBUG {model} __init__.py(72) : /api/get_target_data
-4 2020-03-31 11:38:02,139 DEBUG {model} __init__.py(72) : /static/<path:filename>
-4 2020-03-31 11:38:02,139 DEBUG {model} __init__.py(72) : /err/bad_gateway
-4 2020-03-31 11:38:02,140 DEBUG {model} __init__.py(72) : /login
-4 2020-03-31 11:38:02,141 DEBUG {model} __init__.py(72) : /err/not_found
-4 2020-03-31 11:38:02,142 DEBUG {model} __init__.py(72) : /task/compute
-4 2020-03-31 11:38:02,195 INFO {model} functions.py(29) : [flaskapp] bootstrap init on http://127.0.0.1:5000/. Start used time : 0.42569727897644044 s
-4 2020-03-31 11:38:46,401 INFO {model} __init__.py(17) : initial app models model
-4 2020-03-31 11:38:46,409 INFO {model} __init__.py(13) : initial app core model
-4 2020-03-31 11:38:46,411 INFO {model} __init__.py(15) : initial app services model
-4 2020-03-31 11:38:46,413 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:46,413 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:46,415 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:46,415 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:46,419 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:46,419 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:46,421 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:46,421 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:46,427 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:46,427 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:46,430 INFO {model} __init__.py(22) : initial app views model
-4 2020-03-31 11:38:46,432 INFO {model} __init__.py(53) : register blueprint ycyl success.
-4 2020-03-31 11:38:46,436 INFO {model} __init__.py(53) : register blueprint error success.
-4 2020-03-31 11:38:46,438 INFO {model} __init__.py(53) : register blueprint index success.
-4 2020-03-31 11:38:46,439 INFO {model} __init__.py(53) : register blueprint login success.
-4 2020-03-31 11:38:46,442 INFO {model} __init__.py(53) : register blueprint user success.
-4 2020-03-31 11:38:46,444 INFO {model} __init__.py(53) : register blueprint clazz success.
-4 2020-03-31 11:38:46,447 INFO {model} __init__.py(53) : register blueprint school success.
-4 2020-03-31 11:38:46,449 INFO {model} __init__.py(53) : register blueprint celery success.
-4 2020-03-31 11:38:46,499 DEBUG {model} __init__.py(70) : urls: 
-4 2020-03-31 11:38:46,501 DEBUG {model} __init__.py(72) : /api/get_target_data
-4 2020-03-31 11:38:46,502 DEBUG {model} __init__.py(72) : /err/bad_request
-4 2020-03-31 11:38:46,503 DEBUG {model} __init__.py(72) : /err/unauthorized
-4 2020-03-31 11:38:46,504 DEBUG {model} __init__.py(72) : /err/server_error
-4 2020-03-31 11:38:46,505 DEBUG {model} __init__.py(72) : /task/compute
-4 2020-03-31 11:38:46,506 DEBUG {model} __init__.py(72) : /err/service_unavailable
-4 2020-03-31 11:38:46,506 DEBUG {model} __init__.py(72) : /paths
-4 2020-03-31 11:38:46,507 DEBUG {model} __init__.py(72) : /ycyl/api/count
-4 2020-03-31 11:38:46,508 DEBUG {model} __init__.py(72) : /api/users/
-4 2020-03-31 11:38:46,510 DEBUG {model} __init__.py(72) : /api/classes/
-4 2020-03-31 11:38:46,510 DEBUG {model} __init__.py(72) : /err/not_found
-4 2020-03-31 11:38:46,511 DEBUG {model} __init__.py(72) : /ycyl/api/register
-4 2020-03-31 11:38:46,512 DEBUG {model} __init__.py(72) : /ycyl/
-4 2020-03-31 11:38:46,513 DEBUG {model} __init__.py(72) : /static/<path:filename>
-4 2020-03-31 11:38:46,514 DEBUG {model} __init__.py(72) : /err/bad_gateway_timeout
-4 2020-03-31 11:38:46,515 DEBUG {model} __init__.py(72) : /api/classes/<clazz_id>
-4 2020-03-31 11:38:46,516 DEBUG {model} __init__.py(72) : /api/schools/<school_id>
-4 2020-03-31 11:38:46,518 DEBUG {model} __init__.py(72) : /
-4 2020-03-31 11:38:46,519 DEBUG {model} __init__.py(72) : /login
-4 2020-03-31 11:38:46,520 DEBUG {model} __init__.py(72) : /api/schools/count
-4 2020-03-31 11:38:46,523 DEBUG {model} __init__.py(72) : /err/forbidden
-4 2020-03-31 11:38:46,524 DEBUG {model} __init__.py(72) : /api/get_real_data
-4 2020-03-31 11:38:46,525 DEBUG {model} __init__.py(72) : /api/schools/
-4 2020-03-31 11:38:46,526 DEBUG {model} __init__.py(72) : /api/users/<user_id>
-4 2020-03-31 11:38:46,527 DEBUG {model} __init__.py(72) : /err/bad_gateway
-4 2020-03-31 11:38:46,580 INFO {model} functions.py(29) : [flaskapp] bootstrap init on http://127.0.0.1:5000/. Start used time : 0.43268389701843263 s
-4 2020-03-31 11:38:51,579 INFO {model} __init__.py(17) : initial app models model
-4 2020-03-31 11:38:51,587 INFO {model} __init__.py(13) : initial app core model
-4 2020-03-31 11:38:51,589 INFO {model} __init__.py(15) : initial app services model
-4 2020-03-31 11:38:51,590 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:51,590 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:51,593 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:51,593 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:51,596 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:51,596 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:51,599 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:51,599 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:51,604 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:51,604 INFO {model} database.py(128) : init Query
-4 2020-03-31 11:38:51,606 INFO {model} __init__.py(22) : initial app views model
-4 2020-03-31 11:38:51,609 INFO {model} __init__.py(53) : register blueprint ycyl success.
-4 2020-03-31 11:38:51,613 INFO {model} __init__.py(53) : register blueprint error success.
-4 2020-03-31 11:38:51,615 INFO {model} __init__.py(53) : register blueprint index success.
-4 2020-03-31 11:38:51,616 INFO {model} __init__.py(53) : register blueprint login success.
-4 2020-03-31 11:38:51,619 INFO {model} __init__.py(53) : register blueprint user success.
-4 2020-03-31 11:38:51,621 INFO {model} __init__.py(53) : register blueprint clazz success.
-4 2020-03-31 11:38:51,624 INFO {model} __init__.py(53) : register blueprint school success.
-4 2020-03-31 11:38:51,626 INFO {model} __init__.py(53) : register blueprint celery success.
-4 2020-03-31 11:38:51,681 DEBUG {model} __init__.py(70) : urls: 
-4 2020-03-31 11:38:51,682 DEBUG {model} __init__.py(72) : /api/schools/count
-4 2020-03-31 11:38:51,683 DEBUG {model} __init__.py(72) : /login
-4 2020-03-31 11:38:51,684 DEBUG {model} __init__.py(72) : /ycyl/
-4 2020-03-31 11:38:51,685 DEBUG {model} __init__.py(72) : /api/get_target_data
-4 2020-03-31 11:38:51,686 DEBUG {model} __init__.py(72) : /err/service_unavailable
-4 2020-03-31 11:38:51,687 DEBUG {model} __init__.py(72) : /
-4 2020-03-31 11:38:51,687 DEBUG {model} __init__.py(72) : /api/users/
-4 2020-03-31 11:38:51,688 DEBUG {model} __init__.py(72) : /api/schools/<school_id>
-4 2020-03-31 11:38:51,689 DEBUG {model} __init__.py(72) : /api/classes/<clazz_id>
-4 2020-03-31 11:38:51,691 DEBUG {model} __init__.py(72) : /ycyl/api/register
-4 2020-03-31 11:38:51,692 DEBUG {model} __init__.py(72) : /err/not_found
-4 2020-03-31 11:38:51,693 DEBUG {model} __init__.py(72) : /err/forbidden
-4 2020-03-31 11:38:51,694 DEBUG {model} __init__.py(72) : /static/<path:filename>
-4 2020-03-31 11:38:51,695 DEBUG {model} __init__.py(72) : /api/classes/
-4 2020-03-31 11:38:51,695 DEBUG {model} __init__.py(72) : /api/users/<user_id>
-4 2020-03-31 11:38:51,696 DEBUG {model} __init__.py(72) : /err/server_error
-4 2020-03-31 11:38:51,697 DEBUG {model} __init__.py(72) : /paths
-4 2020-03-31 11:38:51,698 DEBUG {model} __init__.py(72) : /task/compute
-4 2020-03-31 11:38:51,698 DEBUG {model} __init__.py(72) : /api/schools/
-4 2020-03-31 11:38:51,699 DEBUG {model} __init__.py(72) : /ycyl/api/count
-4 2020-03-31 11:38:51,700 DEBUG {model} __init__.py(72) : /api/get_real_data
-4 2020-03-31 11:38:51,701 DEBUG {model} __init__.py(72) : /err/bad_request
-4 2020-03-31 11:38:51,702 DEBUG {model} __init__.py(72) : /err/bad_gateway_timeout
-4 2020-03-31 11:38:51,703 DEBUG {model} __init__.py(72) : /err/bad_gateway
-4 2020-03-31 11:38:51,704 DEBUG {model} __init__.py(72) : /err/unauthorized
-4 2020-03-31 11:38:51,759 INFO {model} functions.py(29) : [flaskapp] bootstrap init on http://127.0.0.1:5000/. Start used time : 0.47260541915893556 s
-4 2020-03-31 11:39:32,819 DEBUG {model} http_interceptor.py(20) : request params: [%s]
-4 2020-03-31 11:39:32,971 DEBUG {model} http_interceptor.py(20) : request params: [%s]
-4 2020-03-31 11:39:33,121 DEBUG {model} http_interceptor.py(20) : request params: [%s]
-4 2020-03-31 11:39:33,122 DEBUG {model} http_interceptor.py(20) : request params: [%s]
-4 2020-03-31 11:39:33,261 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-04-03 14:22:46,691 INFO {model} __init__.py(22) : initial app views model
+4 2020-04-03 14:22:46,694 INFO {model} __init__.py(53) : register blueprint ycyl success.
+4 2020-04-03 14:22:46,697 INFO {model} __init__.py(53) : register blueprint error success.
+4 2020-04-03 14:22:46,700 INFO {model} __init__.py(53) : register blueprint index success.
+4 2020-04-03 14:22:46,702 INFO {model} __init__.py(53) : register blueprint login success.
+4 2020-04-03 14:22:46,704 INFO {model} __init__.py(53) : register blueprint user success.
+4 2020-04-03 14:22:46,706 INFO {model} __init__.py(53) : register blueprint clazz success.
+4 2020-04-03 14:22:46,708 INFO {model} __init__.py(53) : register blueprint school success.
+4 2020-04-03 14:22:46,710 INFO {model} __init__.py(53) : register blueprint celery success.
+4 2020-04-03 14:22:46,778 DEBUG {model} __init__.py(70) : urls: 
+4 2020-04-03 14:22:46,780 DEBUG {model} __init__.py(72) : /err/unauthorized
+4 2020-04-03 14:22:46,781 DEBUG {model} __init__.py(72) : /api/schools/count
+4 2020-04-03 14:22:46,782 DEBUG {model} __init__.py(72) : /err/bad_request
+4 2020-04-03 14:22:46,783 DEBUG {model} __init__.py(72) : /api/users/<user_id>
+4 2020-04-03 14:22:46,783 DEBUG {model} __init__.py(72) : /api/users/
+4 2020-04-03 14:22:46,784 DEBUG {model} __init__.py(72) : /paths
+4 2020-04-03 14:22:46,785 DEBUG {model} __init__.py(72) : /login
+4 2020-04-03 14:22:46,786 DEBUG {model} __init__.py(72) : /
+4 2020-04-03 14:22:46,787 DEBUG {model} __init__.py(72) : /ycyl/api/count
+4 2020-04-03 14:22:46,787 DEBUG {model} __init__.py(72) : /api/classes/
+4 2020-04-03 14:22:46,788 DEBUG {model} __init__.py(72) : /err/server_error
+4 2020-04-03 14:22:46,789 DEBUG {model} __init__.py(72) : /api/classes/<clazz_id>
+4 2020-04-03 14:22:46,790 DEBUG {model} __init__.py(72) : /err/service_unavailable
+4 2020-04-03 14:22:46,791 DEBUG {model} __init__.py(72) : /ycyl/
+4 2020-04-03 14:22:46,792 DEBUG {model} __init__.py(72) : /err/bad_gateway_timeout
+4 2020-04-03 14:22:46,793 DEBUG {model} __init__.py(72) : /api/get_target_data
+4 2020-04-03 14:22:46,794 DEBUG {model} __init__.py(72) : /static/<path:filename>
+4 2020-04-03 14:22:46,795 DEBUG {model} __init__.py(72) : /err/not_found
+4 2020-04-03 14:22:46,795 DEBUG {model} __init__.py(72) : /api/schools/
+4 2020-04-03 14:22:46,796 DEBUG {model} __init__.py(72) : /task/compute
+4 2020-04-03 14:22:46,797 DEBUG {model} __init__.py(72) : /err/bad_gateway
+4 2020-04-03 14:22:46,798 DEBUG {model} __init__.py(72) : /api/get_real_data
+4 2020-04-03 14:22:46,799 DEBUG {model} __init__.py(72) : /ycyl/api/register
+4 2020-04-03 14:22:46,800 DEBUG {model} __init__.py(72) : /err/forbidden
+4 2020-04-03 14:22:46,801 DEBUG {model} __init__.py(72) : /api/schools/<school_id>
+4 2020-04-03 14:22:46,854 INFO {model} functions.py(29) : [flaskapp] bootstrap init on http://0.0.0.0:5000/. Start used time : 0.5639254570007324 s

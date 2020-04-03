@@ -36,13 +36,14 @@ def send_mail(title, to, cc=None, body=None, msg_html=None, attachfiles=None):
     if (msg_html is not None):
         msg.html = msg_html.format( time=datetime.utcnow)
 
-    for att_file in attachfiles:
-        file_name = os.path.basename(att_file).join('')
+    if(attachfiles is not None):
+        for att_file in attachfiles:
+            file_name = os.path.basename(att_file).join('')
 
-        with current_app.open_resource(att_file) as fp:
-            msg.attach(str(file_name),
-                       app.config['MIME_TYPE'][os.path.splitext(att_file)[1]],
-                       fp.read())
+            with current_app.open_resource(att_file) as fp:
+                msg.attach(str(file_name),
+                           app.config['MIME_TYPE'][os.path.splitext(att_file)[1]],
+                           fp.read())
 
     thread = Thread(target=send_async_email, args=[app, msg])
     thread.start()

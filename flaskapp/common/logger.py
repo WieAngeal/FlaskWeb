@@ -16,17 +16,16 @@ FORMAT_STR = '%(asctime)s %(levelname)s {model} :: %(message)s'
 def create_log_file():
     logdir = config.FLASK_LOG_DIR
     logfile = config.FLASK_LOG_FILE
-
-    print(logdir + logfile)
+	
+    filename = logdir + '/' + logfile
 
     if not os.path.exists(logdir):
         os.makedirs(logdir)
 
     if not os.path.isfile(logdir + logfile):
-        with open(logdir + logfile, 'w') as fd:
+        with open(filename, 'w') as fd:
             fd.close()
-
-    return logdir + '\\' + logfile
+    return filename
 
 
 class ConsoleLogger(object):

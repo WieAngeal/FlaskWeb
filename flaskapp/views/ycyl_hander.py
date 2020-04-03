@@ -42,10 +42,13 @@ def register():
                                     <p>我在门后 假装你人还没走</p>
                                     <p>旧地如重游月 圆更寂寞
                                     <p>夜半清醒的烛火 不忍苛责我</p>''',
-                        attachfiles=Attachments
+                        attachfiles=None
                         )
 
-        hosinfo['id'] = ycyl_service.max(Hosinfo.id) + 1
+        id = ycyl_service.max(Hosinfo.id)
+        if (id is None):
+            id = 0
+        hosinfo['id'] = id + 1
         obj = ycyl_service.save(Hosinfo(**hosinfo))
 
         return make_response(data=obj.json())
