@@ -6,10 +6,9 @@ MAINTAINER WieAngeal <392815095@qq.com>
 
 WORKDIR /WorkCtyxy
 ADD ./ /WorkCtyxy/FlaskWeb
-#RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple --upgrade pip
+RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple --upgrade pip
 #RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r /WorkCtyxy/FlaskWeb/requirements.txt
 
-RUN pip install --upgrade pip
 RUN pip install -r /WorkCtyxy/FlaskWeb/requirements.txt
 
 
