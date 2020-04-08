@@ -14,15 +14,12 @@ import os
 FORMAT_STR = '%(asctime)s %(levelname)s {model} :: %(message)s'
 
 def create_log_file():
-    logdir = config.FLASK_LOG_DIR
-    logfile = config.FLASK_LOG_FILE
-	
-    filename = logdir + '/' + logfile
+    filename = config.FLASK_LOG_DIR + '/' + config.FLASK_LOG_FILE
 
-    if not os.path.exists(logdir):
-        os.makedirs(logdir)
+    if not os.path.exists(config.FLASK_LOG_DIR):
+        os.makedirs(config.FLASK_LOG_DIR)
 
-    if not os.path.isfile(logdir + logfile):
+    if not os.path.isfile(filename):
         with open(filename, 'w') as fd:
             fd.close()
     return filename
