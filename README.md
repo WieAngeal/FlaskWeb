@@ -10,7 +10,7 @@
 * 配置拦截器，异常自动解析(web请求返回错误页面，curl请求返回错误json)
 * 拓展flask内置函数，支持环境变量
 * 集成celery框架异步处理
-* 支持docker构建
+* 支持docker构建，阿里云DockerHub自动更新GitHub代码构建
 * flask jinja2模板示例
 * swagger api文档配置
 * 等等
