@@ -14,6 +14,7 @@ class UserService(DBService):
         super(UserService, self).__init__(model=User)
 
 
+
 class ClazzService(DBService):
     def __init__(self):
         super(ClazzService, self).__init__(model=Clazz)

@@ -5,23 +5,25 @@
 # @File    : ycyl_hander.py
 # @Software: PyCharm
 
-from flask import Blueprint, flash, render_template
+from flask import Blueprint, flash, render_template, session, redirect, request
 from ..common import (ConsoleLogger, make_response, HttpError,
                       relative_path, multi_dict_parser2dict)
 from flask import request
 from ..models import Hosinfo
 from ..services import DBService
-from ..common import email
+from ..common import email, auth
 import ast
+
 
 logger = ConsoleLogger(relative_path(__file__))
 ycyl_service = DBService(model=Hosinfo)
 ycyl = Blueprint('ycyl', __name__, url_prefix='/ycyl')
 
-
 @ycyl.route('/', methods=["GET", "POST"])
 def home():
-    return render_template("ycyl.html")
+    token = request.args.get('token')
+    user = auth.verify_auth_token(token)['username']
+    return render_template("ctyxy.html", user=user)
 
 
 @ycyl.route('/api/register', methods=["POST"])

@@ -15,6 +15,7 @@ DEBUG = True  # open debug /or hot restart
 # ****** 工程日志配置
 FLASK_LOG_DIR = os.path.join(PROJECT_PATH, "log")
 FLASK_LOG_FILE = "flask.log"
+FLASK_LOG_SIZE = 2  #2MB
 
 # ****** 上传配置
 UPLOAD_FOLDER = '/tmp/uploads'

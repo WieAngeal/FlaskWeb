@@ -43,7 +43,7 @@ class ConsoleLogger(object):
         __logger.addHandler(handler)
 
         # 日志写文件操作存在进程占用log失败的问题
-        handler = ConcurrentRotatingFileHandler(create_log_file(), maxBytes=5 * 1024 * 1024, backupCount=10, encoding='utf-8')
+        handler = ConcurrentRotatingFileHandler(create_log_file(), maxBytes=config.FLASK_LOG_SIZE * 1024 * 1024, backupCount=10, encoding='utf-8')
         formatter = logging.Formatter('4 %(asctime)s %(levelname)s {model} %(filename)s(%(lineno)d) : %(message)s')
         handler.setFormatter(formatter)
         __logger.addHandler(handler)
@@ -63,7 +63,7 @@ class LoggerFactory(object):
         handler.setFormatter(formatter)
         __logger.addHandler(handler)
 
-        handler = ConcurrentRotatingFileHandler(create_log_file(), maxBytes=5 * 1024 * 1024, backupCount=10, encoding='utf-8')
+        handler = ConcurrentRotatingFileHandler(create_log_file(), maxBytes=config.FLASK_LOG_SIZE * 1024 * 1024, backupCount=10, encoding='utf-8')
         formatter = logging.Formatter('4 %(asctime)s %(levelname)s {model} %(filename)s(%(lineno)d) : %(message)s')
         handler.setFormatter(formatter)
         __logger.addHandler(handler)

@@ -75,8 +75,8 @@ def not_fund(e):
     return render_template("404.html", err=e)
 
 
-@app.route('/login', methods=["GET","POST"])
-def login():
+@app.route('/login_test', methods=["GET","POST"])
+def login_test():
     if request.method == "GET":
         return render_template("index.html")
 

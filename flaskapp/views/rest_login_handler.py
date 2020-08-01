@@ -11,11 +11,11 @@ from flask import Blueprint, render_template, request, flash
 from ..common import ConsoleLogger, relative_path
 
 
-login = Blueprint('login', __name__)
+login_test = Blueprint('login_test', __name__, url_prefix='/login_test')
 
 logger = ConsoleLogger(relative_path(__file__))
 
-@login.route('/login', methods=["POST"])
+@login_test.route('/login', methods=["POST"])
 def login_func():
     form = request.form
     username = form.get('username')

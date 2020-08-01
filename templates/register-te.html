@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>章果科技数据中台用户注册</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" /> 
+
+	<link rel="stylesheet" type="text/css" href="/static/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/font/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/font/iconic/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/util.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/main.css">
+</head>
+
+<body>
+
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('/static/img/login_bg.jpg');">
+			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+				<!--form  class="login100-form validate-form"-->
+					<span class="login100-form-title p-b-49">用户注册</span>
+
+					<div class="wrap-input100 validate-input m-b-23" data-validate="请输入昵称">
+						<span class="label-input100">昵称</span>
+						<input class="input100" type="text" name="username" id="username" placeholder="请设置昵称" autocomplete="off">
+						<span class="focus-input100" data-symbol="&#xf206;"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="请输入密码">
+						<span class="label-input100">密码</span>
+						<input class="input100" type="password" name="password" id="password" placeholder="请输入密码">
+						<span class="focus-input100" data-symbol="&#xf190;"></span>
+					</div>
+
+                    <div class="wrap-input100 validate-input" data-validate="请再次输入密码">
+						<span class="label-input100">确认密码</span>
+						<input class="input100" type="password" name="againpswd" id="againpswd" placeholder="请再次输入密码">
+						<span class="focus-input100" data-symbol="&#xf190;"></span>
+					</div>
+
+                    <div class="wrap-input100 validate-input" data-validate="请输入密码">
+						<span class="label-input100">手机</span>
+						<input class="input100" type="tel" name="telphone" id="telphone" placeholder="请输入手机号">
+						<span class="focus-input100" data-symbol="&#xf202;"></span>
+					</div>
+
+					<div class="text-right p-t-8 p-b-31">
+						<a class="txt1"> </a>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button class="login100-form-btn" onclick="testdes()">注  册</button>
+						</div>
+					</div>
+
+					<div class="flex-col-c p-t-25">
+						<a href="/" class="txt2">返回登录</a>
+					</div>
+				<!--/form-->
+			</div>
+		</div>
+	</div>
+
+	<script src="/static/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="/static/js/main.js"></script>
+    <script src="/static/js/crypto/crypto-js.js"></script>
+</body>
+
+</html>
+
+<script type="text/javascript" charset="utf-8">
+    //判断密码是否符合格式要求
+    function isValidPwd(test){
+        var level = 0;
+        if(test.match(/([a-z])+/)){
+            level = level +1;
+        }
+        if(test.match(/([0-9])+/)){
+            level = level +1;
+        }
+        if(test.match(/([A-Z])+/)){
+            level = level +1;
+        }
+        if(test.match(/[^a-zA-Z0-9]+/)){
+            level = level +1;
+        }
+        if(level < 3){
+            return false;
+        }else{
+            return true;
+        }
+    }
+
+    function getLevel(s){
+        var level = 0;
+        if(s.match(/([a-z])+/)){
+            level++;
+        }
+        if(s.match(/([0-9])+/)){
+            level++;
+        }
+        if(s.match(/([A-Z])+/)){
+            level++;
+        }
+        if(s.match(/[^a-zA-Z0-9]+/)){
+            level++;
+        }
+        var strength ="";
+        if(level == 1){
+            strength = "弱";
+        }else if(level == 2){
+            strength = "中";
+        }else if(level == 3){
+            strength = "强";
+        }else if(level == 4){
+            strength = "极强";
+        }
+        return strength;
+    }
+
+
+    function register() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        var telphone = document.getElementById("telphone").value;
+        var againpswd = document.getElementById("againpswd").value;
+
+        var phoneReg=/1[3-9]+\d{9}/;
+
+        if(!username || username == ''){
+            alert("请输入昵称！");
+            $("#username").focus();
+            return false;
+        }
+
+        if(!telphone || $.trim(telphone) == ''){
+            alert("手机号码不能为空！");
+            $("#telphone").focus();
+            return false;
+        }
+
+        if(!phoneReg.test(telphone)){
+            alert("请输入正确的手机号码格式！");
+            $("#telphone").focus();
+            return false;
+        }
+
+        if(!password || password == ''){
+            alert("请输入密码！");
+            $("#password").focus();
+            return false;
+        }
+        if(!againpswd || againpswd == ''){
+            alert("请输入确认密码！");
+            $("#againpswd").focus();
+            return false;
+        }
+
+        if (password.length <8) {
+            alert("请输入8-14位数字、字母(区分大小写)及特殊字符组合的密码!");
+            $('#password').val("");
+            $('#againpswd').val("");
+            $("#password").focus();
+            return false;
+        }
+        if (password.length >14) {
+            alert("请输入8-14位数字、字母(区分大小写)及特殊字符组合的密码!");
+            $('#password').val("");
+            $('#againpswd').val("");
+            $("#password").focus();
+            return false;
+        }
+
+        var flag = isValidPwd($("#password").val());
+        if(!flag){
+            alert("请输入8-14位数字、字母(区分大小写)及特殊字符组合的密码!");
+            return false;
+        }
+
+        if(password != againpswd){
+            alert("两次输入密码不一致！");
+            $("#password").val("");
+            $("#againpswd").val("");
+            $("#againpswd").focus();
+            return false;
+        }
+
+        var password = "Admin@120";
+        //var timeCode = (Date.parse(new Date()))/1000;
+        var timeCode = CryptoJS.enc.Utf8.parse(key);
+
+        var ss = encryptByDES(timeCode,password);
+        console.log(ss);
+
+		var encodePwd = DES3.encrypt(timeCode,password);
+
+        var data= {
+            data: JSON.stringify({
+                username: username,
+                password: encodePwd,
+                telphone: telphone,
+                timecode: timeCode
+            }),
+        };
+
+        $.ajax({
+            type: "POST",
+            url: "/api/login/register",
+            dataType: "json",
+            data: data,
+            contentType: "application/x-www-form-urlencoded",
+            success: function (result) {
+                console.log(result);
+                if (result.code == "Register Success") {
+                    alert("注册成功，请登录！");
+                    window.location.href="/";
+                }
+                if (result.code == "telphone is existed"){
+                    alert(result.msg);
+                }
+            },
+            error : function() {
+                alert("异常！");
+            }
+        });
+    }
+
+    //DES 加密
+    function encryptByDES(message, key) {
+        console.log(key);
+        console.log(message);
+        var keyHex = CryptoJS.enc.Utf8.parse(key);
+        console.log(keyHex);
+        var encrypted = CryptoJS.DES.encrypt(message, keyHex, {
+            mode: CryptoJS.mode.ECB,
+            padding: CryptoJS.pad.Pkcs7
+        });
+        return encrypted.toString();
+      }
+
+     //DES 解密
+    function decryptByDES(ciphertext, key) {
+        var keyHex = CryptoJS.enc.Utf8.parse(key);
+        // direct decrypt ciphertext
+        var decrypted = CryptoJS.DES.decrypt({
+            ciphertext: CryptoJS.enc.Base64.parse(ciphertext)
+        }, keyHex, {
+            mode: CryptoJS.mode.ECB,
+            padding: CryptoJS.pad.Pkcs7
+        });
+        return decrypted.toString(CryptoJS.enc.Utf8);
+    }
+
+    function testdes() {
+        var password = "Admin@120";
+        var timeCode = (Date.parse(new Date()))/1000;
+
+        var ss = encryptByDES(password,timeCode);
+        console.log(ss);
+    }
+
+    function setCookie(cname, cvalue)
+    {
+      var d = new Date();
+      var hours = 1;
+      d.setTime(d.getTime()+(hours*60*60*1000));
+      var expires = "expires="+d.toGMTString();
+      document.cookie = cname + "=" + cvalue + "; " + expires;
+    }
+
+    function login_token(token) {
+        var data= {
+            data: JSON.stringify({
+                _token: token
+            }),
+        };
+
+        $.ajax({
+            type: "POST",
+            url: "/api/login/login_token",
+            dataType: "json",
+            data: data,
+            contentType: "application/x-www-form-urlencoded",
+            success: function (result) {
+                console.log(result);
+                if(result['code'] == "Success"){
+                    sessionStorage.setItem("token", result['token']);
+                    setCookie("token", result['token']);
+                    window.location.href="/ycyl/?token="+result['token'];
+                }
+            },
+            error : function() {
+                alert("异常！");
+            }
+        });
+    }
+</script>

@@ -41,7 +41,10 @@
             <img  src="/static/img/test-logo.png">
         </div>
         <div class="head-center">
-            <h1>影像云平台运营数据驾驶舱</h1>
+
+            {% if user %}
+                <h1>影像云平台运营数据驾驶舱{{ user }}</h1>
+            {% endif %}
         </div>
         <div class="clock head-right">
         </div>
