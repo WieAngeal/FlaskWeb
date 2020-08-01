@@ -18578,3 +18578,450 @@
 4 2020-08-01 15:21:55,161 DEBUG {model} http_interceptor.py(20) : request params: [%s]
 4 2020-08-01 15:21:55,253 DEBUG {model} http_interceptor.py(20) : request params: [%s]
 4 2020-08-01 15:21:55,258 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 15:24:14,042 INFO {model} __init__.py(17) : initial app models model
+4 2020-08-01 15:24:14,050 INFO {model} __init__.py(13) : initial app core model
+4 2020-08-01 15:24:14,052 INFO {model} __init__.py(15) : initial app services model
+4 2020-08-01 15:24:14,155 INFO {model} database.py(128) : init Query
+4 2020-08-01 15:24:14,155 INFO {model} database.py(128) : init Query
+4 2020-08-01 15:24:14,157 INFO {model} database.py(128) : init Query
+4 2020-08-01 15:24:14,157 INFO {model} database.py(128) : init Query
+4 2020-08-01 15:24:14,159 INFO {model} database.py(128) : init Query
+4 2020-08-01 15:24:14,159 INFO {model} database.py(128) : init Query
+4 2020-08-01 15:24:14,163 INFO {model} database.py(128) : init Query
+4 2020-08-01 15:24:14,163 INFO {model} database.py(128) : init Query
+4 2020-08-01 15:24:14,165 INFO {model} database.py(128) : init Query
+4 2020-08-01 15:24:14,165 INFO {model} database.py(128) : init Query
+4 2020-08-01 15:24:14,169 INFO {model} database.py(128) : init Query
+4 2020-08-01 15:24:14,169 INFO {model} database.py(128) : init Query
+4 2020-08-01 15:24:14,172 INFO {model} database.py(128) : init Query
+4 2020-08-01 15:24:14,172 INFO {model} database.py(128) : init Query
+4 2020-08-01 15:24:14,175 INFO {model} __init__.py(23) : initial app views model
+4 2020-08-01 15:24:14,177 INFO {model} __init__.py(53) : register blueprint ycyl success.
+4 2020-08-01 15:24:14,181 INFO {model} __init__.py(53) : register blueprint error success.
+4 2020-08-01 15:24:14,184 INFO {model} __init__.py(53) : register blueprint index success.
+4 2020-08-01 15:24:14,186 INFO {model} __init__.py(53) : register blueprint login success.
+4 2020-08-01 15:24:14,187 INFO {model} __init__.py(53) : register blueprint login_test success.
+4 2020-08-01 15:24:14,189 INFO {model} __init__.py(53) : register blueprint user success.
+4 2020-08-01 15:24:14,191 INFO {model} __init__.py(53) : register blueprint clazz success.
+4 2020-08-01 15:24:14,193 INFO {model} __init__.py(53) : register blueprint school success.
+4 2020-08-01 15:24:14,195 INFO {model} __init__.py(53) : register blueprint celery success.
+4 2020-08-01 15:24:14,240 DEBUG {model} __init__.py(70) : urls: 
+4 2020-08-01 15:24:14,241 DEBUG {model} __init__.py(72) : /api/schools/
+4 2020-08-01 15:24:14,242 DEBUG {model} __init__.py(72) : /api/login/login_token
+4 2020-08-01 15:24:14,242 DEBUG {model} __init__.py(72) : /api/users/
+4 2020-08-01 15:24:14,243 DEBUG {model} __init__.py(72) : /err/bad_gateway
+4 2020-08-01 15:24:14,244 DEBUG {model} __init__.py(72) : /err/not_found
+4 2020-08-01 15:24:14,245 DEBUG {model} __init__.py(72) : /ycyl/api/register
+4 2020-08-01 15:24:14,245 DEBUG {model} __init__.py(72) : /api/get_target_data
+4 2020-08-01 15:24:14,247 DEBUG {model} __init__.py(72) : /err/service_unavailable
+4 2020-08-01 15:24:14,249 DEBUG {model} __init__.py(72) : /err/bad_request
+4 2020-08-01 15:24:14,250 DEBUG {model} __init__.py(72) : /api/get_real_data
+4 2020-08-01 15:24:14,251 DEBUG {model} __init__.py(72) : /err/forbidden
+4 2020-08-01 15:24:14,251 DEBUG {model} __init__.py(72) : /login_test/login
+4 2020-08-01 15:24:14,252 DEBUG {model} __init__.py(72) : /api/users/<user_id>
+4 2020-08-01 15:24:14,253 DEBUG {model} __init__.py(72) : /api/schools/<school_id>
+4 2020-08-01 15:24:14,254 DEBUG {model} __init__.py(72) : /err/server_error
+4 2020-08-01 15:24:14,255 DEBUG {model} __init__.py(72) : /err/bad_gateway_timeout
+4 2020-08-01 15:24:14,256 DEBUG {model} __init__.py(72) : /api/schools/count
+4 2020-08-01 15:24:14,257 DEBUG {model} __init__.py(72) : /err/unauthorized
+4 2020-08-01 15:24:14,257 DEBUG {model} __init__.py(72) : /api/classes/
+4 2020-08-01 15:24:14,258 DEBUG {model} __init__.py(72) : /paths
+4 2020-08-01 15:24:14,259 DEBUG {model} __init__.py(72) : /api/classes/<clazz_id>
+4 2020-08-01 15:24:14,260 DEBUG {model} __init__.py(72) : /ycyl/api/count
+4 2020-08-01 15:24:14,261 DEBUG {model} __init__.py(72) : /static/<path:filename>
+4 2020-08-01 15:24:14,261 DEBUG {model} __init__.py(72) : /
+4 2020-08-01 15:24:14,262 DEBUG {model} __init__.py(72) : /ycyl/
+4 2020-08-01 15:24:14,263 DEBUG {model} __init__.py(72) : /api/login/generate_token
+4 2020-08-01 15:24:14,264 DEBUG {model} __init__.py(72) : /api/login/register
+4 2020-08-01 15:24:14,265 DEBUG {model} __init__.py(72) : /task/compute
+4 2020-08-01 15:24:14,266 DEBUG {model} __init__.py(72) : /register
+4 2020-08-01 15:24:14,321 INFO {model} functions.py(28) : [flaskapp] bootstrap init on http://0.0.0.0:5000/. Start used time : 0.6421093463897705 s
+4 2020-08-01 15:24:36,246 INFO {model} __init__.py(17) : initial app models model
+4 2020-08-01 15:24:36,253 INFO {model} __init__.py(13) : initial app core model
+4 2020-08-01 15:24:36,255 INFO {model} __init__.py(15) : initial app services model
+4 2020-08-01 15:24:36,355 INFO {model} database.py(128) : init Query
+4 2020-08-01 15:24:36,355 INFO {model} database.py(128) : init Query
+4 2020-08-01 15:24:36,358 INFO {model} database.py(128) : init Query
+4 2020-08-01 15:24:36,358 INFO {model} database.py(128) : init Query
+4 2020-08-01 15:24:36,360 INFO {model} database.py(128) : init Query
+4 2020-08-01 15:24:36,360 INFO {model} database.py(128) : init Query
+4 2020-08-01 15:24:36,364 INFO {model} database.py(128) : init Query
+4 2020-08-01 15:24:36,364 INFO {model} database.py(128) : init Query
+4 2020-08-01 15:24:36,366 INFO {model} database.py(128) : init Query
+4 2020-08-01 15:24:36,366 INFO {model} database.py(128) : init Query
+4 2020-08-01 15:24:36,370 INFO {model} database.py(128) : init Query
+4 2020-08-01 15:24:36,370 INFO {model} database.py(128) : init Query
+4 2020-08-01 15:24:36,373 INFO {model} database.py(128) : init Query
+4 2020-08-01 15:24:36,373 INFO {model} database.py(128) : init Query
+4 2020-08-01 15:24:36,375 INFO {model} __init__.py(23) : initial app views model
+4 2020-08-01 15:24:36,380 INFO {model} __init__.py(53) : register blueprint ycyl success.
+4 2020-08-01 15:24:36,383 INFO {model} __init__.py(53) : register blueprint error success.
+4 2020-08-01 15:24:36,386 INFO {model} __init__.py(53) : register blueprint index success.
+4 2020-08-01 15:24:36,388 INFO {model} __init__.py(53) : register blueprint login success.
+4 2020-08-01 15:24:36,389 INFO {model} __init__.py(53) : register blueprint login_test success.
+4 2020-08-01 15:24:36,391 INFO {model} __init__.py(53) : register blueprint user success.
+4 2020-08-01 15:24:36,394 INFO {model} __init__.py(53) : register blueprint clazz success.
+4 2020-08-01 15:24:36,397 INFO {model} __init__.py(53) : register blueprint school success.
+4 2020-08-01 15:24:36,398 INFO {model} __init__.py(53) : register blueprint celery success.
+4 2020-08-01 15:24:36,449 DEBUG {model} __init__.py(70) : urls: 
+4 2020-08-01 15:24:36,450 DEBUG {model} __init__.py(72) : /err/bad_gateway
+4 2020-08-01 15:24:36,451 DEBUG {model} __init__.py(72) : /api/classes/<clazz_id>
+4 2020-08-01 15:24:36,451 DEBUG {model} __init__.py(72) : /api/users/<user_id>
+4 2020-08-01 15:24:36,452 DEBUG {model} __init__.py(72) : /api/login/generate_token
+4 2020-08-01 15:24:36,453 DEBUG {model} __init__.py(72) : /err/server_error
+4 2020-08-01 15:24:36,454 DEBUG {model} __init__.py(72) : /err/bad_gateway_timeout
+4 2020-08-01 15:24:36,455 DEBUG {model} __init__.py(72) : /ycyl/api/count
+4 2020-08-01 15:24:36,456 DEBUG {model} __init__.py(72) : /ycyl/
+4 2020-08-01 15:24:36,456 DEBUG {model} __init__.py(72) : /api/schools/count
+4 2020-08-01 15:24:36,457 DEBUG {model} __init__.py(72) : /register
+4 2020-08-01 15:24:36,458 DEBUG {model} __init__.py(72) : /ycyl/api/register
+4 2020-08-01 15:24:36,459 DEBUG {model} __init__.py(72) : /api/get_target_data
+4 2020-08-01 15:24:36,461 DEBUG {model} __init__.py(72) : /api/login/register
+4 2020-08-01 15:24:36,462 DEBUG {model} __init__.py(72) : /api/users/
+4 2020-08-01 15:24:36,463 DEBUG {model} __init__.py(72) : /err/bad_request
+4 2020-08-01 15:24:36,464 DEBUG {model} __init__.py(72) : /
+4 2020-08-01 15:24:36,464 DEBUG {model} __init__.py(72) : /api/login/login_token
+4 2020-08-01 15:24:36,465 DEBUG {model} __init__.py(72) : /api/classes/
+4 2020-08-01 15:24:36,466 DEBUG {model} __init__.py(72) : /api/schools/<school_id>
+4 2020-08-01 15:24:36,467 DEBUG {model} __init__.py(72) : /err/unauthorized
+4 2020-08-01 15:24:36,468 DEBUG {model} __init__.py(72) : /login_test/login
+4 2020-08-01 15:24:36,470 DEBUG {model} __init__.py(72) : /api/schools/
+4 2020-08-01 15:24:36,471 DEBUG {model} __init__.py(72) : /static/<path:filename>
+4 2020-08-01 15:24:36,472 DEBUG {model} __init__.py(72) : /paths
+4 2020-08-01 15:24:36,473 DEBUG {model} __init__.py(72) : /task/compute
+4 2020-08-01 15:24:36,474 DEBUG {model} __init__.py(72) : /api/get_real_data
+4 2020-08-01 15:24:36,474 DEBUG {model} __init__.py(72) : /err/not_found
+4 2020-08-01 15:24:36,474 DEBUG {model} __init__.py(72) : /err/service_unavailable
+4 2020-08-01 15:24:36,475 DEBUG {model} __init__.py(72) : /err/forbidden
+4 2020-08-01 15:24:36,529 INFO {model} functions.py(28) : [flaskapp] bootstrap init on http://0.0.0.0:5000/. Start used time : 0.678123664855957 s
+4 2020-08-01 18:16:17,895 INFO {model} __init__.py(17) : initial app models model
+4 2020-08-01 18:16:17,917 INFO {model} __init__.py(13) : initial app core model
+4 2020-08-01 18:16:17,992 INFO {model} __init__.py(15) : initial app services model
+4 2020-08-01 18:16:18,620 INFO {model} database.py(128) : init Query
+4 2020-08-01 18:16:18,620 INFO {model} database.py(128) : init Query
+4 2020-08-01 18:16:18,633 INFO {model} database.py(128) : init Query
+4 2020-08-01 18:16:18,633 INFO {model} database.py(128) : init Query
+4 2020-08-01 18:16:18,640 INFO {model} database.py(128) : init Query
+4 2020-08-01 18:16:18,640 INFO {model} database.py(128) : init Query
+4 2020-08-01 18:16:18,656 INFO {model} database.py(128) : init Query
+4 2020-08-01 18:16:18,656 INFO {model} database.py(128) : init Query
+4 2020-08-01 18:16:18,662 INFO {model} database.py(128) : init Query
+4 2020-08-01 18:16:18,662 INFO {model} database.py(128) : init Query
+4 2020-08-01 18:16:18,674 INFO {model} database.py(128) : init Query
+4 2020-08-01 18:16:18,674 INFO {model} database.py(128) : init Query
+4 2020-08-01 18:16:18,691 INFO {model} database.py(128) : init Query
+4 2020-08-01 18:16:18,691 INFO {model} database.py(128) : init Query
+4 2020-08-01 18:16:18,693 INFO {model} __init__.py(23) : initial app views model
+4 2020-08-01 18:16:18,697 INFO {model} __init__.py(53) : register blueprint ycyl success.
+4 2020-08-01 18:16:18,700 INFO {model} __init__.py(53) : register blueprint error success.
+4 2020-08-01 18:16:18,703 INFO {model} __init__.py(53) : register blueprint index success.
+4 2020-08-01 18:16:18,705 INFO {model} __init__.py(53) : register blueprint login success.
+4 2020-08-01 18:16:18,707 INFO {model} __init__.py(53) : register blueprint login_test success.
+4 2020-08-01 18:16:18,709 INFO {model} __init__.py(53) : register blueprint user success.
+4 2020-08-01 18:16:18,711 INFO {model} __init__.py(53) : register blueprint clazz success.
+4 2020-08-01 18:16:18,713 INFO {model} __init__.py(53) : register blueprint school success.
+4 2020-08-01 18:16:18,714 INFO {model} __init__.py(53) : register blueprint celery success.
+4 2020-08-01 18:16:18,888 DEBUG {model} __init__.py(70) : urls: 
+4 2020-08-01 18:16:18,889 DEBUG {model} __init__.py(72) : /ycyl/
+4 2020-08-01 18:16:18,891 DEBUG {model} __init__.py(72) : /api/schools/<school_id>
+4 2020-08-01 18:16:18,892 DEBUG {model} __init__.py(72) : /api/classes/<clazz_id>
+4 2020-08-01 18:16:18,893 DEBUG {model} __init__.py(72) : /register
+4 2020-08-01 18:16:18,894 DEBUG {model} __init__.py(72) : /api/schools/
+4 2020-08-01 18:16:18,894 DEBUG {model} __init__.py(72) : /
+4 2020-08-01 18:16:18,895 DEBUG {model} __init__.py(72) : /ycyl/api/count
+4 2020-08-01 18:16:18,896 DEBUG {model} __init__.py(72) : /login_test/login
+4 2020-08-01 18:16:18,897 DEBUG {model} __init__.py(72) : /task/compute
+4 2020-08-01 18:16:18,898 DEBUG {model} __init__.py(72) : /err/forbidden
+4 2020-08-01 18:16:18,898 DEBUG {model} __init__.py(72) : /api/schools/count
+4 2020-08-01 18:16:18,899 DEBUG {model} __init__.py(72) : /err/not_found
+4 2020-08-01 18:16:18,900 DEBUG {model} __init__.py(72) : /err/unauthorized
+4 2020-08-01 18:16:18,901 DEBUG {model} __init__.py(72) : /ycyl/api/register
+4 2020-08-01 18:16:18,902 DEBUG {model} __init__.py(72) : /api/get_real_data
+4 2020-08-01 18:16:18,902 DEBUG {model} __init__.py(72) : /static/<path:filename>
+4 2020-08-01 18:16:18,903 DEBUG {model} __init__.py(72) : /api/login/generate_token
+4 2020-08-01 18:16:18,904 DEBUG {model} __init__.py(72) : /api/login/register
+4 2020-08-01 18:16:18,905 DEBUG {model} __init__.py(72) : /api/login/login_token
+4 2020-08-01 18:16:18,906 DEBUG {model} __init__.py(72) : /api/get_target_data
+4 2020-08-01 18:16:18,906 DEBUG {model} __init__.py(72) : /paths
+4 2020-08-01 18:16:18,907 DEBUG {model} __init__.py(72) : /err/service_unavailable
+4 2020-08-01 18:16:18,908 DEBUG {model} __init__.py(72) : /err/bad_gateway
+4 2020-08-01 18:16:18,909 DEBUG {model} __init__.py(72) : /api/users/<user_id>
+4 2020-08-01 18:16:18,910 DEBUG {model} __init__.py(72) : /err/bad_request
+4 2020-08-01 18:16:18,911 DEBUG {model} __init__.py(72) : /api/classes/
+4 2020-08-01 18:16:18,911 DEBUG {model} __init__.py(72) : /api/users/
+4 2020-08-01 18:16:18,912 DEBUG {model} __init__.py(72) : /err/server_error
+4 2020-08-01 18:16:18,914 DEBUG {model} __init__.py(72) : /err/bad_gateway_timeout
+4 2020-08-01 18:16:18,972 INFO {model} functions.py(28) : [flaskapp] bootstrap init on http://0.0.0.0:5000/. Start used time : 2.1543180465698244 s
+4 2020-08-01 18:16:20,892 INFO {model} __init__.py(17) : initial app models model
+4 2020-08-01 18:16:20,904 INFO {model} __init__.py(13) : initial app core model
+4 2020-08-01 18:16:20,908 INFO {model} __init__.py(15) : initial app services model
+4 2020-08-01 18:16:21,020 INFO {model} database.py(128) : init Query
+4 2020-08-01 18:16:21,020 INFO {model} database.py(128) : init Query
+4 2020-08-01 18:16:21,023 INFO {model} database.py(128) : init Query
+4 2020-08-01 18:16:21,023 INFO {model} database.py(128) : init Query
+4 2020-08-01 18:16:21,025 INFO {model} database.py(128) : init Query
+4 2020-08-01 18:16:21,025 INFO {model} database.py(128) : init Query
+4 2020-08-01 18:16:21,028 INFO {model} database.py(128) : init Query
+4 2020-08-01 18:16:21,028 INFO {model} database.py(128) : init Query
+4 2020-08-01 18:16:21,031 INFO {model} database.py(128) : init Query
+4 2020-08-01 18:16:21,031 INFO {model} database.py(128) : init Query
+4 2020-08-01 18:16:21,036 INFO {model} database.py(128) : init Query
+4 2020-08-01 18:16:21,036 INFO {model} database.py(128) : init Query
+4 2020-08-01 18:16:21,039 INFO {model} database.py(128) : init Query
+4 2020-08-01 18:16:21,039 INFO {model} database.py(128) : init Query
+4 2020-08-01 18:16:21,041 INFO {model} __init__.py(23) : initial app views model
+4 2020-08-01 18:16:21,043 INFO {model} __init__.py(53) : register blueprint ycyl success.
+4 2020-08-01 18:16:21,047 INFO {model} __init__.py(53) : register blueprint error success.
+4 2020-08-01 18:16:21,050 INFO {model} __init__.py(53) : register blueprint index success.
+4 2020-08-01 18:16:21,052 INFO {model} __init__.py(53) : register blueprint login success.
+4 2020-08-01 18:16:21,053 INFO {model} __init__.py(53) : register blueprint login_test success.
+4 2020-08-01 18:16:21,055 INFO {model} __init__.py(53) : register blueprint user success.
+4 2020-08-01 18:16:21,057 INFO {model} __init__.py(53) : register blueprint clazz success.
+4 2020-08-01 18:16:21,059 INFO {model} __init__.py(53) : register blueprint school success.
+4 2020-08-01 18:16:21,060 INFO {model} __init__.py(53) : register blueprint celery success.
+4 2020-08-01 18:16:21,112 DEBUG {model} __init__.py(70) : urls: 
+4 2020-08-01 18:16:21,113 DEBUG {model} __init__.py(72) : /ycyl/api/count
+4 2020-08-01 18:16:21,114 DEBUG {model} __init__.py(72) : /err/bad_gateway_timeout
+4 2020-08-01 18:16:21,114 DEBUG {model} __init__.py(72) : /err/service_unavailable
+4 2020-08-01 18:16:21,114 DEBUG {model} __init__.py(72) : /register
+4 2020-08-01 18:16:21,115 DEBUG {model} __init__.py(72) : /paths
+4 2020-08-01 18:16:21,116 DEBUG {model} __init__.py(72) : /api/classes/<clazz_id>
+4 2020-08-01 18:16:21,118 DEBUG {model} __init__.py(72) : /err/bad_request
+4 2020-08-01 18:16:21,118 DEBUG {model} __init__.py(72) : /api/login/login_token
+4 2020-08-01 18:16:21,118 DEBUG {model} __init__.py(72) : /static/<path:filename>
+4 2020-08-01 18:16:21,119 DEBUG {model} __init__.py(72) : /ycyl/api/register
+4 2020-08-01 18:16:21,121 DEBUG {model} __init__.py(72) : /login_test/login
+4 2020-08-01 18:16:21,121 DEBUG {model} __init__.py(72) : /err/unauthorized
+4 2020-08-01 18:16:21,121 DEBUG {model} __init__.py(72) : /api/users/<user_id>
+4 2020-08-01 18:16:21,122 DEBUG {model} __init__.py(72) : /err/bad_gateway
+4 2020-08-01 18:16:21,123 DEBUG {model} __init__.py(72) : /err/forbidden
+4 2020-08-01 18:16:21,123 DEBUG {model} __init__.py(72) : /err/server_error
+4 2020-08-01 18:16:21,124 DEBUG {model} __init__.py(72) : /api/schools/count
+4 2020-08-01 18:16:21,125 DEBUG {model} __init__.py(72) : /api/schools/
+4 2020-08-01 18:16:21,126 DEBUG {model} __init__.py(72) : /api/classes/
+4 2020-08-01 18:16:21,127 DEBUG {model} __init__.py(72) : /api/get_real_data
+4 2020-08-01 18:16:21,127 DEBUG {model} __init__.py(72) : /api/login/generate_token
+4 2020-08-01 18:16:21,128 DEBUG {model} __init__.py(72) : /
+4 2020-08-01 18:16:21,129 DEBUG {model} __init__.py(72) : /api/schools/<school_id>
+4 2020-08-01 18:16:21,130 DEBUG {model} __init__.py(72) : /api/get_target_data
+4 2020-08-01 18:16:21,131 DEBUG {model} __init__.py(72) : /api/login/register
+4 2020-08-01 18:16:21,132 DEBUG {model} __init__.py(72) : /ycyl/
+4 2020-08-01 18:16:21,133 DEBUG {model} __init__.py(72) : /err/not_found
+4 2020-08-01 18:16:21,133 DEBUG {model} __init__.py(72) : /api/users/
+4 2020-08-01 18:16:21,134 DEBUG {model} __init__.py(72) : /task/compute
+4 2020-08-01 18:16:21,187 INFO {model} functions.py(28) : [flaskapp] bootstrap init on http://0.0.0.0:5000/. Start used time : 0.6711377620697021 s
+4 2020-08-01 18:23:36,251 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:23:36,624 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:23:36,826 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:23:38,808 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:23:38,863 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:23:38,866 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:23:38,869 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:23:38,872 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:23:38,875 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:23:38,877 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:23:38,900 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:23:38,911 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:23:38,955 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:23:38,959 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:23:38,961 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:23:39,010 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:23:40,376 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:23:40,430 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:24:02,122 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:07,356 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:07,410 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:07,416 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:07,419 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:07,426 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:07,432 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:07,434 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:07,445 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:07,450 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:07,464 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:07,492 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:07,494 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:07,521 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:07,613 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:37,970 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:38,037 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:38,044 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:38,046 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:38,049 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:38,052 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:38,055 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:38,067 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:38,070 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:38,077 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:38,099 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:38,101 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:38,127 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:38,183 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:50,211 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:50,228 ERROR {model} auth.py(87) : 159627755000000000000000
+4 2020-08-01 18:25:50,229 ERROR {model} auth.py(88) : hza3m8G15v6Kjn4IC5tcJA==
+4 2020-08-01 18:25:50,342 ERROR {model} auth.py(91) : Admin@122
+4 2020-08-01 18:25:52,696 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:52,796 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:52,808 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:59,472 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:59,538 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:25:59,571 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,052 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,139 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,143 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,146 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,150 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,155 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,158 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,164 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,173 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,183 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,205 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,208 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,231 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,277 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,279 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,329 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,334 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,338 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,341 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,343 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,346 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,361 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,363 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,372 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,393 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,396 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,426 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,445 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,498 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,505 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,507 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,510 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,512 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,515 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,528 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,530 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,537 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,550 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,599 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,637 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,639 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,643 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,644 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,646 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,647 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,661 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,667 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,674 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,682 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,754 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,806 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,808 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,809 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,811 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,812 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,814 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,829 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,838 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,842 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,845 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,900 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,916 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,926 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,928 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,929 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,932 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,934 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,945 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,957 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,961 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:53,981 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:54,033 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:54,085 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:54,087 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:54,088 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:54,090 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:54,091 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:54,093 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:54,105 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:54,108 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:54,114 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:54,146 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:54,153 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:54,165 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:26:54,367 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:27:08,163 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:27:08,170 ERROR {model} auth.py(87) : 159627762800000000000000
+4 2020-08-01 18:27:08,171 ERROR {model} auth.py(88) : UMR/denLpk3tCx2Ro3x3OQ==
+4 2020-08-01 18:27:08,172 ERROR {model} auth.py(91) : Admin@124
+4 2020-08-01 18:29:00,212 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:00,315 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:00,329 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:01,670 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:01,726 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:01,730 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:01,735 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:01,737 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:01,742 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:01,746 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:01,753 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:01,758 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:01,787 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:01,792 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:01,795 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:01,815 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:01,900 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:03,171 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:03,236 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:03,275 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:04,130 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:04,187 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:04,193 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:04,197 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:04,199 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:04,201 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:04,203 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:04,214 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:04,217 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:04,225 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:04,249 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:04,251 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:04,279 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:04,349 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:19,964 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:19,968 ERROR {model} auth.py(87) : 159627775800000000000000
+4 2020-08-01 18:29:19,969 ERROR {model} auth.py(88) : HvmNo3nc4t4vrh7ilxKneA==
+4 2020-08-01 18:29:19,971 ERROR {model} auth.py(91) : Admin@120
+4 2020-08-01 18:29:21,484 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:21,577 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:21,589 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:29:42,830 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:31:10,387 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:31:10,508 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:31:10,511 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:31:12,704 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:31:12,788 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:31:12,794 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:31:13,609 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:31:13,672 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:31:13,675 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:31:13,678 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:31:13,681 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:31:13,688 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:31:13,691 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:31:13,699 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:31:13,703 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:31:13,712 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:31:13,742 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:31:13,745 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:31:13,775 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:31:13,822 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:31:32,744 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:31:32,749 ERROR {model} auth.py(87) : 159627788400000000000000
+4 2020-08-01 18:31:32,751 ERROR {model} auth.py(88) : QDWylUPkejcBIxUmJ7TtXw==
+4 2020-08-01 18:31:32,752 ERROR {model} auth.py(91) : Admin@123
+4 2020-08-01 18:32:09,466 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:32:09,562 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-01 18:32:09,577 DEBUG {model} http_interceptor.py(20) : request params: [%s]

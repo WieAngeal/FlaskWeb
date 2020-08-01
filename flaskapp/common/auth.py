@@ -81,10 +81,6 @@ def wapper(func):
         return func(*args, **kwargs)
     return inner
 
-
-def test_des():
-    pydes.test()
-
 def register_user(data):
     is_exist_tel = user_service.query_filter_first(telphone=data['telphone'])
 

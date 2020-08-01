@@ -194,12 +194,18 @@
 
         var timeCode = (Date.parse(new Date()))/1000;
         var key = pad(timeCode, 24);
-        var en_pwd = des3_encrypted(key, password);
+
+        var encrypt_pwd = des3_encrypt(key, password);
+        console.log(encrypt_pwd);
+
+        s2 = des3_decrypt(key, encrypt_pwd);
+        console.log(s2);
+        alert(s2);
 
         var data= {
             data: JSON.stringify({
                 username: username,
-                password: en_pwd,
+                password: encrypt_pwd,
                 telphone: telphone,
                 timecode: key
             }),
@@ -227,7 +233,6 @@
         });
     }
 
-
     function testdes() {
         var username = "admin";
         var telphone = "17693186908";
@@ -235,8 +240,12 @@
         var timeCode = '1596180850';
         var key = pad(timeCode, 24);
 
-        s1 = des3_encrypted(key, password);
+        s1 = des3_encrypt(key, password);
         console.log(s1);
+
+        s2 = des3_decrypt(key, s1);
+        alert(s2);
+
 
         var data= {
             data: JSON.stringify({
@@ -261,12 +270,10 @@
         });
     }
 
-
-
-    function des3_decrypt(str, key, iv) {
-        //const key  = CryptoJS.enc.Utf8.parse("159618085000000000000000"); // key
+    function des3_decrypt(key_value, data) {
+        var key  = CryptoJS.enc.Utf8.parse(key_value); // key
         //const iv = CryptoJS.enc.Utf8.parse("4c43c365"); // iv
-        var decrypt_str = CryptoJS.TripleDES.decrypt(str, key, {
+        var decrypt_str = CryptoJS.TripleDES.decrypt(data, key, {
             //iv: crypto_iv,
             mode: CryptoJS.mode.ECB,
             padding: CryptoJS.pad.Pkcs7
@@ -274,20 +281,16 @@
         return decrypt_str.toString(CryptoJS.enc.Utf8);
     }
 
-    function des3_encrypted(key_value, params){
-        //159618085000000000000000
-        //159618085000000000000000
-        //159618085000000000000000
-        //const key  = CryptoJS.enc.Utf8.parse("159618085000000000000000"); // key
-        const key  = CryptoJS.enc.Utf8.parse(key_value); // key
+    function des3_encrypt(key_value, data){
+        var key  = CryptoJS.enc.Utf8.parse(key_value); // key
         //const iv = CryptoJS.enc.Utf8.parse("4c43c365"); // iv
-        const en_str = CryptoJS.TripleDES.encrypt(params, key, {
+        var encrypt_str = CryptoJS.TripleDES.encrypt(data, key, {
             //iv: iv,
             mode: CryptoJS.mode.ECB,
             padding: CryptoJS.pad.Pkcs7
         });
 
-        return en_str.toString(); // 返回加密后的字符串
+        return encrypt_str.toString(); // 返回加密后的字符串
     }
 
     function pad(num, n) {
@@ -298,26 +301,6 @@
         }
         return num;
     }
-
-
-    function testdes1() {
-        var password = "Admin@120";
-        var timeCode = '1596180850';
-        var key = pad(timeCode, 24);
-
-        s1 = des3_encrypted(key, password);
-        console.log(s1);
-    }
-
-
-
-
-    // 直接使用 key 是不对的,需要像上面那样处理
-    // const key  = "4c43c365a4ac05b91eb5fa95"; // key
-    // const iv = key.substr(0, 8); // iv
-
-
-
 
     function setCookie(cname, cvalue)
     {

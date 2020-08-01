@@ -47,27 +47,3 @@ def decrypt(key, text):
     decrypted_text = str(des.decrypt(base64_decrypted),encoding='utf-8').replace('\0','')
 
     return decrypted_text
-
-
-def test():
-    pd = 'Admin@120'
-    pwd = 'y3OZ9VpQ7EXGBFrceI2clQ=='
-    key = '1596180850'
-
-
-
-    try:
-        tt = '2kuHOjNmmrzgK62pVJYHEVR2k3cvu7c9'
-
-        tt = '2kuHOjNmmrxymmdo1XZdfg=='
-        logger.error(type(tt))
-
-        tt = '/oeChn9QdzoMYnJ4aeAjYw=='
-        logger.error(tt.encode('utf-8'))
-
-        logger.error(encrypt(key, pd))
-        logger.error(decrypt(key, tt))
-
-    except Exception as e:
-        logger.error(e)
-
