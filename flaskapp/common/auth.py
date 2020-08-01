@@ -88,8 +88,11 @@ def test_des():
 def register_user(data):
     is_exist_tel = user_service.query_filter_first(telphone=data['telphone'])
 
-    password = pydes.decrypt(str(data['timecode']), data['password'])
-    logger.error(password)
+    logger.error(data['timecode'])
+    logger.error(data['password'])
+
+    pwd = pydes.decrypt(data['timecode'], data['password'])
+    logger.error(pwd)
 
     if is_exist_tel is None:
         user_id = user_service.max(User.id)
@@ -98,7 +101,7 @@ def register_user(data):
         user_id = user_id + 1
 
         try:
-            obj = user_service.save(User(id=user_id,  username=data['username'], password=data['password'], telphone=data['telphone']))
+            obj = user_service.save(User(id=user_id,  username=data['username'], password=pwd, telphone=data['telphone']))
         except Exception as e:
             logger.error(e)
             data = rep_json_data(code="Register Failed", msg="注册失败")

@@ -55,7 +55,7 @@
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
-							<button class="login100-form-btn" onclick="testdes()">注  册</button>
+							<button class="login100-form-btn" onclick="register()">注  册</button>
 						</div>
 					</div>
 
@@ -192,22 +192,16 @@
             return false;
         }
 
-        var password = "Admin@120";
-        //var timeCode = (Date.parse(new Date()))/1000;
-        var timeCode = CryptoJS.enc.Utf8.parse(key);
-
-        var ss = encryptByDES(timeCode,password);
-        console.log(ss);
-
-		var encodePwd = DES3.encrypt(timeCode,password);
-		console.log(encodePwd);
+        var timeCode = (Date.parse(new Date()))/1000;
+        var key = pad(timeCode, 24);
+        var en_pwd = des3_encrypted(key, password);
 
         var data= {
             data: JSON.stringify({
                 username: username,
-                password: encodePwd,
+                password: en_pwd,
                 telphone: telphone,
-                timecode: timeCode
+                timecode: key
             }),
         };
 
@@ -233,64 +227,85 @@
         });
     }
 
-    function des_encrypt(str, key, iv)
-    {
-        var key			= CryptoJS.MD5(key).toString();
-        var iv			= CryptoJS.MD5(iv).toString();
-        var crypto_key 	= CryptoJS.enc.Utf8.parse(key);
-        var crypto_iv 	= CryptoJS.enc.Utf8.parse(iv.substr(0,8));
 
-        //console.log(crypto_key.toString(CryptoJS.enc.Utf8));
-        //console.log(crypto_iv.toString(CryptoJS.enc.Utf8));
-        var encode_str 	= CryptoJS.TripleDES.encrypt(str, crypto_key, {
-                            iv: 		crypto_iv,
-                            mode: 		CryptoJS.mode.ECB,
-                            padding: 	CryptoJS.pad.Pkcs7});
-        return encode_str.toString();
+    function testdes() {
+        var username = "admin";
+        var telphone = "17693186908";
+        var password = "Admin@120";
+        var timeCode = '1596180850';
+        var key = pad(timeCode, 24);
+
+        s1 = des3_encrypted(key, password);
+        console.log(s1);
+
+        var data= {
+            data: JSON.stringify({
+                username: username,
+                password: s1,
+                telphone: telphone,
+                timecode: key
+            }),
+        };
+
+        $.ajax({
+            type: "POST",
+            url: "/api/login/register",
+            dataType: "json",
+            data: data,
+            contentType: "application/x-www-form-urlencoded",
+            success: function (result) {
+            },
+            error : function() {
+                alert("异常！");
+            }
+        });
     }
-    function des_decrypt(str, key, iv) {
-        var key = CryptoJS.MD5(key).toString();
-        var iv = CryptoJS.MD5(iv).toString();
-        var crypto_key = CryptoJS.enc.Utf8.parse(key);
-        var crypto_iv = CryptoJS.enc.Utf8.parse(iv.substr(0, 8));
-        var decrypt_str = CryptoJS.TripleDES.decrypt(str, crypto_key, {
-            iv: crypto_iv,
+
+
+
+    function des3_decrypt(str, key, iv) {
+        //const key  = CryptoJS.enc.Utf8.parse("159618085000000000000000"); // key
+        //const iv = CryptoJS.enc.Utf8.parse("4c43c365"); // iv
+        var decrypt_str = CryptoJS.TripleDES.decrypt(str, key, {
+            //iv: crypto_iv,
             mode: CryptoJS.mode.ECB,
             padding: CryptoJS.pad.Pkcs7
         });
         return decrypt_str.toString(CryptoJS.enc.Utf8);
     }
 
-    function encrypted(params){
-        const key  = CryptoJS.enc.Utf8.parse("4c43c365a4ac05b91eb5fa95"); // key
-        const iv = CryptoJS.enc.Utf8.parse("4c43c365"); // iv
-        const aaa = CryptoJS.TripleDES.encrypt(params, key, {
-            iv: iv,
-            mode: CryptoJS.mode.CBC,
+    function des3_encrypted(key_value, params){
+        //159618085000000000000000
+        //159618085000000000000000
+        //159618085000000000000000
+        //const key  = CryptoJS.enc.Utf8.parse("159618085000000000000000"); // key
+        const key  = CryptoJS.enc.Utf8.parse(key_value); // key
+        //const iv = CryptoJS.enc.Utf8.parse("4c43c365"); // iv
+        const en_str = CryptoJS.TripleDES.encrypt(params, key, {
+            //iv: iv,
+            mode: CryptoJS.mode.ECB,
             padding: CryptoJS.pad.Pkcs7
         });
 
-        return aaa.toString(); // 返回加密后的字符串
+        return en_str.toString(); // 返回加密后的字符串
     }
 
-    function testdes() {
-        var encodePwd = DES3.encrypt(timeCode,password);
-		console.log(encodePwd);
+    function pad(num, n) {
+        var len = num.toString().length;
+        while(len < n) {
+            num = num + "0";
+            len++;
+        }
+        return num;
+    }
 
+
+    function testdes1() {
         var password = "Admin@120";
-        //var timeCode = (Date.parse(new Date()))/1000;
-        var timeCode = '1596257199';
-        console.log(timeCode);
+        var timeCode = '1596180850';
+        var key = pad(timeCode, 24);
 
-        s1 = des_encrypt(password, timeCode, timeCode);
-        console.log(s1);
-
-        r1 = des_decrypt(s1, timeCode);
-        console.log(r1);
-
-
-
-        s1 = encrypted(password);
+        s1 = des3_encrypted(key, password);
         console.log(s1);
     }
 

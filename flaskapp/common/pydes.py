@@ -40,11 +40,12 @@ def encrypt(key, text):
 def decrypt(key, text):
     # 密文
     # 初始化加密器
-    aes = DES3.new(add_to_24(key), DES3.MODE_ECB)
+    des = DES3.new(add_to_24(key), DES3.MODE_ECB)
     #优先逆向解密base64成bytes
     base64_decrypted = base64.decodebytes(text.encode(encoding='utf-8'))
     #执行解密密并转码返回str
-    decrypted_text = str(aes.decrypt(base64_decrypted),encoding='utf-8').replace('\0','')
+    decrypted_text = str(des.decrypt(base64_decrypted),encoding='utf-8').replace('\0','')
+
     return decrypted_text
 
 
@@ -57,9 +58,16 @@ def test():
 
     try:
         tt = '2kuHOjNmmrzgK62pVJYHEVR2k3cvu7c9'
+
         tt = '2kuHOjNmmrxymmdo1XZdfg=='
+        logger.error(type(tt))
+
+        tt = '/oeChn9QdzoMYnJ4aeAjYw=='
+        logger.error(tt.encode('utf-8'))
+
         logger.error(encrypt(key, pd))
         logger.error(decrypt(key, tt))
+
     except Exception as e:
         logger.error(e)
 
