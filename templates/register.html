@@ -30,6 +30,12 @@
 						<span class="focus-input100" data-symbol="&#xf206;"></span>
 					</div>
 
+                    <div class="wrap-input100 validate-input" data-validate="请输入密码">
+						<span class="label-input100">手机</span>
+						<input class="input100" type="tel" name="telphone" id="telphone" placeholder="请输入手机号">
+						<span class="focus-input100" data-symbol="&#xf202;"></span>
+					</div>
+
 					<div class="wrap-input100 validate-input" data-validate="请输入密码">
 						<span class="label-input100">密码</span>
 						<input class="input100" type="password" name="password" id="password" placeholder="请输入密码">
@@ -40,12 +46,6 @@
 						<span class="label-input100">确认密码</span>
 						<input class="input100" type="password" name="againpswd" id="againpswd" placeholder="请再次输入密码">
 						<span class="focus-input100" data-symbol="&#xf190;"></span>
-					</div>
-
-                    <div class="wrap-input100 validate-input" data-validate="请输入密码">
-						<span class="label-input100">手机</span>
-						<input class="input100" type="tel" name="telphone" id="telphone" placeholder="请输入手机号">
-						<span class="focus-input100" data-symbol="&#xf202;"></span>
 					</div>
 
 					<div class="text-right p-t-8 p-b-31">
@@ -69,7 +69,7 @@
 
 	<script src="/static/vendor/jquery/jquery-3.2.1.min.js"></script>
 	<script src="/static/js/main.js"></script>
-    <script src="/static/js/crypto/crypto-js.js"></script>
+    <script src="/static/js/des3.js"></script>
 </body>
 
 </html>
@@ -228,37 +228,6 @@
         });
     }
 
-    function des3_decrypt(key_value, data) {
-        var key  = CryptoJS.enc.Utf8.parse(key_value); // key
-        //const iv = CryptoJS.enc.Utf8.parse("4c43c365"); // iv
-        var decrypt_str = CryptoJS.TripleDES.decrypt(data, key, {
-            //iv: crypto_iv,
-            mode: CryptoJS.mode.ECB,
-            padding: CryptoJS.pad.Pkcs7
-        });
-        return decrypt_str.toString(CryptoJS.enc.Utf8);
-    }
-
-    function des3_encrypt(key_value, data){
-        var key  = CryptoJS.enc.Utf8.parse(key_value); // key
-        //const iv = CryptoJS.enc.Utf8.parse("4c43c365"); // iv
-        var encrypt_str = CryptoJS.TripleDES.encrypt(data, key, {
-            //iv: iv,
-            mode: CryptoJS.mode.ECB,
-            padding: CryptoJS.pad.Pkcs7
-        });
-
-        return encrypt_str.toString(); // 返回加密后的字符串
-    }
-
-    function pad(num, n) {
-        var len = num.toString().length;
-        while(len < n) {
-            num = num + "0";
-            len++;
-        }
-        return num;
-    }
 
     function setCookie(cname, cvalue)
     {
