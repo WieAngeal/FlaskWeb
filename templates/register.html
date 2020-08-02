@@ -70,7 +70,6 @@
 	<script src="/static/vendor/jquery/jquery-3.2.1.min.js"></script>
 	<script src="/static/js/main.js"></script>
     <script src="/static/js/crypto/crypto-js.js"></script>
-    <script src="/static/js/DES3.js"></script>
 </body>
 
 </html>
@@ -198,10 +197,6 @@
         var encrypt_pwd = des3_encrypt(key, password);
         console.log(encrypt_pwd);
 
-        s2 = des3_decrypt(key, encrypt_pwd);
-        console.log(s2);
-        alert(s2);
-
         var data= {
             data: JSON.stringify({
                 username: username,
@@ -213,7 +208,7 @@
 
         $.ajax({
             type: "POST",
-            url: "/api/login/register",
+            url: "/api/auth/register",
             dataType: "json",
             data: data,
             contentType: "application/x-www-form-urlencoded",
@@ -226,43 +221,6 @@
                 if (result.code == "telphone is existed"){
                     alert(result.msg);
                 }
-            },
-            error : function() {
-                alert("异常！");
-            }
-        });
-    }
-
-    function testdes() {
-        var username = "admin";
-        var telphone = "17693186908";
-        var password = "Admin@120";
-        var timeCode = '1596180850';
-        var key = pad(timeCode, 24);
-
-        s1 = des3_encrypt(key, password);
-        console.log(s1);
-
-        s2 = des3_decrypt(key, s1);
-        alert(s2);
-
-
-        var data= {
-            data: JSON.stringify({
-                username: username,
-                password: s1,
-                telphone: telphone,
-                timecode: key
-            }),
-        };
-
-        $.ajax({
-            type: "POST",
-            url: "/api/login/register",
-            dataType: "json",
-            data: data,
-            contentType: "application/x-www-form-urlencoded",
-            success: function (result) {
             },
             error : function() {
                 alert("异常！");
@@ -320,7 +278,7 @@
 
         $.ajax({
             type: "POST",
-            url: "/api/login/login_token",
+            url: "/api/auth/login_token",
             dataType: "json",
             data: data,
             contentType: "application/x-www-form-urlencoded",

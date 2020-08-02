@@ -7,7 +7,6 @@
 
 from flask import Blueprint, request, redirect
 from flask import url_for
-from ..models import User
 from ..services import UserService
 from ..common import (ConsoleLogger, relative_path)
 from flaskapp import app
@@ -19,44 +18,16 @@ from ..common import auth
 
 logger = ConsoleLogger(relative_path(__file__))
 user_service = UserService()
-login = Blueprint('login', __name__, url_prefix='/api/login')
+login = Blueprint('login', __name__, url_prefix='/api/auth')
 
 @login.route('/generate_token', methods=["GET", "POST"])
 def create_token():
     method = request.method
     if method == 'POST':
         userdata = ast.literal_eval(request.form.get('data'))
-        telphone = userdata['telphone']
-        password = userdata['password']
-        timecode = userdata['timecode']
-
-        logger.error(userdata)
-
-        if not all([telphone, password]):
-            data = auth.rep_json_data(code="Username OR Password is null", msg="用户名和密码不能为空",telphone=telphone)
-            return json.dumps(data)
-
-        try:
-            users = user_service.query_filter_first(telphone=telphone)
-        except Exception as e:
-            logger.error("login error：{}".format(e))
-            data = auth.rep_json_data(code="Query Failed", msg="获取信息失败", telphone=telphone)
-            return json.dumps(data)
-
-        if users is None or not (auth.check_password(password, users['password']) == "Success"):
-            logger.error("用户名或密码错误")
-            data = auth.rep_json_data(code="error username or password", msg="用户名或密码错误！", telphone=telphone)
-            return json.dumps(data)
-
-        token = auth.generate_token(users)
-
-        if token:
-            data = auth.rep_json_data(code="Success", msg="获取token成功！", telphone=telphone, token=token)
-            return json.dumps(data)
-        else:
-            data = auth.rep_json_data(code="Error", msg="获取token失败！", telphone=telphone)
-            return json.load(data)
-
+        json_data = auth.login_verify(userdata['telphone'], userdata['password'], userdata['timecode'])
+        logger.info(json_data)
+        return json_data
 
 @login.route('/login_token', methods=['GET', 'POST'])
 def token_verify():
@@ -65,9 +36,8 @@ def token_verify():
     token = _token['_token'][0]
     rsp = auth.verify_auth_token(token)
     json_data = json.dumps(rsp)
-    logger.error(json_data)
+    logger.info(json_data)
     return json_data
-
 
 @login.route('/register', methods=['GET', 'POST'])
 def register_user():

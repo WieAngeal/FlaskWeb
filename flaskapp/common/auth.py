@@ -10,7 +10,7 @@ from itsdangerous import SignatureExpired, BadSignature
 from flask import request, redirect, url_for
 from ..services import UserService
 from ..models import User
-from ..common import (ConsoleLogger, relative_path, pydes)
+from ..common import (ConsoleLogger, relative_path, des3)
 from flaskapp import app
 import json, jsonify
 import hashlib
@@ -43,27 +43,51 @@ def verify_auth_token(token):
 
     user = user_service.query_filter_first(telphone=data['tel'])
 
-    status = check_password(user['password'], data['pswd'])
-    if status == "Success":
-        data = rep_json_data(code=status, msg="登录成功", username=user['username'], telphone=user['telphone'],token=token)
+    if check_password(user['password'], data['pswd']) is True:
+        data = rep_json_data(code="Success", msg="登录成功", username=user['username'], telphone=user['telphone'],token=token)
     else:
-        data = rep_json_data(code=status, msg="登录失败", telphone=user['telphone'])
+        data = rep_json_data(code="Failed", msg="登录失败", telphone=user['telphone'])
     return  data
+
+
+def login_verify(telphone, password, timecode):
+    try:
+        password = des3.des3_encrypt(des3.decrypt(timecode, password))
+    except Exception as e:
+        logger.error(e)
+
+    if not all([telphone, password]):
+        data = rep_json_data(code="Username OR Password is null", msg="用户名和密码不能为空", telphone=telphone)
+        return json.dumps(data)
+
+    try:
+        users = user_service.query_filter_first(telphone=telphone)
+        logger.info(users)
+    except Exception as e:
+        logger.error("login error：{}".format(e))
+        data = rep_json_data(code="Query Failed", msg="获取信息失败", telphone=telphone)
+        return json.dumps(data)
+
+    if users is None or not (check_password(password, users['password']) is True):
+        logger.error("用户名或密码错误")
+        data = rep_json_data(code="error username or password", msg="用户名或密码错误！", telphone=telphone)
+        return json.dumps(data)
+
+    token = generate_token(users)
+
+    if token:
+        data = rep_json_data(code="Success", msg="获取token成功！", telphone=telphone, token=token)
+    else:
+        data = rep_json_data(code="Error", msg="获取token失败！", telphone=telphone)
+
+    return json.dumps(data)
 
 def check_password(password, passwd):
     if (password == passwd):
-        return 'Success'
+        return True
     else:
-        return 'Failed'
+        return False
 
-def create_md5_password(passwd):
-    # 创建md5对象
-    m = hashlib.md5()
-    b = passwd.encode(encoding='utf-8')
-    m.update(b)
-    passwd_md5 = m.hexdigest()
-    logger.error(passwd_md5)
-    return passwd_md5
 
 def rep_json_data(code=None, msg=None, username=None, telphone=None, token=None):
     data = {'code': code, 'msg': msg, 'username': username, 'telphone': telphone, 'token': token}
@@ -74,7 +98,7 @@ def wapper(func):
     @functools.wraps(func)  # 设置函数的元信息
     def inner(*args, **kwargs):
         logger.error(request.cookies.get('token'))
-        status = auth.verify_auth_token('token')
+        status = verify_auth_token('token')
 
         if status is "Failed":
             return "Failed"
@@ -87,7 +111,7 @@ def register_user(data):
     logger.error(data['timecode'])
     logger.error(data['password'])
 
-    pwd = pydes.decrypt(data['timecode'], data['password'])
+    pwd = des3.decrypt(data['timecode'], data['password'])
     logger.error(pwd)
 
     if is_exist_tel is None:
@@ -97,6 +121,7 @@ def register_user(data):
         user_id = user_id + 1
 
         try:
+            pwd = des3.des3_encrypt(pwd)
             obj = user_service.save(User(id=user_id,  username=data['username'], password=pwd, telphone=data['telphone']))
         except Exception as e:
             logger.error(e)

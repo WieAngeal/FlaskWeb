@@ -75,85 +75,122 @@
 
 	<script src="/static/vendor/jquery/jquery-3.2.1.min.js"></script>
 	<script src="/static/js/main.js"></script>
-    <script src="/static/js/DES3.js"></script>
+    <script src="/static/js/crypto/crypto-js.js"></script>
 </body>
 
 </html>
 
 <script type="text/javascript" charset="utf-8">
-        function get_token() {
-            var telphone = document.getElementById("telphone").value;
-            var password = document.getElementById("password").value;
+    function des3_decrypt(key_value, data) {
+        var key  = CryptoJS.enc.Utf8.parse(key_value); // key
+        //const iv = CryptoJS.enc.Utf8.parse("4c43c365"); // iv
+        var decrypt_str = CryptoJS.TripleDES.decrypt(data, key, {
+            //iv: crypto_iv,
+            mode: CryptoJS.mode.ECB,
+            padding: CryptoJS.pad.Pkcs7
+        });
+        return decrypt_str.toString(CryptoJS.enc.Utf8);
+    }
 
-            var timecode = (Date.parse(new Date()))/1000;
-		    var encodePwd = DES3.encrypt(timecode,password);
+    function des3_encrypt(key_value, data){
+        var key  = CryptoJS.enc.Utf8.parse(key_value); // key
+        //const iv = CryptoJS.enc.Utf8.parse("4c43c365"); // iv
+        var encrypt_str = CryptoJS.TripleDES.encrypt(data, key, {
+            //iv: iv,
+            mode: CryptoJS.mode.ECB,
+            padding: CryptoJS.pad.Pkcs7
+        });
 
-            var data= {
-                data: JSON.stringify({
-                    telphone: telphone,
-                    password: encodePwd
-                }),
-            };
+        return encrypt_str.toString(); // 返回加密后的字符串
+    }
 
-            $.ajax({
-                type: "POST",
-                url: "/api/login/generate_token",
-                dataType: "json",
-                data: data,
-                contentType: "application/x-www-form-urlencoded",
-                success: function (result) {
-                    console.log(result);
-                    if (result.code == "Success") {
-                        login_token(result.token);
-                    }
+    function pad(num, n) {
+        var len = num.toString().length;
+        while(len < n) {
+            num = num + "0";
+            len++;
+        }
+        return num;
+    }
 
-                    if(result.code == "error username or password"){
-                        alert(result.msg);
-                    }
-                },
-                error : function() {
-                    alert("异常！");
+    function get_token() {
+        var telphone = document.getElementById("telphone").value;
+        var password = document.getElementById("password").value;
+
+        var timeCode = (Date.parse(new Date()))/1000;
+        var key = pad(timeCode, 24);
+
+        var encrypt_pwd = des3_encrypt(key, password);
+        console.log(encrypt_pwd);
+
+
+        var data= {
+            data: JSON.stringify({
+                telphone: telphone,
+                password: encrypt_pwd,
+                timecode: key
+            }),
+        };
+
+        $.ajax({
+            type: "POST",
+            url: "/api/auth/generate_token",
+            dataType: "json",
+            data: data,
+            contentType: "application/x-www-form-urlencoded",
+            success: function (result) {
+                console.log(result);
+                if (result.code == "Success") {
+                    login_token(result.token);
                 }
-            });
-        }
 
-        function setCookie(cname, cvalue)
-        {
-          var d = new Date();
-          var hours = 1;
-          d.setTime(d.getTime()+(hours*60*60*1000));
-          var expires = "expires="+d.toGMTString();
-          document.cookie = cname + "=" + cvalue + "; " + expires;
-        }
-
-        function login_token(token) {
-            var data= {
-                data: JSON.stringify({
-                    _token: token
-                }),
-            };
-
-            $.ajax({
-                type: "POST",
-                url: "/api/login/login_token",
-                dataType: "json",
-                data: data,
-                contentType: "application/x-www-form-urlencoded",
-                success: function (result) {
-                    console.log(result);
-                    if(result['code'] == "Success"){
-                        sessionStorage.setItem("token", result['token']);
-                        setCookie("token", result['token']);
-                        window.location.href="/ycyl/?token="+result['token'];
-                    }
-
-                    if(result.code == "error username or password"){
-                        alert(result.msg);
-                    }
-                },
-                error : function() {
-                    alert("异常！");
+                if(result.code == "error username or password"){
+                    alert(result.msg);
                 }
-            });
-        }
-    </script>
+            },
+            error : function() {
+                alert("异常！");
+            }
+        });
+    }
+
+    function setCookie(cname, cvalue)
+    {
+      var d = new Date();
+      var hours = 1;
+      d.setTime(d.getTime()+(hours*60*60*1000));
+      var expires = "expires="+d.toGMTString();
+      document.cookie = cname + "=" + cvalue + "; " + expires;
+    }
+
+    function login_token(token) {
+        var data= {
+            data: JSON.stringify({
+                _token: token
+            }),
+        };
+
+        $.ajax({
+            type: "POST",
+            url: "/api/auth/login_token",
+            dataType: "json",
+            data: data,
+            contentType: "application/x-www-form-urlencoded",
+            success: function (result) {
+                console.log(result);
+                if(result['code'] == "Success"){
+                    sessionStorage.setItem("token", result['token']);
+                    setCookie("token", result['token']);
+                    window.location.href="/ycyl/?token="+result['token'];
+                }
+
+                if(result.code == "error username or password"){
+                    alert(result.msg);
+                }
+            },
+            error : function() {
+                alert("异常！");
+            }
+        });
+    }
+</script>
