@@ -113,7 +113,7 @@ iframe {
 .txt1 {
   font-family: 'Microsoft Yahei';
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 0.5;
   color: #ffffff;
 }
 
@@ -211,7 +211,6 @@ iframe {
   padding: 0 7px 0 43px;
 }
 
-
 /*---------------------------------------------*/
 .focus-input100 {
   position: absolute;
@@ -222,6 +221,7 @@ iframe {
   left: 0;
   pointer-events: none;
 }
+
 
 .focus-input100::after {
   content: attr(data-symbol);
@@ -259,6 +259,58 @@ iframe {
   transition: all 0.4s;
 }
 
+
+
+.img_code {
+  font-family: 'Microsoft Yahei';
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.2;
+
+  display: block;
+  width: 50%;
+  height: 55px;
+  background: transparent;
+  padding: 0 7px 0 43px;
+}
+
+.focus-imgcode {
+  position: absolute;
+  display: block;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.focus-imgcode-img {
+  position: absolute;
+  display: block;
+  top: 30%;
+  right: 10%;
+  padding-left: 0;
+}
+
+.focus-imgcode::after {
+  content: attr(data-symbol);
+  font-family: Material-Design-Iconic-Font;
+  color: #adadad;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: calc(100% - 20px);
+  bottom: 0;
+  left: 0;
+  padding-left: 13px;
+  padding-top: 3px;
+}
 
 .input100:focus + .focus-input100::before {
   width: 100%;
@@ -328,7 +380,7 @@ iframe {
   font-family: 'Microsoft Yahei';
   font-size: 16px;
   color: #fff;
-  line-height: 1.2;
+  line-height: 0.2;
   text-transform: uppercase;
 
   display: -webkit-box;
@@ -432,7 +484,7 @@ iframe {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin: 5px;
+  margin: 1px;
 }
 
 .login100-social-item:hover {

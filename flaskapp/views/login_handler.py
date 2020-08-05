@@ -5,16 +5,18 @@
 # @File    : login_hander.py
 # @Software: PyCharm
 
-from flask import Blueprint, request, redirect
+from flask import Blueprint, request, redirect, render_template
 from flask import url_for
 from ..services import UserService
 from ..common import (ConsoleLogger, relative_path)
+from ..common.captcha import CaptchaTool
 from flaskapp import app
 import json, jsonify
 import hashlib
 import ast
-from ..common import auth
-
+from ..common import auth, auth_trd
+import re, time
+import requests
 
 logger = ConsoleLogger(relative_path(__file__))
 user_service = UserService()
@@ -44,3 +46,28 @@ def register_user():
     data = json.loads(request.form.get('data'))
     json_data = json.dumps(auth.register_user(data))
     return json_data
+
+
+@login.route('/imgcode', methods=['GET', 'POST'])
+def get_verify_code():
+    method = request.method
+    if method == 'GET':
+        new_captcha = CaptchaTool()
+        # 获取图形验证码
+        img, code = new_captcha.get_verify_code()
+        # 存入session
+        #session["code"] = code
+
+        #logger.error(img)
+        logger.error(code)
+
+        return img
+
+
+@login.route('/wechat_code', methods=['GET', 'POST'])
+def wechat_login():
+    url = "https://login.weixin.qq.com/qrcode/oel9rit2RA=="
+    json_data = json.dumps(url)
+    logger.info(json_data)
+    return json_data
+

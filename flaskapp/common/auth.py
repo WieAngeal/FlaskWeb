@@ -88,6 +88,12 @@ def check_password(password, passwd):
     else:
         return False
 
+def check_captcha_code(user_code, flask_code):
+    if (user_code == flask_code):
+        return True
+    else:
+        return False
+
 
 def rep_json_data(code=None, msg=None, username=None, telphone=None, token=None):
     data = {'code': code, 'msg': msg, 'username': username, 'telphone': telphone, 'token': token}

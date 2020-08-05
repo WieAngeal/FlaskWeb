@@ -48,6 +48,13 @@
 						<span class="focus-input100" data-symbol="&#xf190;"></span>
 					</div>
 
+                    <div class="wrap-input100 validate-input" data-validate="请输入验证码">
+                        <span class="label-input100">验证码</span>
+                        <input class="img_code" type="text" name="text" id="verify_code" placeholder="请输入验证码">
+                        <span class="focus-imgcode" data-symbol="&#xf183;"></span>
+                        <img onclick="refresh_img_code()" class="focus-imgcode-img" id="img_code" src="">
+					</div>
+
 					<div class="text-right p-t-8 p-b-31">
 						<a class="txt1"> </a>
 					</div>
@@ -71,7 +78,12 @@
 	<script src="/static/js/main.js"></script>
     <script src="/static/js/des3.js"></script>
 </body>
-
+    <script>
+        window.onload=function(){
+            console.log("初始化页面触发调用验证码接口");
+            refresh_img_code();
+        };
+    </script>
 </html>
 
 <script type="text/javascript" charset="utf-8">
@@ -130,6 +142,7 @@
         var password = document.getElementById("password").value;
         var telphone = document.getElementById("telphone").value;
         var againpswd = document.getElementById("againpswd").value;
+        var verifycode = document.getElementById("verify_code").value;
 
         var phoneReg=/1[3-9]+\d{9}/;
 
@@ -191,6 +204,12 @@
             return false;
         }
 
+        if(!verifycode || verifycode == ''){
+            alert("请输入验证码！");
+            $("#verify_code").focus();
+            return false;
+        }
+
         var timeCode = (Date.parse(new Date()))/1000;
         var key = pad(timeCode, 24);
 
@@ -202,7 +221,8 @@
                 username: username,
                 password: encrypt_pwd,
                 telphone: telphone,
-                timecode: key
+                timecode: key,
+                verifycode: verifycode
             }),
         };
 
@@ -260,6 +280,22 @@
                 }
             },
             error : function() {
+                alert("异常！");
+            }
+        });
+    }
+
+    function refresh_img_code() {
+        console.log("show img wecaht.");
+        $.ajax({
+            type: "GET",
+            url: "/api/auth/imgcode",
+            contentType: "application/x-www-form-urlencoded",
+            success: function (result) {
+                console.log(result);
+                $("#img_code").attr("src", result);
+            },
+            error: function () {
                 alert("异常！");
             }
         });
