@@ -10,7 +10,8 @@ from flask_migrate import Migrate, MigrateCommand
 from flask_script import Manager
 from flask_sqlalchemy import SQLAlchemy
 from flask_mail import Mail
-
+from flask_apscheduler import APScheduler
+from .common import task
 
 import config
 from . import common
@@ -25,6 +26,7 @@ app.template_folder = config.TEMPLATE_FOLDER
 app.secret_key = '1!@#$%^&*()'
 app.config.from_object(config)
 
+
 mail = Mail(app)
 
 db = SQLAlchemy(app)
@@ -32,6 +34,7 @@ migrate = Migrate(app, db)
 manager = Manager(app)
 manager.add_command('db', MigrateCommand)
 
+scheduler = APScheduler(app)
 
 def __register_blueprint_models():
     # 注册模块信息
@@ -64,9 +67,16 @@ def __flask_extends():
     plugins.celery = app.make_celery()
 
 
+def __init_scheduler():
+    logger.debug("__init_scheduler in")
+    # scheduler.init_app(app)
+    # scheduler.start()
+
+
 __flask_extends()
 __register_blueprint_models()
 __init_tables()
+__init_scheduler()
 logger.debug("urls: ")
 for i in list(set([url.rule for url in app.url_map.iter_rules()])):
     logger.debug(i)

@@ -13,6 +13,9 @@ import sys
 from flaskapp import app
 from flaskapp import manager
 
+
+
+
 if __name__ == '__main__':
     # 初始化
     #     $ python manager.py db init

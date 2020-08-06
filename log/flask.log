@@ -14933,3 +14933,1948 @@
 4 2020-08-05 16:52:53,294 DEBUG {model} http_interceptor.py(20) : request params: [%s]
 4 2020-08-05 16:52:53,295 ERROR {model} login_handler.py(62) : 2851i
 4 2020-08-05 16:52:53,295 ERROR {model} login_handler.py(62) : 2851i
+4 2020-08-05 17:34:18,372 INFO {model} __init__.py(17) : initial app models model
+4 2020-08-05 17:34:18,395 INFO {model} __init__.py(13) : initial app core model
+4 2020-08-05 17:34:18,406 INFO {model} __init__.py(15) : initial app services model
+4 2020-08-05 17:34:19,112 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:19,112 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:19,114 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:19,114 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:19,125 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:19,125 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:19,148 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:19,148 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:19,157 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:19,157 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:19,181 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:19,181 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:20,787 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:20,787 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:20,793 INFO {model} __init__.py(24) : initial app views model
+4 2020-08-05 17:34:20,798 INFO {model} __init__.py(53) : register blueprint ycyl success.
+4 2020-08-05 17:34:20,807 INFO {model} __init__.py(53) : register blueprint error success.
+4 2020-08-05 17:34:20,813 INFO {model} __init__.py(53) : register blueprint index success.
+4 2020-08-05 17:34:20,820 INFO {model} __init__.py(53) : register blueprint login success.
+4 2020-08-05 17:34:20,823 INFO {model} __init__.py(53) : register blueprint login_test success.
+4 2020-08-05 17:34:20,827 INFO {model} __init__.py(53) : register blueprint user success.
+4 2020-08-05 17:34:20,831 INFO {model} __init__.py(53) : register blueprint clazz success.
+4 2020-08-05 17:34:20,833 INFO {model} __init__.py(53) : register blueprint school success.
+4 2020-08-05 17:34:20,834 INFO {model} __init__.py(53) : register blueprint celery success.
+4 2020-08-05 17:34:21,314 DEBUG {model} __init__.py(70) : urls: 
+4 2020-08-05 17:34:21,315 DEBUG {model} __init__.py(72) : /api/auth/generate_token
+4 2020-08-05 17:34:21,316 DEBUG {model} __init__.py(72) : /login_test/login
+4 2020-08-05 17:34:21,316 DEBUG {model} __init__.py(72) : /api/classes/
+4 2020-08-05 17:34:21,317 DEBUG {model} __init__.py(72) : /register
+4 2020-08-05 17:34:21,318 DEBUG {model} __init__.py(72) : /api/get_target_data
+4 2020-08-05 17:34:21,319 DEBUG {model} __init__.py(72) : /
+4 2020-08-05 17:34:21,320 DEBUG {model} __init__.py(72) : /ycyl/api/count
+4 2020-08-05 17:34:21,320 DEBUG {model} __init__.py(72) : /api/users/
+4 2020-08-05 17:34:21,321 DEBUG {model} __init__.py(72) : /api/users/<user_id>
+4 2020-08-05 17:34:21,322 DEBUG {model} __init__.py(72) : /api/classes/<clazz_id>
+4 2020-08-05 17:34:21,323 DEBUG {model} __init__.py(72) : /api/schools/count
+4 2020-08-05 17:34:21,324 DEBUG {model} __init__.py(72) : /task/compute
+4 2020-08-05 17:34:21,324 DEBUG {model} __init__.py(72) : /err/bad_gateway_timeout
+4 2020-08-05 17:34:21,325 DEBUG {model} __init__.py(72) : /api/auth/login_token
+4 2020-08-05 17:34:21,326 DEBUG {model} __init__.py(72) : /err/server_error
+4 2020-08-05 17:34:21,327 DEBUG {model} __init__.py(72) : /err/service_unavailable
+4 2020-08-05 17:34:21,328 DEBUG {model} __init__.py(72) : /err/bad_request
+4 2020-08-05 17:34:21,329 DEBUG {model} __init__.py(72) : /api/auth/register
+4 2020-08-05 17:34:21,329 DEBUG {model} __init__.py(72) : /api/auth/imgcode
+4 2020-08-05 17:34:21,330 DEBUG {model} __init__.py(72) : /err/bad_gateway
+4 2020-08-05 17:34:21,331 DEBUG {model} __init__.py(72) : /api/get_real_data
+4 2020-08-05 17:34:21,332 DEBUG {model} __init__.py(72) : /err/unauthorized
+4 2020-08-05 17:34:21,333 DEBUG {model} __init__.py(72) : /paths
+4 2020-08-05 17:34:21,334 DEBUG {model} __init__.py(72) : /ycyl/
+4 2020-08-05 17:34:21,335 DEBUG {model} __init__.py(72) : /static/<path:filename>
+4 2020-08-05 17:34:21,339 DEBUG {model} __init__.py(72) : /api/schools/<school_id>
+4 2020-08-05 17:34:21,342 DEBUG {model} __init__.py(72) : /ycyl/api/register
+4 2020-08-05 17:34:21,344 DEBUG {model} __init__.py(72) : /api/schools/
+4 2020-08-05 17:34:21,346 DEBUG {model} __init__.py(72) : /err/forbidden
+4 2020-08-05 17:34:21,348 DEBUG {model} __init__.py(72) : /err/not_found
+4 2020-08-05 17:34:21,350 DEBUG {model} __init__.py(72) : /api/auth/wechat_code
+4 2020-08-05 17:34:21,406 INFO {model} functions.py(28) : [flaskapp] bootstrap init on http://0.0.0.0:5000/. Start used time : 4.600124073028565 s
+4 2020-08-05 17:34:28,484 INFO {model} __init__.py(17) : initial app models model
+4 2020-08-05 17:34:28,491 INFO {model} __init__.py(13) : initial app core model
+4 2020-08-05 17:34:28,493 INFO {model} __init__.py(15) : initial app services model
+4 2020-08-05 17:34:28,609 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:28,609 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:28,611 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:28,611 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:28,614 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:28,614 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:28,617 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:28,617 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:28,620 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:28,620 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:28,625 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:28,625 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:28,808 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:28,808 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:28,810 INFO {model} __init__.py(24) : initial app views model
+4 2020-08-05 17:34:28,812 INFO {model} __init__.py(53) : register blueprint ycyl success.
+4 2020-08-05 17:34:28,816 INFO {model} __init__.py(53) : register blueprint error success.
+4 2020-08-05 17:34:28,819 INFO {model} __init__.py(53) : register blueprint index success.
+4 2020-08-05 17:34:28,821 INFO {model} __init__.py(53) : register blueprint login success.
+4 2020-08-05 17:34:28,822 INFO {model} __init__.py(53) : register blueprint login_test success.
+4 2020-08-05 17:34:28,824 INFO {model} __init__.py(53) : register blueprint user success.
+4 2020-08-05 17:34:28,826 INFO {model} __init__.py(53) : register blueprint clazz success.
+4 2020-08-05 17:34:28,828 INFO {model} __init__.py(53) : register blueprint school success.
+4 2020-08-05 17:34:28,829 INFO {model} __init__.py(53) : register blueprint celery success.
+4 2020-08-05 17:34:28,875 DEBUG {model} __init__.py(70) : urls: 
+4 2020-08-05 17:34:28,877 DEBUG {model} __init__.py(72) : /ycyl/api/register
+4 2020-08-05 17:34:28,878 DEBUG {model} __init__.py(72) : /register
+4 2020-08-05 17:34:28,878 DEBUG {model} __init__.py(72) : /api/get_target_data
+4 2020-08-05 17:34:28,879 DEBUG {model} __init__.py(72) : /err/service_unavailable
+4 2020-08-05 17:34:28,880 DEBUG {model} __init__.py(72) : /api/auth/generate_token
+4 2020-08-05 17:34:28,881 DEBUG {model} __init__.py(72) : /api/classes/<clazz_id>
+4 2020-08-05 17:34:28,881 DEBUG {model} __init__.py(72) : /login_test/login
+4 2020-08-05 17:34:28,882 DEBUG {model} __init__.py(72) : /err/not_found
+4 2020-08-05 17:34:28,883 DEBUG {model} __init__.py(72) : /ycyl/api/count
+4 2020-08-05 17:34:28,884 DEBUG {model} __init__.py(72) : /
+4 2020-08-05 17:34:28,884 DEBUG {model} __init__.py(72) : /api/users/<user_id>
+4 2020-08-05 17:34:28,885 DEBUG {model} __init__.py(72) : /api/auth/login_token
+4 2020-08-05 17:34:28,886 DEBUG {model} __init__.py(72) : /api/auth/register
+4 2020-08-05 17:34:28,887 DEBUG {model} __init__.py(72) : /api/schools/
+4 2020-08-05 17:34:28,887 DEBUG {model} __init__.py(72) : /err/unauthorized
+4 2020-08-05 17:34:28,888 DEBUG {model} __init__.py(72) : /task/compute
+4 2020-08-05 17:34:28,889 DEBUG {model} __init__.py(72) : /err/bad_gateway
+4 2020-08-05 17:34:28,890 DEBUG {model} __init__.py(72) : /api/users/
+4 2020-08-05 17:34:28,891 DEBUG {model} __init__.py(72) : /api/schools/count
+4 2020-08-05 17:34:28,892 DEBUG {model} __init__.py(72) : /static/<path:filename>
+4 2020-08-05 17:34:28,892 DEBUG {model} __init__.py(72) : /err/forbidden
+4 2020-08-05 17:34:28,893 DEBUG {model} __init__.py(72) : /ycyl/
+4 2020-08-05 17:34:28,894 DEBUG {model} __init__.py(72) : /err/bad_request
+4 2020-08-05 17:34:28,895 DEBUG {model} __init__.py(72) : /api/get_real_data
+4 2020-08-05 17:34:28,895 DEBUG {model} __init__.py(72) : /api/auth/wechat_code
+4 2020-08-05 17:34:28,896 DEBUG {model} __init__.py(72) : /paths
+4 2020-08-05 17:34:28,897 DEBUG {model} __init__.py(72) : /err/server_error
+4 2020-08-05 17:34:28,898 DEBUG {model} __init__.py(72) : /err/bad_gateway_timeout
+4 2020-08-05 17:34:28,898 DEBUG {model} __init__.py(72) : /api/auth/imgcode
+4 2020-08-05 17:34:28,899 DEBUG {model} __init__.py(72) : /api/classes/
+4 2020-08-05 17:34:28,900 DEBUG {model} __init__.py(72) : /api/schools/<school_id>
+4 2020-08-05 17:34:28,952 INFO {model} functions.py(28) : [flaskapp] bootstrap init on http://0.0.0.0:5000/. Start used time : 0.8157863140106201 s
+4 2020-08-05 17:34:30,480 INFO {model} __init__.py(17) : initial app models model
+4 2020-08-05 17:34:30,492 INFO {model} __init__.py(13) : initial app core model
+4 2020-08-05 17:34:30,496 INFO {model} __init__.py(15) : initial app services model
+4 2020-08-05 17:34:30,607 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:30,607 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:30,610 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:30,610 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:30,612 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:30,612 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:30,616 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:30,616 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:30,618 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:30,618 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:30,622 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:30,622 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:30,803 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:30,803 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:34:30,806 INFO {model} __init__.py(24) : initial app views model
+4 2020-08-05 17:34:30,808 INFO {model} __init__.py(53) : register blueprint ycyl success.
+4 2020-08-05 17:34:30,812 INFO {model} __init__.py(53) : register blueprint error success.
+4 2020-08-05 17:34:30,814 INFO {model} __init__.py(53) : register blueprint index success.
+4 2020-08-05 17:34:30,817 INFO {model} __init__.py(53) : register blueprint login success.
+4 2020-08-05 17:34:30,818 INFO {model} __init__.py(53) : register blueprint login_test success.
+4 2020-08-05 17:34:30,820 INFO {model} __init__.py(53) : register blueprint user success.
+4 2020-08-05 17:34:30,824 INFO {model} __init__.py(53) : register blueprint clazz success.
+4 2020-08-05 17:34:30,826 INFO {model} __init__.py(53) : register blueprint school success.
+4 2020-08-05 17:34:30,827 INFO {model} __init__.py(53) : register blueprint celery success.
+4 2020-08-05 17:34:30,871 DEBUG {model} __init__.py(70) : urls: 
+4 2020-08-05 17:34:30,872 DEBUG {model} __init__.py(72) : /api/get_target_data
+4 2020-08-05 17:34:30,873 DEBUG {model} __init__.py(72) : /err/bad_request
+4 2020-08-05 17:34:30,874 DEBUG {model} __init__.py(72) : /api/classes/
+4 2020-08-05 17:34:30,874 DEBUG {model} __init__.py(72) : /login_test/login
+4 2020-08-05 17:34:30,875 DEBUG {model} __init__.py(72) : /register
+4 2020-08-05 17:34:30,876 DEBUG {model} __init__.py(72) : /api/users/<user_id>
+4 2020-08-05 17:34:30,877 DEBUG {model} __init__.py(72) : /err/bad_gateway_timeout
+4 2020-08-05 17:34:30,879 DEBUG {model} __init__.py(72) : /err/unauthorized
+4 2020-08-05 17:34:30,880 DEBUG {model} __init__.py(72) : /api/auth/wechat_code
+4 2020-08-05 17:34:30,881 DEBUG {model} __init__.py(72) : /api/schools/count
+4 2020-08-05 17:34:30,881 DEBUG {model} __init__.py(72) : /
+4 2020-08-05 17:34:30,882 DEBUG {model} __init__.py(72) : /api/auth/imgcode
+4 2020-08-05 17:34:30,883 DEBUG {model} __init__.py(72) : /api/auth/register
+4 2020-08-05 17:34:30,884 DEBUG {model} __init__.py(72) : /api/schools/
+4 2020-08-05 17:34:30,884 DEBUG {model} __init__.py(72) : /err/not_found
+4 2020-08-05 17:34:30,885 DEBUG {model} __init__.py(72) : /err/bad_gateway
+4 2020-08-05 17:34:30,886 DEBUG {model} __init__.py(72) : /api/auth/login_token
+4 2020-08-05 17:34:30,887 DEBUG {model} __init__.py(72) : /api/get_real_data
+4 2020-08-05 17:34:30,888 DEBUG {model} __init__.py(72) : /api/classes/<clazz_id>
+4 2020-08-05 17:34:30,888 DEBUG {model} __init__.py(72) : /ycyl/api/register
+4 2020-08-05 17:34:30,889 DEBUG {model} __init__.py(72) : /err/server_error
+4 2020-08-05 17:34:30,890 DEBUG {model} __init__.py(72) : /ycyl/api/count
+4 2020-08-05 17:34:30,891 DEBUG {model} __init__.py(72) : /api/auth/generate_token
+4 2020-08-05 17:34:30,892 DEBUG {model} __init__.py(72) : /paths
+4 2020-08-05 17:34:30,892 DEBUG {model} __init__.py(72) : /err/forbidden
+4 2020-08-05 17:34:30,893 DEBUG {model} __init__.py(72) : /err/service_unavailable
+4 2020-08-05 17:34:30,894 DEBUG {model} __init__.py(72) : /api/users/
+4 2020-08-05 17:34:30,895 DEBUG {model} __init__.py(72) : /ycyl/
+4 2020-08-05 17:34:30,895 DEBUG {model} __init__.py(72) : /api/schools/<school_id>
+4 2020-08-05 17:34:30,896 DEBUG {model} __init__.py(72) : /task/compute
+4 2020-08-05 17:34:30,897 DEBUG {model} __init__.py(72) : /static/<path:filename>
+4 2020-08-05 17:34:30,950 INFO {model} functions.py(28) : [flaskapp] bootstrap init on http://0.0.0.0:5000/. Start used time : 0.8376600265502929 s
+4 2020-08-05 17:34:48,377 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:34:48,417 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:34:48,424 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:34:48,425 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:34:48,426 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:34:48,427 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:34:48,429 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:34:48,436 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:34:48,441 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:34:48,536 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:34:48,552 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:34:48,555 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:34:48,557 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:34:48,648 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:34:48,678 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:34:48,846 ERROR {model} login_handler.py(62) : 70kpL
+4 2020-08-05 17:34:48,846 ERROR {model} login_handler.py(62) : 70kpL
+4 2020-08-05 17:34:59,975 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:34:59,977 ERROR {model} login_handler.py(62) : 8C5E3
+4 2020-08-05 17:34:59,977 ERROR {model} login_handler.py(62) : 8C5E3
+4 2020-08-05 17:35:00,375 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:35:00,378 ERROR {model} login_handler.py(62) : MwOJY
+4 2020-08-05 17:35:00,378 ERROR {model} login_handler.py(62) : MwOJY
+4 2020-08-05 17:35:00,679 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:35:00,680 ERROR {model} login_handler.py(62) : WHL3t
+4 2020-08-05 17:35:00,680 ERROR {model} login_handler.py(62) : WHL3t
+4 2020-08-05 17:35:00,852 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:35:00,854 ERROR {model} login_handler.py(62) : 7B5D1
+4 2020-08-05 17:35:00,854 ERROR {model} login_handler.py(62) : 7B5D1
+4 2020-08-05 17:35:00,991 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:35:00,993 ERROR {model} login_handler.py(62) : oVS5J
+4 2020-08-05 17:35:00,993 ERROR {model} login_handler.py(62) : oVS5J
+4 2020-08-05 17:35:01,154 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:35:01,156 ERROR {model} login_handler.py(62) : 8IA2Y
+4 2020-08-05 17:35:01,156 ERROR {model} login_handler.py(62) : 8IA2Y
+4 2020-08-05 17:35:02,044 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:35:02,108 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:35:02,110 ERROR {model} login_handler.py(62) : sK8DZ
+4 2020-08-05 17:35:02,110 ERROR {model} login_handler.py(62) : sK8DZ
+4 2020-08-05 17:35:02,117 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:35:03,231 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:35:03,234 ERROR {model} login_handler.py(62) : 914py
+4 2020-08-05 17:35:03,234 ERROR {model} login_handler.py(62) : 914py
+4 2020-08-05 17:35:03,698 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:35:03,700 ERROR {model} login_handler.py(62) : vcS70
+4 2020-08-05 17:35:03,700 ERROR {model} login_handler.py(62) : vcS70
+4 2020-08-05 17:35:03,838 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:35:03,840 ERROR {model} login_handler.py(62) : HFT0h
+4 2020-08-05 17:35:03,840 ERROR {model} login_handler.py(62) : HFT0h
+4 2020-08-05 17:35:03,996 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:35:03,998 ERROR {model} login_handler.py(62) : MLNg8
+4 2020-08-05 17:35:03,998 ERROR {model} login_handler.py(62) : MLNg8
+4 2020-08-05 17:35:04,160 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:35:04,162 ERROR {model} login_handler.py(62) : 7LfbZ
+4 2020-08-05 17:35:04,162 ERROR {model} login_handler.py(62) : 7LfbZ
+4 2020-08-05 17:35:04,294 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:35:04,297 ERROR {model} login_handler.py(62) : F5uc2
+4 2020-08-05 17:35:04,297 ERROR {model} login_handler.py(62) : F5uc2
+4 2020-08-05 17:35:04,450 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:35:04,453 ERROR {model} login_handler.py(62) : 1X6Wl
+4 2020-08-05 17:35:04,453 ERROR {model} login_handler.py(62) : 1X6Wl
+4 2020-08-05 17:35:09,694 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:35:09,736 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:35:09,738 ERROR {model} login_handler.py(62) : ljn6T
+4 2020-08-05 17:35:09,740 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:35:09,738 ERROR {model} login_handler.py(62) : ljn6T
+4 2020-08-05 17:35:11,393 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:35:11,395 ERROR {model} login_handler.py(62) : 2JTI7
+4 2020-08-05 17:35:11,395 ERROR {model} login_handler.py(62) : 2JTI7
+4 2020-08-05 17:35:11,668 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:35:11,671 ERROR {model} login_handler.py(62) : A2fZR
+4 2020-08-05 17:35:11,671 ERROR {model} login_handler.py(62) : A2fZR
+4 2020-08-05 17:35:11,849 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:35:11,850 ERROR {model} login_handler.py(62) : VfP0Y
+4 2020-08-05 17:35:11,850 ERROR {model} login_handler.py(62) : VfP0Y
+4 2020-08-05 17:35:12,020 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:35:12,022 ERROR {model} login_handler.py(62) : 1Ji2m
+4 2020-08-05 17:35:12,022 ERROR {model} login_handler.py(62) : 1Ji2m
+4 2020-08-05 17:35:12,162 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:35:12,165 ERROR {model} login_handler.py(62) : 0TZvH
+4 2020-08-05 17:35:12,165 ERROR {model} login_handler.py(62) : 0TZvH
+4 2020-08-05 17:35:12,309 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:35:12,311 ERROR {model} login_handler.py(62) : VBKS5
+4 2020-08-05 17:35:12,311 ERROR {model} login_handler.py(62) : VBKS5
+4 2020-08-05 17:35:12,459 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:35:12,461 ERROR {model} login_handler.py(62) : 8Gord
+4 2020-08-05 17:35:12,461 ERROR {model} login_handler.py(62) : 8Gord
+4 2020-08-05 17:35:12,605 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:35:12,608 ERROR {model} login_handler.py(62) : H94CU
+4 2020-08-05 17:35:12,608 ERROR {model} login_handler.py(62) : H94CU
+4 2020-08-05 17:35:12,755 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:35:12,757 ERROR {model} login_handler.py(62) : rT9uP
+4 2020-08-05 17:35:12,757 ERROR {model} login_handler.py(62) : rT9uP
+4 2020-08-05 17:35:12,880 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-05 17:35:12,882 ERROR {model} login_handler.py(62) : X7yWw
+4 2020-08-05 17:35:12,882 ERROR {model} login_handler.py(62) : X7yWw
+4 2020-08-05 17:40:30,485 INFO {model} __init__.py(17) : initial app models model
+4 2020-08-05 17:40:30,493 INFO {model} __init__.py(13) : initial app core model
+4 2020-08-05 17:40:30,495 INFO {model} __init__.py(15) : initial app services model
+4 2020-08-05 17:40:30,597 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:40:30,597 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:40:30,600 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:40:30,600 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:40:30,602 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:40:30,602 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:40:30,606 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:40:30,606 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:40:30,608 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:40:30,608 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:40:30,612 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:40:30,612 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:40:30,853 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:40:30,853 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:40:30,855 INFO {model} __init__.py(24) : initial app views model
+4 2020-08-05 17:40:30,857 INFO {model} __init__.py(53) : register blueprint ycyl success.
+4 2020-08-05 17:40:30,861 INFO {model} __init__.py(53) : register blueprint error success.
+4 2020-08-05 17:40:30,863 INFO {model} __init__.py(53) : register blueprint index success.
+4 2020-08-05 17:40:30,866 INFO {model} __init__.py(53) : register blueprint login success.
+4 2020-08-05 17:40:30,867 INFO {model} __init__.py(53) : register blueprint login_test success.
+4 2020-08-05 17:40:30,870 INFO {model} __init__.py(53) : register blueprint user success.
+4 2020-08-05 17:40:30,873 INFO {model} __init__.py(53) : register blueprint clazz success.
+4 2020-08-05 17:40:30,875 INFO {model} __init__.py(53) : register blueprint school success.
+4 2020-08-05 17:40:30,877 INFO {model} __init__.py(53) : register blueprint celery success.
+4 2020-08-05 17:40:30,925 DEBUG {model} __init__.py(70) : urls: 
+4 2020-08-05 17:40:30,926 DEBUG {model} __init__.py(72) : /err/bad_gateway
+4 2020-08-05 17:40:30,927 DEBUG {model} __init__.py(72) : /api/users/
+4 2020-08-05 17:40:30,928 DEBUG {model} __init__.py(72) : /ycyl/api/count
+4 2020-08-05 17:40:30,929 DEBUG {model} __init__.py(72) : /api/auth/imgcode
+4 2020-08-05 17:40:30,929 DEBUG {model} __init__.py(72) : /api/get_real_data
+4 2020-08-05 17:40:30,930 DEBUG {model} __init__.py(72) : /api/schools/
+4 2020-08-05 17:40:30,931 DEBUG {model} __init__.py(72) : /err/service_unavailable
+4 2020-08-05 17:40:30,932 DEBUG {model} __init__.py(72) : /api/users/<user_id>
+4 2020-08-05 17:40:30,932 DEBUG {model} __init__.py(72) : /paths
+4 2020-08-05 17:40:30,933 DEBUG {model} __init__.py(72) : /api/auth/wechat_code
+4 2020-08-05 17:40:30,934 DEBUG {model} __init__.py(72) : /api/schools/count
+4 2020-08-05 17:40:30,935 DEBUG {model} __init__.py(72) : /err/unauthorized
+4 2020-08-05 17:40:30,936 DEBUG {model} __init__.py(72) : /task/compute
+4 2020-08-05 17:40:30,936 DEBUG {model} __init__.py(72) : /err/server_error
+4 2020-08-05 17:40:30,937 DEBUG {model} __init__.py(72) : /ycyl/api/register
+4 2020-08-05 17:40:30,938 DEBUG {model} __init__.py(72) : /api/auth/generate_token
+4 2020-08-05 17:40:30,938 DEBUG {model} __init__.py(72) : /err/forbidden
+4 2020-08-05 17:40:30,939 DEBUG {model} __init__.py(72) : /err/bad_gateway_timeout
+4 2020-08-05 17:40:30,940 DEBUG {model} __init__.py(72) : /api/get_target_data
+4 2020-08-05 17:40:30,941 DEBUG {model} __init__.py(72) : /register
+4 2020-08-05 17:40:30,941 DEBUG {model} __init__.py(72) : /login_test/login
+4 2020-08-05 17:40:30,942 DEBUG {model} __init__.py(72) : /api/schools/<school_id>
+4 2020-08-05 17:40:30,943 DEBUG {model} __init__.py(72) : /api/auth/login_token
+4 2020-08-05 17:40:30,943 DEBUG {model} __init__.py(72) : /static/<path:filename>
+4 2020-08-05 17:40:30,944 DEBUG {model} __init__.py(72) : /api/auth/register
+4 2020-08-05 17:40:30,945 DEBUG {model} __init__.py(72) : /err/bad_request
+4 2020-08-05 17:40:30,946 DEBUG {model} __init__.py(72) : /api/classes/<clazz_id>
+4 2020-08-05 17:40:30,946 DEBUG {model} __init__.py(72) : /err/not_found
+4 2020-08-05 17:40:30,947 DEBUG {model} __init__.py(72) : /ycyl/
+4 2020-08-05 17:40:30,948 DEBUG {model} __init__.py(72) : /
+4 2020-08-05 17:40:30,949 DEBUG {model} __init__.py(72) : /api/classes/
+4 2020-08-05 17:40:31,005 INFO {model} functions.py(28) : [flaskapp] bootstrap init on http://0.0.0.0:5000/. Start used time : 0.8774780750274658 s
+4 2020-08-05 17:40:32,322 INFO {model} __init__.py(17) : initial app models model
+4 2020-08-05 17:40:32,329 INFO {model} __init__.py(13) : initial app core model
+4 2020-08-05 17:40:32,332 INFO {model} __init__.py(15) : initial app services model
+4 2020-08-05 17:40:32,434 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:40:32,434 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:40:32,436 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:40:32,436 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:40:32,438 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:40:32,438 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:40:32,442 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:40:32,442 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:40:32,445 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:40:32,445 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:40:32,449 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:40:32,449 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:40:32,634 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:40:32,634 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:40:32,637 INFO {model} __init__.py(24) : initial app views model
+4 2020-08-05 17:40:32,640 INFO {model} __init__.py(53) : register blueprint ycyl success.
+4 2020-08-05 17:40:32,644 INFO {model} __init__.py(53) : register blueprint error success.
+4 2020-08-05 17:40:32,646 INFO {model} __init__.py(53) : register blueprint index success.
+4 2020-08-05 17:40:32,649 INFO {model} __init__.py(53) : register blueprint login success.
+4 2020-08-05 17:40:32,650 INFO {model} __init__.py(53) : register blueprint login_test success.
+4 2020-08-05 17:40:32,652 INFO {model} __init__.py(53) : register blueprint user success.
+4 2020-08-05 17:40:32,655 INFO {model} __init__.py(53) : register blueprint clazz success.
+4 2020-08-05 17:40:32,657 INFO {model} __init__.py(53) : register blueprint school success.
+4 2020-08-05 17:40:32,658 INFO {model} __init__.py(53) : register blueprint celery success.
+4 2020-08-05 17:40:32,707 DEBUG {model} __init__.py(70) : urls: 
+4 2020-08-05 17:40:32,710 DEBUG {model} __init__.py(72) : /err/service_unavailable
+4 2020-08-05 17:40:32,712 DEBUG {model} __init__.py(72) : /api/schools/count
+4 2020-08-05 17:40:32,713 DEBUG {model} __init__.py(72) : /api/classes/<clazz_id>
+4 2020-08-05 17:40:32,715 DEBUG {model} __init__.py(72) : /api/schools/<school_id>
+4 2020-08-05 17:40:32,717 DEBUG {model} __init__.py(72) : /api/schools/
+4 2020-08-05 17:40:32,719 DEBUG {model} __init__.py(72) : /ycyl/api/count
+4 2020-08-05 17:40:32,721 DEBUG {model} __init__.py(72) : /api/get_target_data
+4 2020-08-05 17:40:32,723 DEBUG {model} __init__.py(72) : /err/bad_request
+4 2020-08-05 17:40:32,725 DEBUG {model} __init__.py(72) : /
+4 2020-08-05 17:40:32,727 DEBUG {model} __init__.py(72) : /register
+4 2020-08-05 17:40:32,729 DEBUG {model} __init__.py(72) : /api/get_real_data
+4 2020-08-05 17:40:32,730 DEBUG {model} __init__.py(72) : /api/classes/
+4 2020-08-05 17:40:32,732 DEBUG {model} __init__.py(72) : /api/auth/generate_token
+4 2020-08-05 17:40:32,734 DEBUG {model} __init__.py(72) : /task/compute
+4 2020-08-05 17:40:32,735 DEBUG {model} __init__.py(72) : /api/users/<user_id>
+4 2020-08-05 17:40:32,736 DEBUG {model} __init__.py(72) : /err/bad_gateway_timeout
+4 2020-08-05 17:40:32,738 DEBUG {model} __init__.py(72) : /api/auth/imgcode
+4 2020-08-05 17:40:32,739 DEBUG {model} __init__.py(72) : /err/server_error
+4 2020-08-05 17:40:32,739 DEBUG {model} __init__.py(72) : /paths
+4 2020-08-05 17:40:32,740 DEBUG {model} __init__.py(72) : /err/forbidden
+4 2020-08-05 17:40:32,741 DEBUG {model} __init__.py(72) : /static/<path:filename>
+4 2020-08-05 17:40:32,742 DEBUG {model} __init__.py(72) : /err/bad_gateway
+4 2020-08-05 17:40:32,743 DEBUG {model} __init__.py(72) : /err/not_found
+4 2020-08-05 17:40:32,743 DEBUG {model} __init__.py(72) : /api/auth/wechat_code
+4 2020-08-05 17:40:32,744 DEBUG {model} __init__.py(72) : /api/users/
+4 2020-08-05 17:40:32,745 DEBUG {model} __init__.py(72) : /ycyl/api/register
+4 2020-08-05 17:40:32,746 DEBUG {model} __init__.py(72) : /login_test/login
+4 2020-08-05 17:40:32,747 DEBUG {model} __init__.py(72) : /err/unauthorized
+4 2020-08-05 17:40:32,747 DEBUG {model} __init__.py(72) : /api/auth/register
+4 2020-08-05 17:40:32,748 DEBUG {model} __init__.py(72) : /ycyl/
+4 2020-08-05 17:40:32,749 DEBUG {model} __init__.py(72) : /api/auth/login_token
+4 2020-08-05 17:40:32,802 INFO {model} functions.py(28) : [flaskapp] bootstrap init on http://0.0.0.0:5000/. Start used time : 0.829624605178833 s
+4 2020-08-05 17:44:13,649 INFO {model} __init__.py(17) : initial app models model
+4 2020-08-05 17:44:13,657 INFO {model} __init__.py(13) : initial app core model
+4 2020-08-05 17:44:13,659 INFO {model} __init__.py(15) : initial app services model
+4 2020-08-05 17:44:13,792 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:44:13,792 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:44:13,794 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:44:13,794 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:44:13,797 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:44:13,797 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:44:13,802 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:44:13,802 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:44:13,805 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:44:13,805 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:44:13,810 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:44:13,810 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:44:14,033 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:44:14,033 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:44:14,037 INFO {model} __init__.py(24) : initial app views model
+4 2020-08-05 17:44:14,039 INFO {model} __init__.py(55) : register blueprint ycyl success.
+4 2020-08-05 17:44:14,043 INFO {model} __init__.py(55) : register blueprint error success.
+4 2020-08-05 17:44:14,046 INFO {model} __init__.py(55) : register blueprint index success.
+4 2020-08-05 17:44:14,048 INFO {model} __init__.py(55) : register blueprint login success.
+4 2020-08-05 17:44:14,049 INFO {model} __init__.py(55) : register blueprint login_test success.
+4 2020-08-05 17:44:14,051 INFO {model} __init__.py(55) : register blueprint user success.
+4 2020-08-05 17:44:14,053 INFO {model} __init__.py(55) : register blueprint clazz success.
+4 2020-08-05 17:44:14,055 INFO {model} __init__.py(55) : register blueprint school success.
+4 2020-08-05 17:44:14,057 INFO {model} __init__.py(55) : register blueprint celery success.
+4 2020-08-05 17:44:14,115 DEBUG {model} __init__.py(72) : urls: 
+4 2020-08-05 17:44:14,117 DEBUG {model} __init__.py(74) : /api/auth/imgcode
+4 2020-08-05 17:44:14,119 DEBUG {model} __init__.py(74) : /api/schools/count
+4 2020-08-05 17:44:14,120 DEBUG {model} __init__.py(74) : /api/users/<user_id>
+4 2020-08-05 17:44:14,122 DEBUG {model} __init__.py(74) : /api/get_real_data
+4 2020-08-05 17:44:14,124 DEBUG {model} __init__.py(74) : /
+4 2020-08-05 17:44:14,127 DEBUG {model} __init__.py(74) : /api/auth/login_token
+4 2020-08-05 17:44:14,128 DEBUG {model} __init__.py(74) : /api/schools/
+4 2020-08-05 17:44:14,131 DEBUG {model} __init__.py(74) : /task/compute
+4 2020-08-05 17:44:14,132 DEBUG {model} __init__.py(74) : /err/bad_gateway
+4 2020-08-05 17:44:14,133 DEBUG {model} __init__.py(74) : /api/auth/generate_token
+4 2020-08-05 17:44:14,134 DEBUG {model} __init__.py(74) : /api/classes/
+4 2020-08-05 17:44:14,135 DEBUG {model} __init__.py(74) : /api/auth/register
+4 2020-08-05 17:44:14,136 DEBUG {model} __init__.py(74) : /err/service_unavailable
+4 2020-08-05 17:44:14,137 DEBUG {model} __init__.py(74) : /api/get_target_data
+4 2020-08-05 17:44:14,138 DEBUG {model} __init__.py(74) : /err/bad_request
+4 2020-08-05 17:44:14,139 DEBUG {model} __init__.py(74) : /err/bad_gateway_timeout
+4 2020-08-05 17:44:14,140 DEBUG {model} __init__.py(74) : /err/not_found
+4 2020-08-05 17:44:14,145 DEBUG {model} __init__.py(74) : /api/auth/wechat_code
+4 2020-08-05 17:44:14,148 DEBUG {model} __init__.py(74) : /api/users/
+4 2020-08-05 17:44:14,149 DEBUG {model} __init__.py(74) : /register
+4 2020-08-05 17:44:14,150 DEBUG {model} __init__.py(74) : /err/server_error
+4 2020-08-05 17:44:14,151 DEBUG {model} __init__.py(74) : /api/classes/<clazz_id>
+4 2020-08-05 17:44:14,152 DEBUG {model} __init__.py(74) : /ycyl/
+4 2020-08-05 17:44:14,153 DEBUG {model} __init__.py(74) : /api/schools/<school_id>
+4 2020-08-05 17:44:14,153 DEBUG {model} __init__.py(74) : /paths
+4 2020-08-05 17:44:14,154 DEBUG {model} __init__.py(74) : /login_test/login
+4 2020-08-05 17:44:14,155 DEBUG {model} __init__.py(74) : /err/unauthorized
+4 2020-08-05 17:44:14,156 DEBUG {model} __init__.py(74) : /err/forbidden
+4 2020-08-05 17:44:14,158 DEBUG {model} __init__.py(74) : /ycyl/api/count
+4 2020-08-05 17:44:14,160 DEBUG {model} __init__.py(74) : /static/<path:filename>
+4 2020-08-05 17:44:14,162 DEBUG {model} __init__.py(74) : /ycyl/api/register
+4 2020-08-05 17:44:14,214 INFO {model} functions.py(28) : [flaskapp] bootstrap init on http://0.0.0.0:5000/. Start used time : 0.6222018718719482 s
+4 2020-08-05 17:44:15,660 INFO {model} __init__.py(17) : initial app models model
+4 2020-08-05 17:44:15,667 INFO {model} __init__.py(13) : initial app core model
+4 2020-08-05 17:44:15,669 INFO {model} __init__.py(15) : initial app services model
+4 2020-08-05 17:44:15,770 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:44:15,770 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:44:15,772 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:44:15,772 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:44:15,774 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:44:15,774 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:44:15,778 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:44:15,778 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:44:15,781 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:44:15,781 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:44:15,785 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:44:15,785 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:44:15,966 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:44:15,966 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:44:15,969 INFO {model} __init__.py(24) : initial app views model
+4 2020-08-05 17:44:15,971 INFO {model} __init__.py(55) : register blueprint ycyl success.
+4 2020-08-05 17:44:15,975 INFO {model} __init__.py(55) : register blueprint error success.
+4 2020-08-05 17:44:15,978 INFO {model} __init__.py(55) : register blueprint index success.
+4 2020-08-05 17:44:15,981 INFO {model} __init__.py(55) : register blueprint login success.
+4 2020-08-05 17:44:15,982 INFO {model} __init__.py(55) : register blueprint login_test success.
+4 2020-08-05 17:44:15,984 INFO {model} __init__.py(55) : register blueprint user success.
+4 2020-08-05 17:44:15,986 INFO {model} __init__.py(55) : register blueprint clazz success.
+4 2020-08-05 17:44:15,988 INFO {model} __init__.py(55) : register blueprint school success.
+4 2020-08-05 17:44:15,989 INFO {model} __init__.py(55) : register blueprint celery success.
+4 2020-08-05 17:44:16,035 DEBUG {model} __init__.py(72) : urls: 
+4 2020-08-05 17:44:16,036 DEBUG {model} __init__.py(74) : /task/compute
+4 2020-08-05 17:44:16,037 DEBUG {model} __init__.py(74) : /api/auth/login_token
+4 2020-08-05 17:44:16,038 DEBUG {model} __init__.py(74) : /err/unauthorized
+4 2020-08-05 17:44:16,039 DEBUG {model} __init__.py(74) : /api/get_target_data
+4 2020-08-05 17:44:16,039 DEBUG {model} __init__.py(74) : /api/classes/<clazz_id>
+4 2020-08-05 17:44:16,040 DEBUG {model} __init__.py(74) : /login_test/login
+4 2020-08-05 17:44:16,041 DEBUG {model} __init__.py(74) : /api/auth/generate_token
+4 2020-08-05 17:44:16,042 DEBUG {model} __init__.py(74) : /api/auth/register
+4 2020-08-05 17:44:16,042 DEBUG {model} __init__.py(74) : /static/<path:filename>
+4 2020-08-05 17:44:16,043 DEBUG {model} __init__.py(74) : /api/schools/count
+4 2020-08-05 17:44:16,044 DEBUG {model} __init__.py(74) : /register
+4 2020-08-05 17:44:16,045 DEBUG {model} __init__.py(74) : /api/auth/imgcode
+4 2020-08-05 17:44:16,046 DEBUG {model} __init__.py(74) : /err/bad_gateway
+4 2020-08-05 17:44:16,046 DEBUG {model} __init__.py(74) : /err/not_found
+4 2020-08-05 17:44:16,047 DEBUG {model} __init__.py(74) : /ycyl/
+4 2020-08-05 17:44:16,048 DEBUG {model} __init__.py(74) : /err/bad_request
+4 2020-08-05 17:44:16,049 DEBUG {model} __init__.py(74) : /api/schools/<school_id>
+4 2020-08-05 17:44:16,049 DEBUG {model} __init__.py(74) : /api/get_real_data
+4 2020-08-05 17:44:16,050 DEBUG {model} __init__.py(74) : /api/auth/wechat_code
+4 2020-08-05 17:44:16,051 DEBUG {model} __init__.py(74) : /err/server_error
+4 2020-08-05 17:44:16,052 DEBUG {model} __init__.py(74) : /ycyl/api/count
+4 2020-08-05 17:44:16,052 DEBUG {model} __init__.py(74) : /paths
+4 2020-08-05 17:44:16,053 DEBUG {model} __init__.py(74) : /err/forbidden
+4 2020-08-05 17:44:16,054 DEBUG {model} __init__.py(74) : /err/bad_gateway_timeout
+4 2020-08-05 17:44:16,055 DEBUG {model} __init__.py(74) : /ycyl/api/register
+4 2020-08-05 17:44:16,055 DEBUG {model} __init__.py(74) : /api/users/
+4 2020-08-05 17:44:16,056 DEBUG {model} __init__.py(74) : /api/users/<user_id>
+4 2020-08-05 17:44:16,057 DEBUG {model} __init__.py(74) : /api/classes/
+4 2020-08-05 17:44:16,058 DEBUG {model} __init__.py(74) : /err/service_unavailable
+4 2020-08-05 17:44:16,059 DEBUG {model} __init__.py(74) : /api/schools/
+4 2020-08-05 17:44:16,059 DEBUG {model} __init__.py(74) : /
+4 2020-08-05 17:44:16,112 INFO {model} functions.py(28) : [flaskapp] bootstrap init on http://0.0.0.0:5000/. Start used time : 0.5334779739379882 s
+4 2020-08-05 17:46:03,023 INFO {model} __init__.py(17) : initial app models model
+4 2020-08-05 17:46:03,030 INFO {model} __init__.py(13) : initial app core model
+4 2020-08-05 17:46:03,032 INFO {model} __init__.py(15) : initial app services model
+4 2020-08-05 17:46:03,144 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:03,144 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:03,149 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:03,149 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:03,152 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:03,152 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:03,156 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:03,156 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:03,159 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:03,159 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:03,165 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:03,165 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:03,391 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:03,391 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:03,395 INFO {model} __init__.py(24) : initial app views model
+4 2020-08-05 17:46:03,399 INFO {model} __init__.py(55) : register blueprint ycyl success.
+4 2020-08-05 17:46:03,405 INFO {model} __init__.py(55) : register blueprint error success.
+4 2020-08-05 17:46:03,408 INFO {model} __init__.py(55) : register blueprint index success.
+4 2020-08-05 17:46:03,413 INFO {model} __init__.py(55) : register blueprint login success.
+4 2020-08-05 17:46:03,415 INFO {model} __init__.py(55) : register blueprint login_test success.
+4 2020-08-05 17:46:03,419 INFO {model} __init__.py(55) : register blueprint user success.
+4 2020-08-05 17:46:03,424 INFO {model} __init__.py(55) : register blueprint clazz success.
+4 2020-08-05 17:46:03,427 INFO {model} __init__.py(55) : register blueprint school success.
+4 2020-08-05 17:46:03,429 INFO {model} __init__.py(55) : register blueprint celery success.
+4 2020-08-05 17:46:03,481 DEBUG {model} __init__.py(72) : urls: 
+4 2020-08-05 17:46:03,483 DEBUG {model} __init__.py(74) : /api/classes/<clazz_id>
+4 2020-08-05 17:46:03,483 DEBUG {model} __init__.py(74) : /login_test/login
+4 2020-08-05 17:46:03,484 DEBUG {model} __init__.py(74) : /err/unauthorized
+4 2020-08-05 17:46:03,485 DEBUG {model} __init__.py(74) : /
+4 2020-08-05 17:46:03,486 DEBUG {model} __init__.py(74) : /api/auth/register
+4 2020-08-05 17:46:03,487 DEBUG {model} __init__.py(74) : /err/bad_gateway
+4 2020-08-05 17:46:03,488 DEBUG {model} __init__.py(74) : /api/schools/<school_id>
+4 2020-08-05 17:46:03,489 DEBUG {model} __init__.py(74) : /err/service_unavailable
+4 2020-08-05 17:46:03,489 DEBUG {model} __init__.py(74) : /task/compute
+4 2020-08-05 17:46:03,490 DEBUG {model} __init__.py(74) : /api/users/<user_id>
+4 2020-08-05 17:46:03,491 DEBUG {model} __init__.py(74) : /api/auth/wechat_code
+4 2020-08-05 17:46:03,492 DEBUG {model} __init__.py(74) : /api/users/
+4 2020-08-05 17:46:03,495 DEBUG {model} __init__.py(74) : /api/schools/
+4 2020-08-05 17:46:03,495 DEBUG {model} __init__.py(74) : /api/auth/imgcode
+4 2020-08-05 17:46:03,496 DEBUG {model} __init__.py(74) : /ycyl/
+4 2020-08-05 17:46:03,497 DEBUG {model} __init__.py(74) : /err/server_error
+4 2020-08-05 17:46:03,498 DEBUG {model} __init__.py(74) : /api/schools/count
+4 2020-08-05 17:46:03,499 DEBUG {model} __init__.py(74) : /paths
+4 2020-08-05 17:46:03,499 DEBUG {model} __init__.py(74) : /api/classes/
+4 2020-08-05 17:46:03,500 DEBUG {model} __init__.py(74) : /static/<path:filename>
+4 2020-08-05 17:46:03,501 DEBUG {model} __init__.py(74) : /err/bad_gateway_timeout
+4 2020-08-05 17:46:03,502 DEBUG {model} __init__.py(74) : /err/not_found
+4 2020-08-05 17:46:03,503 DEBUG {model} __init__.py(74) : /err/forbidden
+4 2020-08-05 17:46:03,503 DEBUG {model} __init__.py(74) : /err/bad_request
+4 2020-08-05 17:46:03,504 DEBUG {model} __init__.py(74) : /ycyl/api/register
+4 2020-08-05 17:46:03,505 DEBUG {model} __init__.py(74) : /api/get_target_data
+4 2020-08-05 17:46:03,506 DEBUG {model} __init__.py(74) : /api/get_real_data
+4 2020-08-05 17:46:03,507 DEBUG {model} __init__.py(74) : /register
+4 2020-08-05 17:46:03,507 DEBUG {model} __init__.py(74) : /api/auth/login_token
+4 2020-08-05 17:46:03,508 DEBUG {model} __init__.py(74) : /ycyl/api/count
+4 2020-08-05 17:46:03,509 DEBUG {model} __init__.py(74) : /api/auth/generate_token
+4 2020-08-05 17:46:03,562 INFO {model} functions.py(28) : [flaskapp] bootstrap init on http://0.0.0.0:5000/. Start used time : 0.5992640972137451 s
+4 2020-08-05 17:46:28,024 INFO {model} __init__.py(17) : initial app models model
+4 2020-08-05 17:46:28,031 INFO {model} __init__.py(13) : initial app core model
+4 2020-08-05 17:46:28,034 INFO {model} __init__.py(15) : initial app services model
+4 2020-08-05 17:46:28,133 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:28,133 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:28,136 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:28,136 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:28,138 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:28,138 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:28,141 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:28,141 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:28,144 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:28,144 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:28,149 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:28,149 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:28,330 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:28,330 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:28,333 INFO {model} __init__.py(24) : initial app views model
+4 2020-08-05 17:46:28,335 INFO {model} __init__.py(55) : register blueprint ycyl success.
+4 2020-08-05 17:46:28,339 INFO {model} __init__.py(55) : register blueprint error success.
+4 2020-08-05 17:46:28,341 INFO {model} __init__.py(55) : register blueprint index success.
+4 2020-08-05 17:46:28,344 INFO {model} __init__.py(55) : register blueprint login success.
+4 2020-08-05 17:46:28,345 INFO {model} __init__.py(55) : register blueprint login_test success.
+4 2020-08-05 17:46:28,346 INFO {model} __init__.py(55) : register blueprint user success.
+4 2020-08-05 17:46:28,348 INFO {model} __init__.py(55) : register blueprint clazz success.
+4 2020-08-05 17:46:28,350 INFO {model} __init__.py(55) : register blueprint school success.
+4 2020-08-05 17:46:28,352 INFO {model} __init__.py(55) : register blueprint celery success.
+4 2020-08-05 17:46:28,394 DEBUG {model} __init__.py(72) : urls: 
+4 2020-08-05 17:46:28,395 DEBUG {model} __init__.py(74) : /api/classes/
+4 2020-08-05 17:46:28,396 DEBUG {model} __init__.py(74) : /ycyl/api/register
+4 2020-08-05 17:46:28,397 DEBUG {model} __init__.py(74) : /ycyl/api/count
+4 2020-08-05 17:46:28,398 DEBUG {model} __init__.py(74) : /api/auth/login_token
+4 2020-08-05 17:46:28,399 DEBUG {model} __init__.py(74) : /task/compute
+4 2020-08-05 17:46:28,399 DEBUG {model} __init__.py(74) : /register
+4 2020-08-05 17:46:28,400 DEBUG {model} __init__.py(74) : /err/unauthorized
+4 2020-08-05 17:46:28,401 DEBUG {model} __init__.py(74) : /api/schools/<school_id>
+4 2020-08-05 17:46:28,402 DEBUG {model} __init__.py(74) : /api/classes/<clazz_id>
+4 2020-08-05 17:46:28,402 DEBUG {model} __init__.py(74) : /api/users/<user_id>
+4 2020-08-05 17:46:28,403 DEBUG {model} __init__.py(74) : /err/bad_gateway_timeout
+4 2020-08-05 17:46:28,404 DEBUG {model} __init__.py(74) : /api/get_target_data
+4 2020-08-05 17:46:28,405 DEBUG {model} __init__.py(74) : /api/auth/register
+4 2020-08-05 17:46:28,406 DEBUG {model} __init__.py(74) : /err/bad_gateway
+4 2020-08-05 17:46:28,407 DEBUG {model} __init__.py(74) : /
+4 2020-08-05 17:46:28,410 DEBUG {model} __init__.py(74) : /api/schools/count
+4 2020-08-05 17:46:28,411 DEBUG {model} __init__.py(74) : /static/<path:filename>
+4 2020-08-05 17:46:28,411 DEBUG {model} __init__.py(74) : /err/server_error
+4 2020-08-05 17:46:28,412 DEBUG {model} __init__.py(74) : /paths
+4 2020-08-05 17:46:28,413 DEBUG {model} __init__.py(74) : /api/auth/imgcode
+4 2020-08-05 17:46:28,413 DEBUG {model} __init__.py(74) : /login_test/login
+4 2020-08-05 17:46:28,414 DEBUG {model} __init__.py(74) : /err/forbidden
+4 2020-08-05 17:46:28,415 DEBUG {model} __init__.py(74) : /api/schools/
+4 2020-08-05 17:46:28,416 DEBUG {model} __init__.py(74) : /err/service_unavailable
+4 2020-08-05 17:46:28,417 DEBUG {model} __init__.py(74) : /api/auth/generate_token
+4 2020-08-05 17:46:28,418 DEBUG {model} __init__.py(74) : /api/auth/wechat_code
+4 2020-08-05 17:46:28,418 DEBUG {model} __init__.py(74) : /api/users/
+4 2020-08-05 17:46:28,419 DEBUG {model} __init__.py(74) : /ycyl/
+4 2020-08-05 17:46:28,420 DEBUG {model} __init__.py(74) : /err/bad_request
+4 2020-08-05 17:46:28,421 DEBUG {model} __init__.py(74) : /api/get_real_data
+4 2020-08-05 17:46:28,422 DEBUG {model} __init__.py(74) : /err/not_found
+4 2020-08-05 17:46:28,474 INFO {model} functions.py(28) : [flaskapp] bootstrap init on http://0.0.0.0:5000/. Start used time : 0.5085060119628906 s
+4 2020-08-05 17:46:30,070 INFO {model} __init__.py(17) : initial app models model
+4 2020-08-05 17:46:30,078 INFO {model} __init__.py(13) : initial app core model
+4 2020-08-05 17:46:30,080 INFO {model} __init__.py(15) : initial app services model
+4 2020-08-05 17:46:30,176 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:30,176 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:30,178 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:30,178 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:30,180 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:30,180 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:30,183 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:30,183 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:30,186 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:30,186 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:30,191 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:30,191 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:30,396 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:30,396 INFO {model} database.py(128) : init Query
+4 2020-08-05 17:46:30,400 INFO {model} __init__.py(24) : initial app views model
+4 2020-08-05 17:46:30,406 INFO {model} __init__.py(55) : register blueprint ycyl success.
+4 2020-08-05 17:46:30,410 INFO {model} __init__.py(55) : register blueprint error success.
+4 2020-08-05 17:46:30,413 INFO {model} __init__.py(55) : register blueprint index success.
+4 2020-08-05 17:46:30,415 INFO {model} __init__.py(55) : register blueprint login success.
+4 2020-08-05 17:46:30,417 INFO {model} __init__.py(55) : register blueprint login_test success.
+4 2020-08-05 17:46:30,418 INFO {model} __init__.py(55) : register blueprint user success.
+4 2020-08-05 17:46:30,420 INFO {model} __init__.py(55) : register blueprint clazz success.
+4 2020-08-05 17:46:30,423 INFO {model} __init__.py(55) : register blueprint school success.
+4 2020-08-05 17:46:30,424 INFO {model} __init__.py(55) : register blueprint celery success.
+4 2020-08-05 17:46:30,478 DEBUG {model} __init__.py(72) : urls: 
+4 2020-08-05 17:46:30,479 DEBUG {model} __init__.py(74) : /task/compute
+4 2020-08-05 17:46:30,480 DEBUG {model} __init__.py(74) : /login_test/login
+4 2020-08-05 17:46:30,481 DEBUG {model} __init__.py(74) : /api/get_target_data
+4 2020-08-05 17:46:30,482 DEBUG {model} __init__.py(74) : /api/auth/imgcode
+4 2020-08-05 17:46:30,484 DEBUG {model} __init__.py(74) : /err/forbidden
+4 2020-08-05 17:46:30,485 DEBUG {model} __init__.py(74) : /api/get_real_data
+4 2020-08-05 17:46:30,487 DEBUG {model} __init__.py(74) : /api/schools/
+4 2020-08-05 17:46:30,488 DEBUG {model} __init__.py(74) : /err/service_unavailable
+4 2020-08-05 17:46:30,489 DEBUG {model} __init__.py(74) : /api/classes/
+4 2020-08-05 17:46:30,490 DEBUG {model} __init__.py(74) : /
+4 2020-08-05 17:46:30,491 DEBUG {model} __init__.py(74) : /err/unauthorized
+4 2020-08-05 17:46:30,491 DEBUG {model} __init__.py(74) : /api/users/<user_id>
+4 2020-08-05 17:46:30,492 DEBUG {model} __init__.py(74) : /api/schools/<school_id>
+4 2020-08-05 17:46:30,493 DEBUG {model} __init__.py(74) : /api/users/
+4 2020-08-05 17:46:30,494 DEBUG {model} __init__.py(74) : /ycyl/api/register
+4 2020-08-05 17:46:30,495 DEBUG {model} __init__.py(74) : /ycyl/
+4 2020-08-05 17:46:30,496 DEBUG {model} __init__.py(74) : /api/schools/count
+4 2020-08-05 17:46:30,497 DEBUG {model} __init__.py(74) : /err/bad_request
+4 2020-08-05 17:46:30,498 DEBUG {model} __init__.py(74) : /err/server_error
+4 2020-08-05 17:46:30,500 DEBUG {model} __init__.py(74) : /err/not_found
+4 2020-08-05 17:46:30,501 DEBUG {model} __init__.py(74) : /api/classes/<clazz_id>
+4 2020-08-05 17:46:30,501 DEBUG {model} __init__.py(74) : /ycyl/api/count
+4 2020-08-05 17:46:30,502 DEBUG {model} __init__.py(74) : /register
+4 2020-08-05 17:46:30,503 DEBUG {model} __init__.py(74) : /paths
+4 2020-08-05 17:46:30,504 DEBUG {model} __init__.py(74) : /static/<path:filename>
+4 2020-08-05 17:46:30,504 DEBUG {model} __init__.py(74) : /api/auth/wechat_code
+4 2020-08-05 17:46:30,505 DEBUG {model} __init__.py(74) : /err/bad_gateway
+4 2020-08-05 17:46:30,506 DEBUG {model} __init__.py(74) : /api/auth/register
+4 2020-08-05 17:46:30,507 DEBUG {model} __init__.py(74) : /api/auth/login_token
+4 2020-08-05 17:46:30,507 DEBUG {model} __init__.py(74) : /err/bad_gateway_timeout
+4 2020-08-05 17:46:30,508 DEBUG {model} __init__.py(74) : /api/auth/generate_token
+4 2020-08-05 17:46:30,559 INFO {model} functions.py(28) : [flaskapp] bootstrap init on http://0.0.0.0:5000/. Start used time : 0.6182174205780029 s
+4 2020-08-06 08:59:05,672 INFO {model} __init__.py(17) : initial app models model
+4 2020-08-06 08:59:05,730 INFO {model} __init__.py(13) : initial app core model
+4 2020-08-06 08:59:05,751 INFO {model} __init__.py(15) : initial app services model
+4 2020-08-06 08:59:07,484 INFO {model} database.py(128) : init Query
+4 2020-08-06 08:59:07,484 INFO {model} database.py(128) : init Query
+4 2020-08-06 08:59:07,486 INFO {model} database.py(128) : init Query
+4 2020-08-06 08:59:07,486 INFO {model} database.py(128) : init Query
+4 2020-08-06 08:59:07,502 INFO {model} database.py(128) : init Query
+4 2020-08-06 08:59:07,502 INFO {model} database.py(128) : init Query
+4 2020-08-06 08:59:07,523 INFO {model} database.py(128) : init Query
+4 2020-08-06 08:59:07,523 INFO {model} database.py(128) : init Query
+4 2020-08-06 08:59:07,527 INFO {model} database.py(128) : init Query
+4 2020-08-06 08:59:07,527 INFO {model} database.py(128) : init Query
+4 2020-08-06 08:59:07,544 INFO {model} database.py(128) : init Query
+4 2020-08-06 08:59:07,544 INFO {model} database.py(128) : init Query
+4 2020-08-06 08:59:09,029 INFO {model} database.py(128) : init Query
+4 2020-08-06 08:59:09,029 INFO {model} database.py(128) : init Query
+4 2020-08-06 08:59:09,032 INFO {model} __init__.py(24) : initial app views model
+4 2020-08-06 08:59:09,035 INFO {model} __init__.py(55) : register blueprint ycyl success.
+4 2020-08-06 08:59:09,039 INFO {model} __init__.py(55) : register blueprint error success.
+4 2020-08-06 08:59:09,043 INFO {model} __init__.py(55) : register blueprint index success.
+4 2020-08-06 08:59:09,049 INFO {model} __init__.py(55) : register blueprint login success.
+4 2020-08-06 08:59:09,051 INFO {model} __init__.py(55) : register blueprint login_test success.
+4 2020-08-06 08:59:09,056 INFO {model} __init__.py(55) : register blueprint user success.
+4 2020-08-06 08:59:09,060 INFO {model} __init__.py(55) : register blueprint clazz success.
+4 2020-08-06 08:59:09,065 INFO {model} __init__.py(55) : register blueprint school success.
+4 2020-08-06 08:59:09,067 INFO {model} __init__.py(55) : register blueprint celery success.
+4 2020-08-06 09:01:51,274 INFO {model} __init__.py(17) : initial app models model
+4 2020-08-06 09:01:51,281 INFO {model} __init__.py(13) : initial app core model
+4 2020-08-06 09:01:51,283 INFO {model} __init__.py(15) : initial app services model
+4 2020-08-06 09:01:51,382 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:01:51,382 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:01:51,385 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:01:51,385 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:01:51,387 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:01:51,387 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:01:51,391 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:01:51,391 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:01:51,396 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:01:51,396 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:01:51,400 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:01:51,400 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:01:51,580 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:01:51,580 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:01:51,585 INFO {model} __init__.py(24) : initial app views model
+4 2020-08-06 09:01:51,589 INFO {model} __init__.py(55) : register blueprint ycyl success.
+4 2020-08-06 09:01:51,598 INFO {model} __init__.py(55) : register blueprint error success.
+4 2020-08-06 09:01:51,603 INFO {model} __init__.py(55) : register blueprint index success.
+4 2020-08-06 09:01:51,609 INFO {model} __init__.py(55) : register blueprint login success.
+4 2020-08-06 09:01:51,611 INFO {model} __init__.py(55) : register blueprint login_test success.
+4 2020-08-06 09:01:51,614 INFO {model} __init__.py(55) : register blueprint user success.
+4 2020-08-06 09:01:51,616 INFO {model} __init__.py(55) : register blueprint clazz success.
+4 2020-08-06 09:01:51,620 INFO {model} __init__.py(55) : register blueprint school success.
+4 2020-08-06 09:01:51,621 INFO {model} __init__.py(55) : register blueprint celery success.
+4 2020-08-06 09:03:32,987 INFO {model} __init__.py(17) : initial app models model
+4 2020-08-06 09:03:32,995 INFO {model} __init__.py(13) : initial app core model
+4 2020-08-06 09:03:32,997 INFO {model} __init__.py(15) : initial app services model
+4 2020-08-06 09:03:33,096 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:03:33,096 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:03:33,098 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:03:33,098 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:03:33,102 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:03:33,102 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:03:33,106 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:03:33,106 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:03:33,109 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:03:33,109 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:03:33,112 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:03:33,112 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:03:33,294 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:03:33,294 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:03:33,296 INFO {model} __init__.py(24) : initial app views model
+4 2020-08-06 09:03:33,299 INFO {model} __init__.py(55) : register blueprint ycyl success.
+4 2020-08-06 09:03:33,303 INFO {model} __init__.py(55) : register blueprint error success.
+4 2020-08-06 09:03:33,306 INFO {model} __init__.py(55) : register blueprint index success.
+4 2020-08-06 09:03:33,308 INFO {model} __init__.py(55) : register blueprint login success.
+4 2020-08-06 09:03:33,309 INFO {model} __init__.py(55) : register blueprint login_test success.
+4 2020-08-06 09:03:33,311 INFO {model} __init__.py(55) : register blueprint user success.
+4 2020-08-06 09:03:33,313 INFO {model} __init__.py(55) : register blueprint clazz success.
+4 2020-08-06 09:03:33,316 INFO {model} __init__.py(55) : register blueprint school success.
+4 2020-08-06 09:03:33,317 INFO {model} __init__.py(55) : register blueprint celery success.
+4 2020-08-06 09:03:33,362 DEBUG {model} __init__.py(70) : __init_scheduler in
+4 2020-08-06 09:03:33,363 DEBUG {model} __init__.py(88) : urls: 
+4 2020-08-06 09:03:33,364 DEBUG {model} __init__.py(90) : /err/bad_gateway_timeout
+4 2020-08-06 09:03:33,365 DEBUG {model} __init__.py(90) : /api/auth/wechat_code
+4 2020-08-06 09:03:33,366 DEBUG {model} __init__.py(90) : /api/get_real_data
+4 2020-08-06 09:03:33,367 DEBUG {model} __init__.py(90) : /task/compute
+4 2020-08-06 09:03:33,367 DEBUG {model} __init__.py(90) : /api/schools/count
+4 2020-08-06 09:03:33,368 DEBUG {model} __init__.py(90) : /api/get_target_data
+4 2020-08-06 09:03:33,369 DEBUG {model} __init__.py(90) : /api/schools/
+4 2020-08-06 09:03:33,370 DEBUG {model} __init__.py(90) : /api/users/
+4 2020-08-06 09:03:33,370 DEBUG {model} __init__.py(90) : /api/auth/generate_token
+4 2020-08-06 09:03:33,371 DEBUG {model} __init__.py(90) : /paths
+4 2020-08-06 09:03:33,372 DEBUG {model} __init__.py(90) : /err/not_found
+4 2020-08-06 09:03:33,373 DEBUG {model} __init__.py(90) : /ycyl/
+4 2020-08-06 09:03:33,373 DEBUG {model} __init__.py(90) : /err/bad_gateway
+4 2020-08-06 09:03:33,374 DEBUG {model} __init__.py(90) : /api/auth/register
+4 2020-08-06 09:03:33,375 DEBUG {model} __init__.py(90) : /api/auth/imgcode
+4 2020-08-06 09:03:33,376 DEBUG {model} __init__.py(90) : /api/classes/
+4 2020-08-06 09:03:33,377 DEBUG {model} __init__.py(90) : /ycyl/api/count
+4 2020-08-06 09:03:33,377 DEBUG {model} __init__.py(90) : /api/auth/login_token
+4 2020-08-06 09:03:33,378 DEBUG {model} __init__.py(90) : /
+4 2020-08-06 09:03:33,379 DEBUG {model} __init__.py(90) : /ycyl/api/register
+4 2020-08-06 09:03:33,380 DEBUG {model} __init__.py(90) : /err/forbidden
+4 2020-08-06 09:03:33,382 DEBUG {model} __init__.py(90) : /api/classes/<clazz_id>
+4 2020-08-06 09:03:33,383 DEBUG {model} __init__.py(90) : /api/users/<user_id>
+4 2020-08-06 09:03:33,384 DEBUG {model} __init__.py(90) : /login_test/login
+4 2020-08-06 09:03:33,385 DEBUG {model} __init__.py(90) : /err/server_error
+4 2020-08-06 09:03:33,386 DEBUG {model} __init__.py(90) : /register
+4 2020-08-06 09:03:33,387 DEBUG {model} __init__.py(90) : /static/<path:filename>
+4 2020-08-06 09:03:33,387 DEBUG {model} __init__.py(90) : /err/unauthorized
+4 2020-08-06 09:03:33,388 DEBUG {model} __init__.py(90) : /err/bad_request
+4 2020-08-06 09:03:33,389 DEBUG {model} __init__.py(90) : /api/schools/<school_id>
+4 2020-08-06 09:03:33,390 DEBUG {model} __init__.py(90) : /err/service_unavailable
+4 2020-08-06 09:03:33,442 INFO {model} functions.py(28) : [flaskapp] bootstrap init on http://0.0.0.0:5000/. Start used time : 0.511744213104248 s
+4 2020-08-06 09:03:35,252 INFO {model} __init__.py(17) : initial app models model
+4 2020-08-06 09:03:35,259 INFO {model} __init__.py(13) : initial app core model
+4 2020-08-06 09:03:35,261 INFO {model} __init__.py(15) : initial app services model
+4 2020-08-06 09:03:35,362 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:03:35,362 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:03:35,364 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:03:35,364 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:03:35,367 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:03:35,367 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:03:35,370 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:03:35,370 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:03:35,374 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:03:35,374 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:03:35,378 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:03:35,378 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:03:35,579 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:03:35,579 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:03:35,582 INFO {model} __init__.py(24) : initial app views model
+4 2020-08-06 09:03:35,584 INFO {model} __init__.py(55) : register blueprint ycyl success.
+4 2020-08-06 09:03:35,588 INFO {model} __init__.py(55) : register blueprint error success.
+4 2020-08-06 09:03:35,590 INFO {model} __init__.py(55) : register blueprint index success.
+4 2020-08-06 09:03:35,592 INFO {model} __init__.py(55) : register blueprint login success.
+4 2020-08-06 09:03:35,594 INFO {model} __init__.py(55) : register blueprint login_test success.
+4 2020-08-06 09:03:35,595 INFO {model} __init__.py(55) : register blueprint user success.
+4 2020-08-06 09:03:35,597 INFO {model} __init__.py(55) : register blueprint clazz success.
+4 2020-08-06 09:03:35,599 INFO {model} __init__.py(55) : register blueprint school success.
+4 2020-08-06 09:03:35,600 INFO {model} __init__.py(55) : register blueprint celery success.
+4 2020-08-06 09:03:35,649 DEBUG {model} __init__.py(70) : __init_scheduler in
+4 2020-08-06 09:03:35,650 DEBUG {model} __init__.py(88) : urls: 
+4 2020-08-06 09:03:35,651 DEBUG {model} __init__.py(90) : /static/<path:filename>
+4 2020-08-06 09:03:35,652 DEBUG {model} __init__.py(90) : /api/users/
+4 2020-08-06 09:03:35,654 DEBUG {model} __init__.py(90) : /task/compute
+4 2020-08-06 09:03:35,654 DEBUG {model} __init__.py(90) : /login_test/login
+4 2020-08-06 09:03:35,655 DEBUG {model} __init__.py(90) : /err/server_error
+4 2020-08-06 09:03:35,656 DEBUG {model} __init__.py(90) : /api/schools/
+4 2020-08-06 09:03:35,657 DEBUG {model} __init__.py(90) : /err/not_found
+4 2020-08-06 09:03:35,659 DEBUG {model} __init__.py(90) : /err/service_unavailable
+4 2020-08-06 09:03:35,659 DEBUG {model} __init__.py(90) : /api/schools/<school_id>
+4 2020-08-06 09:03:35,660 DEBUG {model} __init__.py(90) : /register
+4 2020-08-06 09:03:35,661 DEBUG {model} __init__.py(90) : /api/users/<user_id>
+4 2020-08-06 09:03:35,662 DEBUG {model} __init__.py(90) : /api/auth/wechat_code
+4 2020-08-06 09:03:35,662 DEBUG {model} __init__.py(90) : /api/auth/login_token
+4 2020-08-06 09:03:35,663 DEBUG {model} __init__.py(90) : /err/bad_gateway
+4 2020-08-06 09:03:35,664 DEBUG {model} __init__.py(90) : /err/bad_gateway_timeout
+4 2020-08-06 09:03:35,665 DEBUG {model} __init__.py(90) : /api/auth/generate_token
+4 2020-08-06 09:03:35,665 DEBUG {model} __init__.py(90) : /api/classes/
+4 2020-08-06 09:03:35,666 DEBUG {model} __init__.py(90) : /api/schools/count
+4 2020-08-06 09:03:35,667 DEBUG {model} __init__.py(90) : /api/auth/register
+4 2020-08-06 09:03:35,668 DEBUG {model} __init__.py(90) : /err/bad_request
+4 2020-08-06 09:03:35,669 DEBUG {model} __init__.py(90) : /ycyl/api/register
+4 2020-08-06 09:03:35,670 DEBUG {model} __init__.py(90) : /api/get_real_data
+4 2020-08-06 09:03:35,670 DEBUG {model} __init__.py(90) : /err/unauthorized
+4 2020-08-06 09:03:35,671 DEBUG {model} __init__.py(90) : /err/forbidden
+4 2020-08-06 09:03:35,672 DEBUG {model} __init__.py(90) : /paths
+4 2020-08-06 09:03:35,673 DEBUG {model} __init__.py(90) : /api/classes/<clazz_id>
+4 2020-08-06 09:03:35,674 DEBUG {model} __init__.py(90) : /
+4 2020-08-06 09:03:35,675 DEBUG {model} __init__.py(90) : /api/get_target_data
+4 2020-08-06 09:03:35,675 DEBUG {model} __init__.py(90) : /ycyl/
+4 2020-08-06 09:03:35,676 DEBUG {model} __init__.py(90) : /ycyl/api/count
+4 2020-08-06 09:03:35,677 DEBUG {model} __init__.py(90) : /api/auth/imgcode
+4 2020-08-06 09:03:35,730 INFO {model} functions.py(28) : [flaskapp] bootstrap init on http://0.0.0.0:5000/. Start used time : 0.5349757194519043 s
+4 2020-08-06 09:03:39,384 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:39,441 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:39,445 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:39,446 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:39,447 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:39,448 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:39,450 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:39,467 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:39,474 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:39,581 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:39,593 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:39,597 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:39,600 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:39,665 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:39,695 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:39,973 ERROR {model} login_handler.py(62) : 7f2Rw
+4 2020-08-06 09:03:39,973 ERROR {model} login_handler.py(62) : 7f2Rw
+4 2020-08-06 09:03:41,518 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:41,520 ERROR {model} login_handler.py(62) : 3V9Fx
+4 2020-08-06 09:03:41,520 ERROR {model} login_handler.py(62) : 3V9Fx
+4 2020-08-06 09:03:42,480 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:42,481 ERROR {model} login_handler.py(62) : PcFF6
+4 2020-08-06 09:03:42,481 ERROR {model} login_handler.py(62) : PcFF6
+4 2020-08-06 09:03:42,986 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:42,988 ERROR {model} login_handler.py(62) : q999F
+4 2020-08-06 09:03:42,988 ERROR {model} login_handler.py(62) : q999F
+4 2020-08-06 09:03:43,440 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:43,442 ERROR {model} login_handler.py(62) : b2uO4
+4 2020-08-06 09:03:43,442 ERROR {model} login_handler.py(62) : b2uO4
+4 2020-08-06 09:03:43,843 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:43,845 ERROR {model} login_handler.py(62) : 7roWy
+4 2020-08-06 09:03:43,845 ERROR {model} login_handler.py(62) : 7roWy
+4 2020-08-06 09:03:44,329 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:44,331 ERROR {model} login_handler.py(62) : Rg6sS
+4 2020-08-06 09:03:44,331 ERROR {model} login_handler.py(62) : Rg6sS
+4 2020-08-06 09:03:44,853 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:44,855 ERROR {model} login_handler.py(62) : y48PA
+4 2020-08-06 09:03:44,855 ERROR {model} login_handler.py(62) : y48PA
+4 2020-08-06 09:03:45,351 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:45,353 ERROR {model} login_handler.py(62) : U7KUp
+4 2020-08-06 09:03:45,353 ERROR {model} login_handler.py(62) : U7KUp
+4 2020-08-06 09:03:45,867 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:45,869 ERROR {model} login_handler.py(62) : KB9P7
+4 2020-08-06 09:03:45,869 ERROR {model} login_handler.py(62) : KB9P7
+4 2020-08-06 09:03:46,293 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:46,295 ERROR {model} login_handler.py(62) : Nu9SZ
+4 2020-08-06 09:03:46,295 ERROR {model} login_handler.py(62) : Nu9SZ
+4 2020-08-06 09:03:46,694 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:46,695 ERROR {model} login_handler.py(62) : Tnw5b
+4 2020-08-06 09:03:46,695 ERROR {model} login_handler.py(62) : Tnw5b
+4 2020-08-06 09:03:47,167 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:47,169 ERROR {model} login_handler.py(62) : wI0tI
+4 2020-08-06 09:03:47,169 ERROR {model} login_handler.py(62) : wI0tI
+4 2020-08-06 09:03:47,614 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:47,615 ERROR {model} login_handler.py(62) : 5eVks
+4 2020-08-06 09:03:47,615 ERROR {model} login_handler.py(62) : 5eVks
+4 2020-08-06 09:03:47,990 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:47,992 ERROR {model} login_handler.py(62) : Zu3U0
+4 2020-08-06 09:03:47,992 ERROR {model} login_handler.py(62) : Zu3U0
+4 2020-08-06 09:03:48,360 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:48,362 ERROR {model} login_handler.py(62) : JCUc3
+4 2020-08-06 09:03:48,362 ERROR {model} login_handler.py(62) : JCUc3
+4 2020-08-06 09:03:48,669 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:48,671 ERROR {model} login_handler.py(62) : hh89H
+4 2020-08-06 09:03:48,671 ERROR {model} login_handler.py(62) : hh89H
+4 2020-08-06 09:03:49,046 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:49,047 ERROR {model} login_handler.py(62) : M52DP
+4 2020-08-06 09:03:49,047 ERROR {model} login_handler.py(62) : M52DP
+4 2020-08-06 09:03:49,601 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:49,602 ERROR {model} login_handler.py(62) : Q6MwR
+4 2020-08-06 09:03:49,602 ERROR {model} login_handler.py(62) : Q6MwR
+4 2020-08-06 09:03:50,801 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:50,805 ERROR {model} login_handler.py(62) : h5F98
+4 2020-08-06 09:03:50,805 ERROR {model} login_handler.py(62) : h5F98
+4 2020-08-06 09:03:51,567 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:51,568 ERROR {model} login_handler.py(62) : b56a0
+4 2020-08-06 09:03:51,568 ERROR {model} login_handler.py(62) : b56a0
+4 2020-08-06 09:03:52,919 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:52,921 ERROR {model} login_handler.py(62) : g3V9O
+4 2020-08-06 09:03:52,921 ERROR {model} login_handler.py(62) : g3V9O
+4 2020-08-06 09:03:53,736 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:53,739 ERROR {model} login_handler.py(62) : X2q1s
+4 2020-08-06 09:03:53,739 ERROR {model} login_handler.py(62) : X2q1s
+4 2020-08-06 09:03:54,768 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:54,769 ERROR {model} login_handler.py(62) : Vsx5F
+4 2020-08-06 09:03:54,769 ERROR {model} login_handler.py(62) : Vsx5F
+4 2020-08-06 09:03:55,474 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:55,477 ERROR {model} login_handler.py(62) : d92X2
+4 2020-08-06 09:03:55,477 ERROR {model} login_handler.py(62) : d92X2
+4 2020-08-06 09:03:56,067 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:56,069 ERROR {model} login_handler.py(62) : lPKhf
+4 2020-08-06 09:03:56,069 ERROR {model} login_handler.py(62) : lPKhf
+4 2020-08-06 09:03:56,676 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:56,678 ERROR {model} login_handler.py(62) : 8K4d8
+4 2020-08-06 09:03:56,678 ERROR {model} login_handler.py(62) : 8K4d8
+4 2020-08-06 09:03:57,312 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:57,315 ERROR {model} login_handler.py(62) : GIpEm
+4 2020-08-06 09:03:57,315 ERROR {model} login_handler.py(62) : GIpEm
+4 2020-08-06 09:03:57,709 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:57,711 ERROR {model} login_handler.py(62) : 3ww0x
+4 2020-08-06 09:03:57,711 ERROR {model} login_handler.py(62) : 3ww0x
+4 2020-08-06 09:03:58,187 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:58,189 ERROR {model} login_handler.py(62) : 2t4Ad
+4 2020-08-06 09:03:58,189 ERROR {model} login_handler.py(62) : 2t4Ad
+4 2020-08-06 09:03:59,887 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:03:59,889 ERROR {model} login_handler.py(62) : yp6NZ
+4 2020-08-06 09:03:59,889 ERROR {model} login_handler.py(62) : yp6NZ
+4 2020-08-06 09:04:00,299 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:00,301 ERROR {model} login_handler.py(62) : E46XW
+4 2020-08-06 09:04:00,301 ERROR {model} login_handler.py(62) : E46XW
+4 2020-08-06 09:04:00,810 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:00,812 ERROR {model} login_handler.py(62) : 09HEl
+4 2020-08-06 09:04:00,812 ERROR {model} login_handler.py(62) : 09HEl
+4 2020-08-06 09:04:01,202 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:01,205 ERROR {model} login_handler.py(62) : YCa4k
+4 2020-08-06 09:04:01,205 ERROR {model} login_handler.py(62) : YCa4k
+4 2020-08-06 09:04:01,442 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:01,444 ERROR {model} login_handler.py(62) : Vxf14
+4 2020-08-06 09:04:01,444 ERROR {model} login_handler.py(62) : Vxf14
+4 2020-08-06 09:04:01,637 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:01,638 ERROR {model} login_handler.py(62) : ICBE2
+4 2020-08-06 09:04:01,638 ERROR {model} login_handler.py(62) : ICBE2
+4 2020-08-06 09:04:01,827 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:01,830 ERROR {model} login_handler.py(62) : Oi6uC
+4 2020-08-06 09:04:01,830 ERROR {model} login_handler.py(62) : Oi6uC
+4 2020-08-06 09:04:02,008 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:02,009 ERROR {model} login_handler.py(62) : v9l4m
+4 2020-08-06 09:04:02,009 ERROR {model} login_handler.py(62) : v9l4m
+4 2020-08-06 09:04:02,185 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:02,187 ERROR {model} login_handler.py(62) : 4TX00
+4 2020-08-06 09:04:02,187 ERROR {model} login_handler.py(62) : 4TX00
+4 2020-08-06 09:04:02,352 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:02,354 ERROR {model} login_handler.py(62) : R87Q6
+4 2020-08-06 09:04:02,354 ERROR {model} login_handler.py(62) : R87Q6
+4 2020-08-06 09:04:02,502 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:02,505 ERROR {model} login_handler.py(62) : m6754
+4 2020-08-06 09:04:02,505 ERROR {model} login_handler.py(62) : m6754
+4 2020-08-06 09:04:02,657 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:02,659 ERROR {model} login_handler.py(62) : 00K1Z
+4 2020-08-06 09:04:02,659 ERROR {model} login_handler.py(62) : 00K1Z
+4 2020-08-06 09:04:02,812 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:02,814 ERROR {model} login_handler.py(62) : L09Dc
+4 2020-08-06 09:04:02,814 ERROR {model} login_handler.py(62) : L09Dc
+4 2020-08-06 09:04:02,983 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:02,985 ERROR {model} login_handler.py(62) : IL0jF
+4 2020-08-06 09:04:02,985 ERROR {model} login_handler.py(62) : IL0jF
+4 2020-08-06 09:04:03,127 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:03,128 ERROR {model} login_handler.py(62) : 46mIU
+4 2020-08-06 09:04:03,128 ERROR {model} login_handler.py(62) : 46mIU
+4 2020-08-06 09:04:03,284 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:03,287 ERROR {model} login_handler.py(62) : rV1V6
+4 2020-08-06 09:04:03,287 ERROR {model} login_handler.py(62) : rV1V6
+4 2020-08-06 09:04:03,448 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:03,451 ERROR {model} login_handler.py(62) : 40EYV
+4 2020-08-06 09:04:03,451 ERROR {model} login_handler.py(62) : 40EYV
+4 2020-08-06 09:04:03,588 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:03,590 ERROR {model} login_handler.py(62) : Uq8qU
+4 2020-08-06 09:04:03,590 ERROR {model} login_handler.py(62) : Uq8qU
+4 2020-08-06 09:04:03,754 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:03,757 ERROR {model} login_handler.py(62) : OBr38
+4 2020-08-06 09:04:03,757 ERROR {model} login_handler.py(62) : OBr38
+4 2020-08-06 09:04:03,924 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:03,926 ERROR {model} login_handler.py(62) : JiL7l
+4 2020-08-06 09:04:03,926 ERROR {model} login_handler.py(62) : JiL7l
+4 2020-08-06 09:04:04,057 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:04,059 ERROR {model} login_handler.py(62) : MYmTO
+4 2020-08-06 09:04:04,059 ERROR {model} login_handler.py(62) : MYmTO
+4 2020-08-06 09:04:04,219 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:04,221 ERROR {model} login_handler.py(62) : 3656b
+4 2020-08-06 09:04:04,221 ERROR {model} login_handler.py(62) : 3656b
+4 2020-08-06 09:04:04,370 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:04,372 ERROR {model} login_handler.py(62) : 5IC97
+4 2020-08-06 09:04:04,372 ERROR {model} login_handler.py(62) : 5IC97
+4 2020-08-06 09:04:04,528 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:04,531 ERROR {model} login_handler.py(62) : qS68v
+4 2020-08-06 09:04:04,531 ERROR {model} login_handler.py(62) : qS68v
+4 2020-08-06 09:04:04,673 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:04,675 ERROR {model} login_handler.py(62) : 758n4
+4 2020-08-06 09:04:04,675 ERROR {model} login_handler.py(62) : 758n4
+4 2020-08-06 09:04:04,840 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:04,842 ERROR {model} login_handler.py(62) : c6gnb
+4 2020-08-06 09:04:04,842 ERROR {model} login_handler.py(62) : c6gnb
+4 2020-08-06 09:04:04,979 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:04,980 ERROR {model} login_handler.py(62) : YvmXl
+4 2020-08-06 09:04:04,980 ERROR {model} login_handler.py(62) : YvmXl
+4 2020-08-06 09:04:05,145 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:05,147 ERROR {model} login_handler.py(62) : Y3yh3
+4 2020-08-06 09:04:05,147 ERROR {model} login_handler.py(62) : Y3yh3
+4 2020-08-06 09:04:05,298 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:05,300 ERROR {model} login_handler.py(62) : 6CQ6Z
+4 2020-08-06 09:04:05,300 ERROR {model} login_handler.py(62) : 6CQ6Z
+4 2020-08-06 09:04:05,451 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:05,452 ERROR {model} login_handler.py(62) : ZXla5
+4 2020-08-06 09:04:05,452 ERROR {model} login_handler.py(62) : ZXla5
+4 2020-08-06 09:04:05,943 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:05,945 ERROR {model} login_handler.py(62) : BPS5j
+4 2020-08-06 09:04:05,945 ERROR {model} login_handler.py(62) : BPS5j
+4 2020-08-06 09:04:06,773 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:06,775 ERROR {model} login_handler.py(62) : wU2iS
+4 2020-08-06 09:04:06,775 ERROR {model} login_handler.py(62) : wU2iS
+4 2020-08-06 09:04:07,165 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:07,168 ERROR {model} login_handler.py(62) : 3y5P8
+4 2020-08-06 09:04:07,168 ERROR {model} login_handler.py(62) : 3y5P8
+4 2020-08-06 09:04:07,502 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:07,504 ERROR {model} login_handler.py(62) : v2Nl2
+4 2020-08-06 09:04:07,504 ERROR {model} login_handler.py(62) : v2Nl2
+4 2020-08-06 09:04:07,704 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:07,706 ERROR {model} login_handler.py(62) : a0b7w
+4 2020-08-06 09:04:07,706 ERROR {model} login_handler.py(62) : a0b7w
+4 2020-08-06 09:04:07,891 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:07,892 ERROR {model} login_handler.py(62) : 0SCkH
+4 2020-08-06 09:04:07,892 ERROR {model} login_handler.py(62) : 0SCkH
+4 2020-08-06 09:04:08,095 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:08,097 ERROR {model} login_handler.py(62) : p8ae1
+4 2020-08-06 09:04:08,097 ERROR {model} login_handler.py(62) : p8ae1
+4 2020-08-06 09:04:08,291 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:08,295 ERROR {model} login_handler.py(62) : 5i06j
+4 2020-08-06 09:04:08,295 ERROR {model} login_handler.py(62) : 5i06j
+4 2020-08-06 09:04:08,465 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:08,468 ERROR {model} login_handler.py(62) : 3haa4
+4 2020-08-06 09:04:08,468 ERROR {model} login_handler.py(62) : 3haa4
+4 2020-08-06 09:04:08,691 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:08,693 ERROR {model} login_handler.py(62) : UMWRW
+4 2020-08-06 09:04:08,693 ERROR {model} login_handler.py(62) : UMWRW
+4 2020-08-06 09:04:08,947 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:08,949 ERROR {model} login_handler.py(62) : NMC15
+4 2020-08-06 09:04:08,949 ERROR {model} login_handler.py(62) : NMC15
+4 2020-08-06 09:04:09,192 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:09,194 ERROR {model} login_handler.py(62) : rX2mU
+4 2020-08-06 09:04:09,194 ERROR {model} login_handler.py(62) : rX2mU
+4 2020-08-06 09:04:09,441 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:09,444 ERROR {model} login_handler.py(62) : n5O6d
+4 2020-08-06 09:04:09,444 ERROR {model} login_handler.py(62) : n5O6d
+4 2020-08-06 09:04:09,747 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:09,749 ERROR {model} login_handler.py(62) : j1qDj
+4 2020-08-06 09:04:09,749 ERROR {model} login_handler.py(62) : j1qDj
+4 2020-08-06 09:04:10,027 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:10,029 ERROR {model} login_handler.py(62) : KLFM9
+4 2020-08-06 09:04:10,029 ERROR {model} login_handler.py(62) : KLFM9
+4 2020-08-06 09:04:10,333 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:10,334 ERROR {model} login_handler.py(62) : qJrOt
+4 2020-08-06 09:04:10,334 ERROR {model} login_handler.py(62) : qJrOt
+4 2020-08-06 09:04:10,639 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:10,642 ERROR {model} login_handler.py(62) : y80XW
+4 2020-08-06 09:04:10,642 ERROR {model} login_handler.py(62) : y80XW
+4 2020-08-06 09:04:10,942 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:10,944 ERROR {model} login_handler.py(62) : d1XBC
+4 2020-08-06 09:04:10,944 ERROR {model} login_handler.py(62) : d1XBC
+4 2020-08-06 09:04:11,226 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:11,228 ERROR {model} login_handler.py(62) : IEP7o
+4 2020-08-06 09:04:11,228 ERROR {model} login_handler.py(62) : IEP7o
+4 2020-08-06 09:04:11,461 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:11,462 ERROR {model} login_handler.py(62) : WmTIU
+4 2020-08-06 09:04:11,462 ERROR {model} login_handler.py(62) : WmTIU
+4 2020-08-06 09:04:11,655 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:11,657 ERROR {model} login_handler.py(62) : GeMpQ
+4 2020-08-06 09:04:11,657 ERROR {model} login_handler.py(62) : GeMpQ
+4 2020-08-06 09:04:11,859 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:11,861 ERROR {model} login_handler.py(62) : WFQT6
+4 2020-08-06 09:04:11,861 ERROR {model} login_handler.py(62) : WFQT6
+4 2020-08-06 09:04:12,032 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:12,035 ERROR {model} login_handler.py(62) : 1832t
+4 2020-08-06 09:04:12,035 ERROR {model} login_handler.py(62) : 1832t
+4 2020-08-06 09:04:12,214 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:12,216 ERROR {model} login_handler.py(62) : dYhvW
+4 2020-08-06 09:04:12,216 ERROR {model} login_handler.py(62) : dYhvW
+4 2020-08-06 09:04:12,376 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:12,378 ERROR {model} login_handler.py(62) : b7H6n
+4 2020-08-06 09:04:12,378 ERROR {model} login_handler.py(62) : b7H6n
+4 2020-08-06 09:04:12,550 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:12,553 ERROR {model} login_handler.py(62) : atQ8a
+4 2020-08-06 09:04:12,553 ERROR {model} login_handler.py(62) : atQ8a
+4 2020-08-06 09:04:12,721 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:12,724 ERROR {model} login_handler.py(62) : mJO9u
+4 2020-08-06 09:04:12,724 ERROR {model} login_handler.py(62) : mJO9u
+4 2020-08-06 09:04:12,866 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:12,868 ERROR {model} login_handler.py(62) : 6k5o1
+4 2020-08-06 09:04:12,868 ERROR {model} login_handler.py(62) : 6k5o1
+4 2020-08-06 09:04:13,031 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:13,032 ERROR {model} login_handler.py(62) : 3tQ8V
+4 2020-08-06 09:04:13,032 ERROR {model} login_handler.py(62) : 3tQ8V
+4 2020-08-06 09:04:13,175 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:13,178 ERROR {model} login_handler.py(62) : 1d37o
+4 2020-08-06 09:04:13,178 ERROR {model} login_handler.py(62) : 1d37o
+4 2020-08-06 09:04:13,337 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:13,339 ERROR {model} login_handler.py(62) : mptjp
+4 2020-08-06 09:04:13,339 ERROR {model} login_handler.py(62) : mptjp
+4 2020-08-06 09:04:13,495 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:13,496 ERROR {model} login_handler.py(62) : c77Zg
+4 2020-08-06 09:04:13,496 ERROR {model} login_handler.py(62) : c77Zg
+4 2020-08-06 09:04:13,675 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:13,677 ERROR {model} login_handler.py(62) : 4R3x8
+4 2020-08-06 09:04:13,677 ERROR {model} login_handler.py(62) : 4R3x8
+4 2020-08-06 09:04:13,982 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:13,985 ERROR {model} login_handler.py(62) : uR3bn
+4 2020-08-06 09:04:13,985 ERROR {model} login_handler.py(62) : uR3bn
+4 2020-08-06 09:04:14,153 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:14,156 ERROR {model} login_handler.py(62) : G4U89
+4 2020-08-06 09:04:14,156 ERROR {model} login_handler.py(62) : G4U89
+4 2020-08-06 09:04:14,314 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:14,316 ERROR {model} login_handler.py(62) : SEZ72
+4 2020-08-06 09:04:14,316 ERROR {model} login_handler.py(62) : SEZ72
+4 2020-08-06 09:04:14,411 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:14,414 ERROR {model} login_handler.py(62) : kXT25
+4 2020-08-06 09:04:14,414 ERROR {model} login_handler.py(62) : kXT25
+4 2020-08-06 09:04:14,572 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:14,574 ERROR {model} login_handler.py(62) : I5l89
+4 2020-08-06 09:04:14,574 ERROR {model} login_handler.py(62) : I5l89
+4 2020-08-06 09:04:14,739 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:14,741 ERROR {model} login_handler.py(62) : 4cjyS
+4 2020-08-06 09:04:14,741 ERROR {model} login_handler.py(62) : 4cjyS
+4 2020-08-06 09:04:14,873 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:14,874 ERROR {model} login_handler.py(62) : M0Uot
+4 2020-08-06 09:04:14,874 ERROR {model} login_handler.py(62) : M0Uot
+4 2020-08-06 09:04:19,424 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:19,426 ERROR {model} login_handler.py(62) : 115To
+4 2020-08-06 09:04:19,426 ERROR {model} login_handler.py(62) : 115To
+4 2020-08-06 09:04:19,435 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:20,281 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:20,283 ERROR {model} login_handler.py(62) : n0MGm
+4 2020-08-06 09:04:20,283 ERROR {model} login_handler.py(62) : n0MGm
+4 2020-08-06 09:04:20,289 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:20,607 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:20,611 ERROR {model} login_handler.py(62) : AUrD2
+4 2020-08-06 09:04:20,611 ERROR {model} login_handler.py(62) : AUrD2
+4 2020-08-06 09:04:20,610 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:20,883 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:21,626 ERROR {model} login_handler.py(62) : 7mAYx
+4 2020-08-06 09:04:21,626 ERROR {model} login_handler.py(62) : 7mAYx
+4 2020-08-06 09:04:21,632 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:21,650 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:22,642 ERROR {model} login_handler.py(62) : 40lm4
+4 2020-08-06 09:04:22,642 ERROR {model} login_handler.py(62) : 40lm4
+4 2020-08-06 09:04:22,678 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:22,684 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:22,890 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:23,704 ERROR {model} login_handler.py(62) : q7rcx
+4 2020-08-06 09:04:23,704 ERROR {model} login_handler.py(62) : q7rcx
+4 2020-08-06 09:04:23,703 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:23,743 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:23,836 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:23,838 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:24,721 ERROR {model} login_handler.py(62) : pVe29
+4 2020-08-06 09:04:24,728 ERROR {model} login_handler.py(62) : GoH4G
+4 2020-08-06 09:04:24,721 ERROR {model} login_handler.py(62) : pVe29
+4 2020-08-06 09:04:24,728 ERROR {model} login_handler.py(62) : GoH4G
+4 2020-08-06 09:04:27,762 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:27,765 ERROR {model} login_handler.py(62) : iasM2
+4 2020-08-06 09:04:27,765 ERROR {model} login_handler.py(62) : iasM2
+4 2020-08-06 09:04:28,377 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:28,379 ERROR {model} login_handler.py(62) : 8l9Cs
+4 2020-08-06 09:04:28,379 ERROR {model} login_handler.py(62) : 8l9Cs
+4 2020-08-06 09:04:28,903 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:28,906 ERROR {model} login_handler.py(62) : v5BM8
+4 2020-08-06 09:04:28,906 ERROR {model} login_handler.py(62) : v5BM8
+4 2020-08-06 09:04:29,395 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:29,398 ERROR {model} login_handler.py(62) : w41i8
+4 2020-08-06 09:04:29,398 ERROR {model} login_handler.py(62) : w41i8
+4 2020-08-06 09:04:29,773 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:29,774 ERROR {model} login_handler.py(62) : 3Xq39
+4 2020-08-06 09:04:29,774 ERROR {model} login_handler.py(62) : 3Xq39
+4 2020-08-06 09:04:30,119 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:30,122 ERROR {model} login_handler.py(62) : T9i80
+4 2020-08-06 09:04:30,122 ERROR {model} login_handler.py(62) : T9i80
+4 2020-08-06 09:04:30,459 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:30,461 ERROR {model} login_handler.py(62) : 4v0s0
+4 2020-08-06 09:04:30,461 ERROR {model} login_handler.py(62) : 4v0s0
+4 2020-08-06 09:04:30,779 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:30,781 ERROR {model} login_handler.py(62) : WB05S
+4 2020-08-06 09:04:30,781 ERROR {model} login_handler.py(62) : WB05S
+4 2020-08-06 09:04:31,096 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:31,098 ERROR {model} login_handler.py(62) : 8dPN7
+4 2020-08-06 09:04:31,098 ERROR {model} login_handler.py(62) : 8dPN7
+4 2020-08-06 09:04:31,395 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:31,398 ERROR {model} login_handler.py(62) : XA7r3
+4 2020-08-06 09:04:31,398 ERROR {model} login_handler.py(62) : XA7r3
+4 2020-08-06 09:04:32,246 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:32,248 ERROR {model} login_handler.py(62) : 3LIjx
+4 2020-08-06 09:04:32,248 ERROR {model} login_handler.py(62) : 3LIjx
+4 2020-08-06 09:04:32,621 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:32,623 ERROR {model} login_handler.py(62) : iaag5
+4 2020-08-06 09:04:32,623 ERROR {model} login_handler.py(62) : iaag5
+4 2020-08-06 09:04:32,989 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:32,991 ERROR {model} login_handler.py(62) : D55C4
+4 2020-08-06 09:04:32,991 ERROR {model} login_handler.py(62) : D55C4
+4 2020-08-06 09:04:33,330 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:33,332 ERROR {model} login_handler.py(62) : 4uR6A
+4 2020-08-06 09:04:33,332 ERROR {model} login_handler.py(62) : 4uR6A
+4 2020-08-06 09:04:33,648 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:33,649 ERROR {model} login_handler.py(62) : 045YX
+4 2020-08-06 09:04:33,649 ERROR {model} login_handler.py(62) : 045YX
+4 2020-08-06 09:04:33,952 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:33,954 ERROR {model} login_handler.py(62) : O3PJ3
+4 2020-08-06 09:04:33,954 ERROR {model} login_handler.py(62) : O3PJ3
+4 2020-08-06 09:04:34,257 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:34,259 ERROR {model} login_handler.py(62) : NG36h
+4 2020-08-06 09:04:34,259 ERROR {model} login_handler.py(62) : NG36h
+4 2020-08-06 09:04:34,538 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:34,540 ERROR {model} login_handler.py(62) : 0Kurx
+4 2020-08-06 09:04:34,540 ERROR {model} login_handler.py(62) : 0Kurx
+4 2020-08-06 09:04:34,858 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:34,859 ERROR {model} login_handler.py(62) : OxsH9
+4 2020-08-06 09:04:34,859 ERROR {model} login_handler.py(62) : OxsH9
+4 2020-08-06 09:04:35,165 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:35,166 ERROR {model} login_handler.py(62) : 4UBZF
+4 2020-08-06 09:04:35,166 ERROR {model} login_handler.py(62) : 4UBZF
+4 2020-08-06 09:04:35,556 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:35,559 ERROR {model} login_handler.py(62) : 87s77
+4 2020-08-06 09:04:35,559 ERROR {model} login_handler.py(62) : 87s77
+4 2020-08-06 09:04:35,892 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:35,893 ERROR {model} login_handler.py(62) : c4L63
+4 2020-08-06 09:04:35,893 ERROR {model} login_handler.py(62) : c4L63
+4 2020-08-06 09:04:36,158 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:36,160 ERROR {model} login_handler.py(62) : 76Qdm
+4 2020-08-06 09:04:36,160 ERROR {model} login_handler.py(62) : 76Qdm
+4 2020-08-06 09:04:36,445 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:36,447 ERROR {model} login_handler.py(62) : QBrMk
+4 2020-08-06 09:04:36,447 ERROR {model} login_handler.py(62) : QBrMk
+4 2020-08-06 09:04:36,721 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:36,723 ERROR {model} login_handler.py(62) : R7lj4
+4 2020-08-06 09:04:36,723 ERROR {model} login_handler.py(62) : R7lj4
+4 2020-08-06 09:04:36,973 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:36,976 ERROR {model} login_handler.py(62) : 9Q0O6
+4 2020-08-06 09:04:36,976 ERROR {model} login_handler.py(62) : 9Q0O6
+4 2020-08-06 09:04:37,239 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:37,240 ERROR {model} login_handler.py(62) : LSqRt
+4 2020-08-06 09:04:37,240 ERROR {model} login_handler.py(62) : LSqRt
+4 2020-08-06 09:04:37,473 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:37,474 ERROR {model} login_handler.py(62) : UEGT2
+4 2020-08-06 09:04:37,474 ERROR {model} login_handler.py(62) : UEGT2
+4 2020-08-06 09:04:37,708 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:37,709 ERROR {model} login_handler.py(62) : Dvov3
+4 2020-08-06 09:04:37,709 ERROR {model} login_handler.py(62) : Dvov3
+4 2020-08-06 09:04:39,579 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:39,633 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:39,636 ERROR {model} login_handler.py(62) : 23G28
+4 2020-08-06 09:04:39,636 ERROR {model} login_handler.py(62) : 23G28
+4 2020-08-06 09:04:39,638 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 09:04:52,312 INFO {model} __init__.py(17) : initial app models model
+4 2020-08-06 09:04:52,319 INFO {model} __init__.py(13) : initial app core model
+4 2020-08-06 09:04:52,322 INFO {model} __init__.py(15) : initial app services model
+4 2020-08-06 09:04:52,422 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:04:52,422 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:04:52,424 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:04:52,424 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:04:52,426 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:04:52,426 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:04:52,430 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:04:52,430 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:04:52,433 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:04:52,433 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:04:52,437 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:04:52,437 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:04:52,626 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:04:52,626 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:04:52,628 INFO {model} __init__.py(24) : initial app views model
+4 2020-08-06 09:04:52,631 INFO {model} __init__.py(55) : register blueprint ycyl success.
+4 2020-08-06 09:04:52,635 INFO {model} __init__.py(55) : register blueprint error success.
+4 2020-08-06 09:04:52,638 INFO {model} __init__.py(55) : register blueprint index success.
+4 2020-08-06 09:04:52,641 INFO {model} __init__.py(55) : register blueprint login success.
+4 2020-08-06 09:04:52,642 INFO {model} __init__.py(55) : register blueprint login_test success.
+4 2020-08-06 09:04:52,644 INFO {model} __init__.py(55) : register blueprint user success.
+4 2020-08-06 09:04:52,646 INFO {model} __init__.py(55) : register blueprint clazz success.
+4 2020-08-06 09:04:52,648 INFO {model} __init__.py(55) : register blueprint school success.
+4 2020-08-06 09:04:52,649 INFO {model} __init__.py(55) : register blueprint celery success.
+4 2020-08-06 09:04:52,698 DEBUG {model} __init__.py(70) : __init_scheduler in
+4 2020-08-06 09:08:27,147 INFO {model} __init__.py(17) : initial app models model
+4 2020-08-06 09:08:27,154 INFO {model} __init__.py(13) : initial app core model
+4 2020-08-06 09:08:27,156 INFO {model} __init__.py(15) : initial app services model
+4 2020-08-06 09:08:27,257 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:08:27,257 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:08:27,259 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:08:27,259 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:08:27,261 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:08:27,261 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:08:27,265 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:08:27,265 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:08:27,267 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:08:27,267 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:08:27,272 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:08:27,272 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:08:27,459 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:08:27,459 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:08:27,464 INFO {model} __init__.py(24) : initial app views model
+4 2020-08-06 09:08:27,469 INFO {model} __init__.py(55) : register blueprint ycyl success.
+4 2020-08-06 09:08:27,478 INFO {model} __init__.py(55) : register blueprint error success.
+4 2020-08-06 09:08:27,484 INFO {model} __init__.py(55) : register blueprint index success.
+4 2020-08-06 09:08:27,491 INFO {model} __init__.py(55) : register blueprint login success.
+4 2020-08-06 09:08:27,492 INFO {model} __init__.py(55) : register blueprint login_test success.
+4 2020-08-06 09:08:27,494 INFO {model} __init__.py(55) : register blueprint user success.
+4 2020-08-06 09:08:27,496 INFO {model} __init__.py(55) : register blueprint clazz success.
+4 2020-08-06 09:08:27,499 INFO {model} __init__.py(55) : register blueprint school success.
+4 2020-08-06 09:08:27,500 INFO {model} __init__.py(55) : register blueprint celery success.
+4 2020-08-06 09:08:27,547 DEBUG {model} __init__.py(70) : __init_scheduler in
+4 2020-08-06 09:09:56,240 INFO {model} __init__.py(17) : initial app models model
+4 2020-08-06 09:09:56,247 INFO {model} __init__.py(13) : initial app core model
+4 2020-08-06 09:09:56,249 INFO {model} __init__.py(15) : initial app services model
+4 2020-08-06 09:09:56,252 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:09:56,252 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:09:56,253 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:09:56,253 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:09:56,257 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:09:56,257 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:09:56,260 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:09:56,260 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:09:56,263 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:09:56,263 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:09:56,266 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:09:56,266 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:09:56,451 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:09:56,451 INFO {model} database.py(128) : init Query
+4 2020-08-06 09:09:56,454 INFO {model} __init__.py(24) : initial app views model
+4 2020-08-06 09:09:56,456 INFO {model} __init__.py(55) : register blueprint ycyl success.
+4 2020-08-06 09:09:56,460 INFO {model} __init__.py(55) : register blueprint error success.
+4 2020-08-06 09:09:56,463 INFO {model} __init__.py(55) : register blueprint index success.
+4 2020-08-06 09:09:56,466 INFO {model} __init__.py(55) : register blueprint login success.
+4 2020-08-06 09:09:56,467 INFO {model} __init__.py(55) : register blueprint login_test success.
+4 2020-08-06 09:09:56,469 INFO {model} __init__.py(55) : register blueprint user success.
+4 2020-08-06 09:09:56,471 INFO {model} __init__.py(55) : register blueprint clazz success.
+4 2020-08-06 09:09:56,473 INFO {model} __init__.py(55) : register blueprint school success.
+4 2020-08-06 09:09:56,474 INFO {model} __init__.py(55) : register blueprint celery success.
+4 2020-08-06 09:09:56,519 DEBUG {model} __init__.py(70) : __init_scheduler in
+4 2020-08-06 10:04:13,587 INFO {model} __init__.py(17) : initial app models model
+4 2020-08-06 10:04:13,593 INFO {model} __init__.py(13) : initial app core model
+4 2020-08-06 10:04:13,595 INFO {model} __init__.py(15) : initial app services model
+4 2020-08-06 10:04:13,599 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:04:13,599 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:04:13,601 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:04:13,601 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:04:13,603 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:04:13,603 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:04:13,607 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:04:13,607 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:04:13,610 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:04:13,610 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:04:13,614 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:04:13,614 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:04:13,844 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:04:13,844 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:04:13,846 INFO {model} __init__.py(24) : initial app views model
+4 2020-08-06 10:04:13,848 INFO {model} __init__.py(84) : register blueprint ycyl success.
+4 2020-08-06 10:04:13,852 INFO {model} __init__.py(84) : register blueprint error success.
+4 2020-08-06 10:04:13,854 INFO {model} __init__.py(84) : register blueprint index success.
+4 2020-08-06 10:04:13,858 INFO {model} __init__.py(84) : register blueprint login success.
+4 2020-08-06 10:04:13,859 INFO {model} __init__.py(84) : register blueprint login_test success.
+4 2020-08-06 10:04:13,863 INFO {model} __init__.py(84) : register blueprint user success.
+4 2020-08-06 10:04:13,865 INFO {model} __init__.py(84) : register blueprint clazz success.
+4 2020-08-06 10:04:13,867 INFO {model} __init__.py(84) : register blueprint school success.
+4 2020-08-06 10:04:13,868 INFO {model} __init__.py(84) : register blueprint celery success.
+4 2020-08-06 10:04:13,947 DEBUG {model} __init__.py(99) : __init_scheduler in
+4 2020-08-06 10:06:56,105 INFO {model} __init__.py(17) : initial app models model
+4 2020-08-06 10:06:56,111 INFO {model} __init__.py(13) : initial app core model
+4 2020-08-06 10:06:56,114 INFO {model} __init__.py(15) : initial app services model
+4 2020-08-06 10:06:56,116 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:06:56,116 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:06:56,118 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:06:56,118 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:06:56,120 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:06:56,120 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:06:56,125 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:06:56,125 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:06:56,126 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:06:56,126 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:06:56,132 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:06:56,132 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:06:56,358 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:06:56,358 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:06:56,362 INFO {model} __init__.py(24) : initial app views model
+4 2020-08-06 10:06:56,364 INFO {model} __init__.py(56) : register blueprint ycyl success.
+4 2020-08-06 10:06:56,367 INFO {model} __init__.py(56) : register blueprint error success.
+4 2020-08-06 10:06:56,370 INFO {model} __init__.py(56) : register blueprint index success.
+4 2020-08-06 10:06:56,373 INFO {model} __init__.py(56) : register blueprint login success.
+4 2020-08-06 10:06:56,374 INFO {model} __init__.py(56) : register blueprint login_test success.
+4 2020-08-06 10:06:56,376 INFO {model} __init__.py(56) : register blueprint user success.
+4 2020-08-06 10:06:56,378 INFO {model} __init__.py(56) : register blueprint clazz success.
+4 2020-08-06 10:06:56,380 INFO {model} __init__.py(56) : register blueprint school success.
+4 2020-08-06 10:06:56,382 INFO {model} __init__.py(56) : register blueprint celery success.
+4 2020-08-06 10:06:56,428 DEBUG {model} __init__.py(71) : __init_scheduler in
+4 2020-08-06 10:06:56,429 DEBUG {model} __init__.py(80) : urls: 
+4 2020-08-06 10:06:56,430 DEBUG {model} __init__.py(82) : /err/bad_gateway_timeout
+4 2020-08-06 10:06:56,430 DEBUG {model} __init__.py(82) : /ycyl/api/count
+4 2020-08-06 10:06:56,431 DEBUG {model} __init__.py(82) : /api/get_real_data
+4 2020-08-06 10:06:56,432 DEBUG {model} __init__.py(82) : /ycyl/api/register
+4 2020-08-06 10:06:56,433 DEBUG {model} __init__.py(82) : /api/users/
+4 2020-08-06 10:06:56,434 DEBUG {model} __init__.py(82) : /register
+4 2020-08-06 10:06:56,434 DEBUG {model} __init__.py(82) : /err/bad_gateway
+4 2020-08-06 10:06:56,435 DEBUG {model} __init__.py(82) : /err/service_unavailable
+4 2020-08-06 10:06:56,436 DEBUG {model} __init__.py(82) : /api/get_target_data
+4 2020-08-06 10:06:56,437 DEBUG {model} __init__.py(82) : /api/classes/
+4 2020-08-06 10:06:56,438 DEBUG {model} __init__.py(82) : /api/auth/generate_token
+4 2020-08-06 10:06:56,439 DEBUG {model} __init__.py(82) : /err/not_found
+4 2020-08-06 10:06:56,439 DEBUG {model} __init__.py(82) : /api/schools/count
+4 2020-08-06 10:06:56,442 DEBUG {model} __init__.py(82) : /err/bad_request
+4 2020-08-06 10:06:56,442 DEBUG {model} __init__.py(82) : /api/schools/<school_id>
+4 2020-08-06 10:06:56,443 DEBUG {model} __init__.py(82) : /login_test/login
+4 2020-08-06 10:06:56,444 DEBUG {model} __init__.py(82) : /static/<path:filename>
+4 2020-08-06 10:06:56,445 DEBUG {model} __init__.py(82) : /api/auth/login_token
+4 2020-08-06 10:06:56,446 DEBUG {model} __init__.py(82) : /api/auth/wechat_code
+4 2020-08-06 10:06:56,447 DEBUG {model} __init__.py(82) : /api/classes/<clazz_id>
+4 2020-08-06 10:06:56,447 DEBUG {model} __init__.py(82) : /api/users/<user_id>
+4 2020-08-06 10:06:56,448 DEBUG {model} __init__.py(82) : /task/compute
+4 2020-08-06 10:06:56,449 DEBUG {model} __init__.py(82) : /api/auth/imgcode
+4 2020-08-06 10:06:56,450 DEBUG {model} __init__.py(82) : /api/auth/register
+4 2020-08-06 10:06:56,450 DEBUG {model} __init__.py(82) : /api/schools/
+4 2020-08-06 10:06:56,451 DEBUG {model} __init__.py(82) : /err/unauthorized
+4 2020-08-06 10:06:56,452 DEBUG {model} __init__.py(82) : /paths
+4 2020-08-06 10:06:56,453 DEBUG {model} __init__.py(82) : /
+4 2020-08-06 10:06:56,454 DEBUG {model} __init__.py(82) : /err/server_error
+4 2020-08-06 10:06:56,455 DEBUG {model} __init__.py(82) : /err/forbidden
+4 2020-08-06 10:06:56,456 DEBUG {model} __init__.py(82) : /ycyl/
+4 2020-08-06 10:06:56,507 INFO {model} functions.py(28) : [flaskapp] bootstrap init on http://0.0.0.0:5000/. Start used time : 0.46257848739624025 s
+4 2020-08-06 10:06:58,291 INFO {model} __init__.py(17) : initial app models model
+4 2020-08-06 10:06:58,299 INFO {model} __init__.py(13) : initial app core model
+4 2020-08-06 10:06:58,301 INFO {model} __init__.py(15) : initial app services model
+4 2020-08-06 10:06:58,303 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:06:58,303 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:06:58,306 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:06:58,306 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:06:58,308 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:06:58,308 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:06:58,312 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:06:58,312 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:06:58,315 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:06:58,315 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:06:58,319 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:06:58,319 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:06:58,500 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:06:58,500 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:06:58,503 INFO {model} __init__.py(24) : initial app views model
+4 2020-08-06 10:06:58,507 INFO {model} __init__.py(56) : register blueprint ycyl success.
+4 2020-08-06 10:06:58,511 INFO {model} __init__.py(56) : register blueprint error success.
+4 2020-08-06 10:06:58,513 INFO {model} __init__.py(56) : register blueprint index success.
+4 2020-08-06 10:06:58,516 INFO {model} __init__.py(56) : register blueprint login success.
+4 2020-08-06 10:06:58,518 INFO {model} __init__.py(56) : register blueprint login_test success.
+4 2020-08-06 10:06:58,520 INFO {model} __init__.py(56) : register blueprint user success.
+4 2020-08-06 10:06:58,522 INFO {model} __init__.py(56) : register blueprint clazz success.
+4 2020-08-06 10:06:58,524 INFO {model} __init__.py(56) : register blueprint school success.
+4 2020-08-06 10:06:58,526 INFO {model} __init__.py(56) : register blueprint celery success.
+4 2020-08-06 10:06:58,575 DEBUG {model} __init__.py(71) : __init_scheduler in
+4 2020-08-06 10:06:58,576 DEBUG {model} __init__.py(80) : urls: 
+4 2020-08-06 10:06:58,577 DEBUG {model} __init__.py(82) : /api/schools/
+4 2020-08-06 10:06:58,578 DEBUG {model} __init__.py(82) : /api/get_real_data
+4 2020-08-06 10:06:58,579 DEBUG {model} __init__.py(82) : /api/auth/generate_token
+4 2020-08-06 10:06:58,579 DEBUG {model} __init__.py(82) : /paths
+4 2020-08-06 10:06:58,580 DEBUG {model} __init__.py(82) : /err/unauthorized
+4 2020-08-06 10:06:58,581 DEBUG {model} __init__.py(82) : /api/get_target_data
+4 2020-08-06 10:06:58,581 DEBUG {model} __init__.py(82) : /api/auth/wechat_code
+4 2020-08-06 10:06:58,582 DEBUG {model} __init__.py(82) : /err/bad_request
+4 2020-08-06 10:06:58,583 DEBUG {model} __init__.py(82) : /api/schools/<school_id>
+4 2020-08-06 10:06:58,584 DEBUG {model} __init__.py(82) : /ycyl/
+4 2020-08-06 10:06:58,584 DEBUG {model} __init__.py(82) : /err/service_unavailable
+4 2020-08-06 10:06:58,585 DEBUG {model} __init__.py(82) : /
+4 2020-08-06 10:06:58,586 DEBUG {model} __init__.py(82) : /api/schools/count
+4 2020-08-06 10:06:58,587 DEBUG {model} __init__.py(82) : /api/users/
+4 2020-08-06 10:06:58,588 DEBUG {model} __init__.py(82) : /ycyl/api/count
+4 2020-08-06 10:06:58,588 DEBUG {model} __init__.py(82) : /login_test/login
+4 2020-08-06 10:06:58,589 DEBUG {model} __init__.py(82) : /static/<path:filename>
+4 2020-08-06 10:06:58,590 DEBUG {model} __init__.py(82) : /api/classes/<clazz_id>
+4 2020-08-06 10:06:58,591 DEBUG {model} __init__.py(82) : /err/bad_gateway
+4 2020-08-06 10:06:58,592 DEBUG {model} __init__.py(82) : /api/classes/
+4 2020-08-06 10:06:58,593 DEBUG {model} __init__.py(82) : /register
+4 2020-08-06 10:06:58,593 DEBUG {model} __init__.py(82) : /ycyl/api/register
+4 2020-08-06 10:06:58,594 DEBUG {model} __init__.py(82) : /api/auth/login_token
+4 2020-08-06 10:06:58,595 DEBUG {model} __init__.py(82) : /err/not_found
+4 2020-08-06 10:06:58,596 DEBUG {model} __init__.py(82) : /api/auth/register
+4 2020-08-06 10:06:58,596 DEBUG {model} __init__.py(82) : /err/bad_gateway_timeout
+4 2020-08-06 10:06:58,597 DEBUG {model} __init__.py(82) : /err/server_error
+4 2020-08-06 10:06:58,598 DEBUG {model} __init__.py(82) : /api/auth/imgcode
+4 2020-08-06 10:06:58,599 DEBUG {model} __init__.py(82) : /err/forbidden
+4 2020-08-06 10:06:58,600 DEBUG {model} __init__.py(82) : /task/compute
+4 2020-08-06 10:06:58,602 DEBUG {model} __init__.py(82) : /api/users/<user_id>
+4 2020-08-06 10:06:58,655 INFO {model} functions.py(28) : [flaskapp] bootstrap init on http://0.0.0.0:5000/. Start used time : 0.42572755813598634 s
+4 2020-08-06 10:20:44,408 INFO {model} __init__.py(17) : initial app models model
+4 2020-08-06 10:20:44,415 INFO {model} __init__.py(13) : initial app core model
+4 2020-08-06 10:20:44,417 INFO {model} __init__.py(15) : initial app services model
+4 2020-08-06 10:20:44,420 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:20:44,420 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:20:44,422 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:20:44,422 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:20:44,424 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:20:44,424 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:20:44,428 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:20:44,428 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:20:44,430 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:20:44,430 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:20:44,434 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:20:44,434 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:20:44,629 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:20:44,629 INFO {model} database.py(128) : init Query
+4 2020-08-06 10:20:44,631 INFO {model} __init__.py(24) : initial app views model
+4 2020-08-06 10:20:44,633 INFO {model} __init__.py(56) : register blueprint ycyl success.
+4 2020-08-06 10:20:44,637 INFO {model} __init__.py(56) : register blueprint error success.
+4 2020-08-06 10:20:44,639 INFO {model} __init__.py(56) : register blueprint index success.
+4 2020-08-06 10:20:44,642 INFO {model} __init__.py(56) : register blueprint login success.
+4 2020-08-06 10:20:44,643 INFO {model} __init__.py(56) : register blueprint login_test success.
+4 2020-08-06 10:20:44,645 INFO {model} __init__.py(56) : register blueprint user success.
+4 2020-08-06 10:20:44,647 INFO {model} __init__.py(56) : register blueprint clazz success.
+4 2020-08-06 10:20:44,649 INFO {model} __init__.py(56) : register blueprint school success.
+4 2020-08-06 10:20:44,650 INFO {model} __init__.py(56) : register blueprint celery success.
+4 2020-08-06 10:20:44,703 DEBUG {model} __init__.py(71) : __init_scheduler in
+4 2020-08-06 10:20:44,704 DEBUG {model} __init__.py(80) : urls: 
+4 2020-08-06 10:20:44,705 DEBUG {model} __init__.py(82) : /api/get_real_data
+4 2020-08-06 10:20:44,706 DEBUG {model} __init__.py(82) : /api/get_target_data
+4 2020-08-06 10:20:44,707 DEBUG {model} __init__.py(82) : /api/auth/imgcode
+4 2020-08-06 10:20:44,708 DEBUG {model} __init__.py(82) : /paths
+4 2020-08-06 10:20:44,709 DEBUG {model} __init__.py(82) : /api/auth/register
+4 2020-08-06 10:20:44,709 DEBUG {model} __init__.py(82) : /err/server_error
+4 2020-08-06 10:20:44,710 DEBUG {model} __init__.py(82) : /register
+4 2020-08-06 10:20:44,711 DEBUG {model} __init__.py(82) : /api/schools/count
+4 2020-08-06 10:20:44,712 DEBUG {model} __init__.py(82) : /api/classes/<clazz_id>
+4 2020-08-06 10:20:44,713 DEBUG {model} __init__.py(82) : /err/unauthorized
+4 2020-08-06 10:20:44,713 DEBUG {model} __init__.py(82) : /api/classes/
+4 2020-08-06 10:20:44,714 DEBUG {model} __init__.py(82) : /ycyl/
+4 2020-08-06 10:20:44,715 DEBUG {model} __init__.py(82) : /ycyl/api/register
+4 2020-08-06 10:20:44,716 DEBUG {model} __init__.py(82) : /err/bad_gateway_timeout
+4 2020-08-06 10:20:44,717 DEBUG {model} __init__.py(82) : /ycyl/api/count
+4 2020-08-06 10:20:44,717 DEBUG {model} __init__.py(82) : /err/bad_request
+4 2020-08-06 10:20:44,718 DEBUG {model} __init__.py(82) : /api/schools/
+4 2020-08-06 10:20:44,719 DEBUG {model} __init__.py(82) : /static/<path:filename>
+4 2020-08-06 10:20:44,720 DEBUG {model} __init__.py(82) : /api/auth/wechat_code
+4 2020-08-06 10:20:44,720 DEBUG {model} __init__.py(82) : /api/auth/generate_token
+4 2020-08-06 10:20:44,721 DEBUG {model} __init__.py(82) : /login_test/login
+4 2020-08-06 10:20:44,722 DEBUG {model} __init__.py(82) : /
+4 2020-08-06 10:20:44,723 DEBUG {model} __init__.py(82) : /api/schools/<school_id>
+4 2020-08-06 10:20:44,724 DEBUG {model} __init__.py(82) : /api/auth/login_token
+4 2020-08-06 10:20:44,725 DEBUG {model} __init__.py(82) : /api/users/
+4 2020-08-06 10:20:44,725 DEBUG {model} __init__.py(82) : /err/forbidden
+4 2020-08-06 10:20:44,726 DEBUG {model} __init__.py(82) : /api/users/<user_id>
+4 2020-08-06 10:20:44,728 DEBUG {model} __init__.py(82) : /task/compute
+4 2020-08-06 10:20:44,729 DEBUG {model} __init__.py(82) : /err/bad_gateway
+4 2020-08-06 10:20:44,730 DEBUG {model} __init__.py(82) : /err/not_found
+4 2020-08-06 10:20:44,731 DEBUG {model} __init__.py(82) : /err/service_unavailable
+4 2020-08-06 10:20:44,784 INFO {model} functions.py(28) : [flaskapp] bootstrap init on http://0.0.0.0:5000/. Start used time : 0.4347085475921631 s
+4 2020-08-06 10:24:14,171 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:14,560 ERROR {model} login_handler.py(62) : 6lulV
+4 2020-08-06 10:24:14,560 ERROR {model} login_handler.py(62) : 6lulV
+4 2020-08-06 10:24:14,848 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:14,850 ERROR {model} login_handler.py(62) : 1S8XT
+4 2020-08-06 10:24:14,850 ERROR {model} login_handler.py(62) : 1S8XT
+4 2020-08-06 10:24:15,342 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:15,343 ERROR {model} login_handler.py(62) : 8KXpW
+4 2020-08-06 10:24:15,343 ERROR {model} login_handler.py(62) : 8KXpW
+4 2020-08-06 10:24:15,734 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:15,736 ERROR {model} login_handler.py(62) : UKZZj
+4 2020-08-06 10:24:15,736 ERROR {model} login_handler.py(62) : UKZZj
+4 2020-08-06 10:24:16,164 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:16,167 ERROR {model} login_handler.py(62) : CBAKt
+4 2020-08-06 10:24:16,167 ERROR {model} login_handler.py(62) : CBAKt
+4 2020-08-06 10:24:16,541 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:16,544 ERROR {model} login_handler.py(62) : 6oikS
+4 2020-08-06 10:24:16,544 ERROR {model} login_handler.py(62) : 6oikS
+4 2020-08-06 10:24:16,900 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:16,903 ERROR {model} login_handler.py(62) : q2lE8
+4 2020-08-06 10:24:16,903 ERROR {model} login_handler.py(62) : q2lE8
+4 2020-08-06 10:24:17,285 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:17,287 ERROR {model} login_handler.py(62) : 8c9iT
+4 2020-08-06 10:24:17,287 ERROR {model} login_handler.py(62) : 8c9iT
+4 2020-08-06 10:24:17,612 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:17,717 ERROR {model} login_handler.py(62) : 189C0
+4 2020-08-06 10:24:17,717 ERROR {model} login_handler.py(62) : 189C0
+4 2020-08-06 10:24:42,163 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:42,349 INFO {model} auth.py(65) : {'clazz': 'None', 'clazz_id': 'None', 'email': 'None', 'id': 1, 'password': 'tKMM1l2CiIbNFVlBPYS4GMxmsB0RqMJ+\n', 'telphone': '13900000000', 'token': 'eyJhbGciOiJIUzUxMiIsImlhdCI6MTU5NjYxMzE4MCwiZXhwIjoxNTk2NjE2NzgwfQ.eyJ1c2VyIjoi56ug5p6cIiwidGVsIjoiMTM5MDAwMDAwMDAiLCJwc3dkIjoidEtNTTFsMkNpSWJORlZsQlBZUzRHTXhtc0IwUnFNSitcbiJ9.K76Ah9d7PEAsgx8RAdJSLpFZ71I6x3e40k-IdmMS1u3O1I--6NEd5eXacKzhtsOM5VQfRtk7IclCN7MR1QXUiQ', 'username': '章果'}
+4 2020-08-06 10:24:42,352 ERROR {model} auth.py(72) : 用户名或密码错误
+4 2020-08-06 10:24:42,354 INFO {model} login_handler.py(31) : {"code": "error username or password", "msg": "\u7528\u6237\u540d\u6216\u5bc6\u7801\u9519\u8bef\uff01", "username": null, "telphone": "13900000000", "token": null}
+4 2020-08-06 10:24:42,354 INFO {model} login_handler.py(31) : {"code": "error username or password", "msg": "\u7528\u6237\u540d\u6216\u5bc6\u7801\u9519\u8bef\uff01", "username": null, "telphone": "13900000000", "token": null}
+4 2020-08-06 10:24:46,348 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:46,355 INFO {model} auth.py(65) : {'clazz': 'None', 'clazz_id': 'None', 'email': 'None', 'id': 1, 'password': 'tKMM1l2CiIbNFVlBPYS4GMxmsB0RqMJ+\n', 'telphone': '13900000000', 'token': 'eyJhbGciOiJIUzUxMiIsImlhdCI6MTU5NjYxMzE4MCwiZXhwIjoxNTk2NjE2NzgwfQ.eyJ1c2VyIjoi56ug5p6cIiwidGVsIjoiMTM5MDAwMDAwMDAiLCJwc3dkIjoidEtNTTFsMkNpSWJORlZsQlBZUzRHTXhtc0IwUnFNSitcbiJ9.K76Ah9d7PEAsgx8RAdJSLpFZ71I6x3e40k-IdmMS1u3O1I--6NEd5eXacKzhtsOM5VQfRtk7IclCN7MR1QXUiQ', 'username': '章果'}
+4 2020-08-06 10:24:46,379 INFO {model} login_handler.py(31) : {"code": "Success", "msg": "\u83b7\u53d6token\u6210\u529f\uff01", "username": null, "telphone": "13900000000", "token": ["eyJhbGciOiJIUzUxMiIsImlhdCI6MTU5NjY4MDY4NiwiZXhwIjoxNTk2Njg0Mjg2fQ.eyJ1c2VyIjoi56ug5p6cIiwidGVsIjoiMTM5MDAwMDAwMDAiLCJwc3dkIjoidEtNTTFsMkNpSWJORlZsQlBZUzRHTXhtc0IwUnFNSitcbiJ9.PrbjT6MZD3dJ9ijn4VzaWmIIBQjRqeJ--A_BS_2UzKhmCqCSkk3dwmjv5_-3yRiHmiwFFsAdK2JbZSx0ifOy7w", 3600]}
+4 2020-08-06 10:24:46,379 INFO {model} login_handler.py(31) : {"code": "Success", "msg": "\u83b7\u53d6token\u6210\u529f\uff01", "username": null, "telphone": "13900000000", "token": ["eyJhbGciOiJIUzUxMiIsImlhdCI6MTU5NjY4MDY4NiwiZXhwIjoxNTk2Njg0Mjg2fQ.eyJ1c2VyIjoi56ug5p6cIiwidGVsIjoiMTM5MDAwMDAwMDAiLCJwc3dkIjoidEtNTTFsMkNpSWJORlZsQlBZUzRHTXhtc0IwUnFNSitcbiJ9.PrbjT6MZD3dJ9ijn4VzaWmIIBQjRqeJ--A_BS_2UzKhmCqCSkk3dwmjv5_-3yRiHmiwFFsAdK2JbZSx0ifOy7w", 3600]}
+4 2020-08-06 10:24:46,386 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:46,390 INFO {model} login_handler.py(41) : {"code": "Success", "msg": "\u767b\u5f55\u6210\u529f", "username": "\u7ae0\u679c", "telphone": "13900000000", "token": "eyJhbGciOiJIUzUxMiIsImlhdCI6MTU5NjY4MDY4NiwiZXhwIjoxNTk2Njg0Mjg2fQ.eyJ1c2VyIjoi56ug5p6cIiwidGVsIjoiMTM5MDAwMDAwMDAiLCJwc3dkIjoidEtNTTFsMkNpSWJORlZsQlBZUzRHTXhtc0IwUnFNSitcbiJ9.PrbjT6MZD3dJ9ijn4VzaWmIIBQjRqeJ--A_BS_2UzKhmCqCSkk3dwmjv5_-3yRiHmiwFFsAdK2JbZSx0ifOy7w"}
+4 2020-08-06 10:24:46,390 INFO {model} login_handler.py(41) : {"code": "Success", "msg": "\u767b\u5f55\u6210\u529f", "username": "\u7ae0\u679c", "telphone": "13900000000", "token": "eyJhbGciOiJIUzUxMiIsImlhdCI6MTU5NjY4MDY4NiwiZXhwIjoxNTk2Njg0Mjg2fQ.eyJ1c2VyIjoi56ug5p6cIiwidGVsIjoiMTM5MDAwMDAwMDAiLCJwc3dkIjoidEtNTTFsMkNpSWJORlZsQlBZUzRHTXhtc0IwUnFNSitcbiJ9.PrbjT6MZD3dJ9ijn4VzaWmIIBQjRqeJ--A_BS_2UzKhmCqCSkk3dwmjv5_-3yRiHmiwFFsAdK2JbZSx0ifOy7w"}
+4 2020-08-06 10:24:46,412 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:46,471 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:46,517 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:46,529 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:46,551 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:46,556 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:46,587 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:46,608 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:46,623 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:46,642 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:46,685 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:46,690 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:46,722 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:46,739 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:46,745 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:46,749 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:46,753 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:46,756 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:46,868 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:46,876 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:47,555 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:58,881 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:24:59,073 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:08,541 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:08,544 ERROR {model} login_handler.py(62) : 36D18
+4 2020-08-06 10:25:08,544 ERROR {model} login_handler.py(62) : 36D18
+4 2020-08-06 10:25:20,920 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:21,015 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:21,018 ERROR {model} login_handler.py(62) : Ds49u
+4 2020-08-06 10:25:21,018 ERROR {model} login_handler.py(62) : Ds49u
+4 2020-08-06 10:25:21,023 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:22,238 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:22,282 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:22,287 ERROR {model} login_handler.py(62) : mhK36
+4 2020-08-06 10:25:22,287 ERROR {model} login_handler.py(62) : mhK36
+4 2020-08-06 10:25:22,291 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:23,008 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:23,053 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:23,055 ERROR {model} login_handler.py(62) : 8h5WF
+4 2020-08-06 10:25:23,055 ERROR {model} login_handler.py(62) : 8h5WF
+4 2020-08-06 10:25:23,059 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:23,565 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:23,609 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:23,611 ERROR {model} login_handler.py(62) : tIo11
+4 2020-08-06 10:25:23,611 ERROR {model} login_handler.py(62) : tIo11
+4 2020-08-06 10:25:23,621 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:24,419 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:24,458 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:24,460 ERROR {model} login_handler.py(62) : E5h2Q
+4 2020-08-06 10:25:24,460 ERROR {model} login_handler.py(62) : E5h2Q
+4 2020-08-06 10:25:24,466 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:25,139 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:25,173 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:25,176 ERROR {model} login_handler.py(62) : 0Yl92
+4 2020-08-06 10:25:25,176 ERROR {model} login_handler.py(62) : 0Yl92
+4 2020-08-06 10:25:25,182 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:26,470 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:26,520 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:26,523 ERROR {model} login_handler.py(62) : hTs2p
+4 2020-08-06 10:25:26,523 ERROR {model} login_handler.py(62) : hTs2p
+4 2020-08-06 10:25:26,531 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:27,243 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:27,276 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:27,278 ERROR {model} login_handler.py(62) : pMZU2
+4 2020-08-06 10:25:27,278 ERROR {model} login_handler.py(62) : pMZU2
+4 2020-08-06 10:25:27,286 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:28,230 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:28,233 ERROR {model} login_handler.py(62) : pUf5I
+4 2020-08-06 10:25:28,233 ERROR {model} login_handler.py(62) : pUf5I
+4 2020-08-06 10:25:28,237 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:29,222 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:29,224 ERROR {model} login_handler.py(62) : I33yW
+4 2020-08-06 10:25:29,224 ERROR {model} login_handler.py(62) : I33yW
+4 2020-08-06 10:25:29,229 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:29,745 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:29,746 ERROR {model} login_handler.py(62) : 7Pfht
+4 2020-08-06 10:25:29,746 ERROR {model} login_handler.py(62) : 7Pfht
+4 2020-08-06 10:25:29,751 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:30,169 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:30,171 ERROR {model} login_handler.py(62) : 44QU3
+4 2020-08-06 10:25:30,171 ERROR {model} login_handler.py(62) : 44QU3
+4 2020-08-06 10:25:30,174 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:30,622 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:30,625 ERROR {model} login_handler.py(62) : 5j27q
+4 2020-08-06 10:25:30,625 ERROR {model} login_handler.py(62) : 5j27q
+4 2020-08-06 10:25:30,628 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:31,056 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:31,059 ERROR {model} login_handler.py(62) : 2lJAj
+4 2020-08-06 10:25:31,059 ERROR {model} login_handler.py(62) : 2lJAj
+4 2020-08-06 10:25:31,064 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:31,444 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:31,446 ERROR {model} login_handler.py(62) : 0WALv
+4 2020-08-06 10:25:31,446 ERROR {model} login_handler.py(62) : 0WALv
+4 2020-08-06 10:25:31,450 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:31,829 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:31,831 ERROR {model} login_handler.py(62) : iNYQM
+4 2020-08-06 10:25:31,831 ERROR {model} login_handler.py(62) : iNYQM
+4 2020-08-06 10:25:31,837 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:32,205 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:32,207 ERROR {model} login_handler.py(62) : 4AbMf
+4 2020-08-06 10:25:32,207 ERROR {model} login_handler.py(62) : 4AbMf
+4 2020-08-06 10:25:32,210 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:33,253 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:33,255 ERROR {model} login_handler.py(62) : v8U8U
+4 2020-08-06 10:25:33,255 ERROR {model} login_handler.py(62) : v8U8U
+4 2020-08-06 10:25:33,260 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:33,707 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:33,709 ERROR {model} login_handler.py(62) : Uadi7
+4 2020-08-06 10:25:33,709 ERROR {model} login_handler.py(62) : Uadi7
+4 2020-08-06 10:25:33,713 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:34,216 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:34,220 ERROR {model} login_handler.py(62) : 0M1N6
+4 2020-08-06 10:25:34,220 ERROR {model} login_handler.py(62) : 0M1N6
+4 2020-08-06 10:25:34,226 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:37,066 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:37,168 ERROR {model} login_handler.py(62) : YFOpw
+4 2020-08-06 10:25:37,168 ERROR {model} login_handler.py(62) : YFOpw
+4 2020-08-06 10:25:37,185 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:37,680 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:37,682 ERROR {model} login_handler.py(62) : l98N6
+4 2020-08-06 10:25:37,682 ERROR {model} login_handler.py(62) : l98N6
+4 2020-08-06 10:25:37,688 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:39,139 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:39,140 ERROR {model} login_handler.py(62) : tb42Z
+4 2020-08-06 10:25:39,140 ERROR {model} login_handler.py(62) : tb42Z
+4 2020-08-06 10:25:39,146 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:41,352 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:41,354 ERROR {model} login_handler.py(62) : Xjg5c
+4 2020-08-06 10:25:41,354 ERROR {model} login_handler.py(62) : Xjg5c
+4 2020-08-06 10:25:41,360 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:41,893 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:41,894 ERROR {model} login_handler.py(62) : 926D7
+4 2020-08-06 10:25:41,894 ERROR {model} login_handler.py(62) : 926D7
+4 2020-08-06 10:25:41,899 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:42,349 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:42,352 ERROR {model} login_handler.py(62) : C3GSw
+4 2020-08-06 10:25:42,352 ERROR {model} login_handler.py(62) : C3GSw
+4 2020-08-06 10:25:42,359 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:42,871 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:42,872 ERROR {model} login_handler.py(62) : LlT55
+4 2020-08-06 10:25:42,872 ERROR {model} login_handler.py(62) : LlT55
+4 2020-08-06 10:25:42,875 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:43,318 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:43,320 ERROR {model} login_handler.py(62) : MgIqr
+4 2020-08-06 10:25:43,320 ERROR {model} login_handler.py(62) : MgIqr
+4 2020-08-06 10:25:43,323 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:43,757 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:43,758 ERROR {model} login_handler.py(62) : mlSFB
+4 2020-08-06 10:25:43,758 ERROR {model} login_handler.py(62) : mlSFB
+4 2020-08-06 10:25:43,762 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:44,258 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:44,260 ERROR {model} login_handler.py(62) : wC2ZK
+4 2020-08-06 10:25:44,260 ERROR {model} login_handler.py(62) : wC2ZK
+4 2020-08-06 10:25:44,267 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:44,696 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:44,699 ERROR {model} login_handler.py(62) : B46bW
+4 2020-08-06 10:25:44,699 ERROR {model} login_handler.py(62) : B46bW
+4 2020-08-06 10:25:44,705 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:45,206 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:45,209 ERROR {model} login_handler.py(62) : gy1LT
+4 2020-08-06 10:25:45,209 ERROR {model} login_handler.py(62) : gy1LT
+4 2020-08-06 10:25:45,217 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:46,489 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:46,491 ERROR {model} login_handler.py(62) : mqehk
+4 2020-08-06 10:25:46,491 ERROR {model} login_handler.py(62) : mqehk
+4 2020-08-06 10:25:46,499 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:47,442 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:47,444 ERROR {model} login_handler.py(62) : BPoe5
+4 2020-08-06 10:25:47,444 ERROR {model} login_handler.py(62) : BPoe5
+4 2020-08-06 10:25:47,449 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:47,802 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:47,804 ERROR {model} login_handler.py(62) : St25I
+4 2020-08-06 10:25:47,804 ERROR {model} login_handler.py(62) : St25I
+4 2020-08-06 10:25:47,807 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:48,271 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:48,273 ERROR {model} login_handler.py(62) : swPkE
+4 2020-08-06 10:25:48,273 ERROR {model} login_handler.py(62) : swPkE
+4 2020-08-06 10:25:48,277 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:48,797 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:48,801 ERROR {model} login_handler.py(62) : FQJ0L
+4 2020-08-06 10:25:48,801 ERROR {model} login_handler.py(62) : FQJ0L
+4 2020-08-06 10:25:48,808 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:49,118 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:49,121 ERROR {model} login_handler.py(62) : c9RB2
+4 2020-08-06 10:25:49,121 ERROR {model} login_handler.py(62) : c9RB2
+4 2020-08-06 10:25:49,127 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:49,490 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:49,492 ERROR {model} login_handler.py(62) : pJb1t
+4 2020-08-06 10:25:49,492 ERROR {model} login_handler.py(62) : pJb1t
+4 2020-08-06 10:25:49,495 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:49,831 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:49,834 ERROR {model} login_handler.py(62) : vSwN2
+4 2020-08-06 10:25:49,834 ERROR {model} login_handler.py(62) : vSwN2
+4 2020-08-06 10:25:49,841 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:50,194 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:50,197 ERROR {model} login_handler.py(62) : w6D30
+4 2020-08-06 10:25:50,197 ERROR {model} login_handler.py(62) : w6D30
+4 2020-08-06 10:25:50,202 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:50,509 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:50,511 ERROR {model} login_handler.py(62) : Gr5DQ
+4 2020-08-06 10:25:50,511 ERROR {model} login_handler.py(62) : Gr5DQ
+4 2020-08-06 10:25:50,515 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:50,789 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:50,791 ERROR {model} login_handler.py(62) : BA7y6
+4 2020-08-06 10:25:50,791 ERROR {model} login_handler.py(62) : BA7y6
+4 2020-08-06 10:25:50,795 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:51,091 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:51,095 ERROR {model} login_handler.py(62) : fBEmW
+4 2020-08-06 10:25:51,095 ERROR {model} login_handler.py(62) : fBEmW
+4 2020-08-06 10:25:51,100 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:51,614 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:51,616 ERROR {model} login_handler.py(62) : qJWm9
+4 2020-08-06 10:25:51,616 ERROR {model} login_handler.py(62) : qJWm9
+4 2020-08-06 10:25:51,619 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:51,887 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:51,888 ERROR {model} login_handler.py(62) : d0VoZ
+4 2020-08-06 10:25:51,888 ERROR {model} login_handler.py(62) : d0VoZ
+4 2020-08-06 10:25:51,892 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:52,233 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:52,235 ERROR {model} login_handler.py(62) : 82w8d
+4 2020-08-06 10:25:52,235 ERROR {model} login_handler.py(62) : 82w8d
+4 2020-08-06 10:25:52,239 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:52,577 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:52,581 ERROR {model} login_handler.py(62) : gcI68
+4 2020-08-06 10:25:52,581 ERROR {model} login_handler.py(62) : gcI68
+4 2020-08-06 10:25:52,587 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:52,905 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:52,907 ERROR {model} login_handler.py(62) : T3U99
+4 2020-08-06 10:25:52,907 ERROR {model} login_handler.py(62) : T3U99
+4 2020-08-06 10:25:52,912 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:53,200 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:53,201 ERROR {model} login_handler.py(62) : hQLf8
+4 2020-08-06 10:25:53,201 ERROR {model} login_handler.py(62) : hQLf8
+4 2020-08-06 10:25:53,205 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:53,615 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:53,617 ERROR {model} login_handler.py(62) : 7Td5B
+4 2020-08-06 10:25:53,617 ERROR {model} login_handler.py(62) : 7Td5B
+4 2020-08-06 10:25:53,620 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:54,495 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:55,118 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:55,789 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:55,791 ERROR {model} login_handler.py(62) : 0cQx9
+4 2020-08-06 10:25:55,791 ERROR {model} login_handler.py(62) : 0cQx9
+4 2020-08-06 10:25:55,798 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:56,289 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:25:57,023 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:26:01,013 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:26:01,514 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:26:01,517 ERROR {model} login_handler.py(62) : O7UjT
+4 2020-08-06 10:26:01,517 ERROR {model} login_handler.py(62) : O7UjT
+4 2020-08-06 10:26:01,521 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:26:01,958 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:26:01,961 ERROR {model} login_handler.py(62) : A23Uj
+4 2020-08-06 10:26:01,961 ERROR {model} login_handler.py(62) : A23Uj
+4 2020-08-06 10:26:01,964 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:26:02,222 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:26:02,224 ERROR {model} login_handler.py(62) : nftWZ
+4 2020-08-06 10:26:02,224 ERROR {model} login_handler.py(62) : nftWZ
+4 2020-08-06 10:26:02,228 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:26:05,266 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:26:05,269 ERROR {model} login_handler.py(62) : km2OV
+4 2020-08-06 10:26:05,269 ERROR {model} login_handler.py(62) : km2OV
+4 2020-08-06 10:26:05,272 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:26:05,754 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:26:05,758 ERROR {model} login_handler.py(62) : yqw81
+4 2020-08-06 10:26:05,758 ERROR {model} login_handler.py(62) : yqw81
+4 2020-08-06 10:26:05,765 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:26:06,986 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:26:07,040 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:26:07,070 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:26:07,095 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:26:07,104 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:26:07,128 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:26:07,161 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:26:07,172 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:26:07,200 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:26:07,245 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:26:07,259 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:26:07,297 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:26:07,328 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:26:07,397 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:26:07,399 ERROR {model} login_handler.py(62) : 9fRDT
+4 2020-08-06 10:26:07,399 ERROR {model} login_handler.py(62) : 9fRDT
+4 2020-08-06 10:26:07,402 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:26:12,125 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:26:12,128 ERROR {model} login_handler.py(62) : VJxuM
+4 2020-08-06 10:26:12,128 ERROR {model} login_handler.py(62) : VJxuM
+4 2020-08-06 10:26:12,134 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:36:43,190 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:36:43,193 INFO {model} auth.py(65) : {'clazz': 'None', 'clazz_id': 'None', 'email': 'None', 'id': 1, 'password': 'tKMM1l2CiIbNFVlBPYS4GMxmsB0RqMJ+\n', 'telphone': '13900000000', 'token': '', 'username': '章果'}
+4 2020-08-06 10:36:43,204 INFO {model} login_handler.py(31) : {"code": "Success", "msg": "\u83b7\u53d6token\u6210\u529f\uff01", "username": null, "telphone": "13900000000", "token": ["eyJhbGciOiJIUzUxMiIsImlhdCI6MTU5NjY4MTQwMywiZXhwIjoxNTk2Njg1MDAzfQ.eyJ1c2VyIjoi56ug5p6cIiwidGVsIjoiMTM5MDAwMDAwMDAiLCJwc3dkIjoidEtNTTFsMkNpSWJORlZsQlBZUzRHTXhtc0IwUnFNSitcbiJ9.GfU8SPkNt7Sq5p1aU-n8_bdVKSa7yosyEBVfEsQdpPdIBp22iXa2_w7xlOxz4EKV-2iQH5KUS3PltEKS3Kz18A", 3600]}
+4 2020-08-06 10:36:43,204 INFO {model} login_handler.py(31) : {"code": "Success", "msg": "\u83b7\u53d6token\u6210\u529f\uff01", "username": null, "telphone": "13900000000", "token": ["eyJhbGciOiJIUzUxMiIsImlhdCI6MTU5NjY4MTQwMywiZXhwIjoxNTk2Njg1MDAzfQ.eyJ1c2VyIjoi56ug5p6cIiwidGVsIjoiMTM5MDAwMDAwMDAiLCJwc3dkIjoidEtNTTFsMkNpSWJORlZsQlBZUzRHTXhtc0IwUnFNSitcbiJ9.GfU8SPkNt7Sq5p1aU-n8_bdVKSa7yosyEBVfEsQdpPdIBp22iXa2_w7xlOxz4EKV-2iQH5KUS3PltEKS3Kz18A", 3600]}
+4 2020-08-06 10:36:43,211 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:36:43,215 INFO {model} login_handler.py(41) : {"code": "Success", "msg": "\u767b\u5f55\u6210\u529f", "username": "\u7ae0\u679c", "telphone": "13900000000", "token": "eyJhbGciOiJIUzUxMiIsImlhdCI6MTU5NjY4MTQwMywiZXhwIjoxNTk2Njg1MDAzfQ.eyJ1c2VyIjoi56ug5p6cIiwidGVsIjoiMTM5MDAwMDAwMDAiLCJwc3dkIjoidEtNTTFsMkNpSWJORlZsQlBZUzRHTXhtc0IwUnFNSitcbiJ9.GfU8SPkNt7Sq5p1aU-n8_bdVKSa7yosyEBVfEsQdpPdIBp22iXa2_w7xlOxz4EKV-2iQH5KUS3PltEKS3Kz18A"}
+4 2020-08-06 10:36:43,215 INFO {model} login_handler.py(41) : {"code": "Success", "msg": "\u767b\u5f55\u6210\u529f", "username": "\u7ae0\u679c", "telphone": "13900000000", "token": "eyJhbGciOiJIUzUxMiIsImlhdCI6MTU5NjY4MTQwMywiZXhwIjoxNTk2Njg1MDAzfQ.eyJ1c2VyIjoi56ug5p6cIiwidGVsIjoiMTM5MDAwMDAwMDAiLCJwc3dkIjoidEtNTTFsMkNpSWJORlZsQlBZUzRHTXhtc0IwUnFNSitcbiJ9.GfU8SPkNt7Sq5p1aU-n8_bdVKSa7yosyEBVfEsQdpPdIBp22iXa2_w7xlOxz4EKV-2iQH5KUS3PltEKS3Kz18A"}
+4 2020-08-06 10:36:43,226 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:36:43,347 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:36:43,495 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:36:43,506 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:36:44,112 DEBUG {model} http_interceptor.py(20) : request params: [%s]
+4 2020-08-06 10:36:49,979 DEBUG {model} http_interceptor.py(20) : request params: [%s]

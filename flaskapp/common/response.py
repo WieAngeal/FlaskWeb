@@ -16,6 +16,7 @@ from flask.globals import current_app
 
 class HttpStatus(object):
     SUCCESS = 200
+    FAILED = 300
     BAD_REQUEST = 400
     NOT_FOUND = 404
     NOT_ALLOWED = 405

@@ -81,3 +81,6 @@ MIME_TYPE = {
         '.tar':  'application/x-tar',
         '.gz':   'application/x-gzip'
     }
+
+
+# ############################# flask scheduler config #######################################
