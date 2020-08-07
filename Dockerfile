@@ -14,7 +14,7 @@ EXPOSE 3306
 CMD ["sh", "/mysql/setup.sh"]
 
 
-FROM python:3.7.3
+FROM python:3.8.5
 
 MAINTAINER WieAngeal <392815095@qq.com>
 
