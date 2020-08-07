@@ -13,6 +13,7 @@ from ..models import Hosinfo
 from ..services import DBService
 from ..common import email, auth
 import ast
+from flask_login import login_required
 
 
 logger = ConsoleLogger(relative_path(__file__))
@@ -20,6 +21,7 @@ ycyl_service = DBService(model=Hosinfo)
 ycyl = Blueprint('ycyl', __name__, url_prefix='/ycyl')
 
 @ycyl.route('/', methods=["GET", "POST"])
+@login_required
 def home():
     token = request.args.get('token')
     user = auth.verify_auth_token(token)['username']
