@@ -24,7 +24,7 @@ def login():
     """
     flash("welcome !")
 
-    return render_template("login.html")
+    return render_template("test.html")
 
 @index.route('/register', methods=["GET", "POST"])
 def register_user():

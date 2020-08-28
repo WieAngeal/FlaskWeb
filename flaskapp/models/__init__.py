@@ -11,12 +11,13 @@ from .school import School
 from .user import User
 from .hosinfo import Hosinfo
 from .ctyxy import CtyxyDataShip
+from .config_district import Config_District
 from ..common import ConsoleLogger, relative_path
 
 logger = ConsoleLogger(relative_path(__file__))
 logger.info('initial app models model')
 
-__all__ = ['User', 'Clazz', 'School', 'Hosinfo', 'CtyxyDataShip']
+__all__ = ['User', 'Clazz', 'School', 'Hosinfo', 'CtyxyDataShip', 'Config_District']
 
 # models
 MODELS = __all__

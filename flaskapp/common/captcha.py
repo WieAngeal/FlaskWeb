@@ -61,4 +61,4 @@ class CaptchaTool(object):
         buffered = io.BytesIO()
         self.im.save(buffered, format="PNG")
         img_str = b"data:image/png;base64," + base64.b64encode(buffered.getvalue())
-        return img_str, code
+        return img_str, code.lower()

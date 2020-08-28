@@ -38,7 +38,7 @@
 
                     <div class="wrap-input100 validate-input" data-validate="请输入验证码">
                         <span class="label-input100">验证码</span>
-                        <input class="img_code" type="text" name="text" id="verify_code" placeholder="请输入验证码">
+                        <input class="img_code" type="text" name="text" id="verify_code" onblur="verifyCode()" placeholder="请输入验证码">
                         <span class="focus-imgcode" data-symbol="&#xf183;"></span>
                         <img onclick="refresh_img_code()" class="focus-imgcode-img" id="img_code" src="">
 					</div>
@@ -157,7 +157,7 @@
                 telphone: telphone,
                 password: encrypt_pwd,
                 timecode: key,
-                verifycode: verifycode
+                verifycode: verifycode.toLowerCase()
             }),
         };
 
@@ -252,6 +252,33 @@
             contentType: "application/x-www-form-urlencoded",
             success: function (result) {
                 $("#img_code").attr("src", result);
+            },
+            error : function() {
+                alert("异常！");
+            }
+        });
+    }
+    
+    function verifyCode() {
+        var verifycode = document.getElementById("verify_code").value;
+
+        var data= {
+            data: JSON.stringify({
+                verifycode: verifycode.toLowerCase()
+            }),
+        };
+
+        $.ajax({
+            type: "POST",
+            url: "/api/auth/verifycode",
+            dataType: "json",
+            data: data,
+            contentType: "application/x-www-form-urlencoded",
+            success: function (result) {
+                console.log(result);
+                if(result['code'] == "0"){
+                    alert(result['msg']);
+                }
             },
             error : function() {
                 alert("异常！");

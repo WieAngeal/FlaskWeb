@@ -5,7 +5,7 @@
 # @File    : login_hander.py
 # @Software: PyCharm
 
-from flask import Blueprint, request, redirect, render_template
+from flask import Blueprint, request, session, render_template
 from flask import url_for
 from ..services import UserService
 from ..common import (ConsoleLogger, relative_path)
@@ -33,36 +33,52 @@ def create_token():
 
 @login.route('/login_token', methods=['GET', 'POST'])
 def token_verify():
-    data = request.form.get('data')
-    _token = json.loads(data)
-    token = _token['_token'][0]
-    rsp = auth.verify_auth_token(token)
-    json_data = json.dumps(rsp)
-    logger.info(json_data)
-    return json_data
+    try:
+        data = request.form.get('data')
+        _token = json.loads(data)
+        token = _token['_token'][0]
+        rsp = auth.verify_auth_token(token)
+        json_data = json.dumps(rsp)
+        logger.info(json_data)
+        return json_data
+    except Exception as e:
+        logger.error(e)
 
 @login.route('/register', methods=['GET', 'POST'])
 def register_user():
-    data = json.loads(request.form.get('data'))
-    json_data = json.dumps(auth.register_user(data))
-    return json_data
+    try:
+        data = json.loads(request.form.get('data'))
+        json_data = json.dumps(auth.register_user(data))
+        return json_data
+    except Exception as e:
+        logger.error(e)
 
 
 @login.route('/imgcode', methods=['GET', 'POST'])
 def get_verify_code():
     method = request.method
     if method == 'GET':
-        new_captcha = CaptchaTool()
-        # 获取图形验证码
-        img, code = new_captcha.get_verify_code()
-        # 存入session
-        #session["code"] = code
+        try:
+            new_captcha = CaptchaTool()
+            img, code = new_captcha.get_verify_code()
+            # 存入session
+            session["code"] = code
+            return img
+        except Exception as e:
+            logger.error(e)
 
-        #logger.error(img)
-        logger.error(code)
-
-        return img
-
+@login.route('/verifycode', methods=["GET", "POST"])
+def verify_code():
+    method = request.method
+    if method == 'POST':
+        try:
+            userdata = ast.literal_eval(request.form.get('data'))
+            if userdata['verifycode'] != session['code']:
+                logger.error("验证码错误" + userdata['verifycode'])
+                return json.dumps(auth.rep_json_data(code=0, msg="验证码错误，请重新输入！"))
+            return json.dumps(auth.rep_json_data(code=1, msg="验证码正确！"))
+        except Exception as e:
+            logger.error(e)
 
 @login.route('/wechat_code', methods=['GET', 'POST'])
 def wechat_login():

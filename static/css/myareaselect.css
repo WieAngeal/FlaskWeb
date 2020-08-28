@@ -1,0 +1,164 @@
+﻿/*公共样式 css start---------*/
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing:content-box;
+    box-sizing: content-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+i, cite, em, var, dfn {
+    font-style: normal;
+}
+ol, ul, li {
+    list-style:none;
+}
+/*公共样式 css start---------*/
+/*地址浮动层 css start---------*/
+.ui-area-wrap{
+    height: 26px;
+    margin-right: 6px;
+    position: relative;
+    z-index: 3;
+    line-height: 22px;
+    color: #666;
+    float: left;
+    font-size:14px;
+}
+.ui-area-wrap:hover{
+    z-index: 4;
+}
+.ui-area-text-wrap{
+    background-color: #fff;
+    border: 1px solid #cecbce;
+    height: 29px;
+    line-height: 29px;
+    overflow: hidden;
+    padding: 0 24px 0 4px;
+    position: relative;
+    top: 0;
+    min-width: 142px;
+    border-radius: 2px;
+}
+.ui-area-wrap .ui-area-text-wrap.hover-area-text-wrap{
+    border-bottom-width: 0;
+    height: 33px;
+    z-index: 1;
+
+}
+.ui-area-text-wrap b{
+     background: url("down.png") ;
+    display: block;
+    height: 17px;
+    overflow: hidden;
+    position: absolute;
+    right: 4px;
+    top: 6px;
+    width: 17px;
+}
+/*ui-area-content-wrap css start*/
+.ui-area-content-wrap{
+    background-color: #fff;
+    border: 1px solid #cecbce;
+    box-shadow: 0 0 5px #ddd;
+    display: none;
+    float: left;
+    left: 0;
+    padding: 12px 12px 15px;
+    position: absolute;
+    top: 32px;
+    width: 420px;
+    border-radius: 2px;
+}
+/*.ui-area-wrap:hover .ui-area-content-wrap{
+    display:block;
+}*/
+.ui-area-content-wrap .ui-area-tab{
+    border-bottom: 2px solid #e4393c;
+    cursor: default;
+    height: 25px;
+    overflow: visible;
+    width: 100%;
+    line-height: 22px;
+}
+.ui-area-content-wrap .ui-area-tab a.ui-switchable-item{
+    border:1px solid #ddd;
+    border-bottom-width: 0;
+    color: #005ea6;
+    cursor: pointer;
+    float: left;
+    height: 23px;
+    line-height: 25px;
+    margin-right: 4px;
+    max-width: 46px;
+    min-width:46px;
+    overflow: hidden;
+    padding: 0 25px 1px 6px;
+    position: relative;
+    text-align: center;
+    outline: 0 none;
+    text-decoration: none;
+}
+.ui-area-content-wrap .ui-area-tab a.ui-area-current{
+    background-color: #fff;
+    border-color: #e4393c;
+    border-width: 2px 2px 0;
+    height: 25px;
+    line-height: 22px;
+    padding: 0 25px 0 6px;
+}
+.ui-area-content-wrap .ui-area-tab a.ui-switchable-item em{
+     color: #005aa0;
+}
+.ui-area-content-wrap .ui-area-tab a.ui-switchable-item i{
+     background: url("down.png") ;
+    display: block;
+    height: 16px;
+    opacity: 0.5;
+    overflow: hidden;
+    position: absolute;
+    right: 6px;
+    top: 5px;
+    width: 13px;
+}
+.ui-area-content-wrap .ui-area-content{
+    line-height: 22px;
+    color: #666;
+}
+.ui-area-content-wrap .ui-area-content .ui-switchable-panel{
+    display:none;
+}
+.ui-area-content-wrap .ui-area-content .active-panel{
+    display:block;
+}
+.ui-area-content-wrap .ui-area-content ul.ui-area-content-list{
+    margin-bottom: -5px;
+    overflow: hidden;
+    padding-top: 10px;
+    width: 100%;
+}
+.ui-area-content-wrap .ui-area-content ul.ui-area-content-list li{
+    line-height: 22px;
+    padding: 0 0 0 15px;
+    float: left;
+    width: 88px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.ui-area-content-wrap .ui-area-content ul.ui-area-content-list li a{
+    padding: 0 4px;
+    color: #005aa0;
+    float: left;
+    text-decoration: none;
+}
+.ui-area-content-wrap .ui-area-content ul.ui-area-content-list li.active a{
+    color: #e4393c;
+}
+/*ui-area-content-wrap css end*/
+/*地址浮动层 css end-----------*/
+

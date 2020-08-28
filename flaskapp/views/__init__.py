@@ -16,6 +16,7 @@ from .rest_school_handler import school as _school
 from .rest_user_handler import user as _user
 from .ycyl_hander import ycyl as _ycyl
 from .login_handler import login as _login
+from .util_district import district as _district
 
 
 from ..common import ConsoleLogger, relative_path
@@ -33,4 +34,5 @@ BLUEPRINT_MODELS = [
     _clazz,
     _school,
     _cly,
+    _district,
 ]
