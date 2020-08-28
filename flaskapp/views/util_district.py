@@ -102,8 +102,6 @@ def get_addr_by_id():
             area_list["list"] = addr
             area_list["state"] = 1
 
-            logger.info(district_service.query_all())
-
         except Exception as e:
             logger.debug(e)
 
