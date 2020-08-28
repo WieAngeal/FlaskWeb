@@ -12,6 +12,7 @@ from ..services import DBService
 from ..common import (ConsoleLogger, make_response, HttpError,
                       relative_path, multi_dict_parser2dict)
 import json
+import time
 
 
 district = Blueprint('district', __name__, url_prefix='/api/district')
@@ -100,6 +101,9 @@ def get_addr_by_id():
                    + st_name + '/' + vi_name
             area_list["list"] = addr
             area_list["state"] = 1
+
+            logger.info(district_service.query_all())
+
         except Exception as e:
             logger.debug(e)
 
