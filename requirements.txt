@@ -93,7 +93,7 @@ SQLAlchemy==1.3.5
 texttable==1.6.1
 threadpool==1.3.2
 tzlocal==1.5.1
-urllib3==1.25.3
+urllib3==1.26.5
 vine==1.3.0
 visitor==0.1.3
 websocket-client==0.56.0
